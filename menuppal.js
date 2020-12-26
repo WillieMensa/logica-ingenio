@@ -16,22 +16,13 @@ function poneMenuPpal() {
 		'	<li><a href="./ingenio.html">Ingenio   </a></li>' +
 		'	<li><a href="./aplicaciones.html">Aplicaciones </a></li>' +
 		'	<li class="dropdown">' +
-		'		<a href="javascript:void(0)" class="dropbtn">Representac. Gráfica</a>' +
-		'		<div class="dropdown-content">' +
-		'			<a href="./guias-de-clase.html">Guías de Clase</a>' +
-		'			<a href="./rg-material-estudio.html">Material adicional</a>' +
-		'			<a href="./representacion-con-cad.html">Representación asistida con CAD</a>' +
-		'			<a href="./caligrafia-croquis.html">Caligrafía y croquis</a>' +
-		'			<a href="./repgrafsincorbata.html">Representación gráfica sin corbata</a>' +
-		'		</div>' +
-		'	</li>' +
-		'	<li class="dropdown">' +
 		'		<a href="javascript:void(0)" class="dropbtn">Publicaciones</a>' +
 		'		<div class="dropdown-content">' +
 		'			<a href="matematica-recreativa.html">Matemática recreativa</a>' +
 		'			<a href="publicaciones-varias.html">Publicaciones varias</a>' +
 		'			<a href="calendarios.html">Impresion calendarios y otros</a>' +
 		'			<a href="galeria-personajes.html">Galería de personajes</a>' +
+		'			<a href="./repgrafsincorbata.html">Representación gráfica sin corbata</a>' +
 		'		</div>' +
 		'	<li><a href="./sitemap.html">Mapa del sitio </a></li>' +
 		'	</li>' +

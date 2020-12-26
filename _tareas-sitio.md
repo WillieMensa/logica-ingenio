@@ -1,5 +1,12 @@
 # TAREAS EN SITIO WEB
 
+lo que no sea lógica e ingenio dejarlo en com.ar
+unir con problemas de logica de dropbox/sitios/ingenio
+agregar galerias de personajes (quitarlas de ingverger.com.ar)
+
+generar un nuevo alojamiento en netlify y asignarlo a ingverger.ar
+
+
 ## cambiar direccion de mail en
 dropbox		ape-7170	info@ingverger.com.ar
 scribd	williev	termopilas	info@ingverger.com.ar
