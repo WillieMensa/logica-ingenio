@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" >
+
+<defs>
+
+<filter id="f1" x="0" y="0" width="200%" height="200%">
+<feOffset result="offOut" in="SourceAlphaGraphic" dx="32" dy="32" />
+<feColorMatrix result="matrixOut"  in="offOut" type="saturate" values="0.12" />
+<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+</filter>
+
+</defs>
+
+<rect  x="0" y="0" width="512" height="512" stroke="#aabbcc" fill="#eeeeee" stroke-width="1" />
+<rect  x="53" y="53" rx="32" ry="32" width="406" height="406" stroke="white" stroke-width="0" fill="blue" filter="url(#f1)" />
+
+<path d="M 150 362 L 203 150" fill="none" stroke="#ddeeff" stroke-width="48" stroke-linecap="round"/>
+<path d="M 203 150 L 256 362" fill="none" stroke="#ddeeff" stroke-width="48" stroke-linecap="round"/>
+<path d="M 256 362 L 309 150" fill="none" stroke="#ddeeff" stroke-width="48" stroke-linecap="round"/>
+<path d="M 309 150 L 362 362" fill="none" stroke="#ddeeff" stroke-width="48" stroke-linecap="round"/>
+
+</svg>
+

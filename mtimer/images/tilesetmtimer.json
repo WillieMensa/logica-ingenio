@@ -1,0 +1,44 @@
+{"frames": {
+
+"aleman.png":
+{
+	"frame": {"x":0,"y":0,"w":100,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":60},
+	"sourceSize": {"w":100,"h":60}
+},
+"espanol.png":
+{
+	"frame": {"x":100,"y":0,"w":100,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":60},
+	"sourceSize": {"w":100,"h":60}
+},
+"ingles.png":
+{
+	"frame": {"x":0,"y":60,"w":100,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":60},
+	"sourceSize": {"w":100,"h":60}
+},
+"logomensa.png":
+{
+	"frame": {"x":0,"y":120,"w":174,"h":174},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":174,"h":174},
+	"sourceSize": {"w":174,"h":174}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tilesetmtimer.png",
+	"format": "RGBA8888",
+	"size": {"w":200,"h":294},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e22a340b87d98e05a393b849d85572ce:59492603ac7937fb4cb3601f331a18fd:1b2f802d12284f8e87ac96a6b617e89b$"
+}
+}

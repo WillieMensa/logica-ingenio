@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Resoluci&oacute;n suma oculta </title>
+    <meta name="description" content="Problemas de ingenio.">
+    <meta name="keywords" content="Ingenio, L&oacute;gica,Representaci?n gr?fica, acertijos, axonometr?a, CAD tridimensional,caligraf?a t?cnica, 
+		dibujo tecnico,elipses,empalmes, ingeniería, resolucion problemas,sistemas representaci?n, sudoku gratis para imprimir">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+		<script src="figura1.json"></script>
+
+    <style>
+			/* color base 50%: #0099ff */
+			body {
+					background-color: #ffffff;
+			}
+			.button {
+				background-color: #003d66;
+				border: none;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 16px 2px;
+				cursor: pointer;
+				border-radius: 8px;
+			}
+
+
+			table {
+				border-collapse: collapse;
+				border: 1px solid black;
+			} 
+
+			th,td {
+				/* padding: 10px; */
+				background: #eeffef;
+				color: #222222;
+				border: 1px solid gray;
+				height:20px;
+				width:20px;
+				text-align: center;
+				font: bold 16px Roboto, sans-serif;
+			}
+
+			.bigCell {
+				background: #eeffef;
+				color: #222222;
+				border: 2px solid gray;
+				height:40px;
+				width:40px;
+				text-align: center;
+				font: bold 32px Roboto, sans-serif;
+			}
+
+		.grilla > div {
+			padding: 4px;
+			background: #eeffef;
+			border: 1px solid #cccccc;
+			font: bold 14px Roboto, sans-serif;
+		}          
+
+		.grilla {
+			display: grid;
+				grid-template-columns: 100px 30px 30px 30px 400px;
+				grid-auto-rows: 24px;
+				/* grid-auto-rows: minmax(10px, auto);			*/
+		}
+
+		.indent {
+			text-indent:18.0pt;
+		}
+
+		dd {
+			text-indent:18.0pt;
+		}
+
+	</style>
+
+</head>
+
+<body onload="init()">
+
+	<div class="container p-5 ">
+		<!-- Enunciado del problema -->
+
+	<h1>RESOLVIENDO SUMA OCULTA</h1>
+
+	<p >Este es un proceso met&oacute;dico. Ni el mejor ni el peor; el que me parece a mi.
+	Seguramente hay mejoras posibles; contámelas.</p>
+
+
+	<h1>Problema a resolver</h1>
+
+	<p style='text-align:center'><img width=400 height=207 id='problema65' src="./img/problema65.jpg"></p>
+
+	<p >&nbsp;</p>
+
+	<h2>Pautas para resolver</h2>
+
+	<p >Hay una cantidad muy grande de combinaciones de correspondencia entre letras y
+	dígitos. Tratar de reducir esa cantidad eliminando las que resultan ser
+	obviamente imposibles.</p>
+
+	<p >&nbsp;</p>
+
+	<p >Analizar primero  las sumas parciales de
+	columnas que presenten la menor cantidad de variantes o inc&oacute;gnitas.</p>
+
+	<p >&nbsp;</p>
+
+	<p >Utilizar
+	las particularidades de las sumas parciales para eliminar correspondencias no
+	probables y deducir valores de las letras.</p>
+
+	<p >&nbsp;</p>
+
+	<h2>Método</h2>
+
+	<p >Volcar los resultados parciales en un cuadrito, como el de la figura 1.
+		Le llamarmos tabla de soluci&oacute;n. Servirá para recordar la correspondencia entre letras y
+		dígitos. En esa tabla registraremos las correspondencias que se vayan
+		detectando y tachamos los cuadros que no pueden ser.</p>
+
+	<h1>Resoluci&oacute;n</h1>
+
+	<p >Comenzamos con la pista, la letra ‘A’ es el 7.</p>
+
+	<p >&nbsp;</p>
+
+	<!-- figura 1 -->
+	<div id="tabla1" align=center>	</div>
+	<p  style='text-align:center'>Figura 1</p>
+
+	<p >Análisis
+	por columnas en el orden que parecen ser más prometedoras de reducir variantes.</p>
+
+	<h2>COLUMNA A</h2>
+
+	<p >La	primer columna no puede generar arrastre por lo tanto la letra A y la letra C
+	representan dígitos menores que el representado por la letra D. D es la suma de
+	A + C y eventualmente suma un arrastre desde columna B.</p>
+	<p >&nbsp;</p>
+
+	<div class="grilla">
+		<div>Columna A       </div>
+		<div>A               </div>
+		<div>C               </div>
+		<div>D               </div>
+		<div>Posible soluci&oacute;n</div>
+
+		<div>A+C+D</div>
+		<div>7</div>
+		<div>1</div>
+		<div>8</div>
+		<div>7_18______</div>
+
+		<div></div>
+		<div></div>
+		<div>2         </div>
+		<div>9         </div>
+		<div>7_29______</div>
+
+		<div>A+C+1=D   </div>
+		<div>7         </div>
+		<div>0         </div>
+		<div>8         </div>
+		<div>7_08______</div>
+
+		<div></div>
+		<div></div>
+		<div>1         </div>
+		<div>9         </div>
+		<div>7_19______</div>
+
+	</div>
+	<p>Detectamos valores posibles para algunas letras que llevaremos a la tabla soluci&oacute;n</p>
+
+	<dl>
+		<dd>A =	( 7 )   </dd>
+		<dd>C =	( 0, 1, 2 )</dd>
+		<dd>D =	( 8, 9 )</dd>
+	</dl>
+
+	<div id="tabla2" align=center></div>
+	<p style='text-align:center'>Figura 2</p>
+
+	<dl>
+		<dt>Combinaciones posibles desde aquí</dt>
+		<dd>Sin arrastre de columna anterior: 7_18______, 7_29______</dd>
+		<dd>Con arrastre de columna anterior:	7_08______, 7_19______</dd>
+	</dl>
+
+	<h2>COLUMNA B</h2>
+
+	<div class="grilla">
+		<div>Columna B       </div>
+		<div>B               </div>
+		<div>                </div>
+		<div>D               </div>
+		<div>Posible soluci&oacute;n</div>
+
+		<div>B+B=D     </div>
+		<div>4         </div>
+		<div>          </div>
+		<div>8         </div>
+		<div>7418______</div>
+
+		<div>B+B=10+D              </div>
+		<div>9                     </div>
+		<div>                      </div>
+		<div>8                     </div>
+		<div>7918______, 7908______</div>
+
+		<div>B+B+1=D    </div>
+		<div>4          </div>
+		<div>           </div>
+		<div>9          </div>
+		<div>7419______ </div>
+
+		<div>B+B+1=10+D     </div>
+		<div>9              </div>
+		<div>               </div>
+		<div>               </div>
+		<div>No hay solucion</div>
+
+	</div> 
+
+	<dl>
+		<dd>A =	( 7 )   </dd>
+		<dd>B =	( 4, 9 )</dd>
+		<dd>C =	( 0, 1 )</dd>
+		<dd>D =	( 8, 9 )</dd>
+	</dl>
+
+	<p >Volcamos a la tabla soluci&oacute;n y tenemos:</p>
+
+	<!-- figura 3 -->
+	<div id="tabla3" align=center>	</div>
+	<p style='text-align:center'>Figura 3</p>
+
+	<dl>
+		<dt>Combinaciones posibles hasta aquí:</dt>
+		<dd>Sin arrastre de columna anterior: 7418______, 7908______, 7918______</dd>
+		<dd>Con arrastre de columna anterior: 7419______                        </dd>
+	</dl>
+
+	<h2>COLUMNA J</h2>
+
+	<p >La columna J no recibe arrastre, es J + G = B o J+G = 10 + B, por lo tanto ni J ni G  pueden ser
+	iguales a cero. Combinamos con los valores posibles detectados hasta aquí.</p>
+
+	<div class="grilla">
+		<div>Columna J	      </div>
+		<div>B	              </div>
+		<div>G 	            </div>
+		<div>J	              </div>
+		<div>Posible soluci&oacute;n</div>
+
+		<div>J+G=B	                </div>
+		<div>9	                    </div>
+		<div>3	                    </div>
+		<div>6	                    </div>
+		<div>7908__3__6, 7918__3__6</div>
+
+		<div></div>
+		<div></div>
+		<div>4	                    </div>
+		<div>5	                    </div>
+		<div>7908__4__5, 7918__4__5</div>
+
+		<div></div>
+		<div></div>
+		<div>5	                    </div>
+		<div>4	                    </div>
+		<div>7908__5__4, 7918__5__4</div>
+
+		<div></div>
+		<div></div>
+		<div>6	                    </div>
+		<div>3	                    </div>
+		<div>7908__6__3, 7918__6__3</div>
+
+		<div>J+G=B+10  </div>
+		<div>4	        </div>
+		<div>6	        </div>
+		<div>8	        </div>
+		<div>7419__6__8</div>
+
+		<div></div>
+		<div></div>
+		<div>8         </div>
+		<div>6         </div>
+		<div>7419__8__6</div>
+
+	</div> 
+
+	<dl>
+		<dd>A =	( 7 )   </dd>
+		<dd>B =	( 4, 9 )</dd>
+		<dd>C =	( 0, 1 )</dd>
+		<dd>D =	( 8, 9 )</dd>
+		<dd>G = ( 3, 4, 5, 6, 8 )</dd>
+		<dd>J = ( 3, 4, 5, 6, 8 )</dd>
+	</dl>
+
+
+	<!-- figura 4 -->
+	<div id="tabla4" align=center>	</div>
+	<p  style='text-align:center'>Figura 4</p>
+
+	<dl>
+		<dt>Quedan esta posibilidades:</dt>
+		<dd>Sin arrastre a columna I: 7908__3__6, 7908__4__5, 7908__5__4,	7908__6__3, 7918__3__6, 7918__4__5, 7918__5__4, 7918__6__3</dd>
+		<dd>Con arrastre a columna I: 7419__6__8, 7419__8__6</dd>
+		<dd></dd>
+	</dl>
+
+	<p >&nbsp;</p>
+
+	<h2>COLUMNA D</h2>
+
+	<div class="grilla">
+		<div>Columna D	      </div>
+		<div>D	              </div>
+		<div>F 	            </div>
+		<div>J	              </div>
+		<div>Posible soluci&oacute;n</div>
+
+		<div>D+J=F+10              </div>
+		<div>8	                    </div>
+		<div>2	                    </div>
+		<div>4	                    </div>
+		<div>7908_25__4, 7918_25__4</div>
+
+		<div></div>
+		<div></div>
+		<div>3                     </div>
+		<div>5	                    </div>
+		<div>7908_34__5, 7918_34__5</div>
+
+		<div></div>
+		<div></div>
+		<div>4	       </div>
+		<div>6         </div>
+		<div>7908_43__6</div>
+
+		<div></div>
+		<div>9	        </div>
+		<div>5	        </div>
+		<div>6	        </div>
+		<div>7419_58__6</div>
+
+		<div>D+J+1=F+10            </div>
+		<div>8                     </div>
+		<div>2                     </div>
+		<div>3                     </div>
+		<div>7908_26__3, 7918_26__3</div>
+
+		<div></div>
+		<div></div>
+		<div>3                     </div>
+		<div>4                     </div>
+		<div>7908_35__4, 7918_35__4</div>
+
+		<div></div>
+		<div></div>
+		<div>5                     </div>
+		<div>6                     </div>
+		<div>7908_53__6, 7918_53__6</div>
+
+	</div> 
+
+	<dl>
+		<dt>Conclusiones:</dt>
+		<dd>La columna C siempre recibe arrastre</dd>
+		<dd>A =	( 7 )         </dd>
+		<dd>B =	( 4, 9 )      </dd>
+		<dd>C =	( 0, 1 )      </dd>
+		<dd>D =	( 8, 9 )      </dd>
+		<dd>F = (1, 2, 3, 4, 5)</dd>
+		<dd>G = ( 3, 4, 5, 6, 8 )</dd>
+		<dd>J = (3, 4, 5, 6)   </dd>
+	</dl>
+
+	<!-- figura 5 -->
+	<div id="tabla5" align=center>	</div>
+	<p  style='text-align:center'>Figura 5</p>
+
+	<dl>
+		<dt>Posibles soluciones, todas con arrastre</dt>
+		<dd>7419_58__6, 7908_25__4, 7908_26__3,
+		7908_34__5, 7908_35__4, 7908_43__6, 7908_53__6, 7918_25__4, 7918_26__3,
+		7918_34__5, 7918_35__4, 7918_53__6</dd>
+	</dl>
+
+	<h2>COLUMNA I</h2>
+
+	<div class="grilla">
+		<div>Columna I       </div>
+		<div>                </div>
+		<div>F               </div>
+		<div>I               </div>
+		<div>Posible soluci&oacute;n</div>
+
+		<div>2*I=F                 </div>
+		<div>                      </div>
+		<div>2                     </div>
+		<div>1                     </div>
+		<div>7908_25_14, 7908_26_13</div>
+
+		<div></div>
+		<div></div>
+		<div>4         </div>
+		<div>2         </div>
+		<div>7908_43_26</div>
+
+		<div>2*I=F+10              </div>
+		<div>                      </div>
+		<div>2                     </div>
+		<div>6                     </div>
+		<div>7908_25_64, 7918_25_64</div>
+
+		<div></div>
+		<div></div>
+		<div>5                                 </div>
+		<div>2                                 </div>
+		<div>7419_58_26, 7908_53_26, 7918_53_26</div>
+	</div>
+
+	<dl>
+		<dt>Conclusiones:</dt>
+		<dd>A=( 7 )            </dd>
+		<dd>B=( 4, 9 )         </dd>
+		<dd>C=( 0, 1 )         </dd>
+		<dd>D=( 8, 9 )         </dd>
+		<dd>F=(  2, 4, 5)      </dd>
+		<dd>G=( 3, 4, 5, 6, 8 )</dd>
+		<dd>I=( 1, 2, 6)       </dd>
+		<dd>J=( 3, 4, 5, 6)    </dd>
+	</dl>
+
+	<!-- figura 6 -->
+	<div id="tabla6" align=center>	</div>
+	<p  style='text-align:center'>Figura 6</p>
+
+	<dl>
+		<dt>Posibles soluciones:</dt>
+		<dd>Sin arrastre a columna H: 7908_25_14, 7908_26_13, 7908_43_26</dd>
+		<dd>Con arrastre a columna H: 7908_25_64, 7918_25_64, 7419_58_26,	7908_53_26, 7918_53_26</dd>
+	</dl>
+
+
+	<h2>COLUMNA C</h2>
+
+	<div class="grilla">
+		<div>Columna C       </div>
+		<div>C               </div>
+		<div>F               </div>
+		<div>G               </div>
+		<div>Posible soluci&oacute;n</div>
+
+		<div>C+G+1=F   </div>
+		<div>0         </div>
+		<div>4         </div>
+		<div>3         </div>
+		<div>7908_43_26</div>
+
+		<div></div>
+		<div>1                     </div>
+		<div>5                     </div>
+		<div>3                     </div>
+		<div>7908_53_26, 7918_53_26</div>
+
+	</div>
+
+<dl>
+	<dt>Conclusiones:                                                                    </dt>
+	<dd>No hay arrastre de columna C a B. Por tanto la combinaci&oacute;n 7419___ no es viable. </dd>
+	<dd>Las combinaciones posibles serían: 7908_43_26, 7908_53_26, 7918_53_26            </dd>
+	<dd>Los dígitos que pueden corresponder a las	letras dadas son los siguientes:       </dd>
+	<dd>A =	( 7 ) </dd>
+	<dd>B =	( 9 ) </dd>
+	<dd>C =	( 0,1)</dd>
+	<dd>D =	( 8 )  </dd>
+	<dd>F = ( 4,5) </dd>
+	<dd>G = ( 3 )</dd>
+	<dd>I = ( 2 )</dd>
+	<dd>J = ( 6 )</dd>
+</dl>
+
+<dl>
+	<dt>Con las correspondencias obtenidas podemos extraer conclusiones adicionales.</dt>
+	<dd>F=I+I=2+2=4.</dd>
+	<dd>C+G+1=F; C=F-G-1=4-3-1=4</dd>
+	<dd>G+E=D; E=D-G=8-3=5</dd>
+	<dd>H=0</dd>
+</dl>
+
+	<!-- figura 7 -->
+	<div id="tabla7" align=center>	</div>
+	<p  style='text-align:center'>Figura 7</p>
+
+
+	<p  align=center style='text-align:center'><span lang=es-419
+	style='color:white'>Figura 7</p>
+
+
+	<p >La soluci&oacute;n es:</p>
+
+
+	<div align=center>
+
+	<table>
+		<tr>
+			<td class="bigCell">A</td>
+			<td class="bigCell">B</td>
+			<td class="bigCell">C</td>
+			<td class="bigCell">D</td>
+			<td class="bigCell">E</td>
+			<td class="bigCell">F</td>
+			<td class="bigCell">G</td>
+			<td class="bigCell">H</td>
+			<td class="bigCell">I</td>
+			<td class="bigCell">J</td>
+		</tr>
+		<tr>
+			<td class="bigCell">7</td>
+			<td class="bigCell">9</td>
+			<td class="bigCell">0</td>
+			<td class="bigCell">8</td>
+			<td class="bigCell">5</td>
+			<td class="bigCell">4</td>
+			<td class="bigCell">3</td>
+			<td class="bigCell">1</td>
+			<td class="bigCell">2</td>
+			<td class="bigCell">6</td>
+		</tr>
+	</table>
+
+	</div>
+	<p>&nbsp;</p>
+
+		<!-- fin contenido -->
+	</div>
+
+
+<script>
+
+	function init() {
+		document.getElementById("tabla1").innerHTML= makeTableHTML(figura1);
+		document.getElementById("tabla2").innerHTML= makeTableHTML(figura2);
+		document.getElementById("tabla3").innerHTML= makeTableHTML(figura3);
+		document.getElementById("tabla4").innerHTML= makeTableHTML(figura4);
+		document.getElementById("tabla5").innerHTML= makeTableHTML(figura5);
+		document.getElementById("tabla6").innerHTML= makeTableHTML(figura6);
+		document.getElementById("tabla7").innerHTML= makeTableHTML(figura7);
+	};
+
+	function makeTableHTML(myArray) {
+		var result = "<table class='menu'>";
+		for(var i=0; i<myArray.length; i++) {
+			result += "<tr>";
+			for(var j=0; j<myArray[i].length; j++){
+				result += "<td>"+myArray[i][j]+"</td>";
+			}
+			result += "</tr>";
+		}
+		result += "</table>";
+		return result;
+	}
+
+</script>
+
+</body>
+
+</html>
+
+<html>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+
+<style>
+	.digitos {
+		margin-top: 0px;
+		text-align: center;
+    font-family: 'Arial Rounded';
+		font-size: 24em;
+		color: #ace;
+	}
+
+</style>
+
+<defs>
+
+<filter id="f1" x="0" y="0" width="200%" height="200%">
+<feOffset result="offOut" in="SourceAlphaGraphic" dx="32" dy="32" />
+<feColorMatrix result="matrixOut"  in="offOut" type="saturate" values="0.12" />
+<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+</filter>
+
+</defs>
+
+<rect  x="0" y="0" width="512" height="512" stroke="gray" fill="#eeeeee" stroke-width="1" />
+<rect  x="53" y="53" rx="48" ry="48" width="406" height="406" stroke="white" stroke-width="0" fill="#660" filter="url(#f1)" />
+
+<path d="M 150 150 L 362 150" fill="none" stroke="#ffffaa" stroke-width="64" stroke-linecap="round"/>
+<path d="M 256 150 L 256 362" fill="none" stroke="#ffffaa" stroke-width="64" stroke-linecap="round"/>
+
+</svg>
+

@@ -1,0 +1,87 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width ="260" height= "260"
+  id = "pagina"
+  class="img-responsive"
+  >
+
+  <!-- viewBox tiene las medidas de un A5 vertical -->
+  <!-- Outline the SVG viewport. -->
+  <!-- Ojo! el texto SVG no admite caracteres acentuados -->
+
+  <style>
+
+  @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+  @import url("https://fonts.googleapis.com/css?family=Sriracha");
+  @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+  .trazo { fill:white; stroke:#333;stroke-width:4;opacity:1.0; }
+  .normal { font-family: "Sriracha"; font-size: 16px; }
+  .valor {
+    font: bold 100%/150% 'roboto_mediumregular', sans-serif, dominant-baseline: central; text-anchor: middle;;
+
+/*  font-family: 'Luckiest Guy', cursive; font-size: 20px; fill:#800;         font: bold; dominant-baseline: central; text-anchor: middle;}*/
+
+  .vert { font-family: 'Roboto', cursive; font-size: 26px; fill:#060; font: bold; dominant-baseline: middle; text-anchor: middle;
+    visibility: visible;
+    }
+
+  .title { font: bold 20px sans-serif; }
+
+  </style>
+
+  <defs>
+    <g id="grillaRect">
+      <!-- lineas horizontales que unen vertices (lados) -->
+      <line x1="000" y1="000" x2="160" y2="000" class = "trazo" />
+      <line x1="000" y1="080" x2="160" y2="080" class = "trazo" />
+      <line x1="000" y1="160" x2="160" y2="160" class = "trazo" />
+
+      <!-- verticales -->
+      <line x1="000" y1="000" x2="000" y2="160" class = "trazo" />
+      <line x1="080" y1="000" x2="080" y2="160" class = "trazo" />
+      <line x1="160" y1="000" x2="160" y2="160" class = "trazo" />
+    </g>
+
+    <!-- los circulos -->
+    <g id="circulos">
+      <circle id="circ00" cx="000" cy="000" r="20" class = "trazo" />
+      <circle id="circ01" cx="080" cy="000" r="20" class = "trazo" />
+      <circle id="circ02" cx="160" cy="000" r="20" class = "trazo" />
+      <circle id="circ10" cx="000" cy="080" r="20" class = "trazo" />
+      <circle id="circ11" cx="080" cy="080" r="20" class = "trazo" />
+      <circle id="circ12" cx="160" cy="080" r="20" class = "trazo" />
+      <circle id="circ20" cx="000" cy="160" r="20" class = "trazo" />
+      <circle id="circ21" cx="080" cy="160" r="20" class = "trazo" />
+      <circle id="circ22" cx="160" cy="160" r="20" class = "trazo" />
+    </g>
+
+    <line id="diagDer" x1="000" y1="000" x2="080" y2="080" class = "trazo" />
+    <line id="diagIzq" x1="000" y1="000" x2="-080" y2="080" class = "trazo" />
+
+  </defs>
+
+  <g transform="scale(1.0)">
+    <!-- ahora el tablero sumado modelo CO(ncentrico) -->
+    <g id="CO" transform="translate(050,050)">
+      <use id="grillaR" xlink:href="#grillaRect" x="000" y="000" />
+      <use id="D1" xlink:href="#diagIzq" x="080" y="000" />
+      <use id="D2" xlink:href="#diagDer" x="080" y="000" />
+      <use id="D3" xlink:href="#diagDer" x="000" y="080" />
+      <use id="D4" xlink:href="#diagIzq" x="160" y="080" />
+      <use id="circ1" xlink:href="#circulos" x="000" y="000" />
+      <!-- las sumas en los poligonos -->
+      <text id="sumaCOpos00" x="025" y="025" class="valor" >14</text>
+      <text id="sumaCOpos01" x="054" y="054" class="valor" >10</text>
+      <text id="sumaCOpos02" x="106" y="054" class="valor" >15</text>
+      <text id="sumaCOpos03" x="135" y="025" class="valor" >18</text>
+      <text id="sumaCOpos04" x="025" y="134" class="valor" >12</text>
+      <text id="sumaCOpos05" x="054" y="106" class="valor" >11</text>
+      <text id="sumaCOpos06" x="106" y="106" class="valor" >16</text>
+      <text id="sumaCOpos07" x="135" y="134" class="valor" >24</text>
+      <!-- Valores de los vertices -->
+      <text id="COver00" x="000" y="000" class="vert" >5</text>
+    </g>
+  </g>
+</svg>

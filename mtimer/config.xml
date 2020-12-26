@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ar.com.ingverger.mtimer" version="1.1.4" versionCode="10102" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MTimer</name>
+    <description>
+		M-Timer es una herramienta para controlar el tiempo asignado a una actividad.
+		Se establece el tiempo disponible en minutos y segundos.
+		El tiempo fijado por defecto se modifica con las flechas que apuntan hacia arriba para incrementar y hacia abajo para decrementar.
+		Una vez establecido el tiempo disponible se esta en condiciones de iniciar la cuenta regresiva. Esto se hace picando en el boton inicio (play)
+		En pantalla se presenta el tiempo restante. Cuando se ha completado el tiempo comienza un sonido audible para alertar sobre esta situaci�n.
+		Se puede interrumpir el conteo de tiempo en cualquier instante pulsando el boton detener.
+    </description>
+    <author email="ingverger@gmail.com" href="http://www.ingverger.com.ar">
+		Willie Verger Clever Games
+	</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="android-targetSdkVersion" value="28" />
+</widget>

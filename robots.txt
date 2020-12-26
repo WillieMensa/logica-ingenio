@@ -1,0 +1,6 @@
+# /robots.txt file 
+User-agent: *
+Allow: /
+Disallow: *.pdf
+
+

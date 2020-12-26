@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta charset="utf-8">
+<meta name="author" content="Alonso Manuel Serrano Pérez" />
+<meta name="description" content="Reloj CSS3 + algo de JavaScript " />
+<meta property="fb:admins" content="100003815090498"/>
+<meta property="og:title" content="Reloj CSS3"/>
+<meta property="og:description" content="Reloj con CSS3 más algo de JavaScript"/>
+<meta property="og:image" content="http://atraccionweb.com/prototipo5/imagenes/redessociales.jpg"/>
+<meta property="og:url" content="http://atraccionweb.com/prototipo5/index.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Atracción Web"/>
+<title>Atracción Web - Reloj CSS3 + Algo de JavaScript</title>
+<link rel="icon" href="http://atraccionweb.com/imagenes/favicon.ico" type="image/ico" />
+<link rel="shortcut icon" href="http://atraccionweb.com/imagenes/favicon.ico" type="image/ico" />
+<style type="text/css">
+body {
+	padding-top: 50px;
+}
+#atraccionweb {
+	margin-left: auto;
+	margin-top: 50px;
+	margin-right: auto;
+	width: 351px;
+	height: 45px;
+	z-index: 2;
+	text-align: center;
+}
+#atraccionweb img {
+	height: 100%;
+	width: auto;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+#reloj {
+	width: 200px;
+	height: 200px;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid #000000;
+	border-radius: 50%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#caparelativa {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+#reloj .manillas {
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	background-color: #000000;
+	transform-origin: 50% 100%;
+	visibility: hidden;
+	border-radius: 50%;
+}
+#manillahoras {
+	width: 5px;
+	height: 50px;
+}
+#manillaminutos {
+	width: 3px;
+	height: 80px;
+}
+#manillasegundos {
+	width: 1px;
+	height: 80px;
+}
+#reloj .horas {
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	height: 98%;
+	width: 100%;
+	padding-top: 2%;
+	transform-origin: 50% 50%;
+	text-align:center;
+	opacity: 0;
+	-webkit-transition: all 1s ease-out 0s;
+	-moz-transition: all 1s ease-out 0s;
+	-ms-transition: all 1s ease-out 0s;
+	-o-transition: all 1s ease-out 0s;
+	transition: all 1s ease-out 0s;
+}
+</style>
+<script type="text/javascript">
+function inicia() {
+	colocahoras();
+	setTimeout("muestra()",1000)
+	var mover=setInterval("muestra();anda()",1000);
+}
+function muestra() {
+	manillahoras.style.visibility="visible";
+	manillaminutos.style.visibility="visible";
+	manillasegundos.style.visibility="visible";
+}
+function colocahoras() {	
+	for (var x=1;x<=12;x++) {
+		document.getElementById("hora"+x).style.transform="rotateZ("+(x*30)+"deg)";
+		document.getElementById("hora"+x).style.opacity="1";
+	}
+}
+function anda() {
+	var fecha= new Date();
+	manillasegundos.style.transform="translateY(20px) translateX(100px) rotateZ("+(fecha.getSeconds()*6)+"deg)";
+	manillaminutos.style.transform="translateY(20px) translateX(99px) rotateZ("+(fecha.getMinutes()*6)+"deg)";
+	manillahoras.style.transform="translateY(50px) translateX(98px) rotateZ("+(fecha.getHours()*30+(fecha.getMinutes()/2))+"deg)";
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31682384-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="inicia()">
+
+<div  id="reloj">
+    <div id="caparelativa">
+      <div class="manillas" id="manillahoras"></div>
+      <div class="manillas" id="manillaminutos"></div>
+      <div class="manillas" id="manillasegundos"></div>
+      <div class="horas" id="hora12">12</div>
+      <div class="horas" id="hora1">1</div>
+      <div class="horas" id="hora2">2</div>
+      <div class="horas" id="hora3">3</div>
+      <div class="horas" id="hora4">4</div>
+      <div class="horas" id="hora5">5</div>
+      <div class="horas" id="hora6">6</div>
+      <div class="horas" id="hora7">7</div>
+      <div class="horas" id="hora8">8</div>
+      <div class="horas" id="hora9">9</div>
+      <div class="horas" id="hora10">10</div>
+      <div class="horas" id="hora11">11</div>
+    </div>  
+</div>
+<div id="atraccionweb"><img src="imagenes/logo.png" width="503" height="146" alt="Atracción Web - Diseño web">Alonso Manuel Serrano Pérez</div>
+</body>
+</html>

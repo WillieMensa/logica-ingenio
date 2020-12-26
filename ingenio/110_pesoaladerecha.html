@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title> Un peso a la derecha </title>
+    <meta name="description" content="Problemas de ingenio.">
+    <meta name="keywords" content="Ingenio, L?gica,Representaci?n gr?fica, acertijos, axonometr?a, CAD tridimensional,caligraf?a t?cnica, 
+		dibujo tecnico,elipses,empalmes, ingenier?a, resolucion problemas,sistemas representaci?n, sudoku gratis para imprimir">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ -->
+    <!-- <link rel="stylesheet" href="../css/_ingverger.css"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <style>
+			/* color base 50%: #0099ff */
+			body {
+					background-color: #99d6ff;
+			}
+
+			.button {
+				background-color: #003d66;
+				border: none;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 16px 2px;
+				cursor: pointer;
+				border-radius: 8px;
+			}
+
+		</style>
+
+
+</head>
+
+<body>
+	<div class="container p-5 ">
+		<!-- Contenido de la pagina -->
+		<a name="TopOfPage"></a>
+
+		<h1>Un peso a la derecha</h1>
+		<p>Federico, Victoria y sus compañeros de estudio se sentaron alrededor de una gran mesa redonda. Victoria quedó a la derecha de Federico.</p>
+		<p>Pusieron sobre la mesa las monedas de $1 que tenían y resultó ser que Federico tenía un peso más que Victoria. Victoria, a su vez, tenía $1 más que el chico a su derecha; y este $1 más que quien estaba a su derecha; y así seguían hasta completar
+				la vuelta.</p>
+		<p>Federico decidió pasarle un peso a Victoria, quien a su vez le pasó dos pesos a quien estaba a su derecha, que a su vez le pasó tres pesos a quien estaba a su derecha, y así siguieron con este proceso hasta que uno de los estudiantes se quedó
+				sin monedas. Cuando esto sucedió, Federico tenía 6 veces la cantidad de monedas que tenía Victoria.</p>
+		<p>Las preguntas son:</p>
+		<p>a/ ¿Cuántos estudiantes formaban el grupo? y</p>
+		<p>b/ ¿Cuántas monedas le quedaron finalmente a Federico?</p>
+
+		<!-- <a href="110_pesoaladerecha_solucion.html"><button class="button">Solución</button></a> -->
+		<a ><button class="button" onclick="hideShow()">Solución</button></a>
+
+		<div id="solucion" >
+        <p>Llamaremos</p>
+        <p>A = cantidad inicial de monedas que tiene Federico<br> N = cantidad de integrantes<br> V = vueltas totales<br> C : contador de vueltas.</p>
+        <p>Haciendo una tabla hipotética con números inventados se puede comprobar que:</p>
+        <ul>
+            <li>A = N + V - 1 (1)</li>
+        </ul>
+        <p>O lo que es lo mismo:</p>
+        <ul>
+            <li>A - V = N - 1 (2)</li>
+        </ul>
+        <p>Por ejemplo: A = 8, N = 5 :</p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th style="text-align:center">Estudiantes</th>
+                    <th style="text-align:center"></th>
+                    <th style="text-align:center"></th>
+                    <th style="text-align:center"></th>
+                    <th style="text-align:center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align:center">Federico</td>
+                    <td style="text-align:center">Victoria</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">5</td>
+                </tr>
+                <tr>
+                    <td>Inicio</td>
+                    <td>Tiene</td>
+                    <td style="text-align:center">8</td>
+                    <td style="text-align:center">7</td>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">4</td>
+                </tr>
+                <tr>
+                    <td>Vuelta 1</td>
+                    <td>Recibe</td>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">4</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Pasa</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tiene</td>
+                    <td style="text-align:center">7</td>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">3</td>
+                </tr>
+                <tr>
+                    <td>Vuelta 2</td>
+                    <td>Recibe</td>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">7</td>
+                    <td style="text-align:center">8</td>
+                    <td style="text-align:center">9</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Pasa</td>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">7</td>
+                    <td style="text-align:center">8</td>
+                    <td style="text-align:center">9</td>
+                    <td style="text-align:center">10</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tiene</td>
+                    <td style="text-align:center">6</td>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">2</td>
+                </tr>
+                <tr>
+                    <td>Vuelta 3</td>
+                    <td>Recibe</td>
+                    <td style="text-align:center">10</td>
+                    <td style="text-align:center">11</td>
+                    <td style="text-align:center">12</td>
+                    <td style="text-align:center">13</td>
+                    <td style="text-align:center">14</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Pasa</td>
+                    <td style="text-align:center">11</td>
+                    <td style="text-align:center">12</td>
+                    <td style="text-align:center">13</td>
+                    <td style="text-align:center">14</td>
+                    <td style="text-align:center">15</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tiene</td>
+                    <td style="text-align:center">5</td>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">1</td>
+                </tr>
+                <tr>
+                    <td>Vuelta 4</td>
+                    <td>Recibe</td>
+                    <td style="text-align:center">15</td>
+                    <td style="text-align:center">16</td>
+                    <td style="text-align:center">17</td>
+                    <td style="text-align:center">18</td>
+                    <td style="text-align:center">19</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Pasa</td>
+                    <td style="text-align:center">16</td>
+                    <td style="text-align:center">17</td>
+                    <td style="text-align:center">18</td>
+                    <td style="text-align:center">19</td>
+                    <td style="text-align:center">20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tiene</td>
+                    <td style="text-align:center">4</td>
+                    <td style="text-align:center">3</td>
+                    <td style="text-align:center">2</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">0</td>
+                </tr>
+                <tr>
+                    <td>Situacion final</td>
+                    <td>Recibe</td>
+                    <td style="text-align:center">20</td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Tiene</td>
+                    <td style="text-align:center">24</td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Se completaron 4 vueltas. Entonces</p>
+        <p>A - V = N - 1 queda 8 - 4 = 5 - 1</p>
+        <p>Al completar cada vuelta Federico recibe tantas monedas como el producto de la cantidad de integrantes del grupo por el número de vuelta:<br> N * C</p>
+        <p>Y entrega una moneda, o sea que le quedan<br> ( N * C ) + A - C</p>
+        <p>Que en la última vuelta será: ( N * V ) + A - V (3)</p>
+        <p>Al finalizar el juego Victoria tiene A - V - 1 (4)</p>
+        <p>Ya que Federico tiene seis veces más monedas que Victoria ( N * V ) + A - V = 6 * ( A - V - 1 )</p>
+        <p>O lo que es lo mismo ( N * V ) = 5 * ( A - V ) - 6</p>
+        <p>Reemplazando ( A - V ) por su igual ( N - 1 )<br> ( N * V ) = 5 * ( N - 1 ) - 6<br> ( N * V ) = 5 * N - 11<br> ( N * V ) - 11 = 5 * N</p>
+        <p>Despejando queda</p>
+        <p>5 = V + 11/N (5)</p>
+        <p>La única manera de que el cociente 11/N dé un número entero es que la cantidad de integrantes del grupo sea N = 11</p>
+        <p>De la (5) deducimos que se habrán dado V = 4 vueltas</p>
+        <p>De la (1), A = N + V - 1, surge que Federico tenía inicialmente 14 monedas</p>
+        <p>Y al finalizar el juego ( N * V ) + A - V = 54 monedas</p>
+        <h3>Resumen:</h3>
+        <p>a/ Estudiantes que formaban el grupo? : 11</p>
+        <p>b/ Monedas que le quedaron finalmente a Federico? : 54</p>
+
+		</div>
+
+		<!-- fin contenido -->
+	</div>
+
+	<script src="hide_show.js"></script>
+
+</body>
+
+</html>

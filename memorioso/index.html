@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+
+	<!-- --------------------------------------------------------------------------------------------------------
+		Viewport meta tag is critical to have mobile browsers
+		actually report correct screen dimensions 
+		
+		tecnica para almacenar parametros propios de cada dispositivo en
+			https://developer.mozilla.org/es/docs/Web/API/API_de_almacenamiento_web/Usando_la_API_de_almacenamiento_web
+
+	--------------------------------------------------------------------------------------------------------	-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"	/>
+	<meta name="Author" content="Willie Verger Clever Games">
+
+	<!-- version basica para derivar APK y version web -->
+
+	<title>Concentracion y memoria</title>
+
+	<!--	Problema con web fonts solucionado con ideas de 
+			http://www.html5gamedevs.com/topic/39193-problem-rendering-web-fonts/	-->
+
+	<!-- <script src="https://pixijs.download/v4.8.1/pixi.min.js"></script> -->
+
+	<!-- Guia de uso de fonts de Google en	https://developers.google.com/fonts/docs/getting_started	
+	Supported by Kalam, Bangers, Titan One, Sigmar One and Sriracha)
+	-->
+
+
+	<link type="text/css" href="style.css" rel="stylesheet" >
+	
+	<link href="memorioso.ico"  rel="shortcut icon" >
+
+
+</head>
+<body>
+
+	<h1>Memorioso version 2.2.2</h1>
+	<h2>Concentracion</h2>
+	<p>prueba.</p>
+
+
+
+	<!-- codigo firebase para aplicaciones web -->
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBTqEXj4Fipo_acVv5ZbfYQzBWYRcCNgdM",
+			authDomain: "memorioso-3f643.firebaseapp.com",
+			databaseURL: "https://memorioso-3f643.firebaseio.com",
+			projectId: "memorioso-3f643",
+			storageBucket: "memorioso-3f643.appspot.com",
+			messagingSenderId: "533385426241"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+
+	<!-- compilando con la version 4.8.7 de pixi -->
+	<script src="pixi.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.1/pixi.min.js"></script> -->
+	<!-- <script src="concentracion.min.js"></script> -->
+	<script src="concentracion.js"></script>
+
+</body>
+</html>

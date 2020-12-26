@@ -1,0 +1,202 @@
+/*
+	style.css
+	22/4/2019
+*/
+
+/*
+@font-face {
+    font-family: 'luckiest_guyregular';
+    src: url('luckiestguy-regular-webfont.woff2') format('woff2'),
+         url('luckiestguy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'titanone_regular';
+    src: url('titanone-regular-webfont.woff2') format('woff2'),
+         url('titanone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baloo_regular';
+    src: url('baloo-regular-webfont.woff2') format('woff2'),
+         url('baloo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+manejo con @media screen 
+	(trae problema con tamaños de objetos por eso anulo esta seccion???)
+*/
+@media screen and (min-width:1000px) {
+	body {
+		background-color: #006;	
+	}
+	button, input	{	/*, select {*/
+		border-radius: 8px;
+		font-size: 1.8em;
+		line-height: 14px;
+		width: 160px;
+		height: 40px;
+		margin-top: 8px;
+	}
+}
+
+
+@media screen and (max-width:1000px) and (min-width:700px) {
+	body {
+		background-color: #0d0;
+	}
+	button, input {	/*, select { */
+		border-radius: 6px;
+		font-size: 1.26em;
+		line-height: 10px;
+		width: 112px;
+		height: 28px;
+		margin-top: 6px;
+	}
+}
+
+
+@media screen and (max-width:700px) and (min-width:500px) {
+	body {
+		background-color: #0d0;
+	}
+	button, input {
+		border-radius: 4px;
+		font-size: 0.9em;
+		line-height: 7px;
+		width: 80px;
+		height: 20px;
+		margin-top: 4px;
+	}
+}
+
+
+@media screen and (max-width:500px)  and (min-width:400px) {
+	body {
+		background-color: #600;
+	}
+	button, input {
+		border-radius: 3px;
+		font-size: 0.72em;
+		line-height: 6.4px;
+		width: 64px;
+		height: 16px;
+		margin-top: 3px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	body {
+		background-color: #666;
+	}
+	button, input {
+		border-radius: 3px;
+		font-size: 0.35em;
+		line-height: 6px;
+		width: 56px;
+		height: 14px;
+		margin-top: 3px;
+	}
+
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: 'titanone_regular';
+	font-size: 20px;
+
+}
+
+h2 {
+	font-family: 'baloo_regular', cursive;
+	font-size: 12px;
+
+}
+
+.auxiliar { fill:gray; stroke:#444;stroke-width:1;opacity:0.8; }
+
+.logo {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+
+#levelButton {
+	margin-top: 20px;
+	width: 120px;
+	line-height: 80px;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10 10px;
+	font-family: 'baloo_regular';
+	background: #892;
+	border: none;
+}
+
+
+#checkButton {
+	font-family: 'baloo_regular';
+	font-size: 1.6em;
+	width: 30px;
+}
+
+input, .checkbox, #check, #checkbox, #checkboxtext {
+	border: none;
+	font-family: 'baloo_regular';
+	font-size: 1.0em;
+	font-weight: normal;
+	/*	line-height: 10px;	*/
+	margin: 0px;
+	padding: 0 0px;
+	width: 200px;
+	visibility: hidden;
+}
+
+
+option, #verifica, #seleccion, #selectList {
+	background: #669900;
+	font-family: 'baloo_regular';
+	font-size: 1.6em;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+#selectList {
+	background: #669900;
+	font-family: 'baloo_regular';
+	font-size: 0.6em;
+}
+
+button, input	{	/*, select, option,  {*/
+	background: #669900;
+	border: none;
+	font-family: 'baloo_regular';
+	font-weight: bold;
+	padding: 0px;
+}
+
+#giraPieza, #volteaPieza {
+	font:  40px baloo_regular bold ;
+	line-height: 6px;
+
+}
+
+button:hover {
+  background: #ad1;
+}
+
+

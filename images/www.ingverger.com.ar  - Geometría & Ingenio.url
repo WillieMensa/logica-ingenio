@@ -1,0 +1,6 @@
+[DEFAULT]
+BASEURL=http://www.ingverger.com.ar/
+[InternetShortcut]
+URL=http://www.ingverger.com.ar/
+IconFile=http://www.ingverger.com.ar/images/favicon.ico
+IconIndex=1

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ar.com.ingverger.pentomania" version="0.8.5" versionCode="0805" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PENTOMANIA</name>
+    <description>
+		Pentomania Puzzle is a one player game. An opportunity for mental exercise and fun at the same time.
+		What does it consist of?
+		There is a square board of 64 cells, 8 rows and eight columns. Four cells are occupied. The player must place the twelve pentominoes in such a way that they cover the rest of the board.
+		Each different arrangement of the cells previously occupied gives rise to a problem. The problems are identified numerically. The player can follow that number sequence or choose the problems arbitrarily. Each problem solved adds points to his credit.
+		In case of having difficulties to find the solution the player can request help. This consists of the placement of a piece by the application and subtract a point at the end of the problem.
+
+		Hay un tablero cuadrado de 64 celdillas, 8 filas y ocho columnas. Cuatro celdillas se presentan ocupadas. El jugador debe colocar los doce pentominos de forma tal que cubran el resto del tablero.
+		Cada disposici�n diferentes de las celdillas ocupadas previamente da lugar a un problema. Los problemas son identificados num�ricamente. El jugador puede seguir esa secuencia num�rica o elegir los problemas arbitrariamente. Cada problema resuelto le suma puntos a su haber.
+		En caso de tener dificultades para encontrar la soluci�n el jugador puede solicitar ayuda. Esta consiste en la colocacion de una pieza por parte de la aplicaci�n y le restar� un punto al finalizar el problema.
+
+    </description>
+    <author email="ingverger@gmail.com" href="http://www.ingverger.com.ar/pentomania">
+        Willie Verger Clever Games
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="icon.png" />
+    <allow-intent href="market:*" />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="orientation" value="landscape" />
+    <preference name="windows-target-version" value="10.0" />
+</widget>

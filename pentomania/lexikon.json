@@ -1,0 +1,149 @@
+// ----------------------------------------------------------------------------
+//	lexikon.json
+//	diccionario para version multilingual
+// ----------------------------------------------------------------------------
+
+const dictSp = {
+	txtAcerca: "Acerca de",
+	txtAcercaTit: "ACERCA DE PENTOMANIA",
+	txtAceptar: "Aceptar",
+	txtAjustesPento: 'AJUSTES DE \nPENTOMANIA',
+	txtAleman: "Aleman",
+	txtAyuda	: "Ayuda",
+	txtConfig: "Ajustes",
+	txtDificu: "Dificultad",
+	txtEspanol: "Espanol",
+	txtFin: "Bien resuelto!",
+	txtGirar: 'Girar',
+	txtHint: 'Indicio',
+	txtIdioma: "Idioma",
+	txtIngles: "Ingles",
+	txtJugar: "Jugar",
+	txtMenu: "Menu",
+	txtNivel: "Nivel",
+	txtNoSol: "Sin solucion",
+	txtOtro: "OTRO",
+	txtProblema: 'Problema ',
+	txtProx: 'Siguiente',
+	txtTiempo: "Tiempo: ",
+	txtTituloAyuda: "AYUDA DE PENTOMANIA",
+	txtVerifica: '',								//	'Verifica solucion',
+	txtVoltear: "Voltear",
+	txtVolver: "Volver",
+	txtDescAcerca:
+		'Es un conjunto de rompecabezas de encaje\n' +
+		'desarrollados por Willie Verger Clever Games\n' +
+		'con rutinas propias y de Simon Hung\n' +
+		'Soporte: info@ingverger.com.ar\n' +
+		'Web: ingverger.com.ar',
+	txtDescAyuda :	//	español
+		'PENTOMANIA es un rompecabezas donde tienes que colocar \n' +
+		'las doce piezas pentomino en el espacio dado.\n' +
+		'Hay una cuadricula de 8 x 8. Esto es 64 cuadraditos.\n' +
+		'Comienzas con una pieza ya colocada que ocupa 4 \n' +
+		'cuadraditos. Esta pieza es un tetromino.\n' +
+		'Adicionalmente tienes 12 piezas que ocupan 5 cuadraditos \n' +
+		'cada una. Estas se llaman "pentominos". De ahi el nombre\n' +
+		'del juego.\n' +
+		'Debes cubrir los 60 cuadraditos restantes de la grilla \n' +
+		'con los 12 pentominos.\n' +
+		'Las piezas pueden rotarse y voltearse pero no \n' +
+		'superponerse.\n'
+};
+
+
+const dictEn = {
+	txtAcerca: "About",
+	txtAcercaTit: "ABOUT PENTOMANIA",
+	txtAceptar: "Accept",
+	txtAjustesPento: 'PENTOMANIA\n    SETTINGS',
+	txtAleman: "German",
+	txtAyuda: "Help",
+	txtConfig: "Settings",
+	txtDificu: "Difficulty",
+	txtEspanol: "Spanish",
+	txtFin: "Congratulations!",
+	txtGirar: 'Rotate',
+	txtHint: 'Hint',
+	txtIdioma: "Language",
+	txtIngles: "English",
+	txtJugar: "Play",
+	txtMenu: "Menu",
+	txtNivel: "Level",
+	txtNoSol: "No Solution",
+	txtOtro: "Another",
+	txtProblema: 'Problem ',
+	txtProx: "Next",
+	txtTiempo: "Time: ",
+	txtTituloAyuda: "PENTOMANIA HELP",
+	txtVerifica: '',												//	'Verify',
+	txtVoltear: "Flip",
+	txtVolver: "Back",
+	txtDescAcerca:
+		'It is a set of lace puzzles\n' +
+		'developed by Willie Verger Clever Games\n' +
+		'with own routines and Simon Hung ones\n' +
+		'Support: info@ingverger.com.ar\n' +
+		'Web: ingverger.com.ar',
+	txtDescAyuda:
+		'PENTOMANIA is a puzzle (rompecabezas) where you have to \n' +
+		'fit all twelve pentomino pieces in the given space.\n' +
+		'There is a square 8 x 8 grid. That is 64 little squares.\n' +
+		'You star with a piece that ocuppies 4 little squares \n' +
+		'already placed. This piece is called tetromino.\n' +
+		'Then you have 12 pieces that ocuppies 5 little square \n' +
+		'each. These ones are called "pentominoes". Hence the \n' +
+		'name of the game. You must cover the 60 uncovered little \n' +
+		'squares of the grid with the 12 pentominoes.\n' +
+		'Pieces may be rotated and flipped but not overlapped'
+};
+
+
+
+const dictDe = {
+	txtAcerca: "&#x00DC;ber",
+	txtAcercaTit: "UBER PENTOMANIA",
+	txtAceptar: "Akzeptieren",
+	txtAjustesPento: 'EINSTELLUNGEN\n VON PENTOMANIA',
+	txtAleman: "Deutsch",
+	txtAyuda: "Hilfe",
+	txtConfig: "Einstellung",
+	txtDificu: "Schwierigkeit",
+	txtEspanol: "Spanisch",
+	txtFin: "Gut gelust!\nGluckwunsch! ",
+	txtGirar: 'Rotieren',
+	txtHint: 'Hinweis',
+	txtIdioma: "Sprache",
+	txtIngles: "Englisch",
+	txtJugar: "Spielen",
+	txtMenu: "Menu",
+	txtNivel: "Niveau",
+	txtNoSol: "keine Losung",
+	txtOtro: "Andere",
+	txtProblema: 'Problem ',
+	txtProx: 'Nachste',			//	"N&#x00E4;chste",
+	txtTiempo: "Verstrichene Zeit: ",
+	txtTituloAyuda: "PENTOMANIA HILFE",
+	txtVerifica: '',										//	'Überprüfen',	//	'L&#x00F6;sung &#x00FC;berpr&#x00FC;fen',
+	txtVoltear: "Flip",
+	txtVolver: "Umkehren",
+	txtDescAcerca:
+		'Es ist ein Satz Spitzenpuzzlespiele\n' +
+		'entwickelt von Willie Verger Clever Games\n' +
+		'mit eigenen Routinen von Simon Hung\n' +
+		'Unterstutzung: info@ingverger.com.ar\n' +
+		'Web: ingverger.com.ar\n',
+	txtDescAyuda:
+		'PENTOMANIA ist ein Puzzle (rompecabezas), bei dem Sie \n' +
+		'mussen Fuge alle 12 Pentomino-Teile in das angegebene \n' +
+		'Feld ein. Es gibt ein quadratisches 8 x 8 Gitter. Das \n '+
+		'sind 64 kleine Quadrate. Sie spielen eine Hauptrolle \n' +
+		'mit einem Teil, das bereits 4 kleine Quadrate belegt \n '+
+		'platziert. Dieses Stuck heisst Tetromino. Dann hast du \n '+
+		'12 Teile, die jeweils 5 kleine Quadrate haben. Diese \n '+
+		'Spiel. Sie mussen die 60 unbedeckten kleinen Quadrate des \n' +
+		'werden "Pentominos" genannt. Daher der Name des bedecken \n' +
+		'Gitter mit den 12 Pentominos.\n' +
+		'Stucke durfen gedreht und gekippt werden, aber nicht \n' +
+		'uberlappen.'
+	};

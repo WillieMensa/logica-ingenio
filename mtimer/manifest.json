@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "MTimer",
+  "short_name": "MTimer",
+  "version": "ar.com.ingverger.mtimer",
+  "description": "M-Timer es una herramienta para controlar el tiempo asignado a una actividad.\n\t\tSe establece el tiempo disponible en minutos y segundos.\n\t\tEl tiempo fijado por defecto se modifica con las flechas que apuntan hacia arriba para incrementar y hacia abajo para decrementar.\n\t\tUna vez establecido el tiempo disponible se esta en condiciones de iniciar la cuenta regresiva. Esto se hace picando en el boton inicio (play)\n\t\tEn pantalla se presenta el tiempo restante. Cuando se ha completado el tiempo comienza un sonido audible para alertar sobre esta situaci�n.\n\t\tSe puede interrumpir el conteo de tiempo en cualquier instante pulsando el boton detener.",
+  "author": "Willie Verger Clever Games",
+  "icons": [],
+  "start_url": "index.html"
+}

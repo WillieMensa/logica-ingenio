@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Un peso a la derecha </title>
+    <meta name="description" content="Problemas de ingenio.">
+    <meta name="keywords" content="Ingenio, L?gica,Representaci?n gr?fica, acertijos, axonometr?a, CAD tridimensional,caligraf?a t?cnica, 
+		dibujo tecnico,elipses,empalmes, ingenier?a, resolucion problemas,sistemas representaci?n, sudoku gratis para imprimir">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <style>
+			/* color base 50%: #0099ff */
+			body {
+					background-color: #99d6ff;
+			}
+			.button {
+				background-color: #003d66;
+				border: none;
+				color: white;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 16px 2px;
+				cursor: pointer;
+				border-radius: 8px;
+			}
+		</style>
+
+</head>
+
+<body>
+	<div class="container p-5 ">
+		<!-- Enunciado del problema -->
+		<h1>¿Cuál es el número de Tanya?</h1>
+		<p>Tanya cuenta que pensó en un entero positivo menor que 100 y divisible por 7.  Luego anuncia que en privado le dirá el dígito unidad a Andresito y el dígito de las decenas a Bartolito.  Andresito y Bartolito son dos chicos de pensamiento lógico, aunque la conversación entre ellos pueda sonar extraña:</p>
+		<ul>
+			<li>Andresito: Bartolito no sabe cual es el número de Tanya.</li>
+			<li>Bartolito: Ahora si lo sé.</li>
+		</ul>	
+		<p>Conociendo lo que dijo uno y otro ¿Puedes decir cuál es ese número?</p>
+		<p>&nbsp;</p>
+		<h6>Pautas para resolver</h6>
+		<p>Los chicos tienen información incompleta. Sin embargo, a partir del dígito que conocen, pueden deducir cuál puede ser, o cuales pueden ser, el o los dígitos informados al otro chico.</p>
+		 
+		<p class="footer">Problema original de Tanya Khovanova</p>
+
+		<a ><button class="button" onclick="hideShow()">Solución</button></a>
+
+		<div id="solucion" >
+			<p>El conjunto de múltiplos de siete entre los que se encuentra el número buscado es:</p>
+			<p style="text-align:center;">( 07, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98 )</p>
+			<p>En primer lugar debemos descartar aquellos número cuya decena sea única porque en ese caso Bartolito si conocería el número pensado por Tanya.</p>
+			<p>El conjunto de números posibles se reduce a</p>
+			<p style="text-align:center;">( 21, 28, 42, 49, 70, 77, 91, 98 )</p>
+			<p>Cuando Andresito afirma que Bartolito no conoce el número es porque el dígito de la unidad forma múltiplos de siete con decenas que componen dos números diferentes. y ésto es lo que impide a Bartolito conocer el número pensado por Tanya.</p>
+			<p>Si a Andresito le hubiesen dicho que la unidad era el siete cabría la posibilidad de que el número fuese el 07 y en ese caso Bartolito conocería el número. Desechamos el 77.</p>
+			<p>El dígito que le informaron a Andresito está dentro del conjunto:</p>
+			<p style="text-align:center;">( 0, 1, 2, 8, 9 )</p>
+			<p>Los números posibles entonces son:</p>
+			<p style="text-align:center;">( 21, 28, 42, 49, 70, 91, 98 )</p>
+			<p>Si a Bartolito le hubiesen dicho el número  2, 4, o 9 no hubiese podido saber cual era el número. Con esto eliminamos del conjunto de números posibles a aquellos cuya decena se repite: 21, 28, 42, 49, 91, 98.</p>
+			<p>Por lo tanto el número pensado por Tanya es el único restante: 70</p>
+		</div>
+
+		<!-- fin contenido -->
+	</div>
+
+	<script src="hide_show.js"></script>
+
+</body>
+
+</html>

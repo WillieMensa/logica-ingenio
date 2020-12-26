@@ -1,0 +1,72 @@
+﻿<html>
+<head>
+
+	<!-- Viewport meta tag is critical to have mobile browsers actually report correct screen dimensions -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<title>PENTOMANIA</title>
+	<!--
+
+	-->
+	<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+	<meta name="description" content="Investigando Pentominos Puzzle">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"	/>
+	<link href="willie.ico"  rel="shortcut icon" >
+
+	<link type="text/css" href="style.css" rel="stylesheet" >
+
+
+	<!-- utilizo la version extendida de kinetics.js para tratar de entender el funcionamiento -->
+	<!-- <script src="e:\Dropbox\GitHub\LibreriasVarias\Kinetic-v4.4.3\kinetic-v4.4.3.min.js"></script> -->
+	<script src="kinetic-v4.4.3.min.js"></script>
+
+
+	<script src="animate.js"></script>
+	<script src="polyDemo.js"></script>
+
+	<!-- el proximo script contiene const problemas, array en formato json -->
+	<script type="text/javascript" src="problemas.json"></script>
+
+	<!-- el script que sigue está basado en pentomino.puzzle.js del original -->
+	<script src="ajustes.js"></script>
+	<script src="acercade.js"></script>
+	<script src="ayuda.js"></script>
+
+	<script src="kinetic_grilla.js"></script>
+
+	<script src="pentomino-puzzle-084.js"></script>
+
+
+	<script src="polySolution.js"></script>
+	<script src="polyomino5.js"></script>
+	<script src="polyomino4.js"></script>
+
+	<script src="multi_language.js"></script>
+	<script type="text/javascript" src="lexikon.json"></script>	<!-- datos multilengua en formato json -->
+
+</head>
+
+<body >
+
+
+<div id="container" >
+	<h1>Pentomania</h1>
+	<h2>version 0.7.3</h2>
+	<p>prueba</p>
+
+</div>
+
+<div id="idioma">
+	<button class="langButt" id="espButt" type="radio" onclick="selectLanguage('sp');">
+	<img src="images/espanol-s.jpg" alt="Save icon"/>	Español	</button>
+	<button class="langButt" id="engButt" type="radio" onclick="selectLanguage('en');">
+	<img src="images/ingles-s.jpg" alt="Save icon"/> English	</button>
+	<button class="langButt" id="deuButt" type="button" onclick="selectLanguage('de');">
+	<img src="images/aleman-s.jpg" alt="Save icon"/> Deutsch	</button>
+</div>
+
+<div id="seleccion" style="background-color: lime;"></div>
+
+
+</body>
+</html>

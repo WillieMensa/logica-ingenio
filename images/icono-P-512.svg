@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+
+<defs>
+
+<filter id="f1" x="0" y="0" width="200%" height="200%">
+<feOffset result="offOut" in="SourceAlphaGraphic" dx="32" dy="32" />
+<feColorMatrix result="matrixOut"  in="offOut" type="saturate" values="0.52" />
+<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+</filter>
+
+</defs>
+
+<rect  x="0" y="0" width="512" height="512" stroke="gray" fill="#eeeeee" stroke-width="1" />
+<rect  x="53" y="53" rx="64" ry="64" width="406" height="406" stroke="white" stroke-width="0" fill="#116622" filter="url(#f1)" />
+
+
+<!-- <g fill="white" stroke="green" stroke-width="5" transform="translate(100 100) rotate(0)"> -->
+<g transform="translate(164 118) rotate(0)">
+	<rect id="R0" x="0" y="0" width="092" height="092" fill="#ffcc00" stroke="black" stroke-width="5"  transform="translate(000 000)"/>
+	<rect id="R1" x="0" y="0" width="092" height="092" fill="#ffcc00" stroke="black" stroke-width="5"  transform="translate(092 000)"/>
+	<rect id="R2" x="0" y="0" width="092" height="092" fill="#ffcc00" stroke="black" stroke-width="5"  transform="translate(000 092)"/>
+	<rect id="R3" x="0" y="0" width="092" height="092" fill="#ffcc00" stroke="black" stroke-width="5"  transform="translate(092 092)"/>
+	<rect id="R4" x="0" y="0" width="092" height="092" fill="#ffcc00" stroke="black" stroke-width="5"  transform="translate(000 184)"/>
+</g>
+
+
+</svg>
+

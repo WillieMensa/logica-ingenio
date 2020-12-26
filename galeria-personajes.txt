@@ -1,0 +1,52 @@
+lista de personales ordenada alfabeticmente
+
+      <img src="images/personajes/_AlbertoF.webp   " alt="01"	style="width:019%" >
+			<img src="images/personajes/_AleH.webp       " alt="02"	style="width:019%" >
+			<img src="images/personajes/_AlejandroY.webp " alt="03" style="width:019%" >
+			<img src="images/personajes/_AnibalF.webp    " alt="04"	style="width:019%" >
+			<img src="images/personajes/_annieV.webp     " alt="05" style="width:019%" >
+			<img src="images/personajes/_ArielJ.webp     " alt="06" style="width:019%" >
+			<img src="images/personajes/_CEFK.webp       " alt="07" style="width:019%" >
+			<img src="images/personajes/_ClausH.webp     " alt="08" style="width:019%" >
+			<img src="images/personajes/_DiegoT.webp     " alt="09" style="width:019%" >
+			<img src="images/personajes/_eFeiman.webp    " alt="10" style="width:019%" >
+			<img src="images/personajes/_EzequielC.webp  " alt="11" style="width:019%" >
+			<img src="images/personajes/_GermanG.webp    " alt="12" style="width:019%" >
+			<img src="images/personajes/_Guille-II.webp  " alt="13" style="width:019%" >
+			<img src="images/personajes/_GuilleD.webp    " alt="14" style="width:019%" >
+			<img src="images/personajes/_JorgeLanata.webp" alt="15" style="width:019%" >
+			<img src="images/personajes/_JoseLuisM.webp  " alt="16" style="width:019%" >
+			<img src="images/personajes/_joseO.webp      " alt="17" style="width:019%" >
+			<img src="images/personajes/_Magiord.webp    " alt="18" style="width:019%" >
+			<img src="images/personajes/_MatiasB.webp    " alt="19" style="width:019%" >
+			<img src="images/personajes/_MauricioM.webp  " alt="20" style="width:019%" >
+			<img src="images/personajes/_Nane.webp       " alt="21" style="width:019%" >
+			<img src="images/personajes/_rlopezm.webp    " alt="22" style="width:019%" >
+			<img src="images/personajes/_RubenD.webp     " alt="23" style="width:019%" >
+			<img src="images/personajes/_WillieV.webp    " alt="24" style="width:019%" >
+
+
+			<img src="images/personajes/_AlbertoF.webp   " alt="01"	style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_AleH.webp       " alt="01"	style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_AlejandroY.webp " alt="02" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_AnibalF.webp    " alt="01"	style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_annieV.webp     " alt="12" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_ArielJ.webp     " alt="03" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_CEFK.webp       " alt="13" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_ClausH.webp     " alt="04" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_DiegoT.webp     " alt="14" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_eFeiman.webp    " alt="15" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_EzequielC.webp  " alt="16" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_GermanG.webp    " alt="05" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_Guille-II.webp  " alt="06" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_GuilleD.webp    " alt="07" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_JorgeLanata.webp" alt="08" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_JoseLuisM.webp  " alt="09" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_joseO.webp      " alt="18" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_Magiord.webp    " alt="10" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_MatiasB.webp    " alt="11" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_MauricioM.webp  " alt="19" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_Nane.webp       " alt="20" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">
+			<img src="images/personajes/_rlopezm.webp    " alt="22" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">	
+			<img src="images/personajes/_RubenD.webp     " alt="23" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">	
+			<img src="images/personajes/_WillieV.webp    " alt="21" style="width:019%" onclick="myFunction(this);" onmouseover="myFunction(this);">	

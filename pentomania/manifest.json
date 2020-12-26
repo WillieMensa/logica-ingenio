@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "PENTOMANIA",
+  "short_name": "PENTOMANIA",
+  "version": "ar.com.ingverger.pentomania",
+  "description": "Pentomania Puzzle is a one player game. An opportunity for mental exercise and fun at the same time.\n\t\tWhat does it consist of?\n\t\tThere is a square board of 64 cells, 8 rows and eight columns. Four cells are occupied. The player must place the twelve pentominoes in such a way that they cover the rest of the board.\n\t\tEach different arrangement of the cells previously occupied gives rise to a problem. The problems are identified numerically. The player can follow that number sequence or choose the problems arbitrarily. Each problem solved adds points to his credit.\n\t\tIn case of having difficulties to find the solution the player can request help. This consists of the placement of a piece by the application and subtract a point at the end of the problem.\n\n\t\tHay un tablero cuadrado de 64 celdillas, 8 filas y ocho columnas. Cuatro celdillas se presentan ocupadas. El jugador debe colocar los doce pentominos de forma tal que cubran el resto del tablero.\n\t\tCada disposici�n diferentes de las celdillas ocupadas previamente da lugar a un problema. Los problemas son identificados num�ricamente. El jugador puede seguir esa secuencia num�rica o elegir los problemas arbitrariamente. Cada problema resuelto le suma puntos a su haber.\n\t\tEn caso de tener dificultades para encontrar la soluci�n el jugador puede solicitar ayuda. Esta consiste en la colocacion de una pieza por parte de la aplicaci�n y le restar� un punto al finalizar el problema.",
+  "author": "Willie Verger Clever Games",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "landscape",
+  "start_url": "index.html"
+}

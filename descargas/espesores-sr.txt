@@ -1,0 +1,25 @@
+
+Convenimos los siguientes espesores para imprimir:
+
+0,1: azul, blanco o gris.(blue, white, gray)
+0,2: magenta.
+0,3: celeste (cyan)
+0,4: amarillo (yellow)
+0,5: rojo (red)
+0,6: verde (green)
+
+Grupo B
+0,1: azul, blanco o gris    B continua / F trazo largo y corto
+0,2: magenta.               
+0,3: celeste (cyan)
+0,4: amarillo (yellow)      E Trazos
+0,5: rojo (red)             
+0,6: verde (green)          A continua
+
+Grupo A
+0,1: azul, blanco o gris    B continua / F trazo largo y corto
+0,2: magenta.               
+0,3: celeste (cyan)         
+0,4: amarillo (yellow)      
+0,5: rojo (red)             A Continua
+0,6: verde (green)          

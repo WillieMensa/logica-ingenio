@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<!-- grilla			https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints -->
+<!-- top navigation https://www.w3schools.com/howto/howto_js_topnav.asp -->
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP1LNRZ7TV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-PP1LNRZ7TV');
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8VTQ90FCD9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-8VTQ90FCD9');
+	</script>
+
+	<meta name="google-site-verification" content="pzz9k0Vrcxt5dzdXW9C8_ydBM-hRyr9FxAcbOXoQ0HY" />
+
+	<meta charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,height=device-height,initial-scale=1">
+	<!-- tutorial de https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids	-->
+	<meta name="description" content="Ingenio, aplicaciones Android y representación gráfica">
+	<meta name="keywords" content="Ingenio, Lógica, Rompecabezas, representación gráfica, Sistemas de Representación,CAD 3D, axonometría,
+		CAD tridimensional, caligrafía técnica, cortes y secciones,dibujo tecnico,elipses,empalmes,geometria descriptiva, ingeniería, vistas">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Ing. Guillermo Verger</title> 
+
+	<link	rel="stylesheet"	href="./css/estilo202010.css"	media="screen,projection,tv">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- estilo exclusivo para posicionar tooltip en imagenes -->
+	<style>
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+		top: 100%;
+		left: 50%;
+		margin-left: -60px;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+	</style>
+
+	<script src="menuppal.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+	<h1>Ing. Guillermo Verger - Novedades </h1>
+</div>
+
+<div id="menuppal"></div>
+
+<!-- Contenido de la pagina -->
+
+<div class="row clr_fondo">
+  <div class="col-4 tooltip" style="text-align: center;">
+		<img src="images/aconcagua-s.webp"  style="width:100%"		alt="Monte Aconcagua" />
+		<span class="tooltiptext">Monte Aconcagua</span>
+  </div>
+  <div class="col-4 tooltip" style="text-align: center;">
+		<img src="images/rosario-anochece-s.webp"  style="width:100%"		alt="Anochecer en Rio Parana" />
+		<span class="tooltiptext">Anochecer en Rio Parana</span>
+  </div>
+  <div class="col-4 tooltip" style="text-align: center;">
+		<img src="images/Calle7CnelDominguez-s.webp"  style="width:100%"		alt="Otoño en Coronel Dominguez" />
+		<span class="tooltiptext">Otoño en Coronel Dominguez</span>
+  </div>
+</div>
+
+<div class="row clr_fondo">
+  <div class="col-4" style="text-align: center;">
+		<a href="sumado20.html">
+			<img src="images/sumado20-muestra.webp" alt="juego de lógica sumado 2.0"/>
+		</a>
+  </div>
+  <div class="col-8">
+			<h2><a href="sumado20.html">SUMADO 2.0</a></h2>
+			<p>Una nueva version del juego de lógica SUMADO. Ahora con variantes de resolución más rapida y muy accesibles.
+  </div>
+</div>
+
+<div class="row clr_claro">
+  <div class="col-4" style="text-align: center;">
+			<p><a href="sumaoculta.html">
+			<img src="images/sumaoculta54.png" width="260" height="140" alt="sumaoculta" class="img-responsive"></a></p>		
+  </div>
+  <div class="col-8">
+			<h2><a href="sumaoculta.html">Suma Oculta</a></h2>
+			<p>Se presenta una suma donde los dígitos han sido reemplazados por letras.<br>
+			Cada letra es un dígito diferente; a letras iguales corresponden dígitos iguales.<br>
+			Se trata de encontrar el valor de cada letra para que la suma sea correcta.. 
+			</p>
+			<a href="sumaoculta.html">Ver mas...</a>
+  </div>
+</div>
+
+<div class="row clr_fondo">
+  <div class="col-4" style="text-align: center;">
+			<a href="https://play.google.com/store/apps/details?id=ar.com.ingverger.pentomania" target="_blank">
+				<img src="images/caja_pentomania_xxs.webp" width="170" height="103" border="0" alt="pentomania aplicaci&oacute;n web" class="img-responsive">
+			</a>
+  </div>
+  <div class="col-8">
+				<h2><a href="./pentomania.html">Pentomania</a></h2>
+				<p>Serie de rompecabezas con piezas poligonales.</p>
+				<p>Hay doce pentominos, piezas formadas por la union de cinco cuadraditos unitarios, y cinco tetrominos, piezas formadas por la union de cuatro cuadraditos unitarios.
+				<p>Los problemas que se plantean consisten en cubrir la grilla de 8 x 8 cuadraditos con los doce pentominos y un tetromino.</p>
+				<p>Dispones de una <a href="./frame_pentomania.html">version web</a>
+				o bi&eacute;n la <a href="https://play.google.com/store/apps/details?id=ar.com.ingverger.pentomania" target="_blank">version m&oacute;vil</a> para tablets y celulares.
+				</p>
+  </div>
+</div>
+
+<div class="row clr_claro">
+  <div class="col-4" style="text-align: center;">
+			<a href="./mtimer/index.html"><img src="images/phone-inicio.webp" width="235" height="142" border="0" alt="M-TIMER" class="img-responsive"></a>
+  </div>
+  <div class="col-8">
+			<a href="./mtimer/index.html"><h2>M-Timer</h2></a>
+			<h6>Un temporizador con n&uacute;meros gigantes</h6>
+			<p>
+				M-Timer permite controlar un tiempo establecido previamente y avisa cuando se ha cumplido.
+				El tiempo, fijado por defecto, se modifica con las flechas que apuntan hacia arriba para incrementar y hacia abajo para decrementar. 
+				Una vez establecido el tiempo se esta en condiciones de iniciar la cuenta regresiva. Esto se hace picando en el boton inicio.
+				En pantalla se presenta el tiempo restante. Cuando se ha completado el tiempo comienza un sonido audible para alertar sobre esta situaci&oacute;n.
+				Se puede interrumpir el conteo de tiempo en cualquier instante pulsando el boton detener y reanudar luego.
+				M-Timer puede configurarse para idioma Ingl&eacute;s, Espa&#x00f1;ol y Alem&aacute;n.
+				<p>Puedes correr la <a href="./mtimer/index.html" target="_blank">version web</a> o bi&eacute;n la 
+					<a href="https://play.google.com/store/apps/details?id=ar.com.ingverger.mtimer">version m&oacute;vil</a> para tablets y celulares.
+
+			</p>
+  </div>
+</div>
+
+<div class="row clr_fondo">
+  <div class="col-4" style="text-align: center;">
+			<a href="revista-enigma.html">
+			<img src="images/enigma.webp" width="102" height="132" style="border: #484 1pt solid;"  alt="Revista Enigma, ingenio, puzzles, resoluci&oacute;n de problemas"></a></p>
+  </div>
+  <div class="col-8">
+			<h2><A HREF="revista-enigma.html">Revista Enigma</A></h2>
+			<p style="text-align:right;">
+			<p>Enigma es el bolet&iacute;n informativo de Puzzle SIG, Grupo de Inter&eacute;s Especial en Problemas de Ingenio de Mensa Internacional.
+			<P>Participan personas aficcionadas al dise&#x00F1;o y resoluci&oacute;n de rompecabezas, acertijos, problemas de ingenio, invenci&oacute;n de nuevos tipos de puzzles y temas relacionados.
+			<p>El contenido incluye problemas de diferentes tipos; gran parte de l&oacute;gica y matem&aacute;ticas; muchos gr&aacute;ficos y muy poco texto escrito en ingl&eacute;s.
+			<p>Picando aqui se puede revisar en linea, imprimir o descargar 
+			<A HREF="revista-enigma.html">el &uacute;ltimo n&uacute;mero de la revista Enigma.</A>
+  </div>
+</div>
+
+	<ul id="mainMenu">
+		<li><a href="./curriculum-resumido.html">Quién soy</a></li>
+		<li><a href="./consultas.html">Consultas</a></li>
+	</ul>
+	
+<div class="footer">
+  <p>by Willie Verger, 2020</p>
+</div>
+
+</body>
+</html>
