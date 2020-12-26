@@ -1,14 +1,17 @@
 # Lógica e Ingenio
+ingverger.ar
 Sitio web de Willie Verger dedicado a juegos de lógica e ingenio
+
+wizardly-nobel-c2ebe0.netlify.app
 
 Name servers
 Point your domain’s name servers to Netlify
 To use Netlify DNS, go to your domain registrar and change your domain’s name servers to the following custom hostnames assigned to your DNS zone.
 
-dns1.p06.nsone.net
-dns2.p06.nsone.net
-dns3.p06.nsone.net
-dns4.p06.nsone.net
+dns1.p07.nsone.net
+dns2.p07.nsone.net
+dns3.p07.nsone.net
+dns4.p07.nsone.net
 
 ------------------
 Transformación de sitio a HTML
