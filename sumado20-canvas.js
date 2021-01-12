@@ -103,7 +103,8 @@ function start() {
 		leeJuegosPagina();
 
 		//<canvas id="canvas1" width="560" height="794" class="img-responsive" style="border:1px solid #000000;"></canvas>
-		ctx.fillStyle = '#f0d0b0ff';			//	#f2e8cfff;
+		//	ctx.fillStyle = '#f0d0b0ff';			//	#f2e8cfff;
+		ctx.fillStyle = '#ffffffff';
 		ctx.fillRect(1, 1, 560, 794);
 
 		//	detectar si se pidio con solucion
