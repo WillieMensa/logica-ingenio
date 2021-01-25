@@ -1,7 +1,8 @@
 /*
 	juego-28.js
+	version perdida para recuperar
 	del curso de Udemy
-  Tetris
+	Tetris
 
   Optimizaciones
   crear function que genere tablero vacio
