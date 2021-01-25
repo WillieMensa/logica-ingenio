@@ -1,0 +1,38 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+  }

@@ -2,14 +2,6 @@
 <html lang="es">
 
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP1LNRZ7TV"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-PP1LNRZ7TV');
-	</script>
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
@@ -23,57 +15,6 @@
 
 		<script src="menuppal.js"></script>
 
-
-		<style>
-			* {
-				box-sizing: border-box;
-			}
-
-
-
-			/* Style the images inside the grid */
-			.column img {
-				opacity: 0.8;
-				cursor: pointer;
-			}
-
-			.column img:hover {
-				opacity: 1;
-			}
-
-			/* Clear floats after the columns */
-			.row:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-
-			/* The expanding image container */
-			.container {
-				position: relative;
-				display: none;
-			}
-
-			/* Expanding image text */
-			#imgtext {
-				position: absolute;
-				bottom: 15px;
-				left: 15px;
-				color: #fff;
-				font-size: 16px;
-			}
-
-			/* Closable button inside the expanded image */
-			.closebtn {
-				position: absolute;
-				top: 10px;
-				right: 15px;
-				color: white;
-				font-size: 35px;
-				cursor: pointer;
-			}
-		</style>
-
 	</head>
 
 	<body>
@@ -85,31 +26,38 @@
 		<div id="menuppal"></div>
 
 		<div class="row clr_fondo">
-			<p>Están ordenados por nombre. Reconoces alguno?<br />
-				Si es así, <a href="consultas.html">avísame</a>.
+			<p>A quienes reconoces?<br />
+				<a href="consultas.html">Contame...</a>.
 			</p>
-			<div class="col-12" style="text-align:center;">
-				<img src="images/personajes/AlbertoF.webp			" alt="01" style="width:024%">
-				<img src="images/personajes/AmadoBoudou.webp	" alt="02" style="width:024%">
-				<img src="images/personajes/AngelaMerkel.webp	" alt="03" style="width:024%">
-				<img src="images/personajes/AnibalF.webp			" alt="04" style="width:024%">
-				<img src="images/personajes/BarackOb.webp			" alt="15" style="width:024%">
-				<img src="images/personajes/CarlosPagni.webp	" alt="06" style="width:024%">
-				<img src="images/personajes/CEFK.webp					" alt="07" style="width:024%">
-				<img src="images/personajes/eFeiman.webp			" alt="08" style="width:024%">
-				<img src="images/personajes/GinesGGarcia.webp " alt="09" style="width:024%">
-				<img src="images/personajes/HoracioRL.webp		" alt="10" style="width:024%">
-				<img src="images/personajes/HugoMoya.webp			" alt="11" style="width:024%">
-				<img src="images/personajes/JoaquinMSola.webp " alt="12" style="width:024%">
-				<img src="images/personajes/JorgeBergog.webp	" alt="13" style="width:024%">
-				<img src="images/personajes/JorgeFD.webp			" alt="14" style="width:024%">
-				<img src="images/personajes/JorgeLana.webp		" alt="15" style="width:024%">
-				<img src="images/personajes/LilitaCarrio.webp	" alt="16" style="width:024%">
-				<img src="images/personajes/MauricioM.webp		" alt="17" style="width:024%">
-				<img src="images/personajes/PatriciaB.webp		" alt="18" style="width:024%">
-				<img src="images/personajes/rlopezm.webp			" alt="19" style="width:024%">
-				<img src="images/personajes/RNavarro.webp			" alt="20" style="width:024%">
-				<img src="images/personajes/RobertoC.webp			" alt="21" style="width:024%">
+			<div class="col-6 img-responsive" style="text-align:center;">
+				<map name="primary">
+					<area shape="rect" coords="000,000,096,128" onclick="muestraImagen('images/personajes/AlbertoF.webp     ')" alt="AlbertoF     ">
+					<area shape="rect" coords="096,000,192,128" onclick="muestraImagen('images/personajes/AmadoBoudou.webp  ')" alt="AmadoBoudou     ">
+					<area shape="rect" coords="192,000,288,128" onclick="muestraImagen('images/personajes/AngelaMerkel.webp ')" alt="AngelaMerkel     ">
+					<area shape="rect" coords="288,000,384,128" onclick="muestraImagen('images/personajes/AnibalF.webp			')" alt="AnibalF.web     ">
+					<area shape="rect" coords="000,128,096,256" onclick="muestraImagen('images/personajes/BarackOb.webp			')" alt="BarackOb      ">
+					<area shape="rect" coords="096,128,192,256" onclick="muestraImagen('images/personajes/CarlosPagni.webp	')" alt="CarlosPagni      ">
+					<area shape="rect" coords="192,128,288,256" onclick="muestraImagen('images/personajes/CEFK.webp					')" alt="CEFK.webp      ">
+					<area shape="rect" coords="288,128,384,256" onclick="muestraImagen('images/personajes/GinesGGarcia.webp ')" alt="GinesGGarcia     ">
+					<area shape="rect" coords="000,256,096,384" onclick="muestraImagen('images/personajes/HoracioRL.webp		')" alt="HoracioRL      ">
+					<area shape="rect" coords="096,256,192,384" onclick="muestraImagen('images/personajes/HugoAlconad.webp	')" alt="HugoAlconad      ">
+					<area shape="rect" coords="192,256,288,384" onclick="muestraImagen('images/personajes/HugoMoya.webp			')" alt="HugoMoya      ">
+					<area shape="rect" coords="288,256,384,384" onclick="muestraImagen('images/personajes/JoaquinMSola.webp ')" alt="JoaquinMSola    ">
+					<area shape="rect" coords="000,384,096,512" onclick="muestraImagen('images/personajes/JorgeBergog.webp	')" alt="JorgeBergog      ">
+					<area shape="rect" coords="096,384,192,512" onclick="muestraImagen('images/personajes/JorgeFD.webp			')" alt="JorgeFD     ">
+					<area shape="rect" coords="192,384,288,512" onclick="muestraImagen('images/personajes/JorgeLana.webp		')" alt="JorgeLana     ">
+					<area shape="rect" coords="288,384,384,512" onclick="muestraImagen('images/personajes/LilitaCarrio.webp	')" alt="LilitaCarrio     ">
+					<area shape="rect" coords="000,512,096,640" onclick="muestraImagen('images/personajes/MauricioM.webp		')" alt="MauricioM     ">
+					<area shape="rect" coords="096,512,192,640" onclick="muestraImagen('images/personajes/PatriciaB.webp		')" alt="PatriciaB     ">
+					<area shape="rect" coords="192,512,288,640" onclick="muestraImagen('images/personajes/rlopezm.webp			')" alt="rlopezm		    ">
+					<area shape="rect" coords="288,512,384,640" onclick="muestraImagen('images/personajes/RobertoC.webp			')" alt="RobertoC      ">
+				</map>
+				<img usemap="#primary" src="images/personajes/galeria-publicos.webp" alt="personajes publicos">
+
+			</div>
+			<div class="col-6 container" id='laImagen' style="text-align:center;">
+
+				<img src="images/personajes/WillieV.webp" id='personaje' alt="el dibujante" style="width:100%">
 
 			</div>
 		</div>
@@ -117,8 +65,10 @@
 		<div class="row clr_claro">
 			<div class="col-2"></div>
 			<div class="col-8" style="text-align: center;">
+				<!--
 				<a target="_blank" href="https://www.amazon.es/b?_encoding=UTF8&tag=willieve-21&linkCode=ur2&linkId=91667bae1344fb97bdf9a9a0b0252727&camp=3638&creative=24630&node=665280031">Sofware antivirus y seguridad</a><img src="//ir-es.amazon-adsystem.com/e/ir?t=willieve-21&l=ur2&o=30"
 				  width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+				-->
 			</div>
 			<div class="col-2"></div>
 		</div>
@@ -131,6 +81,16 @@
 		<div class="footer">
 			<p>by Willie Verger, 2020</p>
 		</div>
+
+
+		<script>
+			function muestraImagen(src) {
+				var destino = document.getElementById("personaje");
+				destino.src = src;
+			}
+		</script>
+
+
 
 	</body>
 

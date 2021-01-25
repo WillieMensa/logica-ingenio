@@ -1,0 +1,172 @@
+{"frames": {
+
+"AlbertoF_small.png":
+{
+	"frame": {"x":0,"y":0,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"AmadoBoudou_small.png":
+{
+	"frame": {"x":120,"y":0,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"AngelaMerkel_small.png":
+{
+	"frame": {"x":240,"y":0,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"AnibalF_small.png":
+{
+	"frame": {"x":360,"y":0,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"BarackOb_small.png":
+{
+	"frame": {"x":0,"y":160,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"CarlosPagni_small.png":
+{
+	"frame": {"x":120,"y":160,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"CEFK_small.png":
+{
+	"frame": {"x":240,"y":160,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"GinesGGarcia_small.png":
+{
+	"frame": {"x":360,"y":160,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"HoracioRL_small.png":
+{
+	"frame": {"x":0,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"HugoAlconad_small.png":
+{
+	"frame": {"x":120,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"HugoMoya_small.png":
+{
+	"frame": {"x":240,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"JoaquinMSola_small.png":
+{
+	"frame": {"x":360,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"JorgeBergog_small.png":
+{
+	"frame": {"x":0,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"JorgeFD_small.png":
+{
+	"frame": {"x":120,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"JorgeLana_small.png":
+{
+	"frame": {"x":240,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"LilitaCarrio_small.png":
+{
+	"frame": {"x":360,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"MauricioM_small.png":
+{
+	"frame": {"x":0,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"PatriciaB_small.png":
+{
+	"frame": {"x":120,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"rlopezm_small.png":
+{
+	"frame": {"x":240,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+"RobertoC_small.png":
+{
+	"frame": {"x":360,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "galeria-publicos.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":800},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a71a09d478ef9d849c95e710935dd412:e9203489989dc59d98ba0bc760d0ba2c:12fa438125ad752fd71a8c8106885afb$"
+}
+}
