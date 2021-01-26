@@ -1,0 +1,22 @@
+-     unction in tetris.js --
+(  7, 9):  crear function que genere tablero vacio
+( 86, 1):function reseteaTablero(){
+( 99,16):var objPieza = function(){
+(110,16):  this.nueva = function(){
+(117,28):  this.compruebaSiPierde = function(){
+(130,17):  this.limpia = function(){
+(152,15):  this.caer = function(){
+(174,16):  this.fijar = function(){
+(184,19):  this.colision = function(anguloNuevo, yNueva, xNueva){
+(198,17):  this.dibuja = function(){
+(236,16):  this.rotar = function(){
+(251,16):  this.abajo = function(){
+(258,18):  this.derecha = function(){
+(265, 0):  this.izquierda = function(){
+(277, 1):function dibujaTablero(){
+(314,1):function inicializaTeclado(){
+(316,39):  document.addEventListener('keydown',function(tecla){
+(341, 1):function inicializa(){
+(354, 4):	setInterval(function(){
+(361, 1):function borraCanvas(){
+(367, 1):function principal(){

@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>5.4.0</string>
+        <string>5.5.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -32,7 +32,7 @@
         <key>dpi</key>
         <uint>72</uint>
         <key>dataFormat</key>
-        <string>pixijs4</string>
+        <string>json-array</string>
         <key>textureFileName</key>
         <filename></filename>
         <key>flipPVR</key>
@@ -88,16 +88,16 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>1024</int>
             <key>height</key>
-            <int>2048</int>
+            <int>1024</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>512</int>
+            <int>600</int>
             <key>height</key>
-            <int>-1</int>
+            <int>1024</int>
         </QSize>
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
@@ -106,7 +106,7 @@
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
-            <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
+            <enum type="AlgorithmSettings::SizeConstraints">WordAligned</enum>
             <key>forceSquared</key>
             <false/>
             <key>maxRects</key>
@@ -194,6 +194,7 @@
             <key type="filename">JorgeFD_small.png</key>
             <key type="filename">JorgeLana_small.png</key>
             <key type="filename">LilitaCarrio_small.png</key>
+            <key type="filename">LuisMajul.png</key>
             <key type="filename">MauricioM_small.png</key>
             <key type="filename">PatriciaB_small.png</key>
             <key type="filename">RobertoC_small.png</key>
@@ -280,6 +281,7 @@
             <filename>CarlosPagni_small.png</filename>
             <filename>CEFK_small.png</filename>
             <filename>RobertoC_small.png</filename>
+            <filename>LuisMajul.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
