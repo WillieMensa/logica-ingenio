@@ -76,35 +76,6 @@ Where are Gifted-spence-636cb0.netlify.app servers located in?
 
 Fotos para caricaturizar. Tomar con HDR e iluminacion en automatico 
 
-# estadisticas con glitch
-
-probable-honeysuckle-nautilus
-
-### Pagina del proyecto
- https://glitch.com/~meowing-thread-boursin
-
-### Live App
-
-- https://meowing-thread-boursin.glitch.me
-
-### Code
-
-- https://glitch.com/edit/#!/meowing-thread-boursin
-
-### Embed code
-
-<!-- Copy and Paste Me -->
-<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe
-    src="https://glitch.com/embed/#!/embed/meowing-thread-boursin?path=.env&previewSize=0"
-    title="meowing-thread-boursin on Glitch"
-    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
-
-https://glitch.com/edit/#!/meowing-thread-boursin?previewSize=100&attributionHidden=false&sidebarCollapsed=false&path=.env&previewFirst=false
-
 
 # Google analytics
 

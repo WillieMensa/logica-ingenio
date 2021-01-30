@@ -87,7 +87,7 @@ var amarillo = '#FFD700';
 var verde = '#008000';
 var cyan = '#00CED1';
 var azul = '#0000CD';
-var clrFondo = '#eeeeee';
+var clrFondo = '#888888';
 
 function reseteaTablero(){
   console.log('resetea tablero');

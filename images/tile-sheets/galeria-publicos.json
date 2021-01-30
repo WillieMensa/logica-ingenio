@@ -97,7 +97,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeBergog_small.png",
+	"filename": "JoeBiden.png",
 	"frame": {"x":240,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -105,7 +105,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeFD_small.png",
+	"filename": "JorgeBergog_small.png",
 	"frame": {"x":360,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeLana_small.png",
+	"filename": "JorgeFD_small.png",
 	"frame": {"x":480,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -121,7 +121,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LilitaCarrio_small.png",
+	"filename": "JorgeLana_small.png",
 	"frame": {"x":0,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -129,7 +129,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LuisMajul.png",
+	"filename": "LilitaCarrio_small.png",
 	"frame": {"x":120,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -137,7 +137,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "MauricioM_small.png",
+	"filename": "LuisMajul.png",
 	"frame": {"x":240,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -145,7 +145,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "PatriciaB_small.png",
+	"filename": "MauricioM_small.png",
 	"frame": {"x":360,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -153,7 +153,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "rlopezm_small.png",
+	"filename": "PatriciaB_small.png",
 	"frame": {"x":480,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -161,8 +161,16 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RobertoC_small.png",
+	"filename": "rlopezm_small.png",
 	"frame": {"x":0,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RobertoC_small.png",
+	"frame": {"x":120,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -175,6 +183,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":1024},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:43808b0d87fd94bd4ce9e011ca414a09:f16c634a4b9deebfa8a375dd390ffcf7:12fa438125ad752fd71a8c8106885afb$"
+	"smartupdate": "$TexturePacker:SmartUpdate:7c40ace56318c8b0c46f6790fc8b3893:f44067e67b5782e5b876f4e9bbb63253:12fa438125ad752fd71a8c8106885afb$"
 }
 }

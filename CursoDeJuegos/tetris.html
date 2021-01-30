@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+		<meta name="description" content="Calendario mensual, calendario anual y otras impresiones.">
+		<meta name="keywords" content="Calendario anual, Calendario mensual, Calendario anual 2020, Calendario mensual 2020, L�gica,Rompecabezas">
+
+		<title>Tetris</title>
+
+		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<script src='js/piezas.json'></script>
+		<script src='js/tetris.js'></script>
+
+		<script src="menuppal.js"></script>
+
+	</head>
+
+	<body onload='inicializa();'>
+
+		<!-- Contenido de la pagina -->
+
+		<div class="row clr_fondo">
+			<div class="col-8">
+				<canvas id='canvas' style="border:1px solid #000055; background-color: #888888">
+				</canvas>
+			</div>
+			<div class="col-4">
+				<!--
+					pausar Juego
+					sonido on/off
+					salir del Juego
+					(ver próxima pieza)
+					guardar Juegoscore actual
+					score mas alto
+
+					botones
+						izquierda
+						derecha
+						bajar
+						rotar
+
+			  -->
+				<button onclick="otroJuego()">Pausar Juego</button>
+				<button onclick="otroJuego()">Otro juego</button>
+				<button onclick="otroJuego()">Otro juego</button>
+				<button onclick="otroJuego()">Otro juego</button>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
