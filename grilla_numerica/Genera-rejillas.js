@@ -1,9 +1,25 @@
 /*
 	sumado20-canvas.js
 	2020.12.11 
+
+	objeto: generar datos para rejillas numéricas (ex sumado 2.0)
+
+	iniciar proceso
+
+	generar valores para vértices (aleatorio)
+	calcular polígonos (triangulos)
+	preparar una cadena con formato tipo		
+		{
+			'RAvert':[6,9,5,7,2,3,4,8,1],'RAsuma':[15,17,16,10,13,14,11,6],
+			'COvert':[5,6,4,3,1,8,2,7,9],'COsuma':[14,10,15,18,12,11,16,24],
+			'DDvert':[9,4,3,6,5,7,8,1,2],'DDsuma':[20,18,16,14,15,12,8,14],
+			'DIvert':[2,9,8,5,7,1,6,3,4],'DIsuma':[16,21,24,16,18,16,11,8],
+			'CRvert':[7,1,8,2,3,6,4,9,5],'CRsuma':[12,11,10,15,9,16,18,20],
+			'CLvert':[6,2,3,7,1,8,4,9,5],'CLsuma':[15,10,6,12,20,17,15,14],
+		}
+
 */
 
-// window.onload = start;
 
 const
 	NCOL = 3,
@@ -12,8 +28,8 @@ const
 	NVERT=9,
 	paso = 80,		//	separacion entre vertices
 	radio = 16,
-	DEBUG = false;
-	//	DEBUG = true;
+	//	DEBUG = false;
+	DEBUG = true;
 
 let 
 	aVertex,					//	para ubicar numeros aleatoriamente
@@ -91,11 +107,10 @@ let
 	};
 
 
-function start() {
-	nPagActual = getNroPag();			//	leer nro problema actual
-	document.getElementById("numero").value = nPagActual;
-	if (DEBUG) { DibujaGrillaA4() }
-	dibujaPag();
+
+
+function init() {
+
 };
 
 
@@ -259,8 +274,7 @@ function presentaGrilla( modGrilla, posX, posY)			//
 
 	function dibujaVertices(posX,posY) {
 		ctx.beginPath();
-		ctx.lineWidth = "8";
-		ctx.fillStyle = '#fff';
+		ctx.fillStyle = '#f1f2f3';
 		//	ctx.fill = 'rgb(200, 0, 0)';
 		for ( var x=0; x<=2; x++ )
 		{
@@ -435,3 +449,220 @@ function ajustaNumPag() {
 		//	}
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		function GenJuego( modGrilla)			//	genera un nuevo juego
+		{
+			//	la funciones para preparacion de nuevo juego
+			//	modGrilla: es el modelo de grila, filas columnas y variante
+			//	Identificacion de los modelos de grilla
+			//	sum3x3A
+			//	sum4*3A
+			//	sum4x4A
+
+			var aTemp = undefined,
+				i = undefined,
+				j = undefined,
+				aSumaPolig = [],	//	array con suma de los poligonos
+				aVertex = [],			//	para ubicar numeros aleatoriamente
+				nNum = undefined, //	
+				nFil = undefined, //	cantidad de filas
+				nCol = undefined	//	cantidad de columnas
+				//	aNumeros = [],	//	array con los numeros
+				//	aVertices = []		//	array con datos de vertices
+
+			switch(modGrilla) {
+				case "sum3x3A":
+					// code block
+					nFil = 3;
+					nCol = 3;
+					break;
+
+				case "sum4x3A":
+					// code block
+					nFil = 3;
+					nCol = 4;
+					break;
+
+				case "sum4x4A":
+					// code block
+					nFil = 4;
+					nCol = 4;
+					break;
+
+				default:
+					// code block
+			}
+
+			//	console.log( "nFil, nCol: " + nFil + ", " + nCol );
+
+			for ( i = 0; i < nCol; i++){
+				for ( j = 0; j < nFil; j++)
+				{
+					nNum = 1 + i + ( j * nCol );
+					aVertex.push(nNum);
+					//	console.log( "nNum, aVertex[i]: " + nNum + ", " + aVertex[i] );
+				}
+			}
+
+			//	shuffle the vertex
+			//	Scheitelpunkte vermischen
+			for(i=0; i< (nFil * nCol * 5); i++){
+				var from = Math.floor(Math.random()* nFil * nCol);
+				var to = Math.floor(Math.random()* nFil * nCol);
+				var tmp = aVertex[from];
+				aVertex[from] = aVertex[to];
+				aVertex[to] = tmp;
+				//	console.log( "from, to: " + from + ", " + to );
+			}
+
+			//	console.log("aVertex:" + aVertex );
+
+
+
+			////////////////////////////////////////////////////
+			//	Actualizamos la suma de los poligonos
+			//	dependiente del modelo de grilla
+			//	Grilla  3x3 modelo A
+			switch(modGrilla) {
+				case "sum3x3A":
+					// code block
+					aSumaPolig.push( aVertex[0]+ aVertex[3]+ aVertex[4] );
+					aSumaPolig.push( aVertex[0]+ aVertex[1]+ aVertex[4] );
+					aSumaPolig.push( aVertex[1]+ aVertex[2]+ aVertex[4]+ aVertex[5] );
+					aSumaPolig.push( aVertex[3]+ aVertex[4]+ aVertex[6]+ aVertex[7] );
+					aSumaPolig.push( aVertex[4]+ aVertex[7]+ aVertex[8] );
+					aSumaPolig.push( aVertex[4]+ aVertex[5]+ aVertex[8] );
+
+					break;
+
+				case "sum4x3A":
+					// code block
+					aSumaPolig.push( aVertex[0]+ aVertex[4]+ aVertex[5] );
+					aSumaPolig.push( aVertex[0]+ aVertex[1]+ aVertex[5] );
+					aSumaPolig.push( aVertex[1]+ aVertex[2]+ aVertex[5]+ aVertex[6] );
+					aSumaPolig.push( aVertex[2]+ aVertex[3]+ aVertex[6] );
+					aSumaPolig.push( aVertex[3]+ aVertex[6]+ aVertex[7] );
+
+					aSumaPolig.push( aVertex[4]+ aVertex[8]+ aVertex[9] );
+					aSumaPolig.push( aVertex[4]+ aVertex[5]+ aVertex[9] );
+					aSumaPolig.push( aVertex[5]+ aVertex[6]+ aVertex[9]+ aVertex[10] );
+					aSumaPolig.push( aVertex[6]+ aVertex[7]+ aVertex[10] );
+					aSumaPolig.push( aVertex[7]+ aVertex[10]+ aVertex[11] );
+					break;
+
+				case "sum4x4A":
+					// code block
+					aSumaPolig.push( aVertex[0]+ aVertex[1]+ aVertex[4] );
+					aSumaPolig.push( aVertex[1]+ aVertex[4]+ aVertex[5] );
+					aSumaPolig.push( aVertex[1]+ aVertex[2]+ aVertex[5]+ aVertex[6] );
+					aSumaPolig.push( aVertex[2]+ aVertex[6]+ aVertex[7] );
+					aSumaPolig.push( aVertex[2]+ aVertex[3]+ aVertex[7] );
+
+					aSumaPolig.push( aVertex[4]+ aVertex[5]+ aVertex[8]+ aVertex[9] );
+					aSumaPolig.push( aVertex[5]+ aVertex[6]+ aVertex[9]+ aVertex[10] );
+					aSumaPolig.push( aVertex[6]+ aVertex[7]+ aVertex[10]+ aVertex[11] );
+
+					aSumaPolig.push( aVertex[8]+ aVertex[12]+ aVertex[13] );
+					aSumaPolig.push( aVertex[8]+ aVertex[9]+ aVertex[13] );
+					aSumaPolig.push( aVertex[9]+ aVertex[10]+ aVertex[13]+ aVertex[14] );
+					aSumaPolig.push( aVertex[10]+ aVertex[11]+ aVertex[14] );
+					aSumaPolig.push( aVertex[11]+ aVertex[14]+ aVertex[15] );
+					break;
+
+
+				default:
+					// code block
+			}
+
+			//	console.log(aSumaPolig);
+
+
+			//	colocar sumas en poligonos
+			for ( var i=0;i<aSumaPolig.length ;i++ )
+			{
+				var str = "00" + i;
+				var res = str.substr(-2);
+				var textNode = undefined;
+
+				//	console.log( modGrilla + "pos" + res  );
+				svgTextElement = document.getElementById( modGrilla + "pos" + res );
+				//	console.log("sum3x3pos0"+i + "  -  " + "sum3x3pos0"+i)
+				//	console.log(svgTextElement)
+				textNode = svgTextElement.childNodes[0];
+				textNode.nodeValue = aSumaPolig[i] ;
+
+			}
+
+
+			//	colocar valores en vertices
+			for ( var i=0;i<aVertex.length ;i++ )
+			{
+				var str = "00" + i;
+				var res = str.substr(-2);
+
+				svgTextElement = document.getElementById( modGrilla + "ver" + res );		//	"sum3x3ver0"+i);
+
+				//	console.log( "svgTextElement: " + recorrerObjeto(svgTextElement.childNodes[0]) );
+
+				var c = svgTextElement.childNodes;
+				var txt = c.length + " - ";
+				var j;
+				for (j = 0; j < c.length; j++) {
+					txt = txt + " * " + j + " * " + c[j].nodeName + " * ";
+				}
+				console.log( "svgTextElement.childNodes: " + txt );
+				//	console.log( "svgTextElement: " + c[0].nodeValue + ", " + recorrerObjeto(c) );
+
+				textNode = svgTextElement.childNodes[0];
+				textNode.nodeValue = aVertex[i] ;
+			}
+
+		}
+
+
+    function recorrerObjeto(objeto)
+    {
+        var respuesta="";
+        for (var i in objeto)
+        {
+            respuesta+=i+": "+objeto[i]+"<br>";
+        }
+        return respuesta
+    }
+
+
+//---------------------------------
+
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(94,1):function start() {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(102,2):	function dibujaPag() {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(126,1):function presentaGrilla( modGrilla, posX, posY)			//
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(260,2):	function dibujaVertices(posX,posY) {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(277,2):	function poneSumas(posX,posY,aPosis) {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(308,4)://	function original leeJuegoSerie() {		// recupera datos de un juego de serie
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(310,1):function leeJuegosPagina() {		// recupera datos de un juegos para una página
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(342,1):function ajustaNumPag() {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(360,2):	function setNroPagina() {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(370,2):	function getNroPag()
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(384,2):	function setStorage(key, value)
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(391,2):	function getStorage(key)
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(400,2):	function clearStorage(key)
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(410,5):	//	function printDiv( lConSolucion ) {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(411,2):	function printDiv() {
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(427,2):	function myFunction() {
+
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(449,30):			if (DEBUG) { console.log("function init() beginnen Version 11");}
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(459,3):		function GenJuego( modGrilla)			//	genera un nuevo juego
+"E:\Dropbox\GitHub\logica-ingenio\rejillas\Genera-rejillas.js"(629,5):    function recorrerObjeto(objeto)

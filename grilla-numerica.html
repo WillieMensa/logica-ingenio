@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-
 	<meta charset="utf-8">
 	<meta	name="viewport"	content="width=device-width,height=device-height,initial-scale=1">
 
-	<meta name="keywords" content="Sumado 2.0, puzzles, acertijos, creatividad, enigmas, entrenamiento mental, Gimnasia Cerebral, gimnasia mental, juegos de lógica, 
+	<meta name="keywords" content="Grilla numérica, puzzles, acertijos, creatividad, enigmas, entrenamiento mental, Gimnasia Cerebral, gimnasia mental, juegos de lógica, 
 		juegos numéricos, juegos mentales, lógica, Memoria, percepción visual, Rompecabezas, Problemas de ingenio, Juegos de mesa">
 
-	<title> SUMADO 2.0 </title>
+	<title> Grilla numérica </title>
 	
 	<link	rel="stylesheet"	href="./css/estilo202010.css"	media="screen,projection,tv">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<script src="menuppal.js"></script>
 
-	<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <style>
 	/* estilo particular de esta pagina */
@@ -33,9 +30,9 @@
 
 </head>
 
-<body >
+<body onload="poneMenuPpal(),start();">
 	<div class="header">
-		<h1> SUMADO 2.0 </h1>
+		<h1> Grilla numérica </h1>
 	</div>
 
 	<div id="menuppal"></div>
@@ -43,7 +40,7 @@
 <div class="row clr_claro" style="font-size: 1.2em;">
 	<div class="col-8">
 		<p class="canvStyle">
-			Pongamos las neuronas en movimiento!<br/>
+
 			En los círculos están todos los números del 1 al 9. 
 			En el interior de los triángulos se presenta la suma de sus vértices.
 			El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br/>
@@ -86,11 +83,11 @@
 	</ul>
 
 	<div class="footer">
-		<p>by Willie Verger, 2020</p>
+		<p>by Willie Verger, 2021</p>
 	</div>
 
 	<!-- el proximo script contiene const problemas, array en formato json -->
-	<script src="problemas_sumado.json"></script>
+	<script src="problemas-grilla-numerica.json"></script>
 	<script src="sumado20-canvas.js"></script>
 
 	<script>
