@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+	<!--
+	ver iconos en
+	E:\Dropbox\GitHub\node_modules\@icons\material\svg\pause.svg
+	E:\Dropbox\GitHub\Fonts\fontawesome-free-5.4.2-web\svgs\solid\stop-circle.svg
+
+	emoji unicode symbols: https://www.w3schools.com/charsets/ref_emoji.asp
+							https://www.w3schools.com/charsets/ref_utf_geometric.asp
+							↺	8634	21BA	 	ANTICLOCKWISE OPEN CIRCLE ARROW
+
+							↺	8634	21BA	 	ANTICLOCKWISE OPEN CIRCLE ARROW
+
+	https://en.wikipedia.org/wiki/List_of_Unicode_characters
+-->
 
 	<head>
 		<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -18,6 +31,14 @@
 		<script src='js/tetris.js'></script>
 
 		<script src="menuppal.js"></script>
+
+		<style>
+			.score {
+				font: normal 100%/150% 'roboto_mediumregular', sans-serif;
+				padding: 0.2em;
+				background: #888ddd;
+			}
+		</style>
 
 	</head>
 
@@ -46,10 +67,12 @@
 						rotar
 
 			  -->
-				<button onclick="otroJuego()">Pausar Juego</button>
+				<button onclick="togglePausa()" id="pausarBtn">Pausar Juego</button>
 				<button onclick="otroJuego()">Otro juego</button>
 				<button onclick="otroJuego()">Otro juego</button>
 				<button onclick="otroJuego()">Otro juego</button>
+				<div id="scoreActual" class='score'></div>
+				<div id="scoreMaximo" class='score'></div>
 
 			</div>
 		</div>

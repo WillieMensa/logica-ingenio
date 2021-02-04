@@ -11,7 +11,6 @@
 var canvas;
 var ctx;
 var FPS = 100;
-var NPPF = 10;  // puntos otorgados por fila limpia
 
 //DIMENSIONES DEL CANVAS
 var anchoCanvas = 500;		//	400 para los graficos y 100 para informacion
@@ -31,7 +30,6 @@ var altoF = 40;
 
 var enPausa = false;
 var nScore;
-var maxScore;
 
 //  tablero 12 x 17 (real utilizado 10 x 16)
 //LA MATRIZ ES MAYOR PORQUE AÑADIMOS MÁRGENES PARA LAS COLISIONES
@@ -92,7 +90,7 @@ var amarillo = '#FFD700';
 var verde = '#008000';
 var cyan = '#00CED1';
 var azul = '#0000CD';
-var clrFondo = '#333';
+var clrFondo = '#eeeeee';
 
 
 
@@ -152,7 +150,7 @@ var objPieza = function(){
         }
       }
 
-      //console.log('filaCompleta; ',py,filaCompleta);
+      //console.log('filaCompleta; ',filaCompleta);
 
       if(filaCompleta==true){
         for(px=1; px<anchoTablero+1; px++){
@@ -162,7 +160,6 @@ var objPieza = function(){
 				tablero.splice(py,1);
 				// e insertamos una fila vacia al inicio
 				tablero.unshift([1,0,0,0,0,0,0,0,0,0,0,1]);
-        nScore += NPPF;
       }
     }
   }
@@ -332,8 +329,13 @@ function dibujaTablero(){
 
     }
   }
-  scoreActual=document.getElementById('scoreActual');
   scoreActual.innerHTML=nScore;
+
+}
+
+
+function guardaScore(){
+  maxScore = Math.max( nScore, maxScore);
 
 }
 
@@ -342,13 +344,6 @@ function dibujaTablero(){
 function inicializaTeclado(){
   //LECTURA DE TECLADO
   document.addEventListener('keydown',function(tecla){
-    // agrego control de teclado para abandonar pausar
-
-    //	console.log('tocó tecla...', tecla.keyCode);
-    var pausaBtn = document.getElementById("pausarBtn");
-    enPausa=false;
-    pausaBtn.innerHTML='Pausar';
-
   	//IZQUIERDA
   	if(tecla.keyCode==37){
       pieza.izquierda();
@@ -373,26 +368,7 @@ function inicializaTeclado(){
 
 }
 
-
-
-function borraCanvas(){
-	canvas.width = anchoCanvas;
-	canvas.height = altoCanvas;
-}
-
-
-function togglePausa(){
-  var pausaBtn = document.getElementById("pausarBtn");
-  // voteable = (age < 18) ? "Too young":"Old enough";
-  enPausa = !enPausa;
-	pausaBtn.innerHTML = (enPausa) ? 'Continuar':'Pausar';
-}
-
-
-
 function inicializa(){
-	console.log('inicializando...');
-
   canvas = document.getElementById('canvas');
 	ctx = canvas.getContext('2d');
 
@@ -403,12 +379,26 @@ function inicializa(){
 
   inicializaTeclado();
 
-  maxScore=getStorage('maxScore');
-	nScore=0;
-
 	setInterval(function(){
 		principal();
 	},1000/FPS);
+
+}
+
+
+function borraCanvas(){
+	canvas.width = anchoCanvas;
+	canvas.height = altoCanvas;
+}
+
+
+function togglePausa(){
+
+  var pausaBtn = document.getElementById("pausarBtn");
+  // voteable = (age < 18) ? "Too young":"Old enough";
+  enPausa = !enPausa;
+
+	pausaBtn.innerHTML = (enPausa) ? 'Continuar':'Pausar';
 
 }
 
@@ -421,46 +411,4 @@ function principal(){
     pieza.caer();
     pieza.dibuja();
   }
-}
-
-
-/*
-  valores a guardar
-    nombreJugador
-    maxScore
-
-*/
-
-function guardaScore(){
-  maxScore = Math.max( nScore, maxScore);
-  setStorage('maxScore', maxScore);
-}
-
-
-
-//---------------------------------------
-// funciones auxiliares comunes
-
-//=======================================
-// BEGIN for set|get|clear localstorage
-//=======================================
-function setStorage(key, value){
-	if(typeof(window.localStorage) != 'undefined'){
-		window.localStorage.setItem(key,value);
-	}
-}
-
-function getStorage(key){
-	var value = null;
-	if(typeof(window.localStorage) != 'undefined'){
-		value = window.localStorage.getItem(key);
-	}
-	return value;
-}
-
-function clearStorage(key)
-{
-	if(typeof(window.localStorage) != 'undefined'){
-		window.localStorage.removeItem(key);
-	}
 }
