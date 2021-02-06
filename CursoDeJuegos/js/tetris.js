@@ -12,6 +12,7 @@ var canvas;
 var ctx;
 var FPS = 100;
 var NPPF = 10;  // puntos otorgados por fila limpia
+var nIntervId;  //  para detener juego cuando sea necesario
 
 //DIMENSIONES DEL CANVAS
 var anchoCanvas = 500;		//	400 para los graficos y 100 para informacion
@@ -406,11 +407,19 @@ function inicializa(){
   maxScore=getStorage('maxScore');
 	nScore=0;
 
-	setInterval(function(){
+  nIntervId=setInterval(function(){    
 		principal();
 	},1000/FPS);
 
 }
+
+
+
+function detenerJuego() {
+  console.log(nIntervId);
+   clearInterval(nIntervId);
+}
+
 
 
 function principal(){

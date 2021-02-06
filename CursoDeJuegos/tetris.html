@@ -12,6 +12,32 @@
 							↺	8634	21BA	 	ANTICLOCKWISE OPEN CIRCLE ARROW
 
 	https://en.wikipedia.org/wiki/List_of_Unicode_characters
+
+	en https://stackoverflow.com/questions/22885702/html-for-the-pause-symbol-in-audio-and-video-control/27053825#27053825
+		23F3 ⏳︎ hourglass
+		23F4 ⏴︎ reverse, back
+		23F5 ⏵︎ forward, next, play
+		23F6 ⏶︎ increase
+		23F7 ⏷︎ decrease
+		23F8 ⏸︎ pause
+		23F9 ⏹︎ stop
+		23FA ⏺︎ record
+
+
+Player icons - scalable - font awesome
+
+_____________________
+en https://material.io/resources/icons/?icon=play_arrow&style=baseline
+
+Follow the instructions to embed the icon font in your site and learn how to style your icons using CSS.
+
+Usage:
+
+<span class="material-icons">
+play_arrow
+</span>
+
+
 -->
 
 	<head>
@@ -68,11 +94,15 @@
 
 			  -->
 				<button onclick="togglePausa()" id="pausarBtn">Pausar Juego</button>
-				<button onclick="otroJuego()">Otro juego</button>
+				<button onclick="detenerJuego();">Detener</button>
 				<button onclick="otroJuego()">Otro juego</button>
 				<button onclick="otroJuego()">Otro juego</button>
 				<div id="scoreActual" class='score'></div>
 				<div id="scoreMaximo" class='score'></div>
+				<span class="material-icons">
+					play_arrow
+				</span>
+
 
 			</div>
 		</div>
