@@ -6,6 +6,23 @@
   Optimizaciones
   crear function que genere tablero vacio
 
+	para controlar botones habilitados/deshabilitados uso modelo de pentominos
+	//	volteaPieza: boton para rotar piezzas
+	volteaPieza = document.createElement("button");
+	volteaPieza.innerHTML = dict.txtVoltear;
+	document.body.appendChild(volteaPieza);
+	volteaPieza.addEventListener ("click", function() { voltearPieza() } );
+	volteaPieza.style.position = "absolute";
+	volteaPieza.style.left	=	STAGE_OFFSET_X + 1.3 * dist_X - BLOCK_CELL_SIZE;	//	STAGE_OFFSET_X + 4.0 * BLOCK_CELL_SIZE;
+	volteaPieza.style.top		= STAGE_OFFSET_Y + STAGE_Y - BLOCK_CELL_SIZE;	
+	volteaPieza.style.visibility='hidden';
+
+	para la habilitacion
+	volteaPieza.disabled=false;
+	volteaPieza.disabled=true;
+
+
+
 */
 
 var canvas;
@@ -386,7 +403,18 @@ function togglePausa(){
   var pausaBtn = document.getElementById("pausarBtn");
   // voteable = (age < 18) ? "Too young":"Old enough";
   enPausa = !enPausa;
-	pausaBtn.innerHTML = (enPausa) ? 'Continuar':'Pausar';
+  if(enPausa){
+      pausaBtn.innerHTML = '
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">
+      <path d="M 10,8 v32 l 16,-16 z" />
+      </svg>
+  } else {
+    pausaBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
+  		<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+  	</svg>';
+
+  }
+
 }
 
 
@@ -407,7 +435,7 @@ function inicializa(){
   maxScore=getStorage('maxScore');
 	nScore=0;
 
-  nIntervId=setInterval(function(){    
+  nIntervId=setInterval(function(){
 		principal();
 	},1000/FPS);
 

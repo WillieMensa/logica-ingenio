@@ -1,0 +1,16 @@
+
+arrow_back-24px.svg
+arrow_downward-black-48dp.svg
+arrow_forward-24px.svg
+arrow_right_alt-black-18dp.svg
+help-black-48dp.svg
+help_outline-black-48dp.svg
+keyboard_arrow_down-black-18dp.svg
+keyboard_arrow_left-black-18dp.svg
+loop-black-18dp.svg
+pause-24px.svg
+pause-black-18dp.svg
+redo-black-48dp.svg
+stop-black-48dp.svg
+stop-button-svgrepo-com.svg
+undo-black-48dp.svg

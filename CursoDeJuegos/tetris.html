@@ -1,18 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="es">
 	<!--
 	ver iconos en
 	E:\Dropbox\GitHub\node_modules\@icons\material\svg\pause.svg
 	E:\Dropbox\GitHub\Fonts\fontawesome-free-5.4.2-web\svgs\solid\stop-circle.svg
-
 	emoji unicode symbols: https://www.w3schools.com/charsets/ref_emoji.asp
 							https://www.w3schools.com/charsets/ref_utf_geometric.asp
 							↺	8634	21BA	 	ANTICLOCKWISE OPEN CIRCLE ARROW
-
 							↺	8634	21BA	 	ANTICLOCKWISE OPEN CIRCLE ARROW
-
 	https://en.wikipedia.org/wiki/List_of_Unicode_characters
-
 	en https://stackoverflow.com/questions/22885702/html-for-the-pause-symbol-in-audio-and-video-control/27053825#27053825
 		23F3 ⏳︎ hourglass
 		23F4 ⏴︎ reverse, back
@@ -22,27 +19,17 @@
 		23F8 ⏸︎ pause
 		23F9 ⏹︎ stop
 		23FA ⏺︎ record
-
-
 Player icons - scalable - font awesome
-
 _____________________
 en https://material.io/resources/icons/?icon=play_arrow&style=baseline
-
 Follow the instructions to embed the icon font in your site and learn how to style your icons using CSS.
-
 Usage:
-
 <span class="material-icons">
 play_arrow
 </span>
-
-
 -->
 
 	<head>
-		<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 		<meta name="description" content="Calendario mensual, calendario anual y otras impresiones.">
@@ -50,13 +37,8 @@ play_arrow
 
 		<title>Tetris</title>
 
-		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
 		<script src='js/piezas.json'></script>
 		<script src='js/tetris.js'></script>
-
-		<script src="menuppal.js"></script>
 
 		<style>
 			.score {
@@ -85,18 +67,77 @@ play_arrow
 					(ver próxima pieza)
 					guardar Juegoscore actual
 					score mas alto
-
 					botones
 						izquierda
 						derecha
 						bajar
 						rotar
-
 			  -->
-				<button onclick="togglePausa()" id="pausarBtn">Pausar Juego</button>
-				<button onclick="detenerJuego();">Detener</button>
-				<button onclick="otroJuego()">Otro juego</button>
-				<button onclick="otroJuego()">Otro juego</button>
+
+<!-- pausar -->
+<button onclick="togglePausa()" id="pausarBtn">
+	<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
+		<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+	</svg>
+</button>
+
+<!-- detener -->
+<button onclick="detenerJuego();">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px">
+		<path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/>
+	</svg>
+</button>
+
+<!-- izquierda -->
+<button onclick="otroJuego()">
+	<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
+		<path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+	</svg>
+</button>
+
+<!-- abajo -->
+<button onclick="otroJuego()">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px">
+	<path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/>
+</svg>
+</button>
+
+<!-- derecha -->
+<button onclick="detenerJuego();">
+<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
+<path d="M0 0h24v24H0z" fill="none"/>
+<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+</button>
+
+<!--  -->
+<button onclick="detenerJuego();">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px">
+	<path d="M0 0h24v24H0z" fill="none"/><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+</svg>
+</button>
+
+<!-- giro completo
+<button onclick="detenerJuego();">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48" >
+<path d="M0 0h24v24H0z" fill="none"/><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+</svg>
+</button>
+ -->
+<!-- giro antihorario -->
+<button onclick="detenerJuego();">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px">
+<path d="M0 0h24v24H0z" fill="none"/><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/>
+</svg>
+
+</button>
+
+<button onclick="detenerJuego();">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">
+	<path d="M 10,8 v32 l 28,-16 z" />
+	</svg>
+</button>
+
+				
 				<div id="scoreActual" class='score'></div>
 				<div id="scoreMaximo" class='score'></div>
 				<span class="material-icons">
