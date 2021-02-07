@@ -21,6 +21,9 @@
 	volteaPieza.disabled=false;
 	volteaPieza.disabled=true;
 
+touch
+		.on('pointerdown click', function() {
+
 
 
 */
@@ -50,6 +53,8 @@ var altoF = 40;
 var enPausa = false;
 var nScore;
 var maxScore;
+var pausaBtn;				// boton para pausar juego
+
 
 //  tablero 12 x 17 (real utilizado 10 x 16)
 //LA MATRIZ ES MAYOR PORQUE AÑADIMOS MÁRGENES PARA LAS COLISIONES
@@ -112,6 +117,50 @@ var cyan = '#00CED1';
 var azul = '#0000CD';
 var clrFondo = '#333';
 
+
+
+// --------- inicio de funciones y objetos
+function inicializa(){
+	console.log('inicializando...');
+
+  canvas = document.getElementById('canvas');
+	ctx = canvas.getContext('2d');
+
+  canvas.style.width = anchoCanvas;
+  canvas.style.height = altoCanvas;
+
+  pieza = new objPieza();
+
+  inicializaTeclado();
+  inicializaBotones();
+
+
+  maxScore=getStorage('maxScore');
+	nScore=0;
+
+	//	aqui deberia estar listo para iniciar. Esperando boton Iniciar
+	// que entonces, si deberia llamar a setInterval()
+	// iniciar, continuar, correr
+	// correr();
+
+  borraCanvas();
+	dibujaTablero();
+
+}
+
+
+
+function correr(){
+	// corre el juego desde la posicion actual
+	// puede ser iniciar de cero o reanudar
+	btnPausar.disabled=false;
+	console.log(btnPausar.disabled);
+
+  nIntervId=setInterval(function(){
+		principal();
+	},1000/FPS);
+
+}
 
 
 function reseteaTablero(){
@@ -201,6 +250,7 @@ var objPieza = function(){
         if(this.compruebaSiPierde()==true){
           guardaScore();
           reseteaTablero();
+					clearInterval(nIntervId);
         }
       }
       this.fotograma = 0;
@@ -358,15 +408,13 @@ function dibujaTablero(){
 
 
 function inicializaTeclado(){
-  //LECTURA DE TECLADO
+	console.log('inicializando teclado');
+
+	//LECTURA DE TECLADO
   document.addEventListener('keydown',function(tecla){
     // agrego control de teclado para abandonar pausar
 
     //	console.log('tocó tecla...', tecla.keyCode);
-    var pausaBtn = document.getElementById("pausarBtn");
-    enPausa=false;
-    pausaBtn.innerHTML='Pausar';
-
   	//IZQUIERDA
   	if(tecla.keyCode==37){
       pieza.izquierda();
@@ -393,6 +441,48 @@ function inicializaTeclado(){
 
 
 
+function inicializaBotones(){
+	btnPausar = document.getElementById("btnPausar");
+	enPausa=false;
+
+	btnPausar  = document.getElementById("btnPausar");
+	btnDetener = document.getElementById("btnDetener");
+	//	btnOtro    = document.getElementById("btnOtro");
+	btnIzq     = document.getElementById("btnIzq");
+	btnAba     = document.getElementById("btnAba");
+	btnDer     = document.getElementById("btnDer");
+	btnHelp    = document.getElementById("btnHelp");
+	btnGiro    = document.getElementById("btnGiro");
+	btnCorrer  = document.getElementById("btnCorrer");
+
+	btnPausar.addEventListener ('pointerdown click', togglePausa())
+	btnDetener.addEventListener ('pointerdown click', togglePausa())
+	//	btnOtro   .addEventListener ('pointerdown click', togglePausa())
+	btnIzq.addEventListener ('pointerdown click', togglePausa())
+	btnAba    .addEventListener ('pointerdown click', togglePausa())
+	btnDer    .addEventListener ('pointerdown click', togglePausa())
+	btnHelp   .addEventListener ('pointerdown click', togglePausa())
+	btnGiro   .addEventListener ('pointerdown click', togglePausa())
+	btnCorrer .addEventListener ('pointerdown click', togglePausa())
+
+/*	
+togglePausa()" ibtnCorrerd="btnPausar">
+detenerJuego();"btnCorrer id="btnDetener">
+otroJuego()" id=btnCorrer"btnOtroIzq">
+"otroJuego()" idbtnCorrer="btnAba">
+"detenerJuego();btnCorrer" id="btnDer">
+"detenerJuego();btnCorrer" id="btnHelp">
+"detenerJuego();btnCorrer" id="btnGiro">
+"correr();" id="btnCorrer">
+
+
+.on('pointerdown click', function() {
+*/
+
+}
+
+
+
 function borraCanvas(){
 	canvas.width = anchoCanvas;
 	canvas.height = altoCanvas;
@@ -400,44 +490,14 @@ function borraCanvas(){
 
 
 function togglePausa(){
-  var pausaBtn = document.getElementById("pausarBtn");
+  var pausaBtn = document.getElementById("btnPausar");
   // voteable = (age < 18) ? "Too young":"Old enough";
   enPausa = !enPausa;
   if(enPausa){
-      pausaBtn.innerHTML = '
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">
-      <path d="M 10,8 v32 l 16,-16 z" />
-      </svg>
+		pausaBtn.disabled=true;
   } else {
-    pausaBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">
-  		<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-  	</svg>';
-
+		pausaBtn.disabled=false;
   }
-
-}
-
-
-
-function inicializa(){
-	console.log('inicializando...');
-
-  canvas = document.getElementById('canvas');
-	ctx = canvas.getContext('2d');
-
-  canvas.style.width = anchoCanvas;
-  canvas.style.height = altoCanvas;
-
-  pieza = new objPieza();
-
-  inicializaTeclado();
-
-  maxScore=getStorage('maxScore');
-	nScore=0;
-
-  nIntervId=setInterval(function(){
-		principal();
-	},1000/FPS);
 
 }
 
@@ -445,7 +505,8 @@ function inicializa(){
 
 function detenerJuego() {
   console.log(nIntervId);
-   clearInterval(nIntervId);
+  clearInterval(nIntervId);
+
 }
 
 
@@ -501,3 +562,8 @@ function clearStorage(key)
 		window.localStorage.removeItem(key);
 	}
 }
+
+
+/* function in this file
+
+*/

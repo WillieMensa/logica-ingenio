@@ -1,22 +1,51 @@
--     unction in tetris.js --
-(  7, 9):  crear function que genere tablero vacio
-( 86, 1):function reseteaTablero(){
-( 99,16):var objPieza = function(){
-(110,16):  this.nueva = function(){
-(117,28):  this.compruebaSiPierde = function(){
-(130,17):  this.limpia = function(){
-(152,15):  this.caer = function(){
-(174,16):  this.fijar = function(){
-(184,19):  this.colision = function(anguloNuevo, yNueva, xNueva){
-(198,17):  this.dibuja = function(){
-(236,16):  this.rotar = function(){
-(251,16):  this.abajo = function(){
-(258,18):  this.derecha = function(){
-(265, 0):  this.izquierda = function(){
-(277, 1):function dibujaTablero(){
-(314,1):function inicializaTeclado(){
-(316,39):  document.addEventListener('keydown',function(tecla){
-(341, 1):function inicializa(){
-(354, 4):	setInterval(function(){
-(361, 1):function borraCanvas(){
-(367, 1):function principal(){
+(119,1):function reseteaTablero(){
+
+(132,16):var objPieza = function(){
+(143,16):  this.nueva = function(){
+(150,28):  this.compruebaSiPierde = function(){
+(163,17):  this.limpia = function(){
+(190,15):  this.caer = function(){
+(213,16):  this.fijar = function(){
+(223,19):  this.colision = function(anguloNuevo, yNueva, xNueva){
+(237,17):  this.dibuja = function(){
+(274,16):  this.rotar = function(){
+(289,16):  this.abajo = function(){
+(296,18):  this.derecha = function(){
+(303,20):  this.izquierda = function(){
+
+(316, 1):function dibujaTablero(){
+
+(362, 1):function inicializaTeclado(){
+(364,39):  document.addEventListener('keydown',function(tecla){
+
+(398, 1):function borraCanvas(){
+
+(404, 1):function togglePausa(){
+
+(418, 1):function inicializa(){
+(434,25):  nIntervId=setInterval(function(){
+
+(442, 1):function detenerJuego() {
+
+(449, 1):function principal(){
+
+(467, 1):function guardaScore(){
+
+(480, 1):function setStorage(key, value){
+
+(486, 1):function getStorage(key){
+
+(494, 1):function clearStorage(key)
+
+
+
+
+botones
+togglePausa()" ibtnCorrerd="btnPausar">
+detenerJuego();"btnCorrer id="btnDetener">
+otroJuego()" id=btnCorrer"btnOtroIzq">
+"otroJuego()" idbtnCorrer="btnAba">
+"detenerJuego();btnCorrer" id="btnDer">
+"detenerJuego();btnCorrer" id="btnHelp">
+"detenerJuego();btnCorrer" id="btnGiro">
+"correr();" id="btnCorrer">
