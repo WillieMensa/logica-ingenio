@@ -79,6 +79,11 @@ h1 {
 	font:bold 200%/120% arial,helvetica,sans-serif;
 }
 
+h2 {
+	padding:0.5em;
+	font:bold 150%/120% arial,helvetica,sans-serif;
+}
+
 h4 {
 	padding: 1em;
 }

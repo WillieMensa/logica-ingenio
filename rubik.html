@@ -19,7 +19,13 @@
 	<script src="menuppal.js"></script>
 
 	<style>
-		@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+		@font-face {
+				font-family: 'roboto-regular';
+				src: url('roboto-regular-webfont.woff2') format('woff2'),
+						 url('roboto-regular-webfont.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+		}
 
 		.txtblanco {
 			font-family: Roboto;
@@ -120,7 +126,7 @@
 	<div class="row clr_fondo">
 		<div class="col-8">
 			<h2>Convenciones adoptadas</h2>
-			<h3>Identificacion de las caras del cubo</h3>
+			<h3>Identificación de las caras del cubo</h3>
 			<p>Cada cara del cubo estará vinculada a una letra para identificar los movimientos que se deben realizar.
 				Utilizaremos una convención ampliamente difundida que proviene de la identificación en inglés.</p>
 			<dl>
@@ -143,22 +149,32 @@
 			<p>Al referirnos a caras de los cubitos individuales que deben tener el mismo color los mostraremos
 				todos de un mismo color. Las caras de cubitos que queden grises será porque no importa el color de las mismas.</p>
 
-			<h3>Identificacion de elementosde cara superior</h3>
-			<p style="font-family: monospace; font-size: 2.4em; line-height: 60%;">
-			&#x250C;&#x2500;&#x252C;&#x2500;&#x252C;&#x2500;&#x2510;<br>
-			&#x2502;A&#x2502;B&#x2502;C&#x2502;<br>
-			&#x251C;&#x2500;&#x253C;&#x2500;&#x253C;&#x2500;&#x2524;<br>
-			&#x2502;D&#x2502;E&#x2502;F&#x2502;<br>
-			&#x251C;&#x2500;&#x253C;&#x2500;&#x253C;&#x2500;&#x2524;<br>
-			&#x2502;G&#x2502;H&#x2502;I&#x2502;<br>
-			&#x2514;&#x2500;&#x2534;&#x2500;&#x2534;&#x2500;&#x2518;<br>
-			</p>
-		
+			<h3>Identificacion de elementos en cara superior</h3>
+
+			<svg height="220" width="220">
+				<!-- cara superior -->
+				<polygon points="020,020 140,020 140,140 020,140" style="fill:white;stroke:black;stroke-width:4 ; opacity: 0.96;" />
+				<path d="M020,060 h120 M020,100 h120 M060,020 v120 M100,020 v120" style="fill:none;stroke:black;stroke-width:1" />
+
+				<!-- y ahora para identificar los diferentes cuadraditos -->
+				<text class="txtblanco" x="032" y="050">A</text>
+				<text class="txtblanco" x="072" y="050">B</text>
+				<text class="txtblanco" x="112" y="050">C</text>
+
+				<text class="txtblanco" x="032" y="090">D</text>
+				<text class="txtblanco" x="072" y="090">E</text>
+				<text class="txtblanco" x="112" y="090">F</text>
+
+				<text class="txtblanco" x="032" y="130">G</text>
+				<text class="txtblanco" x="072" y="130">H</text>
+				<text class="txtblanco" x="112" y="130">I</text>
+
+			</svg>
+
 		</div>
 	
 		<div class="col-4">
 			<svg height="220" width="220">
-
 				<!-- cara superior -->
 				<polygon points="020,020 140,020 140,140 020,140" style="fill:white;stroke-width:0 ; opacity: 0.6;" />
 				<!-- cara derecha -->
