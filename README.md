@@ -17,13 +17,6 @@ dns4.p07.nsone.net
 Transformación de sitio a HTML
 
 ## ingverger.ar
-Publicación en https://gifted-spence-636cb0.netlify.app/
-
-Direccion del sitemap: https://gifted-spence-636cb0.netlify.app/sitemap.xml
-
-La idea está en elaboración.
-
-
 
 ## Direcciones acortadas
 
@@ -58,9 +51,6 @@ NOV 13
 SUMADO 2.0
 bit.ly/Sumado203
 CREATED DEC 1, 3:14 PM
-https://gifted-spence-636cb0.netlify.app/calendarios.html
-https://gifted-spence-636cb0.netlify.app/calendarios.html
-
 
 ## Badges
 

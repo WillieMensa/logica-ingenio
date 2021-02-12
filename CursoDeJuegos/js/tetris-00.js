@@ -30,7 +30,7 @@ touch
 
 var canvas;
 var ctx;
-var FPS = 105;				//50;
+var FPS = 100;
 var NPPF = 10;  // puntos otorgados por fila limpia
 var nIntervId;  //  para detener juego cuando sea necesario
 
@@ -53,7 +53,7 @@ var altoF = 40;
 var enPausa = true;		//asi arrancamos. En pausa
 var nScore;
 var maxScore;
-var btnOnOff;				// boton para pausar juego
+var pausaBtn;				// boton para pausar juego
 
 
 //  tablero 12 x 17 (real utilizado 10 x 16)
@@ -121,6 +121,7 @@ var clrFondo = '#333';
 
 // --------- inicio de funciones y objetos
 function inicializa(){
+	console.log('inicializando...');
 
   canvas = document.getElementById('canvas');
 	ctx = canvas.getContext('2d');
@@ -137,7 +138,7 @@ function inicializa(){
   maxScore=getStorage('maxScore');
 	nScore=0;
 
-	// aqui deberia estar listo para iniciar. Esperando boton Iniciar
+	//	aqui deberia estar listo para iniciar. Esperando boton Iniciar
 	// que entonces, si deberia llamar a setInterval()
 	// iniciar, continuar, correr
 	// correr();
@@ -148,6 +149,18 @@ function inicializa(){
 }
 
 
+
+function correr(){
+	// corre el juego desde la posicion actual
+	// puede ser iniciar de cero o reanudar
+	btnPausar.disabled=false;
+	console.log(btnPausar.disabled);
+
+  nIntervId=setInterval(function(){
+		principal();
+	},1000/FPS);
+
+}
 
 
 function reseteaTablero(){
@@ -427,18 +440,12 @@ function inicializaTeclado(){
 }
 
 
-function MueveDer(){
-	pieza.derecha();
-}
-
-function MueveIzq(){
-	console.log('mueve izquierda');
-	pieza.izquierda();
-}
 
 function inicializaBotones(){
-	
-	btnOnOff  = document.getElementById("btnOnOff");
+	btnPausar = document.getElementById("btnPausar");
+	enPausa=true;   //false;
+
+	btnPausar  = document.getElementById("btnPausar");
 	btnDetener = document.getElementById("btnDetener");
 	//	btnOtro    = document.getElementById("btnOtro");
 	btnIzq     = document.getElementById("btnIzq");
@@ -448,20 +455,18 @@ function inicializaBotones(){
 	btnGiro    = document.getElementById("btnGiro");
 	btnCorrer  = document.getElementById("btnCorrer");
 
-	btnOnOff  .addEventListener ('pointerdown click', togglePausa())
-	btnDetener.addEventListener ('pointerdown click', alert('boton detener'));						// togglePausa())
+	btnPausar.addEventListener ('pointerdown click', togglePausa())
+	btnDetener.addEventListener ('pointerdown click', togglePausa())
 	//	btnOtro   .addEventListener ('pointerdown click', togglePausa())
-	//btnIzq.addEventListener ('pointerdown click', MueveIzq());
-	btnIzq.addEventListener ('pointerdown click', alert('boton a izquierda'));
-
-	btnAba    .addEventListener (' click', alert('boton abajo'));						// togglePausa())
-	btnDer    .addEventListener ('pointerdown click', alert('boton derecha'));						// togglePausa())
-	btnHelp   .addEventListener ('pointerdown click', alert('boton ayuda'));						// togglePausa())
-	btnGiro   .addEventListener ('pointerdown click', alert('boton girar'));						// togglePausa())
-	btnCorrer .addEventListener ('pointerdown click', alert('boton correr'));						// togglePausa())
+	btnIzq.addEventListener ('pointerdown click', togglePausa())
+	btnAba    .addEventListener ('pointerdown click', togglePausa())
+	btnDer    .addEventListener ('pointerdown click', togglePausa())
+	btnHelp   .addEventListener ('pointerdown click', togglePausa())
+	btnGiro   .addEventListener ('pointerdown click', togglePausa())
+	btnCorrer .addEventListener ('pointerdown click', togglePausa())
 
 /*	
-togglePausa()" ibtnCorrerd="btnOnOff">
+togglePausa()" ibtnCorrerd="btnPausar">
 detenerJuego();"btnCorrer id="btnDetener">
 otroJuego()" id=btnCorrer"btnOtroIzq">
 "otroJuego()" idbtnCorrer="btnAba">
@@ -484,55 +489,25 @@ function borraCanvas(){
 }
 
 
-
 function togglePausa(){
-	if (enPausa){
-		correr();
-	} else {
-		pausar();
-	}
-}
-
-
-function correr(){
-	// corre el juego desde la posicion actual
-	// puede ser iniciar de cero o reanudar
-	// btnOnOff.disabled=false;
-	// console.log(btnOnOff.disabled);
-
-	enPausa=false;
-
-	btnOnOff.innerHTML =
-		'Pausar<br>'+
-		'<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">'+
-		'<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-	
-  nIntervId=setInterval(function(){
-		principal();
-	},1000/FPS);
-
-}
-
-
-function pausar(){
-  //	btnOnOff = document.getElementById("btnOnOff");
+  pausaBtn = document.getElementById("btnPausar");
   // voteable = (age < 18) ? "Too young":"Old enough";
-  enPausa = true;				//!enPausa;
-		//	btnOnOff.innerHTML =
-		//		'Pausar<br>'+
-		//		'<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">'+
-		//		'<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>'
-		//	
-		//		} else {
-		//REANUDA
-		//	btnOnOff.disabled=false;
-	btnOnOff.innerHTML =
-		'Iniciar<br>' +
-		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">' +
-		'<path d="M 10,8 v32 l 28,-16 z" /></svg>'
+  enPausa = !enPausa;
+  if(enPausa){
+		pausaBtn.innerHTML =
+			'Pausar<br>'+
+			'<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">'+
+				'<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>'
 
-	console.log( enPausa, FPS);
-	//	correr();
+			} else {
+		//REANUDA
+		//	pausaBtn.disabled=false;
+		pausaBtn.innerHTML =
+			'Iniciar<br>' +
+			'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">' +
+			'<path d="M 10,8 v32 l 28,-16 z" /></svg>'
+  }
+	console.log( enPausa);
 
 }
 
@@ -599,40 +574,40 @@ function clearStorage(key)
 }
 
 
-/* in this file
+/* function in this file
 
-(  7, 9):  crear function que genere tablero vacio
-( 14,41):	volteaPieza.addEventListener ("click", function() { voltearPieza() } );
-( 25,28):		.on('pointerdown click', function() {
-(123, 1):function inicializa(){
-(154, 1):function reseteaTablero(){
-(167,16):var objPieza = function(){
-(178,16):  this.nueva = function(){
-(185,28):  this.compruebaSiPierde = function(){
-(198,17):  this.limpia = function(){
-(225,15):  this.caer = function(){
-(249,16):  this.fijar = function(){
-(259,19):  this.colision = function(anguloNuevo, yNueva, xNueva){
-(273,17):  this.dibuja = function(){
-(310,16):  this.rotar = function(){
-(325,16):  this.abajo = function(){
-(332,18):  this.derecha = function(){
-(339,20):  this.izquierda = function(){
-(352,1):function dibujaTablero(){
-(398,1):function inicializaTeclado(){
-(402,39):  document.addEventListener('keydown',function(tecla){
-(432, 1):function inicializaBotones(){
-(467,26):.on('pointerdown click', function() {
-(474, 1):function borraCanvas(){
-(481, 1):function togglePausa(){
-(490, 1):function correr(){
-(503,25):  nIntervId=setInterval(function(){
-(510, 1):function pausar(){
-(534, 1):function detenerJuego() {
-(542, 1):function principal(){
-(560, 1):function guardaScore(){
-(573, 1):function setStorage(key, value){
-(579, 1):function getStorage(key){
-(587, 1):function clearStorage(key)
+(7,9):  crear function que genere tablero vacio
+(14,41):	volteaPieza.addEventListener ("click", function() { voltearPieza() } );
+(25,28):		.on('pointerdown click', function() {
+(123,1):function inicializa(){
+(153,1):function correr(){
+(159,25):  nIntervId=setInterval(function(){
+(166,1):function reseteaTablero(){
+(179,16):var objPieza = function(){
+(190,16):  this.nueva = function(){
+(197,28):  this.compruebaSiPierde = function(){
+(210,17):  this.limpia = function(){
+(237,15):  this.caer = function(){
+(261,16):  this.fijar = function(){
+(271,19):  this.colision = function(anguloNuevo, yNueva, xNueva){
+(285,17):  this.dibuja = function(){
+(322,16):  this.rotar = function(){
+(337,16):  this.abajo = function(){
+(344,18):  this.derecha = function(){
+(351,20):  this.izquierda = function(){
+(364,1):function dibujaTablero(){
+(410,1):function inicializaTeclado(){
+(414,39):  document.addEventListener('keydown',function(tecla){
+(444,1):function inicializaBotones(){
+(479,26):.on('pointerdown click', function() {
+(486,1):function borraCanvas(){
+(492,1):function togglePausa(){
+(506,1):function detenerJuego() {
+(514,1):function principal(){
+(532,1):function guardaScore(){
+(545,1):function setStorage(key, value){
+(551,1):function getStorage(key){
+(559,1):function clearStorage(key)
+(567,4):/* function in this file
 
 */
