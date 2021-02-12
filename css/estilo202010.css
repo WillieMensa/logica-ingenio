@@ -10,8 +10,7 @@
 
 	uso de colores comunes según https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties 
 
-*/
-
+Old Palette
 :root {
 	--clr-oscuro : #660000ff;
 	--clr-medio  : #6a994eff;
@@ -19,6 +18,26 @@
 	--clr-fondo  : #f2e8cfff;
 	--clr-contra : #685533ff;
 }
+
+New Palette from  https://palettte.app/ 
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F; 
+	--clr-fondo  : #F0E8F0;
+}
+
+*/
+
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F; 
+	--clr-fondo  : #F0E8F0;
+}
+
 
 
 /* null margins and padding to give good cross-browser baseline */

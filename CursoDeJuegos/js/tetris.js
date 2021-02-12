@@ -448,29 +448,19 @@ function inicializaBotones(){
 	btnGiro    = document.getElementById("btnGiro");
 	btnCorrer  = document.getElementById("btnCorrer");
 
-	btnOnOff  .addEventListener ('pointerdown click', togglePausa())
-	btnDetener.addEventListener ('pointerdown click', alert('boton detener'));						// togglePausa())
+	btnOnOff  .addEventListener ('pointerdown click', togglePausa )
+	btnDetener.addEventListener ('pointerdown click', console.log('boton detener'));						// togglePausa())
 	//	btnOtro   .addEventListener ('pointerdown click', togglePausa())
 	//btnIzq.addEventListener ('pointerdown click', MueveIzq());
-	btnIzq.addEventListener ('pointerdown click', alert('boton a izquierda'));
+	btnIzq.addEventListener ('pointerdown click', console.log('boton a izquierda'));
 
-	btnAba    .addEventListener (' click', alert('boton abajo'));						// togglePausa())
-	btnDer    .addEventListener ('pointerdown click', alert('boton derecha'));						// togglePausa())
-	btnHelp   .addEventListener ('pointerdown click', alert('boton ayuda'));						// togglePausa())
-	btnGiro   .addEventListener ('pointerdown click', alert('boton girar'));						// togglePausa())
-	btnCorrer .addEventListener ('pointerdown click', alert('boton correr'));						// togglePausa())
+	btnAba    .addEventListener (' click', console.log('boton abajo'));						// togglePausa())
+	btnDer    .addEventListener ('pointerdown click', console.log('boton derecha'));						// togglePausa())
+	btnHelp   .addEventListener ('pointerdown click', console.log('boton ayuda'));						// togglePausa())
+	btnGiro   .addEventListener ('pointerdown click', console.log('boton girar'));						// togglePausa())
+	btnCorrer .addEventListener ('pointerdown click', console.log('boton correr'));						// togglePausa())
 
 /*	
-togglePausa()" ibtnCorrerd="btnOnOff">
-detenerJuego();"btnCorrer id="btnDetener">
-otroJuego()" id=btnCorrer"btnOtroIzq">
-"otroJuego()" idbtnCorrer="btnAba">
-"detenerJuego();btnCorrer" id="btnDer">
-"detenerJuego();btnCorrer" id="btnHelp">
-"detenerJuego();btnCorrer" id="btnGiro">
-"correr();" id="btnCorrer">
-
-
 .on('pointerdown click', function() {
 */
 
@@ -499,17 +489,18 @@ function correr(){
 	// puede ser iniciar de cero o reanudar
 	// btnOnOff.disabled=false;
 	// console.log(btnOnOff.disabled);
+	console.trace();
+	console.log('FPS: ',FPS );
+	console.log('nIntervId: ',nIntervId );
 
-	enPausa=false;
+	if(enPausa){
+		enPausa=false;
 
-	btnOnOff.innerHTML =
-		'Pausar<br>'+
-		'<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 24 24" width="48">'+
-		'<path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-	
-  nIntervId=setInterval(function(){
-		principal();
-	},1000/FPS);
+		nIntervId=setInterval(function(){
+			principal();
+		},1000/FPS);
+
+	}
 
 }
 
@@ -526,10 +517,12 @@ function pausar(){
 		//		} else {
 		//REANUDA
 		//	btnOnOff.disabled=false;
-	btnOnOff.innerHTML =
-		'Iniciar<br>' +
-		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">' +
-		'<path d="M 10,8 v32 l 28,-16 z" /></svg>'
+	//	btnOnOff.innerHTML =
+	//		'Iniciar<br>' +
+	//		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="black" width="48px" height="48px">' +
+	//		'<path d="M 10,8 v32 l 28,-16 z" /></svg>'
+
+	clearInterval(nIntervId);
 
 	console.log( enPausa, FPS);
 	//	correr();
