@@ -436,6 +436,15 @@ function MueveIzq(){
 	pieza.izquierda();
 }
 
+function MueveAba(){
+	pieza.abajo();
+}
+
+function piezaRotar(){
+	pieza.rotar();
+}
+
+
 function inicializaBotones(){
 	
 	btnOnOff  = document.getElementById("btnOnOff");
@@ -448,11 +457,11 @@ function inicializaBotones(){
 	btnGiro    = document.getElementById("btnGiro");
 	btnCorrer  = document.getElementById("btnCorrer");
 
-	btnOnOff  .addEventListener ('pointerdown click', togglePausa )
+	btnOnOff  .addEventListener ('pointerdown click', pausar )
 	btnDetener.addEventListener ('pointerdown click', console.log('boton detener'));						// togglePausa())
 	//	btnOtro   .addEventListener ('pointerdown click', togglePausa())
-	//btnIzq.addEventListener ('pointerdown click', MueveIzq());
-	btnIzq.addEventListener ('pointerdown click', console.log('boton a izquierda'));
+	//	btnIzq.addEventListener ('pointerdown click', MueveIzq );
+	//	btnIzq.addEventListener ('pointerdown click', pieza.izquierda() );
 
 	btnAba    .addEventListener (' click', console.log('boton abajo'));						// togglePausa())
 	btnDer    .addEventListener ('pointerdown click', console.log('boton derecha'));						// togglePausa())
