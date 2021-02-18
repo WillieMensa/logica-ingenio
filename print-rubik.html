@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+	<meta name="description" content="Resolución cubo de Rubik.">
+	<meta name="keywords" content="Cubo de Rubik, puzzles, acertijos, creatividad, enigmas, entrenamiento mental, Gimnasia Cerebral, gimnasia mental, juegos de lógica,
+	juegos numéricos, juegos mentales, lógica, Memoria, percepción visual, Rompecabezas, Problemas de ingenio, Juegos de mesa">
+
+	<title> Resolviendo el cubo de Rubik </title>
+
+	<style>
+	/* sector estilo comun */
+
+/*
+	estilo202010.css
+	2020.10.30
+	adatado al funcionamiento con drop down navigation bar
+
+	tutorial de https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids	
+	grilla	https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints -->
+	top navigation https://www.w3schools.com/howto/howto_js_topnav.asp 
+	https://www.w3schools.com/css/css_dropdowns.asp
+
+	uso de colores comunes según https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties 
+
+Old Palette
+:root {
+	--clr-oscuro : #660000ff;
+	--clr-medio  : #6a994eff;
+	--clr-claro  : #a7c957ff; 
+	--clr-fondo  : #f2e8cfff;
+	--clr-contra : #685533ff;
+}
+
+New Palette from  https://palettte.app/ 
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F; 
+	--clr-fondo  : #F0E8F0;
+}
+
+*/
+
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F; 
+	--clr-fondo  : #fff;
+}
+
+
+
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+}
+
+img, fieldset {
+	border:none;
+}
+
+hr {
+	display:none;
+	/*
+		HR in my code are for semantic breaks in topic/section, NOT
+		style/presenation, so hide them from screen.css users
+	*/
+}
+
+@media (max-width:512px) {
+	* {
+		-webkit-text-size-adjust:none;
+		-ms-text-size-adjust:none;
+	}
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	font: normal 100%/150% 'roboto_mediumregular', sans-serif;
+	padding:0.2em;
+	background:var(--clr-fondo);
+}
+
+h1,
+#footer {
+	text-align:left;
+	color:#111;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+	background:	var(--clr-oscuro);
+  font-size: 1.0em;
+	padding:0.4em;
+}
+
+h1 {
+	padding:1em 0.5em 0.2em 0em;
+	font:bold 300% arial,helvetica,sans-serif;
+}
+
+h2 {
+	padding:0.7em 0.5em 0.2em 0em;
+	font:bold 200% arial,helvetica,sans-serif;
+}
+
+h3 {
+	padding:0.5em 0.5em 0.2em 0em;
+	font:bold 140% arial,helvetica,sans-serif;
+}
+
+h4 {
+	padding: 0.4em 0.5em 0.2em 0em;
+}
+
+p {
+	padding:0 1em 0.5em;
+}
+
+dl {
+	line-height: 120%;
+}
+
+#top {
+	max-width:64em;
+	margin:0 auto;
+	background:#FFF;
+}
+
+@media (max-width:38em) {
+	body {
+		padding:0;
+		background:var(--clr-fondo);
+	}
+	h1 {
+		text-align:left;
+		padding-right:2em;
+		margin-bottom:0.5em;
+	}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.clr_oscuro { background-color: var(--clr-oscuro); } 
+.clr_medio  { background-color: var(--clr-medio); }
+.clr_claro  { background-color: var(--clr-claro); }
+.clr_fondo  { background-color: var(--clr-fondo); }
+.clr_contra { background-color: var(--clr-contra); } 
+
+/* fond -->	background:#dff5d6; */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* para tener imagenes responsivas */
+.img-responsive, .responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+	/* finsector estilo comun */
+	
+
+		@font-face {
+				font-family: 'roboto-regular';
+				src: url('roboto-regular-webfont.woff2') format('woff2'),
+						 url('roboto-regular-webfont.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+		}
+
+		.txtblanco {
+			font-family: Roboto;
+			stroke: #000;
+			stroke-width: 1;
+			font-size: 2.0em;
+		}
+
+		.txtsmall {
+			font-family: Roboto;
+			stroke: #000;
+			stroke-width: 1;
+			font-size: 1.0em;
+		}
+
+		.svgTxt {
+			font-family: Roboto;
+			stroke: #000;
+			font-size: 1.2em;
+		}
+
+		.trazoFlecha {
+			fill:none;
+			stroke: #222;
+			stroke-width:3;
+			stroke-linecap: round;
+		}
+
+		.w_li {
+			padding:0 1em 0.5em;
+		}
+
+		.fondoGris {
+			fill:LightGray;
+			stroke:black;
+		}
+
+		.redFace {
+			fill:red;
+			stroke-width:0; 
+			opacity: 0.95;
+		}
+
+		.blueFace {
+			fill:DodgerBlue;
+			stroke-width:0; 
+			opacity: 0.95;
+		}
+
+		.greenFace {
+			fill:green;
+			stroke-width:0; 
+			opacity: 0.95;
+		}
+
+		.yellowFace {
+			fill: yellow;
+			stroke-width:0; 
+			opacity: 0.95;
+		}
+
+		.orangeFace {
+			fill: orange;
+			stroke-width:0; 
+			opacity: 0.95;
+		}
+
+	</style>
+
+</head>
+
+
+
+<body>
+
+	<div class="header">
+		<h1>Resolviendo el cubo de Rubik</h1>
+	</div>
+
+	<!-- Contenido de la pagina -->
+
+	<div class="row">
+		<div class="col-4" style="text-align: center;">
+			<img src="images/cuborubik.png" width="142" height="130" border="0" alt="cubo de rubik">
+		</div>
+		<div class="col-8">
+			<p>Las notas que siguen las hice, originalmente para mi mismo, como un recordatorio de los pasos que debía
+				seguir para resolver el cubo de Rubik.<br>
+				A esas notas agregué las convenciones mayormente utilizadas.<br>
+			</p>
+		</div>
+	</div>
+
+
+	<h2>Convenciones adoptadas</h2>
+	<div class="row">
+		<div class="col-8">
+			<h3>Identificación de las caras del cubo</h3>
+			<p>Cada cara del cubo estará vinculada a una letra para identificar los movimientos que se deben realizar.
+				Utilizaremos una convención ampliamente difundida que proviene de la identificación en inglés.</p>
+			<dl>
+				<dd>U : superior - la cara blanca </dd>
+				<dd>F . frontal - la cara naranja claro </dd>
+				<dd>R : derecha - la cara verde claro</dd>
+				<dd>L : izquierda - oculta; opuesta a la cara derecha, azul</dd>
+				<dd>B : trasera - oculta; opuesta a la cara frontal, roja</dd>
+				<dd>D : inferior - oculta; opuesta a la cara superior, amarilla</dd>
+			</dl>
+		</div>
+	
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+				<!-- cara superior -->
+				<polygon points="020,020 140,020 140,140 020,140" style="fill:white;stroke-width:0 ; opacity: 0.6;" />
+				<!-- cara derecha -->
+				<polygon points="140,020 200,080 200,200 140,140" class="greenFace" />
+				<!-- cara frontal -->
+				<polygon points="020,140 140,140 200,200 080,200" style="fill:orange;stroke-width:0 ; opacity: 0.6;" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-8">
+			<h3>Movimientos</h3>
+			<p>Una secuencia de movimientos quedará definida por las letras de las caras que se denen girar.
+				Si el movimiento es en sentido horario se indica con la letra.
+				Si el movimiento es en sentido antihorario se indica con la letra seguida de un apostrofe.</p>
+			<p>Ejemplo: <br>
+				U : indica mover la cara superior en sentido horario.<br>
+				U' : indica mover la cara superior en sentido antihorario.</p>
+			<h3>Colores</h3>
+			<p>Al referirnos a caras de los cubitos individuales que deben tener el mismo color los mostraremos
+				todos de un mismo color. Las caras de cubitos que queden grises será porque no importa el color de las mismas.</p>
+		</div>
+		<div class="col-4">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-8">
+			<h3>Identificacion de elementos en cara superior</h3>
+			<p>Cuando haya que referirse a los cubitos de la cara superior los identificaremos coomo muestra la figura.
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<svg height="160" width="160">
+				<!-- cara superior -->
+				<polygon points="020,020 140,020 140,140 020,140" style="fill:white;stroke:black;stroke-width:4 ; opacity: 0.96;" />
+				<path d="M020,060 h120 M020,100 h120 M060,020 v120 M100,020 v120" style="fill:none;stroke:black;stroke-width:1" />
+
+				<!-- y ahora para identificar los diferentes cuadraditos -->
+				<text class="txtblanco" x="032" y="050">A</text>
+				<text class="txtblanco" x="072" y="050">B</text>
+				<text class="txtblanco" x="112" y="050">C</text>
+
+				<text class="txtblanco" x="032" y="090">D</text>
+				<text class="txtblanco" x="072" y="090">E</text>
+				<text class="txtblanco" x="112" y="090">F</text>
+
+				<text class="txtblanco" x="032" y="130">G</text>
+				<text class="txtblanco" x="072" y="130">H</text>
+				<text class="txtblanco" x="112" y="130">I</text>
+
+			</svg>
+
+		</div>
+	</div>
+
+
+	<div class="row">	<h2>Plan de resolución</h2>	</div>
+	<div class="row">
+		<div class="col-8">
+			<p>La idea es resolver el cubo por capas.
+				<p>En primer lugar buscaremos conseguir una cara completa de un color. Ademas de verse todos los cubitos
+					de esa cara del mismo color deben coincidir los colores de las aristas con los colores de las caras adyacentes. Igualmente los vértices, deben coincidir sus colores con los colores de los centros de las caras correspondientes.</p>
+				<p>A continuación se buscará que la capa de cubitos individuales que siguen a la cara ya resuelta también tengan el color adecuado.</p>
+				<p>Finalmente se buscara conseguir el color y la posición adecuada a los cubitos de la última capa.</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+				<!-- cara superior -->
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;stroke-width:1;" />
+
+				<polygon points="020,020 140,020 140,140 020,140" style="fill:white;stroke-width:2 ; opacity: 0.95;" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+		</div>
+	</div>
+
+
+	<h2>Paso 1: Aristas de la cara superior</h2>
+	<div class="row">
+		<div class="col-8">
+			
+			<p>Elegir un color, por ejemplo, el blanco. Con el centro de cara blanco hacia arriba, mover las aristas
+				blancas para hacer una cruz. Cada arista deberá coincidir en sus colores con el centro de la cara superior
+				blanca y el centro de la cara lateral.</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;stroke-width:1;" />
+
+				<!-- B -->
+				<polygon points="060,020 100,020 100,060 060,060" style="fill:white;stroke-width:0; opacity: 0.95;" />
+				<!-- D -->
+				<polygon points="020,060 060,060 060,100 020,100" style="fill:white;stroke-width:0; opacity: 0.95;" />
+				<!-- E -->
+				<polygon points="060,060 100,060 100,100 060,100" style="fill:white;stroke-width:0; opacity: 0.95;" />
+				<!-- F -->
+				<polygon points="100,060 140,060 140,100 100,100" style="fill:white;stroke-width:0; opacity: 0.95;" />
+				<!-- H -->
+				<polygon points="060,100 100,100 100,140 060,140" style="fill:white;stroke-width:0; opacity: 0.95;" />
+
+				<!-- lat.der -->
+				<polygon points="140,060 180,100 180,140 140,100" class="greenFace" />
+				<!-- frontal -->
+				<polygon points="060,140 100,140 140,180 100,180" style="fill:orange;stroke-width:0; opacity: 0.95;" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+
+		</div>
+	</div>
+
+	<!-- Paso 2 -->
+	<h2>Paso 2: Vértices superiores</h2>
+	<div class="row">
+		<div class="col-8">
+			<p>Completar la primer cara dando a los vertices la ubicación y posición correspondiente.</p>
+			<p>La figura muestra una vista análoga a la que tendríamos que tener al completar este paso.</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- superior -->
+				<polygon points="020,020 140,020 140,140 020,140" style="fill:white;stroke-width:0 ; opacity: 0.95;" />
+				<!-- lat.der -->
+				<polygon points="140,020 160,040 160,080 180,100 180,140 160,120 160,160 140,140" class="greenFace" />
+				<!-- frontal -->
+				<polygon points="020,140 140,140 160,160 120,160 140,180 100,180 080,160 040,160" style="fill:orange;stroke-width:0 ; opacity: 0.95;" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+		</div>
+	</div>
+
+	<!-- Paso 3 -->
+	<h2>Paso 3: Segunda capa. Completar aristas laterales</h2>
+	<div class="row">
+		<div class="col-8">		
+			<p>En primer lugar invertimos la posición del cubo. La cara blanca quedará hacia abajo y, en el caso
+				de un cubo standard, hacia arriba debería quedar la capa amarilla.<br>
+				Debemos conseguir aristas laterales con los mismos colores de los cubitos centros de cara.</p>
+			<p>Se pueden presentar dos situaciones simétricas.</p>
+			<p>a/ Hay que llevar el cubito que está en la arista frontal superior hacia la arista frontal derecha. 
+				O sea volcar a derecha. Los movimiento necesarios son:<br />
+				<strong>UR U'R' U'F' UF</strong></p>
+			<p>&nbsp;</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<!-- <p style='font: bold 1.4em sans-serif; text-align: left; '>a/<br> -->
+			<svg height="210" width="220">
+				<text x="0" y="15" class="svgTxt">a/</text>
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" class="fondoGris" />
+
+				<!-- superior -->
+				<!-- <polygon points="020,020 140,020 140,140 020,140" style="fill:Gray;stroke-width:0 ; opacity: 0.95;" /> -->
+				<polygon points="060,100 100,100 100,140 060,140" class="orangeFace" />
+
+				<!-- frontal -->
+				<polygon points="060,180 100,180 060,140 100,140 140,180 180,180 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,080 180,100 180,060 200,080 200,200 180,180 180,140 160,120" class="orangeFace" />
+
+				<!-- centro superior -->
+				<polygon points="060,060 100,060 100,100 060,100" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+				<!-- flecha: cuarva cuadrática 
+				<path d="M80 120 q 60,0 90,30 m-7,7 l7,-7 -7,-21" style="fill:none;stroke:darkSlateGray;stroke-width:3;"/> -->
+				<path d="M80 120 q 60,0 90,30 m-7,7 l7,-7 -7,-21" class="trazoFlecha"/>
+
+			</svg>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-8">
+			<p>b/ Hay que llevar el cubito que está en la arista superior derecha hacia la arista frontal derecha.
+				O sea volcar a izquierda. Los movimiento necesarios son:<br />
+				<strong>U'F' UF UR U'R'</strong>
+			</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<!-- arista lateral der a frontal -->
+			<svg height="210" width="220">
+				<text x="0" y="15" class="svgTxt">b/</text>
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- superior -->
+				<!-- <polygon points="020,020 140,020 140,140 020,140" style="fill:Gray;stroke-width:0 ; opacity: 0.95;" /> -->
+				<polygon points="100,060 140,060 140,100 100,100" class="greenFace" />
+
+				<!-- frontal -->
+				<polygon points="060,180 100,180 080,160 120,160 140,180 180,180 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="140,060 180,100 180,060 200,080 200,200 180,180 180,140 140,100" class="orangeFace" />
+
+				<!-- centro superior -->
+				<polygon points="060,060 100,060 100,100 060,100" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+				<!-- flecha: cuarva cuadrática -->
+				<path d="M120,80 q 0,60 30,90 m-21,-7 21,7 7,-7" class="trazoFlecha"/>
+
+			</svg>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-8">
+			<p>Se repite el procedimiento hasta que todas las aristas laterales estén ubicadas correctamente.<br>
+			En el caso de un cubito en la arista lateral correcta pero en posición invertida habrá que sacarlo, 
+			reemplazandolo por algun cubo de la arista superior, y colocarlo en posición correcta.</p>
+			<p>&nbsp;</p>
+			<p>c/ Una vez resuelto este paso tendremos una vista similar a la de la figura.</p>
+
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<!-- Capa central resuelta -->
+			<svg height="210" width="220">
+				<text x="0" y="15" class="svgTxt">c/</text>
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- frontal -->
+				<polygon points="040,160 160,160 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,160 160,040 200,080 200,200" class="orangeFace" />
+
+				<!-- centro superior -->
+				<polygon points="060,060 100,060 100,100 060,100" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+
+		</div>
+	</div>
+
+
+	
+	<!-- inicio paso 4 -->
+	<h2>Paso 4. Cruz en la capa superior </h2>
+	<div class="row">
+		<div class="col-8">
+					<p>Lo más probable es que la ultima cara está desordenada, con los cubitos fuera de lugar y girados de la posición que debieran tener.<br>
+				El objetivo de esta etapa es conseguir una cruz en la capa superior tal como se muestra en la figura.</p>
+
+				<p>Se pueden presentar varios casos posibles</p>
+			</p>
+			<p>
+				&nbsp;
+				<svg height="080" width="080">
+					<text class="txtsmall" x="00" y="010">a</text>
+					<polygon points="010,010 070,010 070,070 010,070" class="fondoGris" />
+					<polygon points="030,030 050,030 050,050 030,050" class="yellowFace" />
+					<polyline points="010,030 070,030" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="010,050 070,050" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="030,010 030,070" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="050,010 050,070" style="fill:none;stroke:black;stroke-width:1" />
+				</svg>
+				&nbsp;&nbsp;
+				<svg height="080" width="080">
+					<text class="txtsmall" x="00" y="010">b</text>
+					<polygon points="010,010 070,010 070,070 010,070" class="fondoGris" />
+					<polygon points="030,010 050,010 050,050 010,050 010,030 030,030" class="yellowFace" />
+					<polyline points="010,030 070,030" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="010,050 070,050" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="030,010 030,070" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="050,010 050,070" style="fill:none;stroke:black;stroke-width:1" />
+				</svg>
+				&nbsp;&nbsp;
+				<svg height="080" width="080">
+					<text class="txtsmall" x="00" y="010">c</text>
+					<polygon points="010,010 070,010 070,070 010,070" class="fondoGris" />
+					<polygon points="010,030 070,030 070,050 010,050" class="yellowFace" />
+					<polyline points="010,030 070,030" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="010,050 070,050" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="030,010 030,070" style="fill:none;stroke:black;stroke-width:1" />
+					<polyline points="050,010 050,070" style="fill:none;stroke:black;stroke-width:1" />
+				</svg>
+
+			<p>La secuencia que sigue nos permite pasar sucesivamente del caso a/ al b/; del b/ al c/ y del c/ al objetivo de este paso,
+			o sea la cruz amarilla.</p>
+			<p style="text-align: center;"><strong>F R U R' U' F'</strong></p>
+			<p>Al finalizar este paso se habrá alcanzado la situación de la figura</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<!-- Capa central resuelta -->
+			<svg height="210" width="220">
+				<!-- <text x="0" y="15" class="svgTxt">c/</text> -->
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- frontal -->
+				<polygon points="040,160 160,160 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,160 160,040 200,080 200,200" class="orangeFace" />
+
+				<!-- cruz superior -->
+				<polygon points="060,020 100,020 100,060 140,060 140,100 100,100 100,140 060,140 060,100 020,100 020,060 060,060" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+
+		</div>
+	</div>
+
+	<!-- paso 5 -->
+	<h2>Paso 5: Intercambio de aristas</h2>
+	<div class="row">
+		<div class="col-8">
+			<p>Las aristas de la cara superior deben estar posicionadas correctamente.
+				Para cuando no lo estén usaremos un algoritmo que intercambia las aristas superiores adyacentes 
+				frontal e izquierda, o sea, <strong>D</strong> con <strong>H</strong>.</p>
+			<p style="text-align: center;"><strong>RU R'U RU2 R'U</strong></p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+				<!-- <text x="0" y="15" class="svgTxt">c/</text> -->
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- frontal -->
+				<polygon points="040,160 160,160 200,200 080,200" class="greenFace" />
+				<polygon points="060,140 100,140 120,160 080,160" class="redFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,160 160,040 200,080 200,200" class="orangeFace" />
+
+				<!-- cruz superior -->
+				<polygon points="060,020 100,020 100,060 140,060 140,100 100,100 100,140 060,140 060,100 020,100 020,060 060,060" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+				<!-- flecha bidireccional -->
+				<path d="M70 130 h20 v-20 m0,20 l-60,-60 v20 m20,-20 h-20" class="trazoFlecha"/>
+
+			</svg>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-8" style="text-align: left;">
+			<p>Si las aristas a intercambiar están opuestas aplicar el algoritmo descripto, girar dos veces 
+				la cara superior y aplicar nuevamente el algoritmo que producirá el intercambio entre las 
+				aristas que eran <strong>B</strong> y <strong>F</strong>.
+			<p>Al finalizar este paso debemos tener el cubo resuelto hasta la situación que muestra la figura.</p>
+		</div>
+
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+				<!-- <text x="0" y="15" class="svgTxt">c/</text> -->
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- frontal -->
+				<polygon points="040,160 080,160 060,140 100,140 120,160 160,160 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,160 160,120 140,100 140,060 160,080 160,040 200,080 200,200" class="orangeFace" />
+
+				<!-- cruz superior -->
+				<polygon points="060,020 100,020 100,060 140,060 140,100 100,100 100,140 060,140 060,100 020,100 020,060 060,060" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+			</svg>
+
+		</div>
+	</div>
+
+	
+	<h2>Paso 6: Colocar en posición los vértices</h2>
+	<div class="row">
+		<div class="col-8" style="text-align: left;">
+			<p>Colocaremos los vértices en su posición correspondiente y en el último paso les daremos la orientación correcta.</p>
+			<p>Suponiendo que el vértice <font size=5>&#x1F178;</font> está en posición correcta; no importa la orientación. Aplicaremos el algoritmo
+			</p>
+
+			<p style="text-align: center;"><strong>U R U' L' U R' U' L</strong></p>
+
+			<p>Y se producirá el desplazamiento presentado en la figura. <br>
+			Si lo que se necesita es girar en sentido horario se repite el procedimiento.
+			</p>
+
+		</div>
+
+		<div class="col-4" style="text-align: center;">
+			<p>&nbsp;</p>
+
+			<svg height="210" width="220">
+				<!-- <text x="0" y="15" class="svgTxt">c/</text> -->
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- frontal -->
+				<polygon points="040,160 080,160 060,140 100,140 120,160 160,160 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,160 160,120 140,100 140,060 160,080 160,040 200,080 200,200" class="orangeFace" />
+
+				<!-- cruz superior -->
+				<polygon points="060,020 100,020 100,060 140,060 140,100 100,100 100,140 060,140 060,100 020,100 020,060 060,060" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<!-- y ahora para identificar los diferentes cuadraditos -->
+				<text class="txtblanco" x="032" y="050">A</text>
+				<text class="txtblanco" x="112" y="050">C</text>
+				<text class="txtblanco" x="032" y="130">G</text>
+				<text class="txtblanco" x="112" y="130">I</text>
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+
+				<!-- flechas -->
+				<path d="M040 056 v48 m-14,-14 l14,14 14,-14" class="trazoFlecha"/>
+				<path d="M104 040 h-48 m14,14 l-14,-14 14,-14" class="trazoFlecha"/>
+				<path d="M056 104 l50,-50 h-20 m20,20 v-20" class="trazoFlecha"/>
+
+			</svg>
+
+		</div>
+	</div>
+
+	
+	
+	<h2>Paso 7: Orientar correctamente los vértices de la última capa</h2>
+	<div class="row">
+		<div class="col-8">
+			<p>Se puede rotar el vértice <strong>I</strong> en sentido horario aplicando dos veces el algoritmo</p>
+			<p style="text-align: center;"><strong>R' D' R D</strong></p>
+			<p>Si fuese nedesario rotar el vértice en sentido antihorario se debe aplicar cuatro veces</p>
+			<p>En éste punto parecería que el cubo se ha desordenado. Motivo: Nunca hay un solo vértice rotado. 
+			Habrá, al menos, otro vértice que requerirá rotacion. 
+			Procedemos de la siguiente forma: Conservando la situacion de las dos capas inferiores giramos la 
+			capa superior de modo tal que el vértice a rotar ocupe la posición frontal derecha. Y nuevamente 
+			aplicamos el algoritmo para rotar ese vértice.</p>
+
+
+		</div>
+		<div class="col-4" style="text-align: center;">
+
+			<svg height="210" width="220">
+				<!-- <text x="0" y="15" class="svgTxt">c/</text> -->
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:Gray;stroke:black;" />
+
+				<!-- frontal -->
+				<polygon points="040,160 080,160 060,140 100,140 120,160 160,160 200,200 080,200" class="greenFace" />
+
+				<!-- lat.der -->
+				<polygon points="160,160 160,120 140,100 140,060 160,080 160,040 200,080 200,200" class="orangeFace" />
+
+				<!-- cruz superior -->
+				<polygon points="060,020 100,020 100,060 140,060 140,100 100,100 100,140 060,140 060,100 020,100 020,060 060,060" class="yellowFace" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+				<text class="txtblanco" x="112" y="130">I</text>
+
+			</svg>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-8">
+			<h2></h2>
+			<p>Siguiendo los pasos anteriores nuestro cubo debería verse ordenado como en la imagen</p>
+		</div>
+		<div class="col-4" style="text-align: center;">
+			<svg height="210" width="220">
+				
+				<!-- cara superior -->
+				<polygon points="020,020 140,020 140,140 020,140" style="fill:yellow;stroke-width:0 ; opacity: 0.95;" />
+				<!-- cara derecha -->
+				<polygon points="140,020 200,080 200,200 140,140 " class="greenFace" />
+				<!-- cara frontal -->
+				<polygon points="020,140 140,140 200,200 080,200" style="fill:orange;stroke-width:0 ; opacity: 0.95;" />
+
+				<polyline points="020,060 140,060 200,120" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,100 140,100 200,160" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="020,140 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,020 060,140 120,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="100,020 100,140 160,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="140,020 140,140 200,200" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="040,160 160,160 160,040" style="fill:none;stroke:black;stroke-width:1" />
+				<polyline points="060,180 180,180 180,060" style="fill:none;stroke:black;stroke-width:1" />
+
+				<polygon points="020,020 140,020 200,080 200,200 080,200 020,140" style="fill:none;stroke:black;stroke-width:4;" />
+			</svg>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
