@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta	name="viewport"	content="width=device-width,height=device-height,initial-scale=1">
 
-	<meta name="keywords" content="Grilla numérica, puzzles, acertijos, creatividad, enigmas, entrenamiento mental, Gimnasia Cerebral, gimnasia mental, juegos de lógica, 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+
+		<meta name="keywords" content="Grilla numérica, puzzles, acertijos, creatividad, enigmas, entrenamiento mental, Gimnasia Cerebral, gimnasia mental, juegos de lógica,
 		juegos numéricos, juegos mentales, lógica, Memoria, percepción visual, Rompecabezas, Problemas de ingenio, Juegos de mesa">
 
-	<title> Grilla numérica </title>
-	
-	<link	rel="stylesheet"	href="./css/estilo202010.css"	media="screen,projection,tv">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<title> Grilla numérica </title>
 
-	<script src="menuppal.js"></script>
+		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<script src="menuppal.js"></script>
 
 
-<style>
-	/* estilo particular de esta pagina */
+		<style>
+			/* estilo particular de esta pagina */
 	.imprimir{
 		margin: 0;
 		color: #000;
-		/* background-color: #fff; */ 
+		/* background-color: #fff; */
 	}
 
 	.canvStyle { font-family: "Arial"; font-size: 16px; }
@@ -28,82 +29,83 @@
 </style>
 
 
-</head>
+	</head>
 
-<body onload="poneMenuPpal(),start();">
-	<div class="header">
-		<h1> Grilla numérica </h1>
-	</div>
+	<body onload="poneMenuPpal(),start();">
+		<div class="header">
+			<h1> Grilla numérica </h1>
+		</div>
 
-	<div id="menuppal"></div>
+		<div id="menuppal"></div>
 
-<div class="row clr_claro" style="font-size: 1.2em;">
-	<div class="col-8">
-		<p class="canvStyle">
+		<div class="row clr_claro" style="font-size: 1.2em;">
+			<div class="col-8">
+				<p class="canvStyle">
 
-			En los círculos están todos los números del 1 al 9. 
-			En el interior de los triángulos se presenta la suma de sus vértices.
-			El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br/>
-		</p>
-	</div>
-	<div class="col-4">
-		<p><label for="numero">Página:</label>
-		<input type="number" id="numero" name="numero" min="1" max="99" autofocus onchange="ajustaNumPag()"></p>
+					En los círculos están todos los números del 1 al 9.
+					En el interior de los triángulos se presenta la suma de sus vértices.
+					El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br />
+				</p>
+			</div>
+			<div class="col-4">
+				<p><label for="numero">Página:</label>
+					<input type="number" id="numero" name="numero" min="1" max="99" autofocus onchange="ajustaNumPag()"></p>
 
-		<p><label for="conSolucion"> Mostrar solución </label>
-		<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()">	</p>
+				<p><label for="conSolucion"> Mostrar solución </label>
+					<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()"> </p>
 
-		<p><button onclick="printDiv(false)">Imprimir juego</button>	</p>
-	</div>
-</div>
+				<p><button onclick="printDiv(false)">Imprimir juego</button> </p>
+			</div>
+		</div>
 
-<div class="row clr_fondo">
-  <div class="col-8" id="imprimir">
-	<!-- 
+		<div class="row clr_fondo">
+			<div class="col-8" id="imprimir">
+				<!--
   <div class="col-8" id="imprimir" style="width:100%">
-		centimeters = pixels * 2.54 / 96 
+		centimeters = pixels * 2.54 / 96
 		pixels = cm * 96 / 2.54
 		148 mm = 560 px
 		210 mm = 794 px
 	-->
-		<!-- <canvas id="canvas1" width="560" height="794" class="img-responsive" style="border:1px solid #000000;"></canvas> -->
-		<canvas id="canvas1" width="560" height="794" class="img-responsive"></canva>
-	</div>
-  <div class="col-4">
-		<!-- vertical	160 x 600 -->
-		<iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=30&p=14&l=ur1&category=kindlestore&banner=06J05SJ1J7SSAQQ0SQR2&f=ifr&linkID=384264ef561cee25fe2781f116648664&t=willieve-21&tracking_id=willieve-21" width="160" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0">
-		</iframe>
-  </div>
-</div>
+				<canvas id="canvas1" width="560" height="760" class="img-responsive"></canvas>
+			</div>
+			<div class="col-4">
+				<!-- vertical	160 x 600 -->
+				<iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=30&p=14&l=ur1&category=kindlestore&banner=06J05SJ1J7SSAQQ0SQR2&f=ifr&linkID=384264ef561cee25fe2781f116648664&t=willieve-21&tracking_id=willieve-21" width="160" height="600" scrolling="no"
+				  border="0" marginwidth="0" style="border:none;" frameborder="0">
+				</iframe>
+			</div>
+		</div>
 
 
-	<ul id="mainMenu">
-		<li><a href="./curriculum-resumido.html">Quién soy</a></li>
-		<li><a href="./consultas.html">Consultas</a></li>
-	</ul>
+		<ul id="mainMenu">
+			<li><a href="./curriculum-resumido.html">Quién soy</a></li>
+			<li><a href="./consultas.html">Consultas</a></li>
+		</ul>
 
-	<div class="footer">
-		<p>by Willie Verger, 2021</p>
-	</div>
+		<div class="footer">
+			<p>by Willie Verger, 2021</p>
+		</div>
 
-	<!-- el proximo script contiene const problemas, array en formato json -->
-	<script src="problemas-grilla-numerica.json"></script>
-	<script src="sumado20-canvas.js"></script>
+		<!-- el proximo script contiene const problemas, array en formato json -->
+		<script src="js/problemas-grilla-numerica.json"></script>
+		<script src="js/grilla-numerica.js"></script>
 
-	<script>
+		<script>
+			function printDiv() {
+				//	var objeto=document.getElementById('imprimir');
+				var objeto = document.getElementById('canvas1');
+				console.log(objeto);
 
-		function printDiv() {
-			var objeto=document.getElementById('imprimir');
-			//obtenemos el objeto a imprimir
-			var ventana=window.open('','_blank');  //abrimos una ventana vacía nueva
-			ventana.document.write(objeto.innerHTML);  //imprimimos el HTML del objeto en la nueva ventana
-			ventana.document.close();  //cerramos el documento
-			ventana.print();  //imprimimos la ventana
-			ventana.close();  //cerramos la ventana
-		}
+				//obtenemos el objeto a imprimir
+				var ventana = window.open('', '_blank'); //abrimos una ventana vacía nueva
+				ventana.document.write(objeto.innerHTML); //imprimimos el HTML del objeto en la nueva ventana
+				ventana.document.close(); //cerramos el documento
+				ventana.print(); //imprimimos la ventana
+				ventana.close(); //cerramos la ventana
+			}
+		</script>
 
-	</script>
-
-</body>
+	</body>
 
 </html>

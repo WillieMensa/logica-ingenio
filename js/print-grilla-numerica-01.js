@@ -5,29 +5,34 @@
 
 // window.onload = start;
 
-const
+// const, pero Prince no lo acepta
+var
 	NCOL = 3,
 	NFIL = 3,
 	NPOLIG = 8,
 	NVERT=9,
 	paso = 80,		//	separacion entre vertices
 	radio = 16,
+	anchoCanvas= 560,
+	altoCanvas = 780,
+
 	DEBUG = false;
 	//	DEBUG = true;
 
-let 
+var 
 	aVertex,					//	para ubicar numeros aleatoriamente
 	nroPagina = 1,
 	lConSoluc,				//	indicador esta mostrando solución
-	nPagActual,				//	nro problema actual (el valor)
+	nPagActual,				//	nro problema actual (el valor)	nPagActual
 	//	posX = undefined,
 	//	posY = undefined,
-	aSuma, aVert,
-	c = document.getElementById("canvas1"),
-	ctx = c.getContext("2d");
+	canvas,					// canvas a utilizar para las imagenes a imprimir
+	ctx,
+	aSuma, aVert;
 
+	
 	//	posiciones donde colocar las sumas
-	let aPosSumas = {
+	var aPosSumas = {
 		'RA':[
 			[0.32*paso, 0.68*paso],
 			[0.68*paso, 0.32*paso],
@@ -87,29 +92,62 @@ let
 			[0.68*paso, 1.32*paso],
 			[1.32*paso, 1.68*paso],
 			[1.68*paso, 1.32*paso]
-		],
+		]
 	};
 
 
 function start() {
-	nPagActual = getNroPag();			//	leer nro problema actual
-	document.getElementById("numero").value = nPagActual;
-	if (DEBUG) { DibujaGrillaA4() }
-	dibujaPag();
+	//	nPagActual = getNroPag();			//	leer nro problema actual
+	//	document.getElementById("numero").value = nPagActual;
+
+	canvas = document.getElementById('canvas');	
+	ctx = canvas.getContext('2d');
+
+
+	//	para nPagActual desde 0 hasta el cantidad de problemas -1 
+	for(nPagActual=1; nPagActual<=problemas.length; nPagActual++){
+		leeJuegosPagina();
+		dibujaPag();
+		canvas2img();
+
+	}
+
+	canvas.remove();
+
 };
 
 
+
+function canvas2img() {
+	var dataURL = canvas.toDataURL();
+	//	console.log(dataURL);
+	var br = document.createElement('p'); 
+	var img = document.createElement('img'); 
+	img.src = dataURL;
+	document.getElementById('body').appendChild(img);
+	document.getElementById('body').appendChild(br);
+
+}
+
+
+
 	function dibujaPag() {
-		leeJuegosPagina();
+		
+		canvas.width = anchoCanvas;
+		canvas.height = altoCanvas;
+
+		//	document.body.appendChild(canvas);
+		//	ctx = canvas.getContext("2d");
 
 		//<canvas id="canvas1" width="560" height="794" class="img-responsive" style="border:1px solid #000000;"></canvas>
 		//	ctx.fillStyle = '#f0d0b0ff';			//	#f2e8cfff;
-		ctx.fillStyle = '#ffffffff';
-		ctx.fillRect(1, 1, 560, 794);
+		ctx.fillStyle = '#ddaa';
+		ctx.fillRect(8, 8, 560, 794);
 
 		//	detectar si se pidio con solucion
-		var checkBox = document.getElementById("conSolucion");
-		lConSoluc = checkBox.checked;
+		//	var checkBox = document.getElementById("conSolucion");
+		//	lConSoluc = checkBox.checked;
+		lConSoluc = false;
 
 		//	console.log( 'lConSoluc: ', lConSoluc );
 		presentaGrilla("RA", 080, 060);
@@ -121,11 +159,12 @@ function start() {
 		presentaGrilla("CR", 080, 540);
 		presentaGrilla("CL", 320, 540);
 		//DibujaGrillaA4();
+
+
 	}
 
 function presentaGrilla( modGrilla, posX, posY)			//
-{
-	
+{	
 	//	estilo de trazado
 	ctx.lineWidth = "4";
 	ctx.strokeStyle = "#222";  // Green path
@@ -155,7 +194,7 @@ function presentaGrilla( modGrilla, posX, posY)			//
 		case "RA":
 			aSuma = aRAsuma;
 			aVert = aRAvert;
-			console.log(aSuma);
+			// console.log(aSuma);
 
 			//	trazado diagonales de la variante
 			ctx.moveTo( posX, posY );
@@ -268,7 +307,9 @@ function presentaGrilla( modGrilla, posX, posY)			//
 			{
 				ctx.moveTo( posX + x * paso, posY + y * paso );
 				//	ctx.arc( posX - radio + x * paso, posY + y * paso, radio, 0, 2 * Math.PI);
-				ctx.arc( posX + x * paso, posY + y * paso, radio, 0, 2 * Math.PI);
+				var px = posX + x * paso;
+				var py = posY + y * paso;
+				ctx.arc( px, py, radio, 0.0, 2.0 * Math.PI);
 				ctx.stroke();
 				ctx.fill();		// = 'rgb(200, 0, 0)';
 			}
@@ -341,7 +382,7 @@ function leeJuegosPagina() {		// recupera datos de un juegos para una página
 
 
 function ajustaNumPag() {
-	let input = document.getElementById("numero")
+	var input = document.getElementById("numero")
 	//	variablename = (condition) ? value1:value2
 	nPagActual = input.value >= problemas.length ? problemas.length : input.value;
 	//	nPagActual =
@@ -370,7 +411,7 @@ function ajustaNumPag() {
 	//-------------------------------------------
 	function getNroPag()
 	{
-		let nCual = getStorage("nroPagina");
+		var nCual = getStorage("nroPagina");
 		if (DEBUG) { 	console.log('nCual: ' + nCual ); 	};
 		if(isNaN(nCual) || nCual < nroPagina )
 		{
@@ -417,7 +458,8 @@ function ajustaNumPag() {
 		//	document.body.className = (lConSolucion ? "resuelto" : "noresuelto");
 		//obtenemos el objeto a imprimir
 		var ventana=window.open('','_blank');  //abrimos una ventana vacía nueva
-		ventana.document.write(objeto.innerHTML);  //imprimimos el HTML del objeto en la nueva ventana
+		//	ventana.document.write(objeto.innerHTML);  //imprimimos el HTML del objeto en la nueva ventana
+		ventana.document.write(objeto);  //imprimimos el HTML del objeto en la nueva ventana
 		ventana.document.close();  //cerramos el documento
 		ventana.print();  //imprimimos la ventana
 		ventana.close();  //cerramos la ventana

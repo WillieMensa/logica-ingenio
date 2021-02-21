@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	To save the canvas drawing as an image, we can set the source of an image object to the image data URL.
+	From there, a user can right click on the image to save it to their local computer.
+	Alternatively, we could also open up a new browser window with the image data url directly and the user could save it from there.
+
+	Note: The toDataURL() method requires that any images drawn onto the canvas are hosted 
+	on a web server with the same domain as the code executing it.  
+	If this condition is not met, a SECURITY_ERR exception is thrown.
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta	name="viewport"	content="width=device-width,height=device-height,initial-scale=1">
+
+	<meta name="keywords" content="Grilla numérica, puzzles, acertijos, creatividad, enigmas, entrenamiento mental, Gimnasia Cerebral, gimnasia mental, juegos de lógica, 
+		juegos numéricos, juegos mentales, lógica, Memoria, percepción visual, Rompecabezas, Problemas de ingenio, Juegos de mesa">
+
+	<title> Imprimir grillas numéricas </title>
+	
+	<link	rel="stylesheet"	href="./css/print-style.css"	media="screen,projection,tv">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+
+	/* estilo particular de esta pagina */
+	.imprimir{
+		margin: 0;
+		color: #000;
+		/* background-color: #fff; */ 
+	}
+
+	.canvStyle { font-family: "Arial"; font-size: 16px; }
+
+</style>
+
+
+</head>
+
+<body id="body" onload="start();">
+	<div class="header">
+		<h1> Grilla numérica </h1>
+	</div>
+
+
+<div class="row " style="font-size: 1.2em;">
+	<div class="col-8">
+		<p class="canvStyle">
+			En los círculos están todos los números del 1 al 9. 
+			En el interior de los triángulos se presenta la suma de sus vértices.
+			El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br/>
+		</p>
+	</div>
+	<div class="col-4">
+		<!-- 
+		<p><label for="numero">Página:</label>
+		<input type="number" id="numero" name="numero" min="1" max="99" autofocus onchange="ajustaNumPag()"></p>
+
+		<p><label for="conSolucion"> Mostrar solución </label>
+		<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()">	</p>
+		-->
+
+		<p><button onclick="printDiv(false)">Imprimir juego</button>	</p>
+
+	</div>
+</div>
+<hr>
+<div class="row clr_fondo">
+  <div class="col-8" id="imprimir">
+		<canvas id="canvas"></canvas>
+	</div>
+  <div class="col-4">
+  </div>
+</div>
+
+	<!-- el proximo script contiene const problemas, array en formato json -->
+	<script src="js/problemas-grilla-numerica.json"></script>
+	<script src="js/print-grilla-numerica.js"></script>
+
+
+</body>
+
+</html>

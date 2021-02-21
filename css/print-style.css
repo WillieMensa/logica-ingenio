@@ -1,0 +1,252 @@
+/* 
+	print-style.css
+	2021.02.19 
+
+	Estilos de preparacion para imprimir
+
+*/
+
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F;
+	--clr-fondo  : #fff;
+}
+
+
+
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+}
+
+img, fieldset {
+	border:none;
+	pageBreakAfter="always";
+}
+
+canvas {
+	pageBreakAfter="always";
+}
+
+hr {
+	display:none;
+	/*
+		HR in my code are for semantic breaks in topic/section, NOT
+		style/presenation, so hide them from screen.css users
+	*/
+}
+
+@media (max-width:512px) {
+	* {
+		-webkit-text-size-adjust:none;
+		-ms-text-size-adjust:none;
+	}
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	font: normal 100%/150% 'roboto_mediumregular', sans-serif;
+	padding:0.2em;
+	background:var(--clr-fondo);
+}
+
+h1,
+#footer {
+	text-align:left;
+	color:#111;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+	background:	var(--clr-oscuro);
+  font-size: 1.0em;
+	padding:0.4em;
+}
+
+h1 {
+	padding:1em 0.5em 0.2em 0em;
+	font:bold 300% arial,helvetica,sans-serif;
+}
+
+h2 {
+	padding:0.7em 0.5em 0.2em 0em;
+	font:bold 200% arial,helvetica,sans-serif;
+}
+
+h3 {
+	padding:0.5em 0.5em 0.2em 0em;
+	font:bold 140% arial,helvetica,sans-serif;
+}
+
+h4 {
+	padding: 0.4em 0.5em 0.2em 0em;
+}
+
+p {
+	padding:0 1em 0.5em;
+}
+
+dl {
+	line-height: 120%;
+}
+
+#top {
+	max-width:64em;
+	margin:0 auto;
+	background:#FFF;
+}
+
+@media (max-width:38em) {
+	body {
+		padding:0;
+		background:var(--clr-fondo);
+	}
+	h1 {
+		text-align:left;
+		padding-right:2em;
+		margin-bottom:0.5em;
+	}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.clr_oscuro { background-color: var(--clr-oscuro); }
+.clr_medio  { background-color: var(--clr-medio); }
+.clr_claro  { background-color: var(--clr-claro); }
+.clr_fondo  { background-color: var(--clr-fondo); }
+.clr_contra { background-color: var(--clr-contra); }
+
+/* fond -->	background:#dff5d6; */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* para tener imagenes responsivas */
+.img-responsive, .responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* finsector estilo comun */
+
+
+@font-face {
+		font-family: 'roboto-regular';
+		src: url('roboto-regular-webfont.woff2') format('woff2'),
+				 url('roboto-regular-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+.txtblanco {
+	font-family: Roboto;
+	stroke: #000;
+	stroke-width: 1;
+	font-size: 2.0em;
+}
+
+.txtsmall {
+	font-family: Roboto;
+	stroke: #000;
+	stroke-width: 1;
+	font-size: 1.0em;
+}
+
+.svgTxt {
+	font-family: Roboto;
+	stroke: #000;
+	font-size: 1.2em;
+}
+
+.trazoFlecha {
+	fill:none;
+	stroke: #222;
+	stroke-width:3;
+	stroke-linecap: round;
+}
+
+.w_li {
+	padding:0 1em 0.5em;
+}
+
+.fondoGris {
+	fill:LightGray;
+	stroke:black;
+}
+
+.redFace {
+	fill:red;
+	stroke-width:0;
+	opacity: 0.95;
+}
+
+.blueFace {
+	fill:DodgerBlue;
+	stroke-width:0;
+	opacity: 0.95;
+}
+
+.greenFace {
+	fill:green;
+	stroke-width:0;
+	opacity: 0.95;
+}
+
+.yellowFace {
+	fill: yellow;
+	stroke-width:0;
+	opacity: 0.95;
+}
+
+.orangeFace {
+	fill: orange;
+	stroke-width:0;
+	opacity: 0.95;
+}
+
