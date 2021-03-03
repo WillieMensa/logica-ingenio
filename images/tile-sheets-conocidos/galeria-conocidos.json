@@ -50,23 +50,23 @@
 },
 {
 	"filename": "EzequielC_xs.png",
-	"frame": {"x":120,"y":160,"w":120,"h":152},
+	"frame": {"x":120,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":152},
-	"sourceSize": {"w":120,"h":152}
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GermanG_xs.png",
-	"frame": {"x":240,"y":160,"w":112,"h":160},
+	"filename": "GermanG.png",
+	"frame": {"x":240,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":112,"h":160},
-	"sourceSize": {"w":112,"h":160}
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
 },
 {
 	"filename": "Guille-II_xs.png",
-	"frame": {"x":352,"y":160,"w":120,"h":160},
+	"frame": {"x":360,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -74,14 +74,14 @@
 },
 {
 	"filename": "GuilleD_xs.png",
-	"frame": {"x":472,"y":160,"w":120,"h":160},
+	"frame": {"x":480,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JoseLuisM_xs.png",
+	"filename": "GuilleFlores.png",
 	"frame": {"x":0,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -89,7 +89,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "joseO_xs.png",
+	"filename": "JoseLuisM_xs.png",
 	"frame": {"x":120,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -97,7 +97,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JuanCarlosV_xs.png",
+	"filename": "joseO_xs.png",
 	"frame": {"x":240,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -105,7 +105,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "Magiord_xs.png",
+	"filename": "JuanCarlosV_xs.png",
 	"frame": {"x":360,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "MatiasB_xs.png",
+	"filename": "Magiord_xs.png",
 	"frame": {"x":480,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -121,7 +121,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "Nane_xs.png",
+	"filename": "MatiasB_xs.png",
 	"frame": {"x":0,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -129,7 +129,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "OscarAbe_xs.png",
+	"filename": "Nane_xs.png",
 	"frame": {"x":120,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -137,8 +137,16 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RubenD_xs.png",
+	"filename": "OscarAbe_xs.png",
 	"frame": {"x":240,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RubenD_xs.png",
+	"frame": {"x":360,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -151,6 +159,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":800},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:5ef77342842df401e0ea91c7b98999b0:d2f7f2364086061c43602f86d8ecad31:3cdebe7f307c137881d02b0ac9fea867$"
+	"smartupdate": "$TexturePacker:SmartUpdate:87cab59606e7234cbedb973226f067e0:0b87bd6dfebdc8c39015df629a74f2fa:3cdebe7f307c137881d02b0ac9fea867$"
 }
 }

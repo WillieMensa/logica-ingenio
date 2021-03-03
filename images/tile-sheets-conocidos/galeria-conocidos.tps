@@ -187,8 +187,10 @@
             <key type="filename">ArielJurjo.png</key>
             <key type="filename">ClausH_xs.png</key>
             <key type="filename">DiegoT_xs.png</key>
+            <key type="filename">GermanG.png</key>
             <key type="filename">Guille-II_xs.png</key>
             <key type="filename">GuilleD_xs.png</key>
+            <key type="filename">GuilleFlores.png</key>
             <key type="filename">JoseLuisM_xs.png</key>
             <key type="filename">JuanCarlosV_xs.png</key>
             <key type="filename">Magiord_xs.png</key>
@@ -226,21 +228,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">GermanG_xs.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>28,40,56,80</rect>
-                <key>scale9Paddings</key>
-                <rect>28,40,56,80</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -250,7 +237,6 @@
             <filename>ClausH_xs.png</filename>
             <filename>DiegoT_xs.png</filename>
             <filename>EzequielC_xs.png</filename>
-            <filename>GermanG_xs.png</filename>
             <filename>Guille-II_xs.png</filename>
             <filename>GuilleD_xs.png</filename>
             <filename>JoseLuisM_xs.png</filename>
@@ -262,6 +248,8 @@
             <filename>RubenD_xs.png</filename>
             <filename>joseO_xs.png</filename>
             <filename>ArielJurjo.png</filename>
+            <filename>GuilleFlores.png</filename>
+            <filename>GermanG.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

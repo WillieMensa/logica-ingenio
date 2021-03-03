@@ -181,7 +181,23 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">AlbertoF_small.png</key>
+            <key type="filename">AlbertoF.png</key>
+            <key type="filename">JoeBiden.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>120,160,240,320</rect>
+                <key>scale9Paddings</key>
+                <rect>120,160,240,320</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">AlfredoLeuco.png</key>
             <key type="filename">AmadoBoudou_small.png</key>
             <key type="filename">AngelaMerkel_small.png</key>
             <key type="filename">AnibalF_small.png</key>
@@ -244,21 +260,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">JoeBiden.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>120,160,240,320</rect>
-                <key>scale9Paddings</key>
-                <rect>120,160,240,320</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
             <key type="filename">JorgeBergog_small.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -277,7 +278,6 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>AlbertoF_small.png</filename>
             <filename>AmadoBoudou_small.png</filename>
             <filename>AngelaMerkel_small.png</filename>
             <filename>AnibalF_small.png</filename>
@@ -300,6 +300,8 @@
             <filename>LuisMajul.png</filename>
             <filename>JoeBiden.png</filename>
             <filename>JavierMilei.png</filename>
+            <filename>AlfredoLeuco.png</filename>
+            <filename>AlbertoF.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
