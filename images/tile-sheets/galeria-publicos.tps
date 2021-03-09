@@ -202,6 +202,7 @@
             <key type="filename">AngelaMerkel_small.png</key>
             <key type="filename">AnibalF_small.png</key>
             <key type="filename">BarackOb_small.png</key>
+            <key type="filename">CarlosGardel.png</key>
             <key type="filename">CarlosPagni_small.png</key>
             <key type="filename">GinesGGarcia_small.png</key>
             <key type="filename">HoracioRL_small.png</key>
@@ -302,6 +303,7 @@
             <filename>JavierMilei.png</filename>
             <filename>AlfredoLeuco.png</filename>
             <filename>AlbertoF.png</filename>
+            <filename>CarlosGardel.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

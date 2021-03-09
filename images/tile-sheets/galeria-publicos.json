@@ -49,7 +49,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "CarlosPagni_small.png",
+	"filename": "CarlosGardel.png",
 	"frame": {"x":120,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -57,7 +57,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "CEFK_small.png",
+	"filename": "CarlosPagni_small.png",
 	"frame": {"x":240,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GinesGGarcia_small.png",
+	"filename": "CEFK_small.png",
 	"frame": {"x":360,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -73,7 +73,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "HoracioRL_small.png",
+	"filename": "GinesGGarcia_small.png",
 	"frame": {"x":480,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -81,7 +81,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "HugoAlconad_small.png",
+	"filename": "HoracioRL_small.png",
 	"frame": {"x":0,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -89,7 +89,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "HugoMoya_small.png",
+	"filename": "HugoAlconad_small.png",
 	"frame": {"x":120,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -97,7 +97,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JavierMilei.png",
+	"filename": "HugoMoya_small.png",
 	"frame": {"x":240,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -105,7 +105,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JoaquinMSola_small.png",
+	"filename": "JavierMilei.png",
 	"frame": {"x":360,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JoeBiden.png",
+	"filename": "JoaquinMSola_small.png",
 	"frame": {"x":480,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -121,7 +121,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeBergog_small.png",
+	"filename": "JoeBiden.png",
 	"frame": {"x":0,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -129,7 +129,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeFD_small.png",
+	"filename": "JorgeBergog_small.png",
 	"frame": {"x":120,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -137,7 +137,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeLana_small.png",
+	"filename": "JorgeFD_small.png",
 	"frame": {"x":240,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -145,7 +145,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LilitaCarrio_small.png",
+	"filename": "JorgeLana_small.png",
 	"frame": {"x":360,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -153,7 +153,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LuisMajul.png",
+	"filename": "LilitaCarrio_small.png",
 	"frame": {"x":480,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -161,7 +161,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "MauricioM_small.png",
+	"filename": "LuisMajul.png",
 	"frame": {"x":0,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -169,7 +169,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "PatriciaB_small.png",
+	"filename": "MauricioM_small.png",
 	"frame": {"x":120,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -177,7 +177,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "rlopezm_small.png",
+	"filename": "PatriciaB_small.png",
 	"frame": {"x":240,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -185,8 +185,16 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RobertoC_small.png",
+	"filename": "rlopezm_small.png",
 	"frame": {"x":360,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RobertoC_small.png",
+	"frame": {"x":480,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -199,6 +207,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":1024},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:950f0251142c081577df5a3944e51478:badbd6143e5afd6d0f56ea83526c01ab:12fa438125ad752fd71a8c8106885afb$"
+	"smartupdate": "$TexturePacker:SmartUpdate:d351b9ca2cbe18c81fd4b89a14ff63de:e4bede2989740e2d465085d19e163187:12fa438125ad752fd71a8c8106885afb$"
 }
 }
