@@ -186,10 +186,11 @@
             <key type="filename">AnnieV_xs.png</key>
             <key type="filename">ArielJurjo.png</key>
             <key type="filename">ClausH_xs.png</key>
+            <key type="filename">CristianMenRos.png</key>
             <key type="filename">DiegoT_xs.png</key>
             <key type="filename">GermanG.png</key>
             <key type="filename">Guille-II_xs.png</key>
-            <key type="filename">GuilleD_xs.png</key>
+            <key type="filename">GuilleDianda.png</key>
             <key type="filename">GuilleFlores.png</key>
             <key type="filename">JoseLuisM_xs.png</key>
             <key type="filename">JuanCarlosV_xs.png</key>
@@ -238,7 +239,6 @@
             <filename>DiegoT_xs.png</filename>
             <filename>EzequielC_xs.png</filename>
             <filename>Guille-II_xs.png</filename>
-            <filename>GuilleD_xs.png</filename>
             <filename>JoseLuisM_xs.png</filename>
             <filename>JuanCarlosV_xs.png</filename>
             <filename>Magiord_xs.png</filename>
@@ -250,6 +250,8 @@
             <filename>ArielJurjo.png</filename>
             <filename>GuilleFlores.png</filename>
             <filename>GermanG.png</filename>
+            <filename>GuilleDianda.png</filename>
+            <filename>CristianMenRos.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
