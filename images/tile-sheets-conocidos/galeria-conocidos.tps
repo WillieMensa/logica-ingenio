@@ -198,6 +198,7 @@
             <key type="filename">MatiasB_xs.png</key>
             <key type="filename">Nane_xs.png</key>
             <key type="filename">OscarAbe_xs.png</key>
+            <key type="filename">OscarDeSanctis.png</key>
             <key type="filename">RubenD_xs.png</key>
             <key type="filename">joseO_xs.png</key>
             <struct type="IndividualSpriteSettings">
@@ -252,6 +253,7 @@
             <filename>GermanG.png</filename>
             <filename>GuilleDianda.png</filename>
             <filename>CristianMenRos.png</filename>
+            <filename>OscarDeSanctis.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

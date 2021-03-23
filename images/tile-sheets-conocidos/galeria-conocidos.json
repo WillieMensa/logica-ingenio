@@ -153,8 +153,16 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RubenD_xs.png",
+	"filename": "OscarDeSanctis.png",
 	"frame": {"x":480,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RubenD_xs.png",
+	"frame": {"x":0,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -167,6 +175,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":800},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:8d343d7e194581c14fd4d57fd37aee62:b16d75ca81a51ad147a5548cf542bfd6:3cdebe7f307c137881d02b0ac9fea867$"
+	"smartupdate": "$TexturePacker:SmartUpdate:e319e23f01ad8fc1db3073069099622f:2f38f6613e7a126b59f3a107018bb373:3cdebe7f307c137881d02b0ac9fea867$"
 }
 }
