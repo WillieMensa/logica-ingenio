@@ -194,6 +194,7 @@
             <key type="filename">GuilleFlores.png</key>
             <key type="filename">JoseLuisM_xs.png</key>
             <key type="filename">JuanCarlosV_xs.png</key>
+            <key type="filename">LourdesF.png</key>
             <key type="filename">Magiord_xs.png</key>
             <key type="filename">MatiasB_xs.png</key>
             <key type="filename">Nane_xs.png</key>
@@ -254,6 +255,7 @@
             <filename>GuilleDianda.png</filename>
             <filename>CristianMenRos.png</filename>
             <filename>OscarDeSanctis.png</filename>
+            <filename>LourdesF.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
