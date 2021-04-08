@@ -95,9 +95,9 @@
         <key>fixedTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>480</int>
+            <int>512</int>
             <key>height</key>
-            <int>640</int>
+            <int>1024</int>
         </QSize>
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
@@ -181,37 +181,10 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">AlbertoF.png</key>
-            <key type="filename">JoeBiden.png</key>
+            <key type="filename">AdrianVentura.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>120,160,240,320</rect>
-                <key>scale9Paddings</key>
-                <rect>120,160,240,320</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">AmadoBoudou_small.png</key>
-            <key type="filename">AngelaMerkel_small.png</key>
-            <key type="filename">AnibalF_small.png</key>
-            <key type="filename">BarackOb_small.png</key>
-            <key type="filename">GinesGGarcia_small.png</key>
-            <key type="filename">HoracioRL_small.png</key>
-            <key type="filename">HugoMoya_small.png</key>
-            <key type="filename">JavierMilei.png</key>
-            <key type="filename">LilitaCarrio_small.png</key>
-            <key type="filename">MauricioM_small.png</key>
-            <key type="filename">PatriciaB_small.png</key>
-            <key type="filename">rlopezm_small.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0,0</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -223,7 +196,14 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">CEFK_small.png</key>
+            <key type="filename">AlfredoLeuco.png</key>
+            <key type="filename">CarlosGardel.png</key>
+            <key type="filename">CarlosPagni_small.png</key>
+            <key type="filename">JoaquinMSola_small.png</key>
+            <key type="filename">JorgeFD_small.png</key>
+            <key type="filename">JorgeLana_small.png</key>
+            <key type="filename">LuisMajul.png</key>
+            <key type="filename">RobertoC_small.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -232,46 +212,24 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>30,31,60,61</rect>
+                <rect>30,40,60,80</rect>
                 <key>scale9Paddings</key>
-                <rect>30,31,60,61</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">JorgeBergog_small.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>30,34,60,69</rect>
-                <key>scale9Paddings</key>
-                <rect>30,34,60,69</rect>
+                <rect>30,40,60,80</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>AmadoBoudou_small.png</filename>
-            <filename>AngelaMerkel_small.png</filename>
-            <filename>AnibalF_small.png</filename>
-            <filename>BarackOb_small.png</filename>
-            <filename>GinesGGarcia_small.png</filename>
-            <filename>HoracioRL_small.png</filename>
-            <filename>HugoMoya_small.png</filename>
-            <filename>JorgeBergog_small.png</filename>
-            <filename>LilitaCarrio_small.png</filename>
-            <filename>MauricioM_small.png</filename>
-            <filename>PatriciaB_small.png</filename>
-            <filename>rlopezm_small.png</filename>
-            <filename>CEFK_small.png</filename>
-            <filename>JoeBiden.png</filename>
-            <filename>JavierMilei.png</filename>
-            <filename>AlbertoF.png</filename>
+            <filename>JoaquinMSola_small.png</filename>
+            <filename>JorgeFD_small.png</filename>
+            <filename>JorgeLana_small.png</filename>
+            <filename>CarlosPagni_small.png</filename>
+            <filename>RobertoC_small.png</filename>
+            <filename>LuisMajul.png</filename>
+            <filename>AlfredoLeuco.png</filename>
+            <filename>CarlosGardel.png</filename>
+            <filename>AdrianVentura.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

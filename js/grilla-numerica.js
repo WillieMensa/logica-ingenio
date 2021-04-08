@@ -98,38 +98,6 @@ function start() {
 };
 
 
-	function dibujaPag() {
-		leeJuegosPagina();
-
-		//<canvas id="canvas1" width="560" height="794" class="img-responsive" style="border:1px solid #000000;"></canvas>
-		//	ctx.fillStyle = '#f0d0b0ff';			//	#f2e8cfff;
-		ctx.fillStyle = '#ffffffff';
-		ctx.fillRect(1, 1, 560, 794);
-
-		//	detectar si se pidio con solucion
-		var checkBox = document.getElementById("conSolucion");
-		lConSoluc = checkBox.checked;
-
-		//	console.log( 'lConSoluc: ', lConSoluc );
-		presentaGrilla("RA", 080, 060);
-		presentaGrilla("CO", 320, 060);
-
-		presentaGrilla("DD", 080, 300);
-		presentaGrilla("DI", 320, 300);
-
-		presentaGrilla("CR", 080, 540);
-		presentaGrilla("CL", 320, 540);
-		//DibujaGrillaA4();
-		if(DEBUG) {
-			ctx.lineWidth = "1";
-			ctx.strokeStyle = "#222";  // Green path
-			ctx.beginPath();
-			ctx.moveTo( 0, 750 );
-			ctx.lineTo( 560,750);
-			ctx.stroke();
-
-		}
-	}
 
 function presentaGrilla( modGrilla, posX, posY)			//
 {
@@ -209,7 +177,7 @@ function presentaGrilla( modGrilla, posX, posY)			//
 			aSuma = aDIsuma;
 			aVert = aDIvert;
 			//	trazado diagonales de la variante
-			ctx.moveTo( posX+ paso      ,	posY );
+			ctx.moveTo( posX+ paso,	posY );
 			ctx.lineTo( posX,	posY + paso );
 			ctx.moveTo( posX+2*paso, posY );
 			ctx.lineTo( posX+ paso,	posY + paso );
@@ -257,6 +225,43 @@ function presentaGrilla( modGrilla, posX, posY)			//
 			break;
 	}
 }
+
+
+
+function dibujaPag() {
+	leeJuegosPagina();
+
+	//<canvas id="canvas1" width="560" height="794" class="img-responsive" style="border:1px solid #000000;"></canvas>
+	//	ctx.fillStyle = '#f0d0b0ff';			//	#f2e8cfff;
+	ctx.fillStyle = '#ffffffff';
+	ctx.fillRect(1, 1, 560, 794);
+
+	//	detectar si se pidio con solucion
+	var checkBox = document.getElementById("conSolucion");
+	lConSoluc = checkBox.checked;
+
+	//	console.log( 'lConSoluc: ', lConSoluc );
+	presentaGrilla("RA", 080, 060);
+	presentaGrilla("CO", 320, 060);
+
+	presentaGrilla("DD", 080, 300);
+	presentaGrilla("DI", 320, 300);
+
+	presentaGrilla("CR", 080, 540);
+	presentaGrilla("CL", 320, 540);
+	//DibujaGrillaA4();
+	if(DEBUG) {
+		ctx.lineWidth = "1";
+		ctx.strokeStyle = "#222";  // Green path
+		ctx.beginPath();
+		ctx.moveTo( 0, 750 );
+		ctx.lineTo( 560,750);
+		ctx.stroke();
+
+	}
+}
+
+
 
 //***********************************
 	//	funcion para el trazado de diagonales

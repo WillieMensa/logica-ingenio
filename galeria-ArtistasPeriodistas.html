@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+		<meta name="description" content="Galería de personajes públicos: políticos, periodistas.">
+		<meta name="keywords" content="Galería de personajes públicos, políticos, periodistas, caricaturas,Rompecabezas">
+
+		<title>Galería de personajes</title>
+
+		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<script src="menuppal.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="header">
+			<h1> Galería de Artistas y Periodistas </h1>
+		</div>
+
+		<div id="menuppal"></div>
+
+		<div class="row clr_fondo">
+			<p>A quienes reconoces?<br />
+				<a href="consultas.html">Contame...</a>.
+			</p>
+			<div class="col-6 img-responsive" style="text-align:center;">
+				<map name="primary">
+					<area shape="rect" coords="000,000,120,160" onclick="muestraImagen('images/personajes/AdrianVentura.webp')" alt="Adrian Ventura">
+					<area shape="rect" coords="120,000,240,160" onclick="muestraImagen('images/personajes/AlfredoLeuco.webp ')" alt="Alfredo Leuco">
+					<area shape="rect" coords="240,000,360,160" onclick="muestraImagen('images/personajes/CarlosGardel.webp	')" alt="Carlos Gardel">
+					<area shape="rect" coords="360,000,480,160" onclick="muestraImagen('images/personajes/CarlosPagni.webp	')" alt="Carlos Pagni">
+					<area shape="rect" coords="000,160,120,320" onclick="muestraImagen('images/personajes/HugoAlconada.webp	')" alt="Hugo Alconada Mon">
+					<area shape="rect" coords="120,160,240,320" onclick="muestraImagen('images/personajes/JoaquinMSola.webp ')" alt="Joaquin M Sola ">
+					<area shape="rect" coords="240,160,360,320" onclick="muestraImagen('images/personajes/JorgeFDiaz.webp   ')" alt="Jorge Fernandez Diaz">
+					<area shape="rect" coords="360,160,480,320" onclick="muestraImagen('images/personajes/JorgeLanata.webp	')" alt="Jorge Lanata">
+					<area shape="rect" coords="000,320,120,480" onclick="muestraImagen('images/personajes/LuisMajul.webp	  ')" alt="Luis Majul">
+					<area shape="rect" coords="120,320,240,480" onclick="muestraImagen('images/personajes/RobertoCachan.webp')" alt="Roberto Cachanosky">
+					<area shape="rect" coords="240,320,360,480" onclick="muestraImagen('images/personajes/WillieV-simpatico+txt.webp')" alt="Roberto Cacha">
+					<area shape="rect" coords="360,320,480,480" onclick="muestraImagen('images/personajes/WillieV-simpatico+txt.webp')" alt="Roberto Cacha">
+					<area shape="rect" coords="000,000,480,640" onclick="muestraImagen('images/personajes/WillieV-simpatico+txt.webp')" alt="Roberto Cacha">
+					<area shape="rect" coords="120,240,480,640" onclick="muestraImagen('images/personajes/WillieV-simpatico+txt.webp')" alt="Roberto Cacha">
+					<area shape="rect" coords="240,360,480,640" onclick="muestraImagen('images/personajes/WillieV-simpatico+txt.webp')" alt="Roberto Cacha">
+					<area shape="rect" coords="360,480,480,640" onclick="muestraImagen('images/personajes/WillieV-simpatico+txt.webp')" alt="Roberto Cacha">
+
+				</map>
+				<img usemap="#primary" src="images/personajes/galeria-ArtistasPeriodistas.webp" alt="Artistas y Periodistas ">
+
+			</div>
+			<div class="col-6 container" id='laImagen' style="text-align:center;">
+				<img src="images/personajes/WillieV-simpatico+txt.webp" id='personaje' alt="el dibujante" style="width:100%">
+			</div>
+		</div>
+
+		<div class="row clr_claro">
+			<div class="col-2"></div>
+			<div class="col-8" style="text-align: center;">
+				<!--
+				<a target="_blank" href="https://www.amazon.es/b?_encoding=UTF8&tag=willieve-21&linkCode=ur2&linkId=91667bae1344fb97bdf9a9a0b0252727&camp=3638&creative=24630&node=665280031">Sofware antivirus y seguridad</a><img src="//ir-es.amazon-adsystem.com/e/ir?t=willieve-21&l=ur2&o=30"
+				  width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+				-->
+			</div>
+			<div class="col-2"></div>
+		</div>
+
+		<ul id="mainMenu">
+			<li><a href="./curriculum-resumido.html">Quién soy</a></li>
+			<li><a href="./consultas.html">Consultas</a></li>
+		</ul>
+
+		<div class="footer">
+			<p>by Willie Verger, 2021</p>
+		</div>
+
+
+		<script>
+			function muestraImagen(src) {
+				var destino = document.getElementById("personaje");
+				destino.src = src;
+			}
+		</script>
+
+
+
+	</body>
+
+</html>
