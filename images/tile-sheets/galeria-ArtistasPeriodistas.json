@@ -65,7 +65,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LuisMajul.png",
+	"filename": "LionelMessi.png",
 	"frame": {"x":0,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -73,8 +73,16 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RobertoCachanosky.png",
+	"filename": "LuisMajul.png",
 	"frame": {"x":120,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RobertoCachanosky.png",
+	"frame": {"x":240,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -85,8 +93,8 @@
 	"version": "1.0",
 	"image": "galeria-ArtistasPeriodistas.png",
 	"format": "RGBA8888",
-	"size": {"w":512,"h":1024},
+	"size": {"w":480,"h":640},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:a2452cf630ba19cfb06d19d1b807681d:561489bbd6d8f9b35d4f61b878a0e4a0:311412c1fe496c5f00f2fe2edb72bf55$"
+	"smartupdate": "$TexturePacker:SmartUpdate:9b93390bb7bd51da0ac1830b5ffec9ce:05581fc37af0073dd26b7c66645d2bbe:311412c1fe496c5f00f2fe2edb72bf55$"
 }
 }

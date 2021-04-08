@@ -189,6 +189,7 @@
             <key type="filename">JoaquinMoralesSola.png</key>
             <key type="filename">JorgeFernandezDiaz.png</key>
             <key type="filename">JorgeLanata.png</key>
+            <key type="filename">LionelMessi.png</key>
             <key type="filename">LuisMajul.png</key>
             <key type="filename">RobertoCachanosky.png</key>
             <struct type="IndividualSpriteSettings">
@@ -218,6 +219,7 @@
             <filename>JoaquinMoralesSola.png</filename>
             <filename>JorgeFernandezDiaz.png</filename>
             <filename>JorgeLanata.png</filename>
+            <filename>LionelMessi.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
