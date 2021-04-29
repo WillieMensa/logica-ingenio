@@ -33,7 +33,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "ClausH_xs.png",
+	"filename": "AugustoOliva.png",
 	"frame": {"x":480,"y":0,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -41,7 +41,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "CristianMenRos.png",
+	"filename": "ClausH_xs.png",
 	"frame": {"x":0,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -49,7 +49,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "DiegoT_xs.png",
+	"filename": "CristianMenRos.png",
 	"frame": {"x":120,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -57,7 +57,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "EzequielC_xs.png",
+	"filename": "DiegoT_xs.png",
 	"frame": {"x":240,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GermanG.png",
+	"filename": "EzequielC_xs.png",
 	"frame": {"x":360,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -73,7 +73,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "Guille-II_xs.png",
+	"filename": "GermanG.png",
 	"frame": {"x":480,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -81,7 +81,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GuilleDianda.png",
+	"filename": "Guille-II_xs.png",
 	"frame": {"x":0,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -89,7 +89,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GuilleFlores.png",
+	"filename": "GuilleDianda.png",
 	"frame": {"x":120,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -97,7 +97,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JoseLuisM_xs.png",
+	"filename": "GuilleFlores.png",
 	"frame": {"x":240,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -105,7 +105,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "joseO_xs.png",
+	"filename": "JoseLuisM_xs.png",
 	"frame": {"x":360,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -113,7 +113,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JuanCarlosV_xs.png",
+	"filename": "joseO_xs.png",
 	"frame": {"x":480,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -145,7 +145,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "MatiasB_xs.png",
+	"filename": "MarianoMocoroa.png",
 	"frame": {"x":360,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -161,7 +161,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "OscarAbe_xs.png",
+	"filename": "NataliaMariscotti.png",
 	"frame": {"x":0,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -169,7 +169,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "OscarDeSanctis.png",
+	"filename": "OscarAbe_xs.png",
 	"frame": {"x":120,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -177,8 +177,24 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RubenD_xs.png",
+	"filename": "OscarDeSanctis.png",
 	"frame": {"x":240,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "Pascal.png",
+	"frame": {"x":360,"y":640,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RubenD_xs.png",
+	"frame": {"x":480,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -191,6 +207,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":800},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:30640d038b443aae10148506fea17b56:e7feefa3b67b7673b7ab4b1cf3c17c40:3cdebe7f307c137881d02b0ac9fea867$"
+	"smartupdate": "$TexturePacker:SmartUpdate:d6126c58b1e41fd7da39e65969cb2db1:fb5347b6ee6122c9ba53973da95d0083:3cdebe7f307c137881d02b0ac9fea867$"
 }
 }

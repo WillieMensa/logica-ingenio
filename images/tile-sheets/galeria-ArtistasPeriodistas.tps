@@ -185,13 +185,16 @@
             <key type="filename">AlfredoLeuco.png</key>
             <key type="filename">CarlosGardel.png</key>
             <key type="filename">CarlosPagni.png</key>
+            <key type="filename">DiegoMaradona.png</key>
             <key type="filename">HugoAlconada.png</key>
             <key type="filename">JoaquinMoralesSola.png</key>
             <key type="filename">JorgeFernandezDiaz.png</key>
             <key type="filename">JorgeLanata.png</key>
             <key type="filename">LionelMessi.png</key>
             <key type="filename">LuisMajul.png</key>
+            <key type="filename">MirthaLegrand.png</key>
             <key type="filename">RobertoCachanosky.png</key>
+            <key type="filename">RobertoNavarro.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -220,6 +223,9 @@
             <filename>JorgeFernandezDiaz.png</filename>
             <filename>JorgeLanata.png</filename>
             <filename>LionelMessi.png</filename>
+            <filename>DiegoMaradona.png</filename>
+            <filename>RobertoNavarro.png</filename>
+            <filename>MirthaLegrand.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

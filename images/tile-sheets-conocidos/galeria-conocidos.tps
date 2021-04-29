@@ -185,6 +185,7 @@
             <key type="filename">AlejanY_xs.png</key>
             <key type="filename">AnnieV_xs.png</key>
             <key type="filename">ArielJurjo.png</key>
+            <key type="filename">AugustoOliva.png</key>
             <key type="filename">ClausH_xs.png</key>
             <key type="filename">CristianMenRos.png</key>
             <key type="filename">DiegoT_xs.png</key>
@@ -193,14 +194,15 @@
             <key type="filename">GuilleDianda.png</key>
             <key type="filename">GuilleFlores.png</key>
             <key type="filename">JoseLuisM_xs.png</key>
-            <key type="filename">JuanCarlosV_xs.png</key>
             <key type="filename">LourdesF.png</key>
             <key type="filename">LuciBagilet.png</key>
             <key type="filename">Magiord_xs.png</key>
-            <key type="filename">MatiasB_xs.png</key>
+            <key type="filename">MarianoMocoroa.png</key>
             <key type="filename">Nane_xs.png</key>
+            <key type="filename">NataliaMariscotti.png</key>
             <key type="filename">OscarAbe_xs.png</key>
             <key type="filename">OscarDeSanctis.png</key>
+            <key type="filename">Pascal.png</key>
             <key type="filename">RubenD_xs.png</key>
             <key type="filename">joseO_xs.png</key>
             <struct type="IndividualSpriteSettings">
@@ -243,9 +245,7 @@
             <filename>EzequielC_xs.png</filename>
             <filename>Guille-II_xs.png</filename>
             <filename>JoseLuisM_xs.png</filename>
-            <filename>JuanCarlosV_xs.png</filename>
             <filename>Magiord_xs.png</filename>
-            <filename>MatiasB_xs.png</filename>
             <filename>Nane_xs.png</filename>
             <filename>OscarAbe_xs.png</filename>
             <filename>RubenD_xs.png</filename>
@@ -258,6 +258,10 @@
             <filename>OscarDeSanctis.png</filename>
             <filename>LourdesF.png</filename>
             <filename>LuciBagilet.png</filename>
+            <filename>AugustoOliva.png</filename>
+            <filename>MarianoMocoroa.png</filename>
+            <filename>NataliaMariscotti.png</filename>
+            <filename>Pascal.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

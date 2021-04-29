@@ -33,7 +33,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "HugoAlconada.png",
+	"filename": "DiegoMaradona.png",
 	"frame": {"x":0,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -41,7 +41,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JoaquinMoralesSola.png",
+	"filename": "HugoAlconada.png",
 	"frame": {"x":120,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -49,7 +49,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeFernandezDiaz.png",
+	"filename": "JoaquinMoralesSola.png",
 	"frame": {"x":240,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -57,7 +57,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JorgeLanata.png",
+	"filename": "JorgeFernandezDiaz.png",
 	"frame": {"x":360,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -65,7 +65,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LionelMessi.png",
+	"filename": "JorgeLanata.png",
 	"frame": {"x":0,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -73,7 +73,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "LuisMajul.png",
+	"filename": "LionelMessi.png",
 	"frame": {"x":120,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -81,8 +81,32 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "RobertoCachanosky.png",
+	"filename": "LuisMajul.png",
 	"frame": {"x":240,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "MirthaLegrand.png",
+	"frame": {"x":360,"y":320,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RobertoCachanosky.png",
+	"frame": {"x":0,"y":480,"w":120,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
+	"sourceSize": {"w":120,"h":160}
+},
+{
+	"filename": "RobertoNavarro.png",
+	"frame": {"x":120,"y":480,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -95,6 +119,6 @@
 	"format": "RGBA8888",
 	"size": {"w":480,"h":640},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:9b93390bb7bd51da0ac1830b5ffec9ce:05581fc37af0073dd26b7c66645d2bbe:311412c1fe496c5f00f2fe2edb72bf55$"
+	"smartupdate": "$TexturePacker:SmartUpdate:33dde830f3d5fa4ab1f1076f5353a9a5:2435047f10aa9ba5f06b4ec320de458e:311412c1fe496c5f00f2fe2edb72bf55$"
 }
 }
