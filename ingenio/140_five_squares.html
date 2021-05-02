@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Cinco Cuadrados </title>
+    <meta name="description" content="Problemas de ingenio.">
+    <meta name="keywords" content="Ingenio, Lógica,Representación gráfica, acertijos, 
+			resolucion problemas, sudoku gratis para imprimir">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <style>
+        /* color base 50%: #0099ff */
+        
+        body {
+            background-color: #cce8ff;
+        }
+        
+        .button {
+            background-color: #003d66;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 16px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container p-5 ">
+        <!-- Contenido de la pagina -->
+        <a name="TopOfPage"></a>
+        <h1>Cinco cuadrados</h1>
+        <p>En un rectángulo que mide 18 x 17 hay cinco cuadrados iguales dispuestos como se muestra en la figura.<br> Se pregunta: Cuál es el area de cada cuadrado? <br> Un problema similar fue presentado a niños de 12 a 13 años en Vietnam.
+        </p>
+
+				<p style="text-align:center;">
+        <!-- Enunciado del problema -->
+        <svg xml:space="preserve" 
+					zoomAndPan="disable" 
+					xmlns:xlink="http://www.w3.org/1999/xlink" 
+					xmlns:svg="http://www.w3.org/2000/svg" 
+					xmlns="http://www.w3.org/2000/svg" 
+					width="420" height="400" 
+					viewBox="0 0 420 400" version="1.1">
+					<!-- svg_esquemas.svg -->
+
+					<defs>
+						<path id="q" d="M 00 00 L 040 030 010 070 -30 040 z" fill="#88aaff" stroke="black" stroke-width="1" />
+
+					</defs>
+
+					<g id="group" transform="translate(10,10), scale(2)">
+							<rect x="0" y="0" width="180" height="170" stroke="black" stroke-width="1" fill="#ffffee" />
+							<use xlink:href="#q" x="030" y="000" />
+							<use xlink:href="#q" x="070" y="030" />
+							<use xlink:href="#q" x="140" y="020" />
+							<use xlink:href="#q" x="110" y="060" />
+							<use xlink:href="#q" x="080" y="100" />
+
+					<g id="cotahorizontal">
+						<!-- linea -->
+						<path
+							 style="fill:#000000;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+							 d="m 0,185 h 180"
+							 id="path8" />
+						<!-- flecha -->
+						<path
+							 style="fill:#000000;stroke:#000000;stroke-width:1.0; stroke-linecap:round;stroke-linejoin:round"
+							 d="m 0,185 10,-3 0,6 z"
+							 id="path9" />
+						<path
+							 style="fill:#000000;stroke:#000000;stroke-width:1.0; stroke-linecap:round;stroke-linejoin:round"
+							 d="m 180,185 -10,-3 0,6 z"
+							 id="path91" />
+							<text x="080" y="183" font-size="10" fill="black">180</text>
+
+					</g>
+
+					<g id="cotavert" transform="rotate(270, 200,170)">
+					
+						<!-- linea -->
+						<path
+							 style="fill:#000000;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+							 d="m 200,165 h 170"
+							 id="path8" />
+						<!-- flecha -->
+						<path
+							 style="fill:#000000;stroke:#000000;stroke-width:1.0; stroke-linecap:round;stroke-linejoin:round"
+							 d="m 200,165 10,-3 0,6 z"
+							 id="path9" />
+						<path
+							 style="fill:#000000;stroke:#000000;stroke-width:1.0; stroke-linecap:round;stroke-linejoin:round"
+							 d="m 370,165 -10,-3 0,6 z"
+							 id="path91" />
+							<text x="280" y="163" font-size="10" fill="black">170</text>
+
+					</g>
+
+					</g>
+
+				</svg><br>
+				Figura 1
+				</p>
+
+        <p><a><button class="button" onclick="hideShow()">Ver solución</button></a></p>
+
+        <div id="solucion">
+
+				<p>La clave para resolver el problema es considerar un triángulo rectángulo como el rojo de la figura 2.
+				La hipotenusa coincide con el lado de los cuadrado y sus catetos serviràn para medir vertical y horizontalmente.
+				Llamaremos "a" al cateto menor y "b" al cateto mayor.
+				</p>
+				<p style="text-align:center;">
+
+					<svg 
+						xml:space="preserve" zoomAndPan="disable" 
+						xmlns:xlink="http://www.w3.org/1999/xlink" 
+						xmlns:svg="http://www.w3.org/2000/svg" 
+						xmlns="http://www.w3.org/2000/svg" 
+						width="420" height="350" 
+						viewBox="0 0 420 350" version="1.1">
+
+						<defs>
+							<path id="q" d="M 00 00 L 040 030 010 070 -30 040 z" fill="#88aaff" stroke="black" stroke-width="1" />
+							<path id="t1" d="M 00 00 L 030 000 000 040 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+							<path id="t2" d="M 00 00 L 040 000 040 030 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+
+						</defs>
+
+						<g id="group" transform="translate(10,10), scale(2)">
+								<rect x="0" y="0" width="180" height="170" stroke="black" stroke-width="1" fill="#ffffee" />
+								<use xlink:href="#q" x="030" y="000" />
+								<use xlink:href="#q" x="070" y="030" />
+								<use xlink:href="#q" x="140" y="020" />
+								<use xlink:href="#q" x="110" y="060" />
+								<use xlink:href="#q" x="080" y="100" />
+
+								<use xlink:href="#t1" x="000" y="000" />
+
+						</g>
+
+				</svg><br>
+				Figura 2
+				</p>
+					Vinculamos las medidas del rectángulo contenedor con los lados de los cuadrados utilizando triángulos rectángulos como el indicado en figura2.<br>
+					En sentido horizontal se tienen tres catetos mayores y dos catetos menores. Es decir:
+					<p style="text-align:center;">2 * a + 3 * b = 180</p>
+				<p style="text-align:center;">
+					<svg 
+						xml:space="preserve" 
+						zoomAndPan="disable" 
+						xmlns:xlink="http://www.w3.org/1999/xlink" 
+						xmlns:svg="http://www.w3.org/2000/svg" 
+						xmlns="http://www.w3.org/2000/svg" 
+						width="420" height="360" 
+						viewBox="0 0 420 360" version="1.1">
+
+						width="600" height="400" viewBox="0 0 600 400" version="1.1">
+					<!-- svg_esquemas.svg -->
+
+					<defs>
+						<path id="q" d="M 00 00 L 040 030 010 070 -30 040 z" fill="#88aaff" stroke="black" stroke-width="1" />
+						<path id="t1" d="M 00 00 L 030 000 000 040 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+						<path id="t2" d="M 00 00 L 040 000 040 030 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+
+					</defs>
+
+					<g id="group" transform="translate(10,10), scale(2)">
+							<rect x="0" y="0" width="180" height="170" stroke="black" stroke-width="1" fill="#ffffee" />
+							<use xlink:href="#q" x="030" y="000" />
+							<use xlink:href="#q" x="070" y="030" />
+							<use xlink:href="#q" x="140" y="020" />
+							<use xlink:href="#q" x="110" y="060" />
+							<use xlink:href="#q" x="080" y="100" />
+
+							<use xlink:href="#t1" x="000" y="000" />
+							<use xlink:href="#t1" x="110" y="020" />
+
+							<use xlink:href="#t2" x="030" y="000" />
+							<use xlink:href="#t2" x="070" y="030" />
+							<use xlink:href="#t2" x="140" y="020" />
+
+					</g>
+
+				</svg><br>
+				Figura 3
+
+				</p>
+					En sentido vertical se tienen dos catetos mayores y tres catetos menores como muestra la figura 4. Es decir:
+					<p style="text-align:center;">3 * a + 2 * b = 170</p>
+					</p>
+				<p style="text-align:center;">
+					<svg 
+						xml:space="preserve" 
+						zoomAndPan="disable" 
+						xmlns:xlink="http://www.w3.org/1999/xlink" 
+						xmlns:svg="http://www.w3.org/2000/svg" 
+						xmlns="http://www.w3.org/2000/svg" 
+						width="420" height="360" 
+						viewBox="0 0 420 360" version="1.1">
+
+						width="600" height="400" viewBox="0 0 600 400" version="1.1">
+					<!-- svg_esquemas.svg -->
+
+					<defs>
+						<path id="q" d="M 00 00 L 040 030 010 070 -30 040 z" fill="#88aaff" stroke="black" stroke-width="1" />
+						<path id="t1" d="M 00 00 L 030 000 000 040 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+						<path id="t2" d="M 00 00 L 040 000 040 030 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+						<path id="t3" d="M 00 00 L 000 030 040 030 z" fill="#ee0000" stroke="black" stroke-width="0.5" />
+
+					</defs>
+
+					<g id="group" transform="translate(10,10), scale(2)">
+							<rect x="0" y="0" width="180" height="170" stroke="black" stroke-width="1" fill="#ffffee" />
+							<use xlink:href="#q" x="030" y="000" />
+							<use xlink:href="#q" x="070" y="030" />
+							<use xlink:href="#q" x="140" y="020" />
+							<use xlink:href="#q" x="110" y="060" />
+							<use xlink:href="#q" x="080" y="100" />
+
+							<use xlink:href="#t1" x="000" y="000" />
+
+							<use xlink:href="#t3" x="000" y="040" />
+							<use xlink:href="#t3" x="040" y="070" />
+							<use xlink:href="#t3" x="050" y="140" />
+							<use xlink:href="#t1" x="050" y="100" />
+
+					</g>
+
+				</svg><br>
+				Figura 4
+
+				<p>Trabajando con las ecuaciones (1) y (2) se concluye que:
+				<p style="text-align:center;">a = 3 y b = 4
+				<p> Entonces el lado del cuadrado es 5 y su área es 25.
+
+        </div>
+
+        <!-- fin contenido -->
+    </div>
+
+    <script src="hide_show.js"></script>
+
+</body>
+
+</html>
