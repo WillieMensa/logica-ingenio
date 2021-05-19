@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "MEMORIOSO",
+  "short_name": "MEMORIOSO",
+  "version": "ar.com.ingverger.memorioso",
+  "description": "Memorioso es un juego que ejercita y desafia tu concentracion y memoria. \n\t\tSobre el tablero se colocan pares de imagenes iguales. El juego consiste en detectar esos pares. \n\t\tSe elige un par de imagenes que se mostraran durente un segundo. Si las imagenes son iguales se retiran del tablero.\n\t\tLas imagenes no cambian su lugar durante el juego. La memoria interviene recordando los lugares donde las imagenes eran iguales.\n\t\tEl juego finaliza una vez que se han detectado todos los pares.\t\t\n\t\tExisten varios niveles de dificultad dados por la cantidad de imagenes que se presentan.\n\t\tLa mecanica del juego es simple, sin embargo requiere memoria para facilitar la ubicacion adecuada de los pares de imagenes.",
+  "author": "Guillermo Verger",
+  "icons": [],
+  "orientation": "landscape",
+  "start_url": "index.html"
+}

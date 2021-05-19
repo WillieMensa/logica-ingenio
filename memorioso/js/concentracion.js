@@ -1,5 +1,6 @@
 	/*
 		concentracion.js
+		25/2/2021
 		9/1/2020
 		23/1/2019
 
@@ -22,18 +23,18 @@
 	//	-------------------------
 	//	Constantes
 	//	-------------------------
-		let	FILA_BOTONES = 50,
+	let	FILA_BOTONES = 50,
 		LINEA_BOTONES = 470,
 		//	RENDERER_W = 1200,			//	850,			//	1000,
 		//	RENDERER_H = 700,			//	450,			//	600,
 		RENDERER_W = 1000,				//	1000,
 		RENDERER_H = 600,
 		FONDO_JUEGO = 0xecffb3,		//	 "#ffc",
-		VERSION	= "2.2.2",				//	21/12/2019
+		VERSION	= "3.0.3",				//	2021.03.16 
 		FONDO_AYUDA = 0x008cff,
 		FONT_NIVEL1 = "luckiest_guyregular"	//	titulo:	"Bangers",	"Titan One", "Sigmar One"
 		FONT_NIVEL2 = "luckiest_guyregular"	//	"bangersregular",	botones: "Bangers",	//	"Sigmar One",
-		FONT_NIVEL3 = "sriracharegular",
+		FONT_NIVEL3 = "roboto",
 		COLOR_BOTON = 0x0033cc,				//	COLOR_BOTON = 0x006600,
 		DEBUG = false;
 		//	DEBUG = true;
@@ -62,7 +63,7 @@
 	renderer.view.style.left = "0px";
 
 	document.body.appendChild(renderer.view);
-
+	
 	//Scale the canvas to the maximum window size
 	//	let scale = scaleToWindow(renderer.view);
 
@@ -76,6 +77,7 @@
 	//	-------------------------
 	let	BotonAtras = undefined,
 		BotonAyuda = undefined,
+		BotonPrivacidad = undefined,
 		BotonJugar = undefined,
 		BotonAcercaDe = undefined,
 		BotonMenu = undefined,
@@ -88,8 +90,9 @@
 		EscenaDeAyudas = undefined,			//	container ayudas
 		EscenaDeJuego = undefined,			//	container juego
 		EscenaAcercaDe = undefined,			//	container de estadisticas
-		EscenaFinJuego = undefined,			//	container aviso de fin del juego
-		EscenaMenuInic = undefined,			//	container pantalla de inicio
+		EscenaFinJuego = undefined,			//	container aviso de fin del juego cuando completó identificacion piezas
+		EscenaMenuInic = undefined,			//	container pantalla de inicio 
+		EscenaPrivacidad = undefined,			//	container pantalla de politica de privacidad
 		//	EscenaDificultad = undefined,		//	container seleccion nivel de dificultad
 		EscenarioGral = undefined			//	container del total (1er nivel)
 
@@ -99,12 +102,12 @@
 		nFil = undefined,					//	cantidad de filas de baldositas en tablero
 		nivJuego = 1,						//	nivel de juego; debe ser un valor entre 1 y 12.
 		txtNivDif = undefined,
-		tilesOnBoard = undefined, 
+		tilesOnBoard = undefined,
 		chosenTiles = undefined;			//	array con los numeros de las piezas
 
 
 	//	variasbles para manejar texto en diferentes idiomas
-	let	
+	let
 		txtAcerca = "Acerca de",
 		txtAyuda	= "Ayuda",
 		txtJugar = "Jugar",
@@ -116,23 +119,38 @@
 			'Es un juego para ejercitar concentracion \n' +
 			'y memoria desarrollado por \n' +
 			'Willie Verger Juegos de Ingenio\n\n' +
-			'Soporte: info@ingverger.com.ar\n' +
-			'Web: ingverger.com.ar\n' +
+			'Soporte: ingverger@gmail.com\n' +
+			'Web: https://ingverger.ar\n' +
 			'\n',
 		txtDescAyuda = 'Que es?\n' +
-			'MEMORIOSO es un juego de concentracion y memoria.\n' + 
-			'En que consiste?\n' + 
-			'Hay un conjunto de fichas o cartas, cada una con una imagen, \n' + 
-			'colocadas de forma tal que no se ve su anverso.\n' + 
+			'MEMORIOSO es un juego de concentracion y memoria.\n' +
+			'En que consiste?\n' +
+			'Hay un conjunto de fichas o cartas, cada una con una imagen, \n' +
+			'colocadas de forma tal que no se ve su anverso.\n' +
 			'Hay dos fichas de cada imagen. El juego consiste en encontrar\n' +
-			'las parejas de imagenes iguales.\n' + 
-			'Al pulsar sobre una imagen, esta se da vuelta.\n' + 
+			'las parejas de imagenes iguales.\n' +
+			'Al pulsar sobre una imagen, esta se da vuelta.\n' +
 			'Se eligen dos fichas consecutivas. Si resultan ser iguales se\n' +
 			'retiran del tablero. Si son diferentes vuelven a la posicion\n' +
-			'original.\n' + 
+			'original.\n' +
 			'El juego finaliza cuando se han encontrado todas las parejas.',
-			txtFin = "Bien resuelto!\nFelicitaciones! ",
-			txtTiempo = "Tiempo: ";
+		txtPrivacidad = "Privacidad",
+		txtDescPrivacidad =
+			'Política de Privacidad\n\n' +
+			'Willie Verger está comprometido con la seguridad de los datos de sus usuarios.\n\n' +
+			'Willie Verger no solicita información a sus usuarios al momento de utilizar sus aplicaciones.\n' +
+			'Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser\n' +
+			'identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de \n' + 
+			'este documento.\n\n' + 
+			'Las aplicaciones desarrolladas por Willie Verger no contienen enlaces a otros sitios.\n\n' +
+			'Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada \n' +
+			'por lo que le recomendamos y enfatizamos revisar continuamente esta página para \n' +
+			'asegurarse que está de acuerdo con dichos cambios.\n\n' +
+			'Willie Verger Se reserva el derecho de cambiar los términos de la presente Política \n' +
+			'de Privacidad en cualquier momento.\n' +
+			'\n',
+		txtFin = "Bien resuelto!\nFelicitaciones! ",
+		txtTiempo = "Tiempo: ";
 
 	const	estiloTxtBoton = new PIXI.TextStyle({	//	estilo comun a los botones con texto
 			fontFamily: FONT_NIVEL2,		//	fontFamily: "Sigmar One",
@@ -181,9 +199,9 @@
 	}, 10);
 	*/
 
-	//load resources; a JSON file and run the `setup` function when it's done 
+	//load resources; a JSON file and run the `setup` function when it's done
 	PIXI.loader
-		.add("memorioso2.json")		//	PIXI.loader.add("assets/spritesheet.json").load(setup);
+		.add("img/memorioso2.json")		//	PIXI.loader.add("assets/spritesheet.json").load(setup);
 		.load(setup);
 
 
@@ -196,7 +214,7 @@
 
 		//Get a reference to the texture atlas id's
 		//	Create an alias for the texture atlas frame ids
-		id = resources["memorioso2.json"].textures;
+		id = resources["img/memorioso2.json"].textures;
 
 		/* Create the sprites */
 
@@ -204,11 +222,11 @@
 		EscenarioGral = new PIXI.Container();
 
 		// Size the renderer to fill the screen
-		resize(); 
+		resize();
 		// Listen for and adapt to changes to the screen size, e.g.,
 		// user changing the window or rotating their device
 		window.addEventListener("resize", resize);
-		
+
 		//	Escenario menu inicial
 		EscenaMenuInic = new PIXI.Container();
 		EscenarioGral.addChild(EscenaMenuInic);
@@ -228,6 +246,10 @@
 		//	Crear escenario de estadisticas
 		EscenaAcercaDe = new PIXI.Container();
 		EscenarioGral.addChild(EscenaAcercaDe);
+
+		//	Crear escenario de ayudas
+		EscenaPrivacidad = new PIXI.Container();
+		EscenarioGral.addChild(EscenaPrivacidad);
 
 		//	Crear escenario seleccion dificultad
 		//	EscenaDificultad = new PIXI.Container();
@@ -252,6 +274,7 @@
 		PantallaJugar();
 		PantallaAcercaDe();
 		PantallaFinJuego();
+		PantallaPrivacidad();
 		//	PantallaDificultad();
 
 		//	Set the initial game state
@@ -308,7 +331,7 @@
 		EscenaMenuInic.visible = true;
 
 		const style = new PIXI.TextStyle({
-			fill: 0x9900cc,						//	"#040",					    //	
+			fill: 0x9900cc,						//	"#040",					    //
 			fontFamily: FONT_NIVEL1,			//	fontFamily: 'Titan One',
 			fontSize: 96,
 			fontWeight: "bold",
@@ -360,9 +383,9 @@
 		//	prepara los botones; que en realidad son textos botonizados
 
 		//	es realmeente necesaria la variable que sigue???
-		var BotonTexture;
+		//	var BotonTexture;
 
-		//	-------------------------------------------------------------	
+		//	-------------------------------------------------------------
 		//	ESTILO COMUN A TODOS LOS BOTONES-TEXTO
 		const style = new PIXI.TextStyle({
 			//	fillGradientStops: [ 0,100 ],
@@ -374,14 +397,14 @@
 			padding: 8,
 		});
 
-		//	-------------------------------------------------------------	
+		//	-------------------------------------------------------------
 		//	Preparacion del boton jugar
 		BotonJugar = new PIXI.Text( txtJugar, style);
 		BotonJugar.anchor.set(0.0);
 		BotonJugar.x = FILA_BOTONES;						// Set the initial position
 		BotonJugar.y = 100;
 		// Opt-in to interactivity
-		BotonJugar.interactive = true;				
+		BotonJugar.interactive = true;
 		BotonJugar.buttonMode = true;			// Shows hand cursor
 		// Pointers normalize touch and mouse
 		BotonJugar.on('pointerdown', Jugar );
@@ -416,37 +439,51 @@
 		BotonAyuda.on('pointerdown', Ayuda );
 		BotonAyuda.on('click', Ayuda ); // mouse-only
 		BotonAyuda.on('tap', Ayuda ); // touch-only
-		
+
+		//	-------------------------------------------------------------
+		//	Preparacion Privacidad
+		BotonPrivacidad = new PIXI.Text( txtPrivacidad, style);
+		BotonPrivacidad.anchor.set(0.0);
+		BotonPrivacidad.x = FILA_BOTONES;					// Set the initial position
+		BotonPrivacidad.y = 450;
+		// Opt-in to interactivity
+		BotonPrivacidad.interactive = true;
+		BotonPrivacidad.buttonMode = true;				// Shows hand cursor
+		// Pointers normalize touch and mouse
+		BotonPrivacidad.on('pointerdown', PoliticaPrivacidad );
+		BotonPrivacidad.on('click', PoliticaPrivacidad ); // mouse-only
+		BotonPrivacidad.on('tap', PoliticaPrivacidad ); // touch-only
+
 		//	-------------------------------------------------------------
 		//	Preparacion boton volver a inicio
-		
+
 		BotonAtras = new PIXI.Text( txtVolver , style);
 		BotonAtras.anchor.set(0.0);
 		BotonAtras.x = FILA_BOTONES;								// Set the initial position
-		BotonAtras.y = 450;	
+		BotonAtras.y = 450;
 		BotonAtras.interactive = true;					// Opt-in to interactivity
 		BotonAtras.buttonMode = true;					// Shows hand cursor
 		// Pointers normalize touch and mouse
 		BotonAtras.on('pointerdown', Menu );
 		BotonAtras.on('click', Menu );
 		BotonAtras.on('tap', Menu );
-		
-		
+
+
 		//	-------------------------------------------------------------
 		//	Preparacion otro botonMenu
 		BotonMenu = new PIXI.Text( txtMenu, style);
 		BotonMenu.anchor.set(0.0);
 		BotonMenu.x = FILA_BOTONES;								// Set the initial position
-		BotonMenu.y = 450;	
+		BotonMenu.y = 450;
 		BotonMenu.interactive = true;					// Opt-in to interactivity
 		BotonMenu.buttonMode = true;					// Shows hand cursor
 		// Pointers normalize touch and mouse
 		BotonMenu.on('pointerdown', Menu );
 		BotonMenu.on('click', Menu );
 		BotonMenu.on('tap', Menu );
-		
+
 		//	-------------------------------------------------------------
-				
+
 	}
 
 
@@ -489,9 +526,39 @@
 
 
 
+	function PantallaPrivacidad() {
+		var graphics = new PIXI.Graphics();
+		// draw a rounded rectangle
+		graphics.lineStyle(4, 0x332211, 0.95)
+		graphics.beginFill( FONDO_AYUDA, 0.95);
+		graphics.drawRoundedRect(40, 40, RENDERER_W-200, RENDERER_H-200 );
+		graphics.endFill();
+
+		EscenaPrivacidad.addChild(graphics);
+
+		const style = new PIXI.TextStyle({
+			fill: "#ffffff",
+			fontFamily: FONT_NIVEL3,		//	fontFamily: "Sriracha",
+			fontSize: 18,
+			fontStyle: "normal",
+			fontWeight: "400"
+		});
+		const richText = new PIXI.Text( txtDescPrivacidad, style );
+
+		richText.x = 60;
+		richText.y = 60;
+
+		EscenaPrivacidad.addChild(richText);
+		EscenaPrivacidad.visible = true;
+
+	}
+
+
+
 	function Menu() {
 		//	definir cuales son las escenas visibles y cuales invisibles
 		EscenaDeAyudas.visible = false;		//	container ayudas
+		EscenaPrivacidad.visible = false;		//	container politica privacidad
 		EscenaDeJuego.visible = false;
 		EscenaAcercaDe.visible = false;		//	container estadisticas
 		EscenaFinJuego.visible = false;		//	container aviso de fin del juego
@@ -515,8 +582,13 @@
 		BotonJugar.visible =true;
 		BotonJugar.alpha=1;
 
+		//	BotonPrivacidad
+		EscenaMenuInic.addChild(BotonPrivacidad);
+		BotonPrivacidad.visible = true;
+		BotonPrivacidad.alpha=1;
+
 		txtNivDif.text = nivJuego;
-		//		"Tiempo: " + elapsed + " seg.";	
+		//		"Tiempo: " + elapsed + " seg.";
 		//	= nivJuego;
 
 		state = Menu;
@@ -530,6 +602,7 @@
 
 	//	definir cuales son las escenas visibles y cuales invisibles
 		EscenaDeAyudas.visible = false;
+		EscenaPrivacidad.visible = false;		
 		EscenaDeJuego.visible = false;
 		EscenaAcercaDe.visible = true;
 		EscenaFinJuego.visible = false;
@@ -550,6 +623,7 @@
 	function Ayuda() {
 	//	definir cuales son las escenas visibles y cuales invisibles
 		EscenaDeAyudas.visible = true;
+		EscenaPrivacidad.visible = false;		//	container politica privacidad
 		EscenaDeJuego.visible = false;
 		EscenaAcercaDe.visible = false;
 		EscenaFinJuego.visible = false;
@@ -561,6 +635,25 @@
 		BotonAtras.visible = true;
 
 		state = Ayuda;
+
+	}
+
+
+
+	function PoliticaPrivacidad() {
+	//	definir cuales son las escenas visibles y cuales invisibles
+		EscenaDeAyudas.visible = false;
+		EscenaPrivacidad.visible = true;		//	container politica privacidad
+		EscenaDeJuego.visible = false;
+		EscenaAcercaDe.visible = false;
+		EscenaFinJuego.visible = false;
+		EscenaMenuInic.visible = false;
+		EscenarioGral.visible = true;
+
+		EscenaPrivacidad.addChild(BotonAtras);
+		BotonAtras.visible = true;
+
+		state = PoliticaPrivacidad;
 
 	}
 
@@ -629,6 +722,7 @@
 		if (DEBUG) { console.log("=== function end ===" ); }
 
 		EscenaDeAyudas.visible = false;		//	container ayudas
+		EscenaPrivacidad.visible = false;
 		EscenaDeJuego.visible = true;
 		EscenaAcercaDe.visible = false;		//	container estadisticas
 		EscenaFinJuego.visible = true;		//	container aviso de fin del juego
@@ -649,7 +743,7 @@
 		//	BotonAcercaDe.visible = true;
 
 		state = end;
-		
+
 	}
 
 
@@ -705,7 +799,7 @@
 
 		//	Texto grande; numeros indicadores del nivel actual
 		var styleL = new PIXI.TextStyle({
-			fill: COLOR_BOTON,					    //	
+			fill: COLOR_BOTON,					    //
 			fontFamily: FONT_NIVEL2,			//	fontFamily: 'Titan One',			//	cursive;
 			fontSize: 64,
 			fontWeight: "bold",
@@ -715,7 +809,7 @@
 		//	---------------------------------------------------------------
 		//	Texto pequeño; Titulo del selector, texto de la caja e indicador de nivel
 		styleS = new PIXI.TextStyle({
-			fill: COLOR_BOTON,					    //	
+			fill: COLOR_BOTON,					    //
 			fontFamily: FONT_NIVEL2,			//	fontFamily: 'Titan One',			//	cursive;
 			fontSize: 28,
 			fontWeight: "normal",
@@ -737,7 +831,7 @@
 		BotonDificilMas.x = x0 + (0.8 * anchoCaja);
 		BotonDificilMas.y = y0 + (0.56 * altoCaja);
 		BotonDificilMas.anchor.set(0.5);
-		BotonDificilMas.interactive = true;				
+		BotonDificilMas.interactive = true;
 		BotonDificilMas.buttonMode = true;			// Shows hand cursor
 		BotonDificilMas.on('pointerdown', MasDificil );
 
@@ -748,14 +842,14 @@
 		BotonDificilMenos.x = x0 + (0.2 * anchoCaja);
 		BotonDificilMenos.y = y0 + (0.56 * altoCaja);
 		BotonDificilMenos.anchor.set(0.5);
-		BotonDificilMenos.interactive = true;				
+		BotonDificilMenos.interactive = true;
 		BotonDificilMenos.buttonMode = true;			// Shows hand cursor
 		BotonDificilMenos.on('pointerdown', MenosDificil );
 
 		EscenaMenuInic.addChild(BotonDificilMenos);
 
 		//	numero indicador de nivel de dificultad
-		//	la variable debe definirse entre las globales para ser luego actualizada 
+		//	la variable debe definirse entre las globales para ser luego actualizada
 		//	mediante los botones que tambien deben ser reconocidos global
 		txtNivDif = new PIXI.Text( "8", styleL );
 		txtNivDif.x = x0+(anchoCaja/2);
@@ -769,7 +863,7 @@
 
 		EscenaMenuInic.addChild(txtNivDif);
 		EscenaMenuInic.addChild(txtTitulo);
-		
+
 	}
 
 
@@ -808,7 +902,7 @@
 		*/
 
 		//	control del tiempo
-		Crono = new PIXI.Text( txtTiempo, { fontFamily: FONT_NIVEL3, fontSize: "16px", fill: "#a00"  } );	
+		Crono = new PIXI.Text( txtTiempo, { fontFamily: FONT_NIVEL3, fontSize: "16px", fill: "#a00"  } );
 		Crono.position.set(400, 10 );
 		EscenaDeJuego.addChild(Crono);
 
@@ -873,6 +967,7 @@
 
 	//	definir cuales son las escenas visibles y cuales invisibles
 		EscenaDeAyudas.visible = false;
+		EscenaPrivacidad.visible = false;
 		EscenaDeJuego.visible = false;
 		EscenaAcercaDe.visible = false;
 		EscenaFinJuego.visible = false;
@@ -894,8 +989,8 @@
 	//	Codigo especifico para este juego
 	//	=========================================
 	function GenJuego(){			//	genera un nuevo juego
-		let firstTile=null,			// primera pieza elegida por el jugador			
-			secondTile=null,			// segunda pieza elegida por el jugador			
+		let firstTile=null,			// primera pieza elegida por el jugador
+			secondTile=null,			// segunda pieza elegida por el jugador
 			canPick=true					// puede el jugador elegir una pieza?
 
 		// choose 24 random tile images
@@ -965,7 +1060,7 @@
 			var candidate=Math.floor(Math.random()*48);
 			if(chosenTiles.indexOf(candidate)==-1){
 				chosenTiles.push(candidate,candidate)
-			}			
+			}
 		}
 
 
@@ -1019,7 +1114,7 @@
 					// can I pick a tile?
 					if(canPick) {
 
-						
+
 
 						 // is the tile already selected?
 						if(!this.isSelected){
@@ -1039,19 +1134,19 @@
 							else{
 
 								//	if (DEBUG) {	console.log(" 1er. tile firstTile.tint: " + firstTile.tint + ", " + firstTile.theVal ) }
-	
+
 								secondTile=this
 								// can't pick anymore
 								canPick=false;
 
 								// did we pick the same tiles?
 								if(firstTile.theVal==secondTile.theVal){
-									//	llevar la cuenta de las baldositas que quedan sobre el tablero	
+									//	llevar la cuenta de las baldositas que quedan sobre el tablero
 									var pos = chosenTiles.indexOf(firstTile.theVal);
 									chosenTiles.splice(pos, 1 );
 									pos = chosenTiles.indexOf(secondTile.theVal);
 									chosenTiles.splice(pos, 1 );
-							
+
 									// wait a second then remove the tiles and make the player able to pick again
 									setTimeout(function(){
 										EscenaDeJuego.removeChild(firstTile);
@@ -1073,16 +1168,16 @@
 										secondTile.alpha=0.7;		//	0.5;
 										firstTile=null;
 										secondTile=null;
-										canPick=true	
+										canPick=true
 									},1000);
 								}
-							}	
+							}
 						}
 					}
 				}
 				if (DEBUG) {	console.log("i, j, tile.tint: " + i + ", " + j + ", " + tile.tint + ", " + tile.theVal ) }
 			}
-		} 
+		}
 	}
 
 
@@ -1096,9 +1191,10 @@
 		if (DEBUG) { console.log("=== function Jugar ===" ); }
 
 		//	var i = undefined;
-		
+
 		//	definir cuales son las escenas visibles y cuales invisibles
 		EscenaDeAyudas.visible = false;
+		EscenaPrivacidad.visible = false;
 		EscenaDeJuego.visible = true;
 		EscenaAcercaDe.visible = false;
 		EscenaFinJuego.visible = false;
@@ -1115,7 +1211,7 @@
 
 
 		GenJuego()		//	genera un nuevo juego
-		
+
 		start = new Date().getTime();
 		elapsed = 0;
 
@@ -1127,27 +1223,27 @@
 //=======================================
 // BEGIN for set|get|clear localstorage
 //=======================================
-function setStorage(key, value) 
+function setStorage(key, value)
 {
-	if(typeof(window.localStorage) != 'undefined'){ 
-		window.localStorage.setItem(key,value); 
-	} 
+	if(typeof(window.localStorage) != 'undefined'){
+		window.localStorage.setItem(key,value);
+	}
 }
 
-function getStorage(key) 
+function getStorage(key)
 {
 	var value = null;
-	if(typeof(window.localStorage) != 'undefined'){ 
-		value = window.localStorage.getItem(key); 
-	} 
+	if(typeof(window.localStorage) != 'undefined'){
+		value = window.localStorage.getItem(key);
+	}
 	return value;
 }
 
-function clearStorage(key) 
+function clearStorage(key)
 {
-	if(typeof(window.localStorage) != 'undefined'){ 
-		window.localStorage.removeItem(key); 
-	} 
+	if(typeof(window.localStorage) != 'undefined'){
+		window.localStorage.removeItem(key);
+	}
 }
 
 
@@ -1174,12 +1270,12 @@ function initLanguage()		//	para adaptar a diferentes idiomas
 		txtDificu = "Difficulty";
 		txtDescAcerca =
 			'About MEMORIOSO version ' + VERSION  + '\n' +
-			'It is a game to exercise concentration and memory \n' + 
-			'developed by Willie Verger Ingenuity Games \n' + 
+			'It is a game to exercise concentration and memory \n' +
+			'developed by Willie Verger Ingenuity Games \n' +
 			'Support: info@ingverger.com.ar\n' +
 			'Web: ingverger.com.ar\n' +
 			'\n';
-		txtDescAyuda = 
+		txtDescAyuda =
 			'What is it? \n' +
 			'MEMORIOSO is a game of concentration and memory. \n' +
 			'What does it consist of? \n' +
@@ -1195,6 +1291,14 @@ function initLanguage()		//	para adaptar a diferentes idiomas
 			txtFin = "Well resolved!\nCongratulations! ",
 			txtTiempo = "Elapsed time: ";
 
+		txtPrivacidad =
+			'Política de Privacidad\n' +
+			'Se establecen los términos en que Willie Verger usa y protege la información que es proporcionada por sus usuarios al momento de utilizar sus aplicaciones y sitio web. Willie Verger está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.\n' +
+			'La aplicaciones desarrolladas por Willie Verger, asi como el propio sitio web, no recogen información personal de los usuarios.\n' +
+			'Esta aplicación no utiliza cookies\n' +
+			'Las aplicaciones desarrolladas por Willie Verger no contienen enlaces a otros sitios.\n' +
+			'Willie Verger Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.\n' +
+			'\n';
 
 		noSolutionText = "No solution ";
 		nextText = "NEXT";
@@ -1215,13 +1319,13 @@ function initLanguage()		//	para adaptar a diferentes idiomas
 		txtDificu = "Schwierigkeit";
 		txtDescAcerca =
 			'Über MEMORIOSO Version ' + VERSION  + '\n' +
-			'Es ist ein von Willie Verger Ingenuity Games \n' + 
+			'Es ist ein von Willie Verger Ingenuity Games \n' +
 			'entwickeltes Spiel, um Konzentration und \n' +
 			'Gedächtnis zu trainieren. \n' +
 			'Unterstützung: info@ingverger.com.ar\n' +
 			'Web: ingverger.com.ar\n' +
 			'\n';
-		txtDescAyuda = 
+		txtDescAyuda =
 			'Was ist es?\n' +
 			'MEMORIOSO ist ein Spiel der Konzentration und des Gedächtnisses.\n' +
 			'Es gibt eine Reihe von Karten mit jeweils einem Bild so platziert,\n' +
@@ -1244,11 +1348,11 @@ function initLanguage()		//	para adaptar a diferentes idiomas
 		nextText = "Nächste";
 		finishText = "Glückwunsch!";
 		levelText = "Niveau";
-		
+
 		//	document.getElementById('hintsButton').value = "Hilfe";
 		//	document.getElementById('resetButton').value = "Zurücksetzen";
 		//	document.getElementById('startButton').value = "Beginnen";
-//	
+//
 //			checkSolutionShift = 90;
 //			document.getElementById('checkboxtext').innerHTML = "Überprüfen";
 
@@ -1264,5 +1368,3 @@ function getSystemLanguage()
 	var lang = window.navigator.userLanguage || window.navigator.language;
 	return lang.toLowerCase();
 }
-
-
