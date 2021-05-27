@@ -28,16 +28,31 @@ New Palette from  https://palettte.app/
 	--clr-fondo  : #F0E8F0;
 }
 
+FONDO OSCURO
+:root {
+	--clr-contra : #f3e8eeff;
+	--clr-oscuro : #ddaaccff;
+	--clr-medio  : #998888ff;
+	--clr-claro  : #776655ff; 
+	--clr-fondo  : #2c2e2fff;
+}
+
+FONDO 
+#230007ff;
+#d7cf07ff;
+#d98324ff;
+#a40606ff;
+#5a0002ff;
+
 */
 
 :root {
-	--clr-contra : #663A25;
-	--clr-oscuro : #662403;
-	--clr-medio  : #579433;
-	--clr-claro  : #9AC27F; 
-	--clr-fondo  : #F0E8F0;
+	--clr-oscuro : #a40606ff;
+	--clr-medio  : #bb6614ff; 
+	--clr-claro  : #669907ff;
+	--clr-fondo  : #230007ff;
+	--clr-contra : #5a0002ff;
 }
-
 
 
 /* null margins and padding to give good cross-browser baseline */
@@ -75,6 +90,7 @@ body {
 	font: normal 100%/150% 'roboto_mediumregular', sans-serif;
 	padding:0.2em;
 	background: var(--clr-fondo);
+	color:#FFF;
 }
 
 h1,
@@ -218,7 +234,7 @@ li {
   float: left;
 }
 
-li a, .dropbtn {
+a, li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
