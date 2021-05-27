@@ -1,0 +1,259 @@
+/*
+	estilo202010.css
+	2020.10.30
+	adatado al funcionamiento con drop down navigation bar
+
+	tutorial de https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids	
+	grilla	https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints -->
+	top navigation https://www.w3schools.com/howto/howto_js_topnav.asp 
+	https://www.w3schools.com/css/css_dropdowns.asp
+
+	uso de colores comunes según https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties 
+
+Old Palette
+:root {
+	--clr-oscuro : #660000ff;
+	--clr-medio  : #6a994eff;
+	--clr-claro  : #a7c957ff; 
+	--clr-fondo  : #f2e8cfff;
+	--clr-contra : #685533ff;
+}
+
+New Palette from  https://palettte.app/ 
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F; 
+	--clr-fondo  : #F0E8F0;
+}
+
+*/
+
+:root {
+	--clr-contra : #663A25;
+	--clr-oscuro : #662403;
+	--clr-medio  : #579433;
+	--clr-claro  : #9AC27F; 
+	--clr-fondo  : #F0E8F0;
+}
+
+
+
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+}
+
+img, fieldset {
+	border:none;
+}
+
+hr {
+	display:none;
+	/*
+		HR in my code are for semantic breaks in topic/section, NOT
+		style/presenation, so hide them from screen.css users
+	*/
+}
+
+@media (max-width:512px) {
+	* {
+		-webkit-text-size-adjust:none;
+		-ms-text-size-adjust:none;
+	}
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+	font: normal 100%/150% 'roboto_mediumregular', sans-serif;
+	padding:0.2em;
+	background: var(--clr-fondo);
+}
+
+h1,
+#footer {
+	text-align:center;
+	background: var(--clr-oscuro);
+	color:#FFF;
+}
+.footer {
+  color: #ffffff;
+  text-align: center;
+	background:	var(--clr-oscuro);
+  font-size: 1.0em;
+	padding:0.4em;
+}
+
+
+
+h1 {
+	padding:0.5em;
+	font:bold 200%/120% arial,helvetica,sans-serif;
+}
+
+h2 {
+	padding:0.5em;
+	font:bold 150%/120% arial,helvetica,sans-serif;
+}
+
+h3, h4 {
+	padding: 1em;
+}
+
+p {
+	padding:0 1em 0.5em;
+}
+
+#top {
+	max-width:64em;
+	margin:0 auto;
+	background:#FFF;
+}
+
+@media (max-width:38em) {
+	body {
+		padding:0;
+		background:var(--clr-palido);
+	}
+	h1 {
+		text-align:left;
+		padding-right:2em;
+		margin-bottom:0.5em;
+	}
+}
+
+/* ---- */
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: var(--clr-oscuro);
+  color: #ffffff;
+  padding: 0px;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+	background:	var(--clr-oscuro);
+  font-size: 1.0em;
+	padding:0.4em;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.clr_oscuro { background-color: var(--clr-oscuro); } 
+.clr_medio  { background-color: var(--clr-medio); }
+.clr_claro  { background-color: var(--clr-claro); }
+.clr_fondo  { background-color: var(--clr-fondo); }
+.clr_contra { background-color: var(--clr-contra); } 
+
+/* fond -->	background:#dff5d6; */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* para tener imagenes responsivas */
+.img-responsive, .responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* imagenes */
+img-circle {
+  border-radius: 50%; 
+  border-radius: 50%;
+}
+
+/* selectores para la navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--clr-medio);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  /* background-color: var(--clr-oscuro); */
+  background-color: var(--clr-contra);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  var(--clr-medio);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.82);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: var(--clr-contra);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
