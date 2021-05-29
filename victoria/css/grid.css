@@ -23,7 +23,7 @@
     }
     
     .grid2c>div {
-        border-radius: 15px;
+        border-radius: 20px;
         padding: 1rem;
         background-color: var(--clr-oscuro);
         margin: 1rem;
