@@ -145,7 +145,7 @@ h3, h4 {
 }
 
 p {
-	padding:0 0.5em 0.5em;
+	padding:0 1em 0.5em;
 }
 
 #top {
@@ -243,7 +243,7 @@ img-circle {
 }
 
 /* selectores para la navigation bar */
-ul {
+.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -251,7 +251,7 @@ ul {
   background-color: var(--clr-medio);
 }
 
-li {
+li.nav {
   float: left;
 }
 
