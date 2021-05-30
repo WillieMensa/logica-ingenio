@@ -16,10 +16,10 @@ function poneMenuPpal() {
 		'	<li class="dropdown">' +
 		'		<a href="javascript:void(0)" class="dropbtn">Enlaces</a>' +
 		'		<div class="dropdown-content">' +
-		'			<a href="comercios.html">Comercios</a>' +
-		'			<a href="servicios.html">Servicios</a>' +
-		'			<a href="gastronomia.html">Gastronomia</a>' +
-		'			<a href="recreaciones.html">Recreaciones</a>' +
+		'			<a href="gastronomia.html">Gastronomía</a>' +
+		'			<a href="termas.html">Termas</a>' +
+		'			<a href="enConstruccion.html">Servicios</a>' +
+		'			<a href="enConstruccion.html">Recreaciones</a>' +
 		'		</div>' +
 		'	<li><a href="./eventos.html">Eventos</a></li>' +
 		'	<li><a href="./sitemap.html">Mapa del sitio </a></li>' +
