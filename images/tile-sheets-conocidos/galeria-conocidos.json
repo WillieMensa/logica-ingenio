@@ -65,7 +65,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "EzequielC_xs.png",
+	"filename": "EzequielCastano.png",
 	"frame": {"x":360,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -207,6 +207,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":800},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:d6126c58b1e41fd7da39e65969cb2db1:fb5347b6ee6122c9ba53973da95d0083:3cdebe7f307c137881d02b0ac9fea867$"
+	"smartupdate": "$TexturePacker:SmartUpdate:87cd7293f24d6c2025f0b8dd04b369b7:9569db43b48668ef674e8982addf6a92:3cdebe7f307c137881d02b0ac9fea867$"
 }
 }

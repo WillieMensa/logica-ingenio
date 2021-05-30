@@ -189,6 +189,7 @@
             <key type="filename">ClausH_xs.png</key>
             <key type="filename">CristianMenRos.png</key>
             <key type="filename">DiegoT_xs.png</key>
+            <key type="filename">EzequielCastano.png</key>
             <key type="filename">GermanG.png</key>
             <key type="filename">Guille-II_xs.png</key>
             <key type="filename">GuilleDianda.png</key>
@@ -219,21 +220,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">EzequielC_xs.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>30,38,60,76</rect>
-                <key>scale9Paddings</key>
-                <rect>30,38,60,76</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
         </map>
         <key>fileList</key>
         <array>
@@ -242,7 +228,6 @@
             <filename>AnnieV_xs.png</filename>
             <filename>ClausH_xs.png</filename>
             <filename>DiegoT_xs.png</filename>
-            <filename>EzequielC_xs.png</filename>
             <filename>Guille-II_xs.png</filename>
             <filename>JoseLuisM_xs.png</filename>
             <filename>Magiord_xs.png</filename>
@@ -262,6 +247,7 @@
             <filename>MarianoMocoroa.png</filename>
             <filename>NataliaMariscotti.png</filename>
             <filename>Pascal.png</filename>
+            <filename>EzequielCastano.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
