@@ -65,14 +65,36 @@ color version 0.1.3
  #887711ff;
  #889911ff;
 
+version 0.2.0
+ #221111ff;                
+ #444411ff;                
+ #669911ff;                
+ #99cc66ff;	#777711ff; 
+ #995511ff;                
+
+
+version 0.2.1
+ #264653ff;
+ #2a9d8fff;
+ #e9c46aff;
+ #f4a261ff;
+ #e76f51ff;
+
+Elegida por Natalia Mariscotti
+$eggshell: #f4f1deff;
+$terra-cotta: #e07a5fff;
+$independence: #3d405bff;
+$green-sheen: #81b29aff;
+$deep-champagne: #f2cc8fff;
+
 */
 
 :root {
-	--clr-fondo  : #221111ff;
-	--clr-oscuro :#444411ff;
-	--clr-medio  : #669911ff;
-	--clr-claro  : #99cc66;	/* #777711ff; */
-	--clr-contra : #995511ff;
+	--clr-fondo  : #3d405bff;
+	--clr-oscuro : #81b29aff;
+	--clr-medio  : #e07a5fff;
+	--clr-claro  : #f4f1deff;
+	--clr-contra : #f2cc8fff;
 }
 
 
