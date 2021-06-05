@@ -182,7 +182,7 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">AleH_xs.png</key>
-            <key type="filename">AlejanY_xs.png</key>
+            <key type="filename">AlejandroYacono.png</key>
             <key type="filename">AnnieV_xs.png</key>
             <key type="filename">ArielJurjo.png</key>
             <key type="filename">AugustoOliva.png</key>
@@ -224,7 +224,6 @@
         <key>fileList</key>
         <array>
             <filename>AleH_xs.png</filename>
-            <filename>AlejanY_xs.png</filename>
             <filename>AnnieV_xs.png</filename>
             <filename>ClausH_xs.png</filename>
             <filename>DiegoT_xs.png</filename>
@@ -248,6 +247,7 @@
             <filename>NataliaMariscotti.png</filename>
             <filename>Pascal.png</filename>
             <filename>EzequielCastano.png</filename>
+            <filename>AlejandroYacono.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
