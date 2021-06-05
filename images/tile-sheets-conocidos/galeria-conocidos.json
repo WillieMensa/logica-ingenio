@@ -9,7 +9,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "AlejanY_xs.png",
+	"filename": "AlejandroYacono.png",
 	"frame": {"x":120,"y":0,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -207,6 +207,6 @@
 	"format": "RGBA8888",
 	"size": {"w":600,"h":800},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:87cd7293f24d6c2025f0b8dd04b369b7:9569db43b48668ef674e8982addf6a92:3cdebe7f307c137881d02b0ac9fea867$"
+	"smartupdate": "$TexturePacker:SmartUpdate:35112ec4355ea1c2b16575d176180d0c:c64318f9e65f367bc0d5ac7b1090ee00:3cdebe7f307c137881d02b0ac9fea867$"
 }
 }
