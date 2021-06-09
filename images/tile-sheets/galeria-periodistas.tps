@@ -182,28 +182,20 @@
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
             <key type="filename">AdrianVentura.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0,0</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>30,40,60,80</rect>
-                <key>scale9Paddings</key>
-                <rect>30,40,60,80</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
             <key type="filename">AlfredoLeuco.png</key>
             <key type="filename">CarlosGardel.png</key>
-            <key type="filename">CarlosPagni_small.png</key>
-            <key type="filename">JoaquinMSola_small.png</key>
-            <key type="filename">JorgeFD_small.png</key>
-            <key type="filename">JorgeLana_small.png</key>
+            <key type="filename">CarlosPagni.png</key>
+            <key type="filename">DiegoMaradona.png</key>
+            <key type="filename">FernandoBurlando.png</key>
+            <key type="filename">HugoAlconada.png</key>
+            <key type="filename">JoaquinMoralesSola.png</key>
+            <key type="filename">JorgeFernandezDiaz.png</key>
+            <key type="filename">JorgeLanata.png</key>
+            <key type="filename">LionelMessi.png</key>
             <key type="filename">LuisMajul.png</key>
-            <key type="filename">RobertoC_small.png</key>
+            <key type="filename">MirthaLegrand.png</key>
+            <key type="filename">RobertoCachanosky.png</key>
+            <key type="filename">RobertoNavarro.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -221,15 +213,21 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>JoaquinMSola_small.png</filename>
-            <filename>JorgeFD_small.png</filename>
-            <filename>JorgeLana_small.png</filename>
-            <filename>CarlosPagni_small.png</filename>
-            <filename>RobertoC_small.png</filename>
             <filename>LuisMajul.png</filename>
             <filename>AlfredoLeuco.png</filename>
             <filename>CarlosGardel.png</filename>
             <filename>AdrianVentura.png</filename>
+            <filename>CarlosPagni.png</filename>
+            <filename>DiegoMaradona.png</filename>
+            <filename>FernandoBurlando.png</filename>
+            <filename>HugoAlconada.png</filename>
+            <filename>JoaquinMoralesSola.png</filename>
+            <filename>JorgeFernandezDiaz.png</filename>
+            <filename>JorgeLanata.png</filename>
+            <filename>LionelMessi.png</filename>
+            <filename>MirthaLegrand.png</filename>
+            <filename>RobertoCachanosky.png</filename>
+            <filename>RobertoNavarro.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

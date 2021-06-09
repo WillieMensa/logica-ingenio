@@ -1,0 +1,7 @@
+﻿<!-- https://learnui.design/tools/data-color-picker.html#divergent -->
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="780" height="140" viewBox="0 0 780 140">
+				<g fill="none" fill-rule="evenodd">
+					<rect id="#083008"  width="140" height="140" x="0" fill="#083008"/>,<rect id="#7d8a54"  width="140" height="140" x="160" fill="#7d8a54"/>,<rect id="#ffeeb3"  width="140" height="140" x="320" fill="#ffeeb3"/>,<rect id="#d59863"  width="140" height="140" x="480" fill="#d59863"/>,<rect id="#a64133"  width="140" height="140" x="640" fill="#a64133"/>
+				</g>
+			</svg>

@@ -186,6 +186,7 @@
             <key type="filename">CarlosGardel.png</key>
             <key type="filename">CarlosPagni.png</key>
             <key type="filename">DiegoMaradona.png</key>
+            <key type="filename">FernandoBurlando.png</key>
             <key type="filename">HugoAlconada.png</key>
             <key type="filename">JoaquinMoralesSola.png</key>
             <key type="filename">JorgeFernandezDiaz.png</key>
@@ -226,6 +227,7 @@
             <filename>DiegoMaradona.png</filename>
             <filename>RobertoNavarro.png</filename>
             <filename>MirthaLegrand.png</filename>
+            <filename>FernandoBurlando.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
