@@ -1,0 +1,38 @@
+.button {
+    background-color: var(--clr-contra);	/* #003d66; */
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* para el svg */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700');
+.gris {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 72px;
+    font-weight:700;
+    dominant-baseline: central; text-anchor: start;
+    fill: #123;
+    /* text-shadow: -8px 8px 8px black;*/
+}
+.trazo { stroke: #123;stroke-width:8;opacity:1.0; }
+.caja { fill: var(--clr-claro);}
+/* .caja { fill: clr_claro;} */
+
+.letraclara {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color: black;
+}
+
+.svg-container {
+	width="450" height="280"
+
+}

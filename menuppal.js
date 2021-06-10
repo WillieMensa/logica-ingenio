@@ -25,6 +25,7 @@ function poneMenuPpal() {
 		'			<a href="galeria-ArtistasPeriodistas.html">Artistas y Periodistas</a>' +
 		'			<a href="galeria-publicos.html">Personajes Públicos</a>' +
 		'			<a href="./repgrafsincorbata.html">Representación gráfica sin corbata</a>' +
+		'			<a href="revista-enigma.html">&Uacute;ltimo n&uacute;mero de la revista Enigma.</a>' +
 		'		</div>' +
 		'	<li><a href="./sitemap.html">Mapa del sitio </a></li>' +
 		'	</li>' +
