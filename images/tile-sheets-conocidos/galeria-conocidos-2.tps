@@ -95,9 +95,9 @@
         <key>fixedTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>600</int>
+            <int>480</int>
             <key>height</key>
-            <int>800</int>
+            <int>640</int>
         </QSize>
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
@@ -181,19 +181,7 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">AleH_xs.png</key>
-            <key type="filename">AlejandroYacono.png</key>
-            <key type="filename">AnnieV_xs.png</key>
-            <key type="filename">ArielJurjo.png</key>
-            <key type="filename">AugustoOliva.png</key>
-            <key type="filename">ClausH_xs.png</key>
-            <key type="filename">CristianMenRos.png</key>
-            <key type="filename">DiegoT_xs.png</key>
-            <key type="filename">EzequielCastano.png</key>
-            <key type="filename">GermanG.png</key>
-            <key type="filename">Guille-II_xs.png</key>
-            <key type="filename">GuilleDianda.png</key>
-            <key type="filename">GuilleFlores.png</key>
+            <key type="filename">JohnnieV.png</key>
             <key type="filename">JoseLuisM_xs.png</key>
             <key type="filename">LourdesF.png</key>
             <key type="filename">LuciBagilet.png</key>
@@ -223,31 +211,19 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>AleH_xs.png</filename>
-            <filename>AnnieV_xs.png</filename>
-            <filename>ClausH_xs.png</filename>
-            <filename>DiegoT_xs.png</filename>
-            <filename>Guille-II_xs.png</filename>
             <filename>JoseLuisM_xs.png</filename>
             <filename>Magiord_xs.png</filename>
             <filename>Nane_xs.png</filename>
             <filename>OscarAbe_xs.png</filename>
             <filename>RubenD_xs.png</filename>
             <filename>joseO_xs.png</filename>
-            <filename>ArielJurjo.png</filename>
-            <filename>GuilleFlores.png</filename>
-            <filename>GermanG.png</filename>
-            <filename>GuilleDianda.png</filename>
-            <filename>CristianMenRos.png</filename>
             <filename>OscarDeSanctis.png</filename>
             <filename>LourdesF.png</filename>
             <filename>LuciBagilet.png</filename>
-            <filename>AugustoOliva.png</filename>
             <filename>MarianoMocoroa.png</filename>
             <filename>NataliaMariscotti.png</filename>
             <filename>Pascal.png</filename>
-            <filename>EzequielCastano.png</filename>
-            <filename>AlejandroYacono.png</filename>
+            <filename>JohnnieV.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -34,14 +34,6 @@
 },
 {
 	"filename": "AugustoOliva.png",
-	"frame": {"x":480,"y":0,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "ClausH_xs.png",
 	"frame": {"x":0,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -49,7 +41,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "CristianMenRos.png",
+	"filename": "ClausH_xs.png",
 	"frame": {"x":120,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -57,7 +49,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "DiegoT_xs.png",
+	"filename": "CristianMenRos.png",
 	"frame": {"x":240,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -65,7 +57,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "EzequielCastano.png",
+	"filename": "DiegoT_xs.png",
 	"frame": {"x":360,"y":160,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -73,15 +65,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GermanG.png",
-	"frame": {"x":480,"y":160,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "Guille-II_xs.png",
+	"filename": "EzequielCastano.png",
 	"frame": {"x":0,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -89,7 +73,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GuilleDianda.png",
+	"filename": "GermanG.png",
 	"frame": {"x":120,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -97,7 +81,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "GuilleFlores.png",
+	"filename": "Guille-II_xs.png",
 	"frame": {"x":240,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -105,7 +89,7 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "JoseLuisM_xs.png",
+	"filename": "GuilleDianda.png",
 	"frame": {"x":360,"y":320,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
@@ -113,88 +97,8 @@
 	"sourceSize": {"w":120,"h":160}
 },
 {
-	"filename": "joseO_xs.png",
-	"frame": {"x":480,"y":320,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "LourdesF.png",
+	"filename": "GuilleFlores.png",
 	"frame": {"x":0,"y":480,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "LuciBagilet.png",
-	"frame": {"x":120,"y":480,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "Magiord_xs.png",
-	"frame": {"x":240,"y":480,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "MarianoMocoroa.png",
-	"frame": {"x":360,"y":480,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "Nane_xs.png",
-	"frame": {"x":480,"y":480,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "NataliaMariscotti.png",
-	"frame": {"x":0,"y":640,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "OscarAbe_xs.png",
-	"frame": {"x":120,"y":640,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "OscarDeSanctis.png",
-	"frame": {"x":240,"y":640,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "Pascal.png",
-	"frame": {"x":360,"y":640,"w":120,"h":160},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
-	"sourceSize": {"w":120,"h":160}
-},
-{
-	"filename": "RubenD_xs.png",
-	"frame": {"x":480,"y":640,"w":120,"h":160},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":160},
@@ -205,8 +109,8 @@
 	"version": "1.0",
 	"image": "galeria-conocidos.png",
 	"format": "RGBA8888",
-	"size": {"w":600,"h":800},
+	"size": {"w":480,"h":640},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:35112ec4355ea1c2b16575d176180d0c:c64318f9e65f367bc0d5ac7b1090ee00:3cdebe7f307c137881d02b0ac9fea867$"
+	"smartupdate": "$TexturePacker:SmartUpdate:18b6c926421e4f3e75e49ff0846a974c:ad531b846c600644cbf470902363b5d1:3cdebe7f307c137881d02b0ac9fea867$"
 }
 }
