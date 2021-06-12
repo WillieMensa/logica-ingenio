@@ -18,97 +18,99 @@
 </head>
 
 <body>
-	<div class="svg-container">
-		<!-- Contenido de la pagina -->
-		<a name="TopOfPage"></a>
-		<h2>Triángulo equilátero disecado</h2>
-		<p>Dividí un triángulo equilátero en cuatro piezas. Tres de ellas iguales y la cuarta diferente. Luego uní las piezas, sin superponerlas, obteniendo la			figura que se muestra.<br />
-			El problema consiste en dividir esta figura en cuatro piezas para conseguir el triángulo equilátero original.</p>
-		<!-- Enunciado del problema -->
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink"
-			xml:space="preserve"
-			width="80%" height="80%"
-			viewBox="0 0 500 270"
-			zoomAndPan="disable">
+	<!-- Contenido de la pagina -->
+	<a name="TopOfPage"></a>
+	<div class="row clr_fondo svg-container" >
+		<div class="col-12">
+			<h2>Triángulo equilátero disecado</h2>
+			<p>Dividí un triángulo equilátero en cuatro piezas. Tres de ellas iguales y la cuarta diferente. Luego uní las piezas, sin superponerlas, obteniendo la			figura que se muestra.<br />
+				El problema consiste en dividir esta figura en cuatro piezas para conseguir el triángulo equilátero original.</p>
+			<!-- Enunciado del problema -->
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xml:space="preserve"
+				width="80%" height="80%"
+				viewBox="0 0 500 270"
+				zoomAndPan="disable">
 
-			<g transform="scale(0.80)">				
-				<g transform="translate(200,10) scale(0.50)" >
-					<polygon id="perfil"
+				<g transform="scale(0.80)">				
+					<g transform="translate(200,10) scale(0.50)" >
+						<polygon id="perfil"
+							points="100,0
+							200,0
+							300,173.20
+							700,173.20
+							750,259.81
+							650,433.01
+							750,606.22
+							150,606.22
+							200,519.61
+							300,519.61
+							200,346.41
+							00,346.41
+							50,259.81
+							0,173.20"
+							fill="#ccccff"
+							stroke="#000066"
+							stroke-width="16"
+							/>
+					</g>
+				</g>
+			</svg>
+
+			<p><a><button class="button" onclick="hideShow()">Ver solución</button></a></p>
+
+			<div id="solucion" >
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xml:space="preserve"
+				width="80%" height="80%"
+				viewBox="0 0 550 350"
+				zoomAndPan="disable">
+
+				<def >
+					<polygon id="h7gono"
+						points="00,0 600,0 550,86.60 350,86.60 250,259.81 200,173.20 100,173.20"
+						fill="#ccccff"
+						stroke="#000066"
+						stroke-width="8"/>
+
+					<polygon id="h6gono"
 						points="100,0
 						200,0
 						300,173.20
-						700,173.20
-						750,259.81
-						650,433.01
-						750,606.22
-						150,606.22
-						200,519.61
-						300,519.61
-						200,346.41
-						00,346.41
+						250,259.81
 						50,259.81
-						0,173.20"
+						00,173.20"
 						fill="#ccccff"
 						stroke="#000066"
-						stroke-width="16"
-						/>
+						stroke-width="8"/>
+				</def>
+			<g transform="scale(0.8)">
+				<!-- <rect x="0" y="0" rx="0" ry="0" width="800" height="300" style="fill:#99d6ff;opacity:0.95" /> -->
+
+				<g transform="translate(10,20) scale(0.40)" >
+					<g transform="translate(800,606.22) rotate(180,00,00)" > <use href="#h7gono"/></g>
+					<g transform="translate(150,0) rotate(60,00,00)"       > <use href="#h7gono"/></g>
+					<g transform="translate(450,519.61) rotate(240,00,00)" ><use href="#h7gono"/></g>
+					<g transform="translate(450,346.41) rotate(300,00,00)" ><use href="#h6gono"/></g>
+				</g>
+
+				<g transform="translate(350,40) scale(0.40)" >
+					<g transform="translate(800,606.22) rotate(180,00,00)" ><use href="#h7gono"/></g>
+					<g transform="translate(400,-86.60) rotate(60,00,00)"  ><use href="#h7gono"/></g>
+					<g transform="translate(00,606.22) rotate(300,00,00)"  ><use href="#h7gono"/></g>
+					<g transform="translate(200,433.01) rotate(300,00,00)" ><use href="#h6gono"/></g>
 				</g>
 			</g>
-		</svg>
+			</svg>
+				
+			</div>
 
-		<p><a><button class="button" onclick="hideShow()">Ver solución</button></a></p>
-
-		<div id="solucion" >
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink"
-			xml:space="preserve"
-			width="80%" height="80%"
-			viewBox="0 0 550 350"
-			zoomAndPan="disable">
-
-			<def >
-				<polygon id="h7gono"
-					points="00,0 600,0 550,86.60 350,86.60 250,259.81 200,173.20 100,173.20"
-					fill="#ccccff"
-					stroke="#000066"
-					stroke-width="8"/>
-
-				<polygon id="h6gono"
-					points="100,0
-					200,0
-					300,173.20
-					250,259.81
-					50,259.81
-					00,173.20"
-					fill="#ccccff"
-					stroke="#000066"
-					stroke-width="8"/>
-			</def>
-		<g transform="scale(0.8)">
-			<!-- <rect x="0" y="0" rx="0" ry="0" width="800" height="300" style="fill:#99d6ff;opacity:0.95" /> -->
-
-			<g transform="translate(10,20) scale(0.40)" >
-				<g transform="translate(800,606.22) rotate(180,00,00)" > <use href="#h7gono"/></g>
-				<g transform="translate(150,0) rotate(60,00,00)"       > <use href="#h7gono"/></g>
-				<g transform="translate(450,519.61) rotate(240,00,00)" ><use href="#h7gono"/></g>
-				<g transform="translate(450,346.41) rotate(300,00,00)" ><use href="#h6gono"/></g>
-			</g>
-
-			<g transform="translate(350,40) scale(0.40)" >
-				<g transform="translate(800,606.22) rotate(180,00,00)" ><use href="#h7gono"/></g>
-				<g transform="translate(400,-86.60) rotate(60,00,00)"  ><use href="#h7gono"/></g>
-				<g transform="translate(00,606.22) rotate(300,00,00)"  ><use href="#h7gono"/></g>
-				<g transform="translate(200,433.01) rotate(300,00,00)" ><use href="#h6gono"/></g>
-			</g>
-		</g>
-		</svg>
-			
+			<!-- fin contenido -->
 		</div>
-
-		<!-- fin contenido -->
 	</div>
 
 	<script src="hide_show.js"></script>
