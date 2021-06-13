@@ -19,7 +19,8 @@ let
 	aVertex,					//	para ubicar numeros aleatoriamente
 	nroPagina = 1,
 	lConSoluc,				//	indicador esta mostrando solución
-	nPagActual,				//	nro problema actual (el valor)
+	//nPagActual,				//	nro problema actual (el valor)
+	nroProb,				//	nro problema actual (el valor)
 	//	posX = undefined,
 	//	posY = undefined,
 	aSuma, aVert,
@@ -92,8 +93,8 @@ let
 
 
 function start() {
-	nPagActual = getNroPag();			//	leer nro problema actual
-	document.getElementById("numero").value = nPagActual;
+	// nPagActual = getNroPag();			//	leer nro problema actual
+	// document.getElementById("numero").value = nPagActual;
 	dibujaPag();
 };
 
@@ -236,6 +237,8 @@ function dibujaPag() {
 	ctx.fillStyle = '#ffffffff';
 	ctx.fillRect(1, 1, 560, 794);
 
+	document.getElementById('nroProb').innerHTML = " Página: " + nroProb;
+
 	//	detectar si se pidio con solucion
 	var checkBox = document.getElementById("conSolucion");
 	lConSoluc = checkBox.checked;
@@ -322,18 +325,19 @@ function dibujaPag() {
 //	tomado de presenta suma oculta
 function leeJuegosPagina() {		// recupera datos de un juegos para una página
 	if (DEBUG){	console.log('--- inmediatemente antes de leer nPagActual: ', nPagActual )	}
-	aRAvert = problemas[nPagActual-1].RAvert;
-	aRAsuma = problemas[nPagActual-1].RAsuma;
-	aCOvert = problemas[nPagActual-1].COvert;
-	aCOsuma = problemas[nPagActual-1].COsuma;
-	aDDvert = problemas[nPagActual-1].DDvert;
-	aDDsuma = problemas[nPagActual-1].DDsuma;
-	aDIvert = problemas[nPagActual-1].DIvert;
-	aDIsuma = problemas[nPagActual-1].DIsuma;
-	aCRvert = problemas[nPagActual-1].CRvert;
-	aCRsuma = problemas[nPagActual-1].CRsuma;
-	aCLvert = problemas[nPagActual-1].CLvert;
-	aCLsuma = problemas[nPagActual-1].CLsuma;
+	nroProb = problemas[0].nroProb;
+	aRAvert = problemas[0].RAvert;
+	aRAsuma = problemas[0].RAsuma;
+	aCOvert = problemas[0].COvert;
+	aCOsuma = problemas[0].COsuma;
+	aDDvert = problemas[0].DDvert;
+	aDDsuma = problemas[0].DDsuma;
+	aDIvert = problemas[0].DIvert;
+	aDIsuma = problemas[0].DIsuma;
+	aCRvert = problemas[0].CRvert;
+	aCRsuma = problemas[0].CRsuma;
+	aCLvert = problemas[0].CLvert;
+	aCLsuma = problemas[0].CLsuma;
 
 	if (DEBUG){
 		console.log("aRAvert: ", aRAvert);

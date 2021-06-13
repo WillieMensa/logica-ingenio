@@ -40,25 +40,29 @@
 
 		<div class="row clr_claro" style="font-size: 1.2em;">
 			<div class="col-8">
-				<p class="canvStyle">
+				<!-- <p class="canvStyle"> -->
+				<p>
 					En los círculos están todos los números del 1 al 9.
 					En el interior de los triángulos se presenta la suma de sus vértices.
 					El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br />
 				</p>
 			</div>
 			<div class="col-4">
+				<!-- anulado porque muestro una sola página.
+				Cambiar todas las semanas. Poner número de problema.
 				<p><label for="numero">Página:</label>
-					<input type="number" id="numero" name="numero" min="1" max="99" autofocus onchange="ajustaNumPag()"></p>
+				<input type="number" id="numero" name="numero" min="1" max="99" autofocus onchange="ajustaNumPag()"></p> -->
 
-				<p><label for="conSolucion"> Mostrar solución </label>
-					<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()"> </p>
+				<div id="nroProb"></div>
+				<label for="conSolucion">Mostrar solución </label>
+				<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()">
 
-				<p><button onclick="printDiv(false)">Imprimir juego</button> </p>
+				<p><button onclick="printDiv(false)">Imprimir juego</button></p>
 			</div>
 		</div>
 
 		<div class="row clr_fondo">
-			<div class="col-8" id="imprimir">
+			<div class="col-8" id="imprimir" style="text-align: center;">
 				<!--
   <div class="col-8" id="imprimir" style="width:100%">
 		centimeters = pixels * 2.54 / 96
