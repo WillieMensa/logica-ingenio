@@ -237,7 +237,7 @@ function dibujaPag() {
 	ctx.fillStyle = '#ffffffff';
 	ctx.fillRect(1, 1, 560, 794);
 
-	document.getElementById('nroProb').innerHTML = " Página: " + nroProb;
+	document.getElementById('nroProb').innerHTML = " Problema: " + nroProb;
 
 	//	detectar si se pidio con solucion
 	var checkBox = document.getElementById("conSolucion");
@@ -428,7 +428,7 @@ function ajustaNumPag() {
 	function printDiv() {
 		var objeto = document.getElementById('imprimir');
 		//	console.log( "lConSolucion: " + lConSolucion );
-		//	console.log(objeto);
+		console.log(objeto);
 
 		//	document.body.className = (lConSolucion ? "resuelto" : "noresuelto");
 		//obtenemos el objeto a imprimir

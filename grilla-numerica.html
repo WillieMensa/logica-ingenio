@@ -47,7 +47,7 @@
 					El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br />
 				</p>
 			</div>
-			<div class="col-4">
+			<div class="col-4" style="text-align: right;">
 				<!-- anulado porque muestro una sola página.
 				Cambiar todas las semanas. Poner número de problema.
 				<p><label for="numero">Página:</label>
@@ -57,7 +57,7 @@
 				<label for="conSolucion">Mostrar solución </label>
 				<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()">
 
-				<p><button onclick="printDiv(false)">Imprimir juego</button></p>
+				<!-- <p><button onclick="printDiv(false)">Imprimir juego</button></p> -->
 			</div>
 		</div>
 
@@ -91,18 +91,17 @@
 		<script src="js/grilla-numerica.js"></script>
 
 		<script>
-			function printDiv() {
-				//	var objeto=document.getElementById('imprimir');
-				var objeto = document.getElementById('canvas1');
-				console.log(objeto);
-
-				//obtenemos el objeto a imprimir
-				var ventana = window.open('', '_blank'); //abrimos una ventana vacía nueva
-				ventana.document.write(objeto.innerHTML); //imprimimos el HTML del objeto en la nueva ventana
-				ventana.document.close(); //cerramos el documento
-				ventana.print(); //imprimimos la ventana
-				ventana.close(); //cerramos la ventana
-			}
+		//		function printDiv() {
+		//			//	var objeto=document.getElementById('imprimir');
+		//			var objeto = document.getElementById('canvas1');
+		//			console.log(objeto);
+		//			//obtenemos el objeto a imprimir
+		//			var ventana = window.open('', '_blank'); //abrimos una ventana vacía nueva
+		//			ventana.document.write(objeto.innerHTML); //imprimimos el HTML del objeto en la nueva ventana
+		//			ventana.document.close(); //cerramos el documento
+		//			ventana.print(); //imprimimos la ventana
+		//			ventana.close(); //cerramos la ventana
+		//		}
 		</script>
 
 	</body>
