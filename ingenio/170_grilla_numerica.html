@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title> Grilla numérica </title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Criptosuma">
+	<meta name="keywords" content="Ingenio, Lógica,acertijos, resolucion problemas, sudoku gratis para imprimir, puzzles, acertijos, creatividad, enigmas, Gimnasia Cerebral, gimnasia mental, juegos de lógica, juegos numéricos, juegos mentales, lógica, Memoria, percepción visual, Rompecabezas, Problemas de ingenio, Juegos de mesa">
+
+	<link rel="stylesheet" href="../css/estilo202010.css" media="screen,projection,tv">
+	<link rel="stylesheet" href="../css/ingenio.css" media="screen,projection,tv">
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+</head>
+
+<body>
+
+	<div class="row clr_fondo" style="font-size: 1.2em;">
+		<div class="col-3"></div>
+		<div class="col-6">
+			<p>
+				En los círculos están todos los números del 1 al 9.
+				En el interior de los triángulos se presenta la suma de sus vértices.
+				El objetivo del juego es deducir los valores de cada círculo, el primero de los cuales ya está asignado.<br />
+			</p>
+		</div>
+		<div class="col-3"></div>
+
+	</div>
+
+	<div class="row clr_fondo">
+		<div class="col-3"></div>
+		<div class="col-6" id="imprimir" style="text-align: center;">
+			<!--
+			<div class="col-8" id="imprimir" style="width:100%">
+				centimeters = pixels * 2.54 / 96
+				pixels = cm * 96 / 2.54
+				148 mm = 560 px
+				210 mm = 794 px
+			-->
+			<canvas id="canvas1" width="560" height="760" class="img-responsive"></canvas>
+		</div>
+		<div class="col-3"></div>
+	</div>
+
+	<div class="row clr_fondo" style="font-size: 1.2em;">
+
+		<div class="col-6" style="text-align: right;">
+			<div id="nroProb"></div>
+			<label for="conSolucion">Mostrar solución </label>
+			<input type="checkbox" name="conSolucion" id="conSolucion" value="si" onclick="dibujaPag()">
+
+			<!-- <p><button onclick="printDiv(false)">Imprimir juego</button></p> -->
+		</div>
+		<div class="col-3"></div>
+	</div>
+
+	<!-- el proximo script contiene const problemas, array en formato json -->
+	<script src="../js/problemas-grilla-numerica.json"></script>
+	<script src="../js/grilla-numerica.js"></script>
+
+</body>
+
+</html>

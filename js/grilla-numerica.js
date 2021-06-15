@@ -3,7 +3,7 @@
 	2020.12.11
 */
 
-// window.onload = start;
+window.onload = start;
 
 const
 	NCOL = 3,
@@ -19,8 +19,8 @@ let
 	aVertex,					//	para ubicar numeros aleatoriamente
 	nroPagina = 1,
 	lConSoluc,				//	indicador esta mostrando solución
-	//nPagActual,				//	nro problema actual (el valor)
-	nroProb,				//	nro problema actual (el valor)
+	//nPagActual,			//	nro problema actual (el valor)
+	nroProb,					//	nro problema actual (el valor)
 	//	posX = undefined,
 	//	posY = undefined,
 	aSuma, aVert,
@@ -243,7 +243,7 @@ function dibujaPag() {
 	var checkBox = document.getElementById("conSolucion");
 	lConSoluc = checkBox.checked;
 
-	//	console.log( 'lConSoluc: ', lConSoluc );
+	console.log( 'lConSoluc: ', lConSoluc );
 	presentaGrilla("RA", 080, 060);
 	presentaGrilla("CO", 320, 060);
 
