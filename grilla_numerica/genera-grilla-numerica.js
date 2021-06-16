@@ -3,7 +3,7 @@
 	mecanismos tomados de GrillaSumado11.html
 
 	Hay que generar un objeto similar a este para que sea leido por la app que presenta el juego
-	{ 
+	{ 'nroProb':1,
 		'RAvert':[6,9,5,7,2,3,4,8,1],'RAsuma':[15,17,16,10,13,14,11,6],
 		'COvert':[5,6,4,3,1,8,2,7,9],'COsuma':[14,10,15,18,12,11,16,24],
 		'DDvert':[9,4,3,6,5,7,8,1,2],'DDsuma':[20,18,16,14,15,12,8,14],
@@ -41,6 +41,7 @@ let
 function init() {
 	for (var i=0;i<NCUANTOS ;i++ ){
 		salida += '{<br>'
+		salida += "'nroProb':" + i +",<br>" ;
 		GenJuego("RA");
 		GenJuego("CO");
 		GenJuego("DD");
