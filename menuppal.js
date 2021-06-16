@@ -13,7 +13,7 @@ function poneMenuPpal() {
 	document.getElementById('menuppal').innerHTML = 
 		'	<ul id="mainMenu">' +
 		'	<li><a href="./index.html">Inicio </a></li> ' +
-		'	<li><a href="./problemas_ingenio_2020.html">Problemas de Ingenio </a></li>' +
+		'	<li><a href="./problemas_ingenio_2020.html">Juegos de Ingenio </a></li>' +
 		'	<li><a href="./ingenio.html">Juegos </a></li>' +
 		'	<li><a href="./aplicaciones.html">Aplicaciones </a></li>' +
 		'	<li class="dropdown">' +
