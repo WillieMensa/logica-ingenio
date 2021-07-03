@@ -181,6 +181,7 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">JesusCejas.png</key>
             <key type="filename">JohnnieV.png</key>
             <key type="filename">JoseLuisM_xs.png</key>
             <key type="filename">LourdesF.png</key>
@@ -191,6 +192,8 @@
             <key type="filename">NataliaMariscotti.png</key>
             <key type="filename">OscarAbe_xs.png</key>
             <key type="filename">OscarDeSanctis.png</key>
+            <key type="filename">OsvaldoDiaz.png</key>
+            <key type="filename">PabloCaputi.png</key>
             <key type="filename">Pascal.png</key>
             <key type="filename">RubenD_xs.png</key>
             <key type="filename">joseO_xs.png</key>
@@ -224,6 +227,9 @@
             <filename>NataliaMariscotti.png</filename>
             <filename>Pascal.png</filename>
             <filename>JohnnieV.png</filename>
+            <filename>JesusCejas.png</filename>
+            <filename>OsvaldoDiaz.png</filename>
+            <filename>PabloCaputi.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

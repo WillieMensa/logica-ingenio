@@ -3,9 +3,10 @@
 
 //=========
 // constantes
+//	05/11/2020
 //=========
 const
-	versionString = "0.3.0", //  lleva el numero de version actual
+	versionString = "0.3.0", //	05/11/2020
 	DEBUG = false,
 	//	DEBUG = true,
 	NRO_PROB = 1,
