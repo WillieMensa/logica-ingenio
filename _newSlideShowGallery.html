@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<!-- grilla			https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints -->
+<!-- top navigation https://www.w3schools.com/howto/howto_js_topnav.asp -->
+<!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+
+<head>
+	<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+	<meta charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,height=device-height,initial-scale=1">
+	<!-- tutorial de https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids	-->
+	<meta name="description" content="Juegos de lógica e Ingenio, aplicaciones Android">
+	<meta name="keywords" content="Juegos Ingenio, Lógica, Rompecabezas">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Ing. Guillermo Verger</title> 
+
+	<link	rel="stylesheet"	href="./css/estilo202010.css"	media="screen,projection,tv">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<script src="menuppal.js"></script>
+
+	<!-- inicio de modificaciones esquema habitual -->
+<style>
+body {
+/*  font-family: Arial;
+  margin: 0;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  /* float: left; */
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+	<!-- fin de modificaciones esquema habitual -->
+</head>
+
+<body>
+
+<div class="header">
+	<h1>Ing. Guillermo Verger - Novedades </h1>
+</div>
+
+<div id="menuppal"></div>
+
+<!-- Contenido de la pagina -->
+
+<div class="row clr_palido">
+  <div class="col-1">
+  </div>
+  <div class="col-2">
+    <img class="demo cursor" src=".\_trabajosNuevos\AdrianVentura_S.webp" style="width:100%" onclick="currentSlide(1)" alt="Cinque Terre">
+  </div>
+  <div class="col-2">
+    <img class="demo cursor" src=".\_trabajosNuevos\AlbertoFernandez_S.webp" style="width:100%" onclick="currentSlide(2)" alt="Mountains and fjords">			
+  </div>
+  <div class="col-2">
+    <img class="demo cursor" src=".\_trabajosNuevos\AnibalFernandez_S.webp" style="width:100%" onclick="currentSlide(3)" alt="Cinque Terre">		
+  </div>
+  <div class="col-2">
+    <img class="demo cursor" src=".\_trabajosNuevos\AlbertoParodi_S.webp" style="width:100%" onclick="currentSlide(4)" alt="Cinque Terre">		
+  </div>
+  <div class="col-2">
+    <img class="demo cursor" src=".\_trabajosNuevos\AlejandroYacono_S.webp" style="width:100%" onclick="currentSlide(5)" alt="Cinque Terre">		
+  </div>
+  <div class="col-1"></div>
+</div>
+
+
+<div class="row clr_palido">
+  <div class="col-2"></div>
+  <div class="col-8">
+		<div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+			<img src=".\_trabajosNuevos\AdrianVentura.jpg" style="width:100%">
+		</div>
+	</div>
+  <div class="col-2"></div>
+</div>
+
+	<div class="row clr_medio">
+		<div class="col-2"></div>
+		<div class="col-8 mySlides">
+			<div class="numbertext">2 / 6</div>
+			<img src=".\_trabajosNuevos\AlbertoFernandez.jpg" style="width:100%">
+		</div>
+		<div class="col-2"></div>
+	</div>
+
+	<div class="row clr_medio">
+		<div class="col-2"></div>
+		<div class="col-8 mySlides">
+			<div class="numbertext">3 / 6</div>
+			<img src=".\_trabajosNuevos\AnibalFernandez.jpg" style="width:100%">
+		</div>
+		<div class="col-2"></div>
+	</div>
+
+	<div class="row clr_medio">
+		<div class="col-2"></div>
+		<div class="col-8 mySlides">
+			<div class="numbertext">4 / 6</div>
+			<img src=".\_trabajosNuevos\AlbertoParodi.jpg" style="width:100%">
+		</div>
+		<div class="col-2"></div>
+	</div>
+
+	<div class="row clr_medio">
+		<div class="col-2"></div>
+		<div class="col-8 mySlides">
+			<div class="numbertext">5 / 6</div>
+			<img src=".\_trabajosNuevos\AlejandroYacono.jpg" style="width:100%">
+		</div>
+		<div class="col-2"></div>
+	</div>
+
+	<ul id="mainMenu">
+		<li><a href="./curriculum-resumido.html">Quién soy</a></li>
+		<li><a href="./consultas.html">Consultas</a></li>
+	</ul>
+
+<div class="footer">
+  <p>by Willie Verger, 2021</p>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+   
+</body>
+</html>
