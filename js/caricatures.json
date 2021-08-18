@@ -1,0 +1,13 @@
+// ----------------------------------------------------------------------------
+//	caricaturas.json
+//	listado de caricaturas a presentar
+// ----------------------------------------------------------------------------
+
+var caricaturas = [
+  {"thumbnail":"AdrianVentura_S.webp",			"image":"AdrianVentura.webp",			"alt":"A.V."},
+  {"thumbnail":"AlbertoFernandez_S.webp",	  "image":"AlbertoFernandez.webp",	"alt":"A.F."},
+  {"thumbnail":"AnibalFernandez_S.webp",		"image":"AnibalFernandez.webp",		"alt":"A.F."},
+  {"thumbnail":"AlbertoParodi_S.webp",			"image":"AlbertoParodi.webp",			"alt":"A.P."},
+  {"thumbnail":"AlejandroYacono_S.webp",		"image":"AlejandroYacono.webp",		"alt":"A.Y.E."},
+  {"thumbnail":"DickandMary.webp",		      "image":"DickandMary.webp",		    "alt":"D.M."}
+];

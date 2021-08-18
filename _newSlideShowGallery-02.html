@@ -4,20 +4,6 @@
 <!-- top navigation https://www.w3schools.com/howto/howto_js_topnav.asp -->
 <!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
 
-<!-- 
-	2021.08.16 
-	Probar utilización de columnas habituales de mi sitio
-	primer columna los thumbnails
-	segunda columna caricatura plena
-	debajo: fila con la paginacion
-
-	Para las imágenes a mostrar tomar referencias de un archivo caricaturas.json y
-	rellenar adcuadamente los espacios
-
-	al iniciar o cambiar de página leer archivo json y presentar
-
--->
-
 <head>
     <script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -58,16 +44,14 @@
         /* Hide the images by default */
         
         .mySlides {
-          display: none;
+            display: none;
         }
         /* Add a pointer when hovering over the thumbnail images */
         
         .cursor {
             cursor: pointer;
         }
-        /* Next & previous buttons 
-					eliminar cuando haya implementado paginacion
-				*/
+        /* Next & previous buttons */
         
         .prev,
         .next {
@@ -169,7 +153,7 @@
 <body>
 
     <div class="header">
-        <h3>Personajes</h3>
+        <h1>Ing. Guillermo Verger - Novedades </h1>
     </div>
 
     <div id="menuppal"></div>
@@ -181,14 +165,12 @@
 		 -->
 
     <div class="row">
-        <div class="col-1">
-            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+        <div class="col-1 clr_contra">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
         </div>
-
-				<div class="col-2" id="thumb01">
-            <img class="demo cursor" src=".\_trabajosNuevos\" + caricatures[i].thumbnail style="width:100%" onclick="currentSlide(1)" alt=caricatures[i].alt >
+        <div class="col-2">
+            <img class="demo cursor" src=".\_trabajosNuevos\AdrianVentura_S.webp" style="width:100%" onclick="currentSlide(1)" alt="A.V.">
         </div>
-
         <div class="col-2">
             <img class="demo cursor" src=".\_trabajosNuevos\AlbertoFernandez_S.webp" style="width:100%" onclick="currentSlide(2)" alt="A.F.">
         </div>
@@ -202,7 +184,7 @@
             <img class="demo cursor" src=".\_trabajosNuevos\AlejandroYacono_S.webp" style="width:100%" onclick="currentSlide(5)" alt="A.Y.E.">
         </div>
         <div class="col-1">
-            <!-- <a class="next" onclick="plusSlides(1)">❯</a> -->
+            <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
     </div>
 
@@ -254,13 +236,11 @@
         <div class="col-2"></div>
     </div>
 
-		<!-- 
-				para presentar nombre o inicial de caricatura usar esta div
-				<div class="caption-container">
-						<p id="caption"></p>
-				</div>
-		 -->
-
+<!-- 
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+ -->
     <div class="row clr_fondo center">
         <div class="col-12 ">
             <div class="pagination">
@@ -289,37 +269,7 @@
         <p>by Willie Verger, 2021</p>
     </div>
 
-
-		<!-- el proximo script contiene datos caricaturas, array en formato json -->
-		<script src="js/caricatures.json"></script>
-
     <script>
-
-window.onload = function(){
-	var x = document.getElementById("solucion");
-	x.style.display = "none";
-};
-
-function hideShow() {
-	var x = document.getElementById("solucion");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-
-			// poner thumbnail
-				document.getElementById("thumb01").innerHTML = 
-            <img class="demo cursor" src=".\_trabajosNuevos\" + caricatures[i].thumbnail style="width:100%" onclick="currentSlide(1)" alt=caricatures[i].alt >
-
-
-
-
-
-
-
-
         var slideIndex = 1;
         showSlides(slideIndex);
 

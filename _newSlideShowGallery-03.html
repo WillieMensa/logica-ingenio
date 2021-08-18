@@ -184,11 +184,10 @@
         <div class="col-1">
             <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
         </div>
-
-				<div class="col-2" id="thumb01">
+        <div class="col-2">
+					i = 0;
             <img class="demo cursor" src=".\_trabajosNuevos\" + caricatures[i].thumbnail style="width:100%" onclick="currentSlide(1)" alt=caricatures[i].alt >
         </div>
-
         <div class="col-2">
             <img class="demo cursor" src=".\_trabajosNuevos\AlbertoFernandez_S.webp" style="width:100%" onclick="currentSlide(2)" alt="A.F.">
         </div>
@@ -295,28 +294,11 @@
 
     <script>
 
-window.onload = function(){
-	var x = document.getElementById("solucion");
-	x.style.display = "none";
-};
-
-function hideShow() {
-	var x = document.getElementById("solucion");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-
 			// poner thumbnail
-				document.getElementById("thumb01").innerHTML = 
+				document.getElementById("col-2").innerHTML = 
+					i = 0;
             <img class="demo cursor" src=".\_trabajosNuevos\" + caricatures[i].thumbnail style="width:100%" onclick="currentSlide(1)" alt=caricatures[i].alt >
-
-
-
-
-
+        </div>
 
 
 
