@@ -2,8 +2,16 @@
 <html lang="es">
 
 <!-- 
-	2021.08.18 Version funcional
-	falta: iniciales (alt)
+	2021.08.16 
+	1ra fila: thumbnails
+	2da fila: caricatura plena
+	3ra fila: iniciales (alt)
+	4ta fila: paginacion
+
+	Para las imágenes a mostrar tomar referencias de un archivo caricaturas.json y
+	rellenar adcuadamente los espacios
+
+	al iniciar o cambiar de página leer archivo json y presentar
 
 -->
 
@@ -25,17 +33,36 @@
 			}
 
 			.button {
-				background-color: var(--clr-medio);			/* #003d66; */
+				background-color: #003d66;
 				border: none;
 				color: white;
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 10px;
 				text-align: center;
 				text-decoration: none;
 				display: inline-block;
 				font-size: 16px;
-				margin: 2px 2px;
+				margin: 16px 2px;
 				cursor: pointer;
-				border-radius: 4px;
+				border-radius: 8px;
+
+			.pagination {
+					display: inline-block;
+			}
+			
+			.pagination a {
+					color: black;
+					float: left;
+					padding: 8px 16px;
+					text-decoration: none;
+			}
+			
+			.pagination a.active {
+					background-color: #4CAF50;
+					color: white;
+			}
+			
+			.pagination a:hover:not(.active) {
+					background-color: #ddd;
 			}
 
 		</style>
@@ -47,7 +74,7 @@
 	<body>
 
 		<div class="header">
-			<h2>Galería de personajes</h2>
+			<h1> Galería de personajes públicos</h1>
 		</div>
 
 		<div id="menuppal"></div>
@@ -64,7 +91,7 @@
 				<img src="" id='thumb04' alt="imagen 04" style="width:12%" class="img-responsive" onclick="muestraImagen( 4 )">
 				<img src="" id='thumb05' alt="imagen 05" style="width:12%" class="img-responsive" onclick="muestraImagen( 5 )">
 				<img src="" id='thumb06' alt="imagen 06" style="width:12%" class="img-responsive" onclick="muestraImagen( 6 )">
-				<!-- <img src="" id='thumb07' alt="imagen 06" style="width:12%" class="img-responsive" onclick="muestraImagen( 7 )"> -->
+				<img src="" id='thumb07' alt="imagen 06" style="width:12%" class="img-responsive" onclick="muestraImagen( 7 )">
 			</div>
 
 			<!-- <div class="col-1"></div> -->
@@ -73,7 +100,6 @@
 
 		<hr />
 
-		<!-- la imagen principal de la pàgina -->
 		<div class="row clr_claro">
 			<div class="col-2"></div>
 			<div class="col-8 container" id='laImagen' style="text-align:center;">
@@ -92,17 +118,25 @@
 
 
     <div class="row clr_fondo center">
-			<div class="col-12 ">
-				<button class="button" onclick="caricaturaThumb(1)">1</button>
-				<button class="button" onclick="caricaturaThumb(2)">2</button>
-				<button class="button" onclick="caricaturaThumb(3)">3</button>
-				<button class="button" onclick="caricaturaThumb(4)">4</button>
-				<button class="button" onclick="caricaturaThumb(5)">5</button>
-				<button class="button" onclick="caricaturaThumb(6)">6</button>
-				<button class="button" onclick="caricaturaThumb(7)">7</button>
-				<button class="button" onclick="caricaturaThumb(8)">8</button>
-				<button class="button" onclick="caricaturaThumb(9)">9</button>
-			</div>
+        <div class="col-12 ">
+            <div class="pagination">
+							<button class="button" onclick="caricaturaThumb(1)">1</button>
+							<button class="button" onclick="caricaturaThumb(2)">2</button>
+							<button class="button" onclick="caricaturaThumb(3)">3</button>
+							<button class="button" onclick="caricaturaThumb(4)">4</button>
+							<button class="button" onclick="caricaturaThumb(5)">5</button>
+							<button class="button" onclick="caricaturaThumb(6)">6</button>
+							<button class="button" onclick="caricaturaThumb(7)">7</button>
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
     </div>
 
 

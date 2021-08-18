@@ -10,7 +10,7 @@
 
 	const
 		CARPETA = "./_trabajosNuevos/",		//	carpeta donde estan caricaturas y thumbnails
-		THUMBPP = 6,											//	thumbnails por pagina		
+		THUMBPP = 7,											//	thumbnails por pagina		
 		FAKE = null;
 
 
@@ -30,40 +30,49 @@ function loadThumbnails(){
 
 	nCaric = (nPagina - 1 ) * THUMBPP
 	
-	console.log(nCaric);
-	console.log( CARPETA ) ;
-	console.log( caricaturas[nCaric].thumbnail ) ;
-	console.log( CARPETA + caricaturas[nCaric].thumbnail ) ;
+	// console.log(nCaric);
+	//	console.log( CARPETA ) ;
+	//	console.log( caricaturas[nCaric].thumbnail ) ;
+	//	console.log( CARPETA + caricaturas[nCaric].thumbnail ) ;
 
 	destino = document.getElementById("thumb00");
-	console.log(destino);
+	//	console.log(destino);
 	destino.src = (CARPETA + caricaturas[nCaric].thumbnail);
 	nCaric++;
 
-	console.log(nCaric);
+	// console.log(nCaric);
 	destino = document.getElementById("thumb01");
 	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
 	nCaric++;
 
-	console.log(nCaric);
+	// console.log(nCaric);
 	destino = document.getElementById("thumb02");
 	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
 	nCaric++;
 
-	console.log(nCaric);
+	// console.log(nCaric);
 	destino = document.getElementById("thumb03");
 	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
 	nCaric++;
 
-	console.log(nCaric);
+	// console.log(nCaric);
 	destino = document.getElementById("thumb04");
 	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
 	nCaric++;
 
-	console.log(nCaric);
+	// console.log(nCaric);
 	destino = document.getElementById("thumb05");
 	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
 	nCaric++;
+
+	destino = document.getElementById("thumb06");
+	//	console.log(destino);
+	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
+	nCaric++;
+
+	//	destino = document.getElementById("thumb07");	
+	//	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
+	//	nCaric++;
 
 }
 
@@ -72,9 +81,10 @@ function muestraImagen(nIndx ) {
 	//	resolver vinculación nro thumbnail --> nro de caricatura
 
 	nCaric = (nPagina - 1 ) * THUMBPP + nIndx;
-	console.log(nCaric);
+	// console.log(nCaric);
 
 	var destino = document.getElementById("personaje");
+	console.log(destino);
 
 	destino.src = CARPETA + caricaturas[nCaric].image;
 
@@ -95,6 +105,6 @@ function caricaturaThumb(nThumb){
 	//	alt="imagen 00" style="width:15%" class="img-responsive" onclick="muestraImagen( 0 )" >
 
 
-THUMBPP
+	//	THUMBPP
 
 }
