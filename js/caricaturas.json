@@ -73,7 +73,7 @@ var caricaturas = [
   {"thumbnail":"RobertoNavarro.webp   ",	"image":"RobertoNavarro.webp   ",	"alt":"R.N."},
   {"thumbnail":"RubenDagostino.webp   ",	"image":"RubenDagostino.webp   ",	"alt":"R.D."},
   {"thumbnail":"RubenStalli.webp      ",	"image":"RubenStalli.webp      ",	"alt":"R.S."},
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" "},
+  {"thumbnail":"VladimirPutin.webp    ",	"image":"VladimirPutin.webp    ",	"alt":"V.P."},
   {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" "},
   {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" "},
   {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" "},
