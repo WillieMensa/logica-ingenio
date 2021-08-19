@@ -22,10 +22,7 @@ function poneMenuPpal() {
 		'			<a href="matematica-recreativa.html">Matemática recreativa</a>' +
 		'			<a href="publicaciones-varias.html">Publicaciones varias</a>' +
 		'			<a href="calendarios.html">Impresion calendarios y otros</a>' +
-		'			<a href="galeria-conocidos-1.html">Personajes conocidos</a>' +
-		'			<a href="galeria-conocidos-2.html">+ Personajes conocidos</a>' +
-		'			<a href="galeria-ArtistasPeriodistas.html">Artistas y Periodistas</a>' +
-		'			<a href="galeria-publicos.html">Personajes Públicos</a>' +
+		'			<a href="galeria.html">Galería de Personajes</a>' +
 		'			<a href="./repgrafsincorbata.html">Representación gráfica sin corbata</a>' +
 		'			<a href="revista-enigma.html">&Uacute;ltimo n&uacute;mero de la revista Enigma.</a>' +
 		'		</div>' +

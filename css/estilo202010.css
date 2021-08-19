@@ -104,7 +104,7 @@ h2 {
 }
 
 h3, h4 {
-	padding: 1em;
+	padding: 0.4em;
 }
 
 p {
@@ -142,7 +142,7 @@ p {
 
 [class*="col-"] {
   float: left;
-  padding: 5px;
+  padding: 4px;
 }
 
 html {
