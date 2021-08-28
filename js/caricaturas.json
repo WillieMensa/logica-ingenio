@@ -4,7 +4,6 @@
 // ----------------------------------------------------------------------------
 
 var caricaturas = [
-  {"thumbnail":"WillieV.webp          ",	"image":"WillieV.webp          ",	"alt":"W.V. "},
   {"thumbnail":"AdrianVentura.webp    ",	"image":"AdrianVentura.webp    ",	"alt":"A.V"},
   {"thumbnail":"AlbertoFernandez.webp ",	"image":"AlbertoFernandez.webp ",	"alt":"A.F."},
   {"thumbnail":"AlbertoParodi.webp    ",	"image":"AlbertoParodi.webp    ",	"alt":"A.P."},
@@ -62,6 +61,7 @@ var caricaturas = [
   {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp    ",	"alt":"M.L."},
   {"thumbnail":"Nane.webp             ",	"image":"Nane.webp             ",	"alt":"N.F."},
   {"thumbnail":"NataliaMariscotti.webp",	"image":"NataliaMariscotti.webp",	"alt":"N.M."},
+  {"thumbnail":"NNenVivo.webp         ",	"image":"NNenVivo.webp         ",	"alt":"N.N. "},
   {"thumbnail":"OscarAbella.webp      ",	"image":"OscarAbella.webp      ",	"alt":"O.A."},
   {"thumbnail":"OscarDeSan.webp       ",	"image":"OscarDeSan.webp       ",	"alt":"O.D.S."},
   {"thumbnail":"OsvaldoDiaz.webp      ",	"image":"OsvaldoDiaz.webp      ",	"alt":"O.D."},
