@@ -30,7 +30,7 @@ var caricaturas = [
   {"thumbnail":"EzequielCastano.webp  ",	"image":"EzequielCastano.webp  ",	"alt":"E.C."},
   {"thumbnail":"FacundoManes.webp     ",	"image":"FacundoManes.webp     ",	"alt":"F.M."},
   {"thumbnail":"FernandoBurlando.webp ",	"image":"FernandoBurlando.webp ",	"alt":"F.B."},
-  {"thumbnail":"FacundoManes.webp     ",	"image":"FacundoManes.webp     ",	"alt":"G.G."},
+  {"thumbnail":"GermanGaravelli.webp  ",	"image":"GermanGaravelli.webp  ",	"alt":"G.G."},
   {"thumbnail":"GinesGGarcia.webp     ",	"image":"GinesGGarcia.webp     ",	"alt":"G.G.G."},
   {"thumbnail":"Guille-II.webp        ",	"image":"Guille-II.webp        ",	"alt":"G.II."},
   {"thumbnail":"GuilleDianda.webp     ",	"image":"GuilleDianda.webp     ",	"alt":"G.D."},
