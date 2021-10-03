@@ -56,6 +56,7 @@ var caricaturas = [
   {"thumbnail":"Magiord.webp          ",	"image":"Magiord.webp          ",	"alt":"Magiord"},
   {"thumbnail":"MarceloBonelli.webp   ",	"image":"MarceloBonelli.webp   ",	"alt":"M.B."},
   {"thumbnail":"MarianoMocoroa.webp   ",	"image":"MarianoMocoroa.webp   ",	"alt":"M.M."},
+  {"thumbnail":"MartinTetaz.webp      ",	"image":"MartinTetaz.webp      ",	"alt":"M.T."},
   {"thumbnail":"MatiasBortolato.webp  ",	"image":"MatiasBortolato.webp  ",	"alt":"M.B."},
   {"thumbnail":"MauricioM.webp        ",	"image":"MauricioM.webp        ",	"alt":"M.M."},
   {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp    ",	"alt":"M.L."},
