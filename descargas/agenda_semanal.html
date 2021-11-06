@@ -1,0 +1,180 @@
+<?xml version="1.0" standalone="no"?>
+<!-- 
+	html para generar agenda_saemanalpdf 
+	derivada de hoja01.html
+	23/11/2019
+
+-->
+<head>
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Bangers" rel="stylesheet"> -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Delius Unicase' rel='stylesheet'> -->
+
+	<style>
+
+		body {
+			color: #111;
+			//	font-family: 'Luckiest Guy', cursive;
+			font-size: 2.00em;
+			//	height: auto;
+			margin:5; 
+			padding:5; 
+			background:MediumSeaGreen; 
+		}
+
+ 	</style>
+
+
+
+</head>
+
+<body onload="init()">
+
+	<div>
+		<button onclick="printDiv(false)">Imprimir hoja</button>
+	</div>
+	<p>
+
+
+	<div class="imprimir" id="imprimir">
+
+		<!-- viewBox tiene las medidas de un A4 horizontal -->
+		<!-- Outline the SVG viewport. -->
+
+					<!-- width ="1120" height= "790" -->
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			width ="1100" height= "760" 
+			id = "pagina">
+
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet"> -->
+
+		<style>
+
+		@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+		@import url("https://fonts.googleapis.com/css?family=Bangers");
+		@import url("https://fonts.googleapis.com/css?family=Sriracha");
+
+		/*	original 
+			@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+		*/
+		@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+
+		@media print {
+			/* Aquí irían tus reglas CSS específicas para imprimir */
+
+		} 
+
+
+		.trazo { fill:white; stroke:#111;stroke-width:1;opacity:1.0; }
+		.auxiliar { fill:white; stroke:#800088;stroke-width:1;opacity:1.0; }
+		.marco { fill:white; stroke:#111;stroke-width:2;opacity:1.0; }
+		.fondoClaro { fill:#eee; stroke:#111;stroke-width:2; opacity:1.0; }
+
+		.small { font-family: "Sriracha"; font-size: 12px; }
+
+		.normal { font-family: 'Roboto', sans-serif; font-size: 16px; }
+		.grande { font-family: 'Roboto', sans-serif; font-size: 20px; }
+
+		.valor { font-family: "Luckiest Guy"; font-size: 24px; fill:#333; font: bold; dominant-baseline: central; text-anchor: middle;}
+		.vert { font-family: 'Caveat Brush', cursive; font-size: 28px; fill:#026; font: bold; dominant-baseline: middle; text-anchor: middle;
+			visibility: visible;
+			}
+
+		.title { font: bold 20px sans-serif; }
+
+
+		.imprimir{
+			background: #eeeeee;		/* white; */
+			margin: 0px;
+			padding: 0px;
+			max-width: 1100px;
+			max-height: 900px;
+		}
+
+		</style>
+
+
+		<g id="R1" transform="translate(20,10)">
+
+			<!-- rectangulo hoja -->
+			<!-- <rect width="148mm" height="210mm" x="0"   y="0" fill="#ddd"  stroke="#0a3" stroke-width="2" /> -->
+
+			<!-- rectangulo exterior -->
+			<!-- <rect width="138mm" height="200mm" x="5mm"   y="5mm" fill="#eff000"  stroke="#0a3" stroke-width="2" /> -->
+			<rect width="128mm" height="192mm" x="0" y="0" class="marco"/>
+
+			<!-- sombra en encabezamiento -->
+			<rect width="128mm" height="022mm" x="0" y="0" class="fondoClaro"/>
+
+			<!-- lineas horizontales -->
+			<line x1="0mm" y1="022mm" x2="128mm" y2="022mm" class = "trazo"/>
+			<line x1="0mm" y1="065mm" x2="128mm" y2="065mm" class = "trazo"/>
+			<line x1="0mm" y1="108mm" x2="128mm" y2="108mm" class = "trazo"/>
+			<line x1="0mm" y1="151mm" x2="128mm" y2="151mm" class = "trazo"/>
+
+			<!-- lineas verticales -->
+			<line x1="64mm" y1="00mm" x2="64mm" y2="192mm" class = "trazo"/>
+
+
+			<text	x="03mm"	y="008mm" class="grande">Semana Nro:</text>
+			<text	x="67mm"	y="008mm" class="grande">Desde: </text>
+			<text	x="67mm"	y="016mm" class="grande">Hasta: </text>
+
+			<text	x="03mm"	y="028mm" class="normal">Lunes</text>
+			<text	x="67mm"	y="028mm" class="normal">Martes</text>
+			<text	x="03mm"	y="071mm" class="normal">Miercoles</text>
+			<text	x="67mm"	y="071mm" class="normal">Jueves</text>
+			<text	x="03mm"	y="114mm" class="normal">Viernes</text>
+			<text	x="67mm"	y="114mm" class="normal">Sabado</text>
+			<text	x="03mm"	y="157mm" class="normal">Domingo</text>
+			<text	x="67mm"	y="157mm" class="normal">Notas</text>
+
+		</g>
+
+		<use xlink:href="#R1" transform="translate(570, 000)"/>
+
+		</svg>
+
+
+	</div>
+
+	<!-- inicio de los scripts -->
+	<script type="text/javascript">
+
+		const	
+			//	DEBUG = false;
+			DEBUG = true;
+
+
+		function init() {
+			if (DEBUG) { console.log("function init() beginnen Version 11")};
+
+		};
+
+		
+
+
+
+		function printDiv( ) {
+
+			var objeto=document.getElementById('imprimir'); 
+			//	console.log( "lConSolucion: " + lConSolucion );
+   
+			//obtenemos el objeto a imprimir
+			var ventana=window.open('','_blank');  //abrimos una ventana vacía nueva
+			ventana.document.write(objeto.innerHTML);  //imprimimos el HTML del objeto en la nueva ventana
+			ventana.document.close();  //cerramos el documento
+			ventana.print();  //imprimimos la ventana
+			ventana.close();  //cerramos la ventana
+		}
+
+
+
+	</script>
+
+
+</body>
