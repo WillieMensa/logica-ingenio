@@ -24,7 +24,7 @@ function poneMenuPpal() {
 		'			<a href="calendarios.html">Impresion calendarios y otros</a>' +
 		'			<a href="galeria.html">Galería de Personajes</a>' +
 		'			<a href="./repgrafsincorbata.html">Representación gráfica sin corbata</a>' +
-		'			<a href="revista-enigma.html">&Uacute;ltimo n&uacute;mero de la revista Enigma.</a>' +
+		'			<a href="revista-enigma.html">Revista Enigma.</a>' +
 		'		</div>' +
 		'	<li><a href="./sitemap.html">Mapa del sitio </a></li>' +
 		'	</li>' +
