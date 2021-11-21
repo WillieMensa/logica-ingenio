@@ -17,6 +17,7 @@ var lasCaricaturas = [
   {"thumbnail":"AlbertoCormillot.webp ",	"image":"AlbertoCormillot.webp ",	"alt":"A.C.",     "clase":"A"},
   {"thumbnail":"CarlosGardel.webp     ",	"image":"CarlosGardel.webp     ",	"alt":"C.G.",     "clase":"A"},
 
+  {"thumbnail":"AdrianaMeyer.webp     ",	"image":"AdrianaMeyer.webp     ",	"alt":"A.M.",     "clase":"C"},
   {"thumbnail":"AlbertoParodi.webp    ",	"image":"AlbertoParodi.webp    ",	"alt":"A.P.",     "clase":"C"},
   {"thumbnail":"AlfredoBolatti.webp   ",	"image":"AlfredoBolatti.webp   ",	"alt":"A.B.",     "clase":"C"},
   {"thumbnail":"AnnieV.webp           ",	"image":"AnnieV.webp           ",	"alt":"A.V.",     "clase":"C"},
@@ -52,6 +53,7 @@ var lasCaricaturas = [
   {"thumbnail":"RobertoCachan.webp    ",	"image":"RobertoCachan.webp    ",	"alt":"R.C.",     "clase":"E"},
   {"thumbnail":"RobertoNavarro.webp   ",	"image":"RobertoNavarro.webp   ",	"alt":"R.N.",     "clase":"E"},
 
+  {"thumbnail":"OrganizarUnaToma.webp ",	"image":"OrganizarUnaToma.webp ",	"alt":"TOMA",     "clase":"M"},
   {"thumbnail":"AleHernandez.webp     ",	"image":"AleHernandez.webp     ",	"alt":"A.H.",     "clase":"M"},
   {"thumbnail":"AlejandroYacono.webp  ",	"image":"AlejandroYacono.webp  ",	"alt":"A.Y.",     "clase":"M"},
   {"thumbnail":"ArielJurjo.webp       ",	"image":"ArielJurjo.webp       ",	"alt":"A.J.",     "clase":"M"},
@@ -80,6 +82,7 @@ var lasCaricaturas = [
   {"thumbnail":"GinesGGarcia.webp     ",	"image":"GinesGGarcia.webp     ",	"alt":"G.G.G.",   "clase":"P"},
   {"thumbnail":"HoracioRL.webp        ",	"image":"HoracioRL.webp        ",	"alt":"H.R.L.",   "clase":"P"},
   {"thumbnail":"HugoMoya.webp         ",	"image":"HugoMoya.webp         ",	"alt":"H.M.",     "clase":"P"},
+  {"thumbnail":"MaxiBagilet.webp      ",	"image":"MaxiBagilet.webp      ",	"alt":"M.B.",     "clase":"P"},
   {"thumbnail":"JavierMilei.webp      ",	"image":"JavierMilei.webp      ",	"alt":"J.M.",     "clase":"P"},
   {"thumbnail":"JoeBiden.webp         ",	"image":"JoeBiden.webp         ",	"alt":"J.B.",     "clase":"P"},
   {"thumbnail":"JorgeBergog.webp      ",	"image":"JorgeBergog.webp      ",	"alt":"J.B.",     "clase":"P"},

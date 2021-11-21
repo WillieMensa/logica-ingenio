@@ -1,9 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>https://ingverger.ar/</loc></url>
 <url><loc>https://ingverger.ar/49rompecocos.html</loc></url>
 <url><loc>https://ingverger.ar/aplicaciones.html</loc></url>
@@ -12,17 +8,32 @@
 <url><loc>https://ingverger.ar/cuadrominos.html</loc></url>
 <url><loc>https://ingverger.ar/curriculum-resumido.html</loc></url>
 <url><loc>https://ingverger.ar/galeria.html</loc></url>
+<url><loc>https://ingverger.ar/galeria.html?clase=%25252522AD%25252522</loc></url>
+<url><loc>https://ingverger.ar/galeria.html?clase=%25252522C%25252522</loc></url>
+<url><loc>https://ingverger.ar/galeria.html?clase=%25252522E%25252522</loc></url>
+<url><loc>https://ingverger.ar/galeria.html?clase=%25252522M%25252522</loc></url>
+<url><loc>https://ingverger.ar/galeria.html?clase=%25252522P%25252522</loc></url>
 <url><loc>https://ingverger.ar/grilla-numerica.html</loc></url>
 <url><loc>https://ingverger.ar/index.html</loc></url>
 <url><loc>https://ingverger.ar/ingenio.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/110_pesoaladerecha.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/120_numero_tanya.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/130_equilatero_disecado.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/140_five_squares.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/150_cripto_virus_chino.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/160_cripto_perro_gato.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/170_grilla_numerica.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/180_cripto_crin_cola.html</loc></url>
+<url><loc>https://ingverger.ar/ingenio/190_messi_fideo_goool.html</loc></url>
 <url><loc>https://ingverger.ar/ingenio/sumaoculta-resolucion.html</loc></url>
+<url><loc>https://ingverger.ar/juegos.html</loc></url>
 <url><loc>https://ingverger.ar/lareglasecreta.html</loc></url>
 <url><loc>https://ingverger.ar/matematica-recreativa.html</loc></url>
 <url><loc>https://ingverger.ar/memorioso/index.html</loc></url>
 <url><loc>https://ingverger.ar/mtimer/index.html</loc></url>
 <url><loc>https://ingverger.ar/pentomania.html</loc></url>
 <url><loc>https://ingverger.ar/pentomania_frame.html</loc></url>
-<url><loc>https://ingverger.ar/problemas_ingenio_2020.html</loc></url>
+<url><loc>https://ingverger.ar/politicaprivacidad.html</loc></url>
 <url><loc>https://ingverger.ar/publicaciones-varias.html</loc></url>
 <url><loc>https://ingverger.ar/repgrafsincorbata.html</loc></url>
 <url><loc>https://ingverger.ar/revista-enigma.html</loc></url>
@@ -30,8 +41,8 @@
 <url><loc>https://ingverger.ar/rubik.html</loc></url>
 <url><loc>https://ingverger.ar/sitemap.html</loc></url>
 <url><loc>https://ingverger.ar/solucioncubosteinhaus.html</loc></url>
+<url><loc>https://ingverger.ar/soluciones.html</loc></url>
 <url><loc>https://ingverger.ar/sudoku.html</loc></url>
 <url><loc>https://ingverger.ar/sumado.html</loc></url>
 <url><loc>https://ingverger.ar/sumado/index.html</loc></url>
-<url><loc>https://ingverger.ar/sumaoculta.html</loc></url>
-</urlset>
+<url><loc>https://ingverger.ar/sumaoculta.html</loc></url></urlset>

@@ -31,16 +31,16 @@ function plusSlides(n) {
 	// calculo de la cantidad de paginas
 	let nCantX = caricaturas.length / THUMBPP;
 	let nCantPag = ( Math.floor(nCantX) == Math.ceil(nCantX) ) ? Math.floor(nCantX) : Math.ceil(nCantX) ;
-	console.log( "cantidad paginas = " , nCantPag );
+	//	console.log( "cantidad paginas = " , nCantPag );
 
 
 	//	nPagina = (n>0) ? nPagina++ : nPagina -- ;
 	nPagina = nPagina + n;
-	console.log( "n, Pagina actual = " , n, nPagina );
+	//	console.log( "n, Pagina actual = " , n, nPagina );
 
 	nPagina = (nPagina < 1) ? 1 : nPagina ;
 	nPagina = (nPagina > nCantPag ) ? nCantPag : nPagina ;
-	console.log( "Pagina actual = " , nPagina );
+	//	console.log( "Pagina actual = " , nPagina );
 
   //	if (n >= THUMBPP) {nPagina++};
 	loadThumbnails();
@@ -103,7 +103,7 @@ function muestraImagen(nIndx ) {
 
 	destino.src = CARPETA + caricaturas[nCaric].image;
 
-	console.log(destino.src);
+	//	console.log(destino.src);
 	var captionText = document.getElementById("caption");
 	captionText.innerHTML = caricaturas[nCaric].alt;
 }
@@ -150,8 +150,8 @@ function loadCaricaturas(claseAct){
 
 function checkClass() {
 
-	console.log(cClase);
-	console.log( clase.includes(cClase) );
+	//	console.log(cClase);
+	//	console.log( clase.includes(cClase) );
 
 	if ( lasCaricaturas.clase.includes(cClase) )
 	{
@@ -168,20 +168,13 @@ function processUser()
 
 	var temp = parameters[0].split("=");
 	claseAct = unescape(temp[1]);
-
-	//	temp = parameters[1].split("=");
-	//	p = unescape(temp[1]);
-	//	document.getElementById("log").innerHTML = l;
-	//	document.getElementById("pass").innerHTML = p;
-
-	console.log(claseAct);
 }
 
 
 
 function poneTitulo() {
 	var text;
-	console.log(claseAct);
+	//	console.log(claseAct);
 
 	if (claseAct.includes("C")) {
 		// block of code to be executed if condition1 is true
@@ -199,8 +192,8 @@ function poneTitulo() {
 		text = "???";
 	}
 
-	console.log(claseAct);
-	console.log(text);
+	//	console.log(claseAct);
+	//	console.log(text);
 
 	document.getElementById("titulo").innerHTML = "Galería " + text ;
 }
