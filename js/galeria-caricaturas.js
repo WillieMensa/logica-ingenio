@@ -1,5 +1,5 @@
 /*
-	galeria-caricaturas.js
+	new-galeria-caricaturas.js
 	2021.08.17 
 */
 
@@ -7,6 +7,7 @@
 		nCaric = 0,		//	nro de caricatura definido en el .JSON
 		nPagina = 1,	//	nro de pagina actual. Comenzamos en 1
 		xfake = null;
+		claseAct = undefined;
 
 	const
 		CARPETA = "./galeria/",		//	carpeta donde estan caricaturas y thumbnails
@@ -16,10 +17,61 @@
 
 	window.onload = function(){
 		poneMenuPpal();							// porque hay superposicion con la misma funcion de carga
+		processUser();
+		poneTitulo();
+		loadCaricaturas(claseAct);
 		loadThumbnails();
 		muestraImagen(0);
 	}
 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+	// calculo de la cantidad de paginas
+	let nCantX = caricaturas.length / THUMBPP;
+	let nCantPag = ( Math.floor(nCantX) == Math.ceil(nCantX) ) ? Math.floor(nCantX) : Math.ceil(nCantX) ;
+	console.log( "cantidad paginas = " , nCantPag );
+
+
+	//	nPagina = (n>0) ? nPagina++ : nPagina -- ;
+	nPagina = nPagina + n;
+	console.log( "n, Pagina actual = " , n, nPagina );
+
+	nPagina = (nPagina < 1) ? 1 : nPagina ;
+	nPagina = (nPagina > nCantPag ) ? nCantPag : nPagina ;
+	console.log( "Pagina actual = " , nPagina );
+
+  //	if (n >= THUMBPP) {nPagina++};
+	loadThumbnails();
+	muestraImagen(0);
+  //	showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+
+	// corregir aqui para desplazar imagenes 
+  if (n >= THUMBPP) {nPagina++}
+  if (n < 1) {nPagina--}
+
+	//	for (i = 0; i < slides.length; i++) {
+  //	    slides[i].style.display = "none";
+  //	}
+  //	for (i = 0; i < dots.length; i++) {
+  //	    dots[i].className = dots[i].className.replace(" active", "");
+  //	}
+  //	slides[slideIndex-1].style.display = "block";
+  //	dots[slideIndex-1].className += " active";
+  //	captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
 function loadThumbnails(){
 	let 
@@ -29,34 +81,15 @@ function loadThumbnails(){
 
 	nCaric = (nPagina - 1 ) * THUMBPP
 	
+	for (let i=0;i < THUMBPP ; i++)
+	{
+		destino = document.getElementById("thumb0" + i );
+		//	console.log(nPagina, nCaric);
+		//	console.log(caricaturas[nCaric]);
+		destino.src = (CARPETA + caricaturas[nCaric].thumbnail);
+		nCaric++;
 
-	destino = document.getElementById("thumb00");
-	destino.src = (CARPETA + caricaturas[nCaric].thumbnail);
-	nCaric++;
-
-	destino = document.getElementById("thumb01");
-	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
-	nCaric++;
-
-	destino = document.getElementById("thumb02");
-	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
-	nCaric++;
-
-	destino = document.getElementById("thumb03");
-	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
-	nCaric++;
-
-	destino = document.getElementById("thumb04");
-	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
-	nCaric++;
-
-	destino = document.getElementById("thumb05");
-	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
-	nCaric++;
-
-	destino = document.getElementById("thumb06");
-	destino.src = CARPETA + caricaturas[nCaric].thumbnail;
-	nCaric++;
+	}
 
 }
 
@@ -70,6 +103,7 @@ function muestraImagen(nIndx ) {
 
 	destino.src = CARPETA + caricaturas[nCaric].image;
 
+	console.log(destino.src);
 	var captionText = document.getElementById("caption");
 	captionText.innerHTML = caricaturas[nCaric].alt;
 }
@@ -85,4 +119,88 @@ function caricaturaThumb(nThumb){
 	loadThumbnails();
 	muestraImagen(0);
 
+}
+
+function loadCaricaturas(claseAct){
+	//caricaturas = [];
+	cClase = claseAct;
+	let x = 0;
+	caricaturas = [];
+
+	for (let i=0;i<lasCaricaturas.length ;i++ )
+	{
+		if ( cClase.includes(lasCaricaturas[i].clase ))
+		{
+			//	console.log( x++);
+			caricaturas.push(lasCaricaturas[i]);
+
+		}
+	}
+
+	while (( caricaturas.length % THUMBPP ) != 0)
+	{
+	  caricaturas.push( {"thumbnail":"blanco.webp",	"image":"blanco.webp",	"alt":"??","clase":"O"} );
+	}
+
+	//caricaturas = 
+	//	lasCaricaturas.forEach(checkClass);
+
+}
+
+
+function checkClass() {
+
+	console.log(cClase);
+	console.log( clase.includes(cClase) );
+
+	if ( lasCaricaturas.clase.includes(cClase) )
+	{
+		//	caricaturas 
+	}
+}
+
+
+
+function processUser()
+/* funcion generica para procesar parametros recibidos en pagina web */
+{
+	var parameters = location.search.substring(1).split("&");
+
+	var temp = parameters[0].split("=");
+	claseAct = unescape(temp[1]);
+
+	//	temp = parameters[1].split("=");
+	//	p = unescape(temp[1]);
+	//	document.getElementById("log").innerHTML = l;
+	//	document.getElementById("pass").innerHTML = p;
+
+	console.log(claseAct);
+}
+
+
+
+function poneTitulo() {
+	var text;
+	console.log(claseAct);
+
+	if (claseAct.includes("C")) {
+		// block of code to be executed if condition1 is true
+			text = "Conocidos";
+	} else 	if (claseAct.includes("AD")) {
+			text = "Artistas y deportistas";
+	} else 	if (claseAct.includes("E")) {
+	//} else 	if (claseAct == "E") {
+			text = "Periodistas";
+	} else 	if (claseAct.includes("M")) {
+			text = "Mensanos";
+	} else 	if (claseAct.includes("P")) {
+			text = "Políticos";
+	} else {
+		text = "???";
+	}
+
+	console.log(claseAct);
+	console.log(text);
+
+	document.getElementById("titulo").innerHTML = "Galería " + text ;
 }

@@ -1,105 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-
-	<!-- 
-	_galeria.html
-	Version con imagenes y thumbnails en una sola fila para en caso de celulares mostrar primero la imagen y luego los thumbnails
-	2021.08.18 Version funcional
-	-->
-
+<!-- Este html recibe parámetro desde el enlacede llamda.
+	Ver como se resuelve en function processUser()
+-->
 	<head>
-		
+	<!-- 
+		<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-		<meta name="description" content="Galería de personajes públicos: políticos, periodistas.">
-		<meta name="keywords" content="Galería de personajes públicos, políticos, periodistas, caricaturas,Rompecabezas">
+		<meta name="description" content="Calendario mensual, calendario anual y otras impresiones.">
+		<meta name="keywords" content="Calendario anual, Calendario mensual, Calendario anual 2020, Calendario mensual 2020, L�gica,Rompecabezas">
 
-		<title>Galería de personajes</title>
+		<title>Galeria</title>
 
 		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <style>
-			.center {
-				text-align: center;
-			}
-
-			.button {
-				background-color: var(--clr-medio);			/* #003d66; */
-				border: none;
-				color: white;
-				padding: 0.5em 1em 0.5em 1em;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 2px 2px;
-				cursor: pointer;
-				border-radius: 4px;
-			}
-
-		</style>
-
 		<script src="menuppal.js"></script>
+
+	<style>
+	/*
+		body {
+			font-family: Arial;
+			margin: 0;
+		}
+	*/
+
+	* {
+		box-sizing: border-box;
+	}
+
+	img {
+		vertical-align: middle;
+	}
+
+	/* Position the image container (needed to position the left and right arrows) */
+	.container {
+		position: relative;
+		text-align: center;
+
+	}
+
+	/* Hide the images by default */
+	.mySlides {
+		display: none;
+	}
+
+	/* Add a pointer when hovering over the thumbnail images */
+	.cursor {
+		cursor: pointer;
+	}
+
+	/* Next & previous buttons */
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 95%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: .clr_contra;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	/* Position the "prev button" to the left */
+	.prev {
+		left: 0;
+		border-radius: 3px 0 0 3px;
+	}
+	/* Position the "next button" to the right */
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+
+	/* Container for image text */
+	.caption-container {
+		text-align: center;
+		background-color: #222;
+		padding: 2px 16px;
+		color: white;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Six columns side by side */
+	.column {
+		float: left;
+		width: 16.66%;
+	}
+
+	/* Add a transparency effect for thumnbail images */
+	.demo {
+		opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+		opacity: 1;
+	}
+	</style>
+
 
 	</head>
 
 	<body>
 
-		<div class="header">
-			<h2>Galería de personajes</h2>
-		</div>
-
 		<div id="menuppal"></div>
 
+		<div class="header">
+			<h3 id="titulo" style="text-align:center;"> Galería </h3>
+		</div>
+
+		<!-- Contenido de la pagina -->
+		<div class="container">
+			<!-- esta version similar a original galeria.html -->
+			<div class="row" id='laImagen' style="text-align:center;">
+				<div class="col-12" style="text-align: center;">
+					<img src=".\galeria\williev.webp" id='personaje' alt="el dibujante" style="width:50%" class="img-responsive">
+				</div>
+			</div>
+    
+			<div class="clr_medio">
+				<p id="caption" style="color:white; padding:0; font-weight:500"></p>
+			</div>
+
+	<!-- thumbnails -->
+  <div class="row">
+
+		<img class="demo cursor img-responsive" src="" id='thumb00' alt="imagen 00" style="width:12%" onclick="muestraImagen( 0 )">
+		<img class="demo cursor img-responsive" src="" id='thumb01' alt="imagen 01" style="width:12%" onclick="muestraImagen( 1 )">
+		<img class="demo cursor img-responsive" src="" id='thumb02' alt="imagen 02" style="width:12%" onclick="muestraImagen( 2 )">
+		<img class="demo cursor img-responsive" src="" id='thumb03' alt="imagen 03" style="width:12%" onclick="muestraImagen( 3 )">
+		<img class="demo cursor img-responsive" src="" id='thumb04' alt="imagen 04" style="width:12%" onclick="muestraImagen( 4 )">
+		<img class="demo cursor img-responsive" src="" id='thumb05' alt="imagen 05" style="width:12%" onclick="muestraImagen( 5 )">
+		<img class="demo cursor img-responsive" src="" id='thumb06' alt="imagen 06" style="width:12%" onclick="muestraImagen( 6 )">
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+</div>
+
+    
+
 		<div class="row clr_fondo">
-
-			<!-- la imagen principal de la pàgina -->
-			<div class="col-6 container" id='laImagen' style="text-align:center;">
-				<img src=".\galeria\williev.webp" id='personaje' alt="el dibujante" style="width:90%" class="img-responsive">
+			<div class="col-4" style="text-align: center;">
 			</div>
-
-			<!-- thumbnails -->
-			<div class="col-6 container" id='laImagen' style="text-align:center;">
-				<img src="" id='thumb00' alt="imagen 00" style="width:12%" class="img-responsive" onclick="muestraImagen( 0 )">
-				<img src="" id='thumb01' alt="imagen 01" style="width:12%" class="img-responsive" onclick="muestraImagen( 1 )">
-				<img src="" id='thumb02' alt="imagen 02" style="width:12%" class="img-responsive" onclick="muestraImagen( 2 )">
-				<img src="" id='thumb03' alt="imagen 03" style="width:12%" class="img-responsive" onclick="muestraImagen( 3 )">
-				<img src="" id='thumb04' alt="imagen 04" style="width:12%" class="img-responsive" onclick="muestraImagen( 4 )">
-				<img src="" id='thumb05' alt="imagen 05" style="width:12%" class="img-responsive" onclick="muestraImagen( 5 )">
-				<img src="" id='thumb06' alt="imagen 06" style="width:12%" class="img-responsive" onclick="muestraImagen( 6 )">
-				<!-- <img src="" id='thumb07' alt="imagen 06" style="width:12%" class="img-responsive" onclick="muestraImagen( 7 )"> -->
+			<div class="col-8">
 			</div>
-
 		</div>
 
-
-		<div class="footer clr_medio">
-				<h4 id="caption"></h4>
+		<div class="row clr_claro">
 		</div>
 
-
-		<div class="footer clr_claro">
-				<button class="button" onclick="caricaturaThumb(1)">1</button>
-				<button class="button" onclick="caricaturaThumb(2)">2</button>
-				<button class="button" onclick="caricaturaThumb(3)">3</button>
-				<button class="button" onclick="caricaturaThumb(4)">4</button>
-				<button class="button" onclick="caricaturaThumb(5)">5</button>
-				<button class="button" onclick="caricaturaThumb(6)">6</button>
-				<button class="button" onclick="caricaturaThumb(7)">7</button>
-				<button class="button" onclick="caricaturaThumb(8)">8</button>
-				<button class="button" onclick="caricaturaThumb(9)">9</button>
-				<button class="button" onclick="caricaturaThumb(10)">10</button>
-    </div>
-
-
-		<div>
-			<ul id="mainMenu">
-				<li><a href="./curriculum-resumido.html">Quién soy</a></li>
-				<li><a href="./consultas.html">Consultas</a></li>
-			</ul>
-		</div>
-
+		<ul id="mainMenu">
+			<li><a href="./curriculum-resumido.html">Quién soy</a></li>
+			<li><a href="./consultas.html">Consultas</a></li>
+		</ul>
 
 		<div class="footer">
 			<p>by Willie Verger, 2021</p>
