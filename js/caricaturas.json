@@ -38,6 +38,7 @@ var lasCaricaturas = [
 
   {"thumbnail":"DiegoMaradona.webp    ",	"image":"DiegoMaradona.webp    ",	"alt":"D.M.",     "clase":"D"},
   {"thumbnail":"LionelMessi.webp      ",	"image":"LionelMessi.webp      ",	"alt":"L.M.",     "clase":"D"},
+  {"thumbnail":"ManuGinobili.webp     ",	"image":"ManuGinobili.webp     ",	"alt":"M.G.",     "clase":"D"},
 
   {"thumbnail":"AdrianVentura.webp    ",	"image":"AdrianVentura.webp    ",	"alt":"A.V.",     "clase":"E"},
   {"thumbnail":"AlfredoLeuco.webp     ",	"image":"AlfredoLeuco.webp     ",	"alt":"A.L.",     "clase":"E"},
