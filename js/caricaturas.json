@@ -85,7 +85,6 @@ var lasCaricaturas = [
   {"thumbnail":"GinesGGarcia.webp     ",	"image":"GinesGGarcia.webp     ",	"alt":"G.G.G.",   "clase":"P"},
   {"thumbnail":"HoracioRL.webp        ",	"image":"HoracioRL.webp        ",	"alt":"H.R.L.",   "clase":"P"},
   {"thumbnail":"HugoMoya.webp         ",	"image":"HugoMoya.webp         ",	"alt":"H.M.",     "clase":"P"},
-  {"thumbnail":"MaxiBagilet.webp      ",	"image":"MaxiBagilet.webp      ",	"alt":"M.B.",     "clase":"P"},
   {"thumbnail":"JavierMilei.webp      ",	"image":"JavierMilei.webp      ",	"alt":"J.M.",     "clase":"P"},
   {"thumbnail":"JoeBiden.webp         ",	"image":"JoeBiden.webp         ",	"alt":"J.B.",     "clase":"P"},
   {"thumbnail":"JorgeBergog.webp      ",	"image":"JorgeBergog.webp      ",	"alt":"J.B.",     "clase":"P"},
@@ -93,8 +92,9 @@ var lasCaricaturas = [
   {"thumbnail":"LilitaCarrio.webp     ",	"image":"LilitaCarrio.webp     ",	"alt":"L.C.",     "clase":"P"},
   {"thumbnail":"MartinTetaz.webp      ",	"image":"MartinTetaz.webp      ",	"alt":"M.T.",     "clase":"P"},
   {"thumbnail":"MauricioM.webp        ",	"image":"MauricioM.webp        ",	"alt":"M.M.",     "clase":"P"},
+  {"thumbnail":"MaxiBagilet.webp      ",	"image":"MaxiBagilet.webp      ",	"alt":"M.B.",     "clase":"P"},
   {"thumbnail":"PatriciaBullrich.webp ",	"image":"PatriciaBullrich.webp ",	"alt":"P.B.",     "clase":"P"},
-  {"thumbnail":"rLopezMurphy.webp     ",	"image":"RLopezMurphy.webp     ",	"alt":"R.L.M.",   "clase":"P"},
+  {"thumbnail":"RLopezMurphy.webp     ",	"image":"RLopezMurphy.webp     ",	"alt":"R.L.M.",   "clase":"P"},
   {"thumbnail":"VladimirPutin.webp    ",	"image":"VladimirPutin.webp    ",	"alt":"V.P.",     "clase":"P"},
 
   {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
