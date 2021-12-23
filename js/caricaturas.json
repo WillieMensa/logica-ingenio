@@ -12,10 +12,11 @@
 // P : Politicos
 
 var lasCaricaturas = [
-  {"thumbnail":"GuillermoFrancella.webp",	"image":"GuillermoFrancella.webp","alt":"G.F.",     "clase":"A"},
-  {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp    ",	"alt":"M.L.",     "clase":"A"},
   {"thumbnail":"AlbertoCormillot.webp ",	"image":"AlbertoCormillot.webp ",	"alt":"A.C.",     "clase":"A"},
   {"thumbnail":"CarlosGardel.webp     ",	"image":"CarlosGardel.webp     ",	"alt":"C.G.",     "clase":"A"},
+  {"thumbnail":"GuillermoFrancella.webp",	"image":"GuillermoFrancella.webp","alt":"G.F.",     "clase":"A"},
+  {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp    ",	"alt":"M.L.",     "clase":"A"},
+  {"thumbnail":"RicardoDarin.webp     ",	"image":"RicardoDarin.webp     ",	"alt":"R.D.",     "clase":"A"},
 
   {"thumbnail":"AdrianaMeyer.webp     ",	"image":"AdrianaMeyer.webp     ",	"alt":"A.M.",     "clase":"C"},
   {"thumbnail":"AlbertoParodi.webp    ",	"image":"AlbertoParodi.webp    ",	"alt":"A.P.",     "clase":"C"},
@@ -23,7 +24,7 @@ var lasCaricaturas = [
   {"thumbnail":"AnnieV.webp           ",	"image":"AnnieV.webp           ",	"alt":"A.V.",     "clase":"C"},
   {"thumbnail":"DiegoT.webp           ",	"image":"DiegoT.webp           ",	"alt":"D.T.",     "clase":"C"},
   {"thumbnail":"GuilleFlores.webp     ",	"image":"GuilleFlores.webp     ",	"alt":"G.F.",     "clase":"C"},
-  {"thumbnail":"Johnnie.webp          ",	"image":"Johnnie.webp          ",	"alt":"J.C.V.",     "clase":"C"},
+  {"thumbnail":"Johnnie.webp          ",	"image":"Johnnie.webp          ",	"alt":"J.C.V.",   "clase":"C"},
   {"thumbnail":"JesusCejas.webp       ",	"image":"JesusCejas.webp       ",	"alt":"J.C.",     "clase":"C"},
   {"thumbnail":"LourdesF.webp         ",	"image":"LourdesF.webp         ",	"alt":"L.F.",     "clase":"C"},
   {"thumbnail":"LuciBagilet.webp      ",	"image":"LuciBagilet.webp      ",	"alt":"L.B.",     "clase":"C"},
