@@ -180,7 +180,7 @@ function poneTitulo() {
 		// block of code to be executed if condition1 is true
 			text = "Conocidos";
 	} else 	if (claseAct.includes("AD")) {
-			text = "Artistas y deportistas";
+			text = "Artistas y Deportistas";
 	} else 	if (claseAct.includes("E")) {
 	//} else 	if (claseAct == "E") {
 			text = "Periodistas";
