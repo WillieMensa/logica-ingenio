@@ -59,6 +59,7 @@ var lasCaricaturas = [
   {"thumbnail":"OrganizarUnaToma.webp ",	"image":"OrganizarUnaToma.webp ",	"alt":"TOMA",     "clase":"M"},
   {"thumbnail":"AleHernandez.webp     ",	"image":"AleHernandez.webp     ",	"alt":"A.H.",     "clase":"M"},
   {"thumbnail":"AlejandroYacono.webp  ",	"image":"AlejandroYacono.webp  ",	"alt":"A.Y.",     "clase":"M"},
+  {"thumbnail":"AngelDureLopez.webp   ",	"image":"AngelDureLopez.webp   ",	"alt":"A.D.",     "clase":"M"},
   {"thumbnail":"ArielJurjo.webp       ",	"image":"ArielJurjo.webp       ",	"alt":"A.J.",     "clase":"M"},
   {"thumbnail":"AugustoOliva.webp     ",	"image":"AugustoOliva.webp     ",	"alt":"A.O.",     "clase":"M"},
   {"thumbnail":"ClausH.webp           ",	"image":"ClausH.webp           ",	"alt":"C.H.",     "clase":"M"},
