@@ -13,6 +13,7 @@
 
 var lasCaricaturas = [
   {"thumbnail":"AlbertoCormillot.webp ",	"image":"AlbertoCormillot.webp ",	"alt":"A.C.",     "clase":"A"},
+  {"thumbnail":"AlbertoOlmedo.webp    ",	"image":"AlbertoOlmedo.webp    ",	"alt":"A.O.",     "clase":"A"},
   {"thumbnail":"CarlosGardel.webp     ",	"image":"CarlosGardel.webp     ",	"alt":"C.G.",     "clase":"A"},
   {"thumbnail":"GuillermoFrancella.webp",	"image":"GuillermoFrancella.webp","alt":"G.F.",     "clase":"A"},
   {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp    ",	"alt":"M.L.",     "clase":"A"},
