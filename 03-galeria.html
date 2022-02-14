@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- modificado a partir de 02- -->
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+
+<div class="w3-row-padding">
+  <div class="w3-col m1">
+    <img src="./galeria/AdrianVentura.webp    " style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-col m1">
+    <img src="./galeria/AlfredoLeuco.webp     " style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-col m1">
+    <img src="./galeria/CarlosPagni.webp      " style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-col m1">
+    <img src="./galeria/AleHernandez.webp     " style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-col m1">
+    <img src="./galeria/AlejandroYacono.webp     " style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-col m1">
+    <img src="./galeria/AngelDureLopez.webp      " style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <!-- <img id="img01" style="width:120%"> -->
+    <img id="img01" style="height:100%; text-align:center">
+  </div>
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+</body>
+</html>
