@@ -12,7 +12,7 @@
 
 	const
 		CARPETA = "./galeria/",		//	carpeta donde estan caricaturas y thumbnails
-		THUMBPP = 7,							//	thumbnails por pagina		
+		THUMBPP = 9,							//	thumbnails por pagina		
 		FAKE = null;
 
 
@@ -20,9 +20,14 @@
 		poneMenuPpal();						// porque hay superposicion con la misma funcion de carga
 		processUser();
 		poneTitulo();
+
+		console.log( claseAct )
+		claseAct = ( claseAct == undefined ) ? "C": claseAct
+		console.log( claseAct )
+
 		loadCaricaturas(claseAct);
 		loadThumbnails();
-		muestraImagen(0);
+		//	muestraImagen(0);
 	}
 
 var slideIndex = 1;
@@ -31,8 +36,10 @@ showSlides(slideIndex);
 function plusSlides(n) {
 	// calculo de la cantidad de paginas
 	let nCantX = caricaturas.length / THUMBPP;
+	console.log( nCantX);
 	let nCantPag = ( Math.floor(nCantX) == Math.ceil(nCantX) ) ? Math.floor(nCantX) : Math.ceil(nCantX) ;
-	//	console.log( "cantidad paginas = " , nCantPag );
+	
+	console.log( "cantidad paginas = " , nCantPag );
 
 
 	//	nPagina = (n>0) ? nPagina++ : nPagina -- ;
@@ -45,7 +52,7 @@ function plusSlides(n) {
 
   //	if (n >= THUMBPP) {nPagina++};
 	loadThumbnails();
-	muestraImagen(0);
+	//	muestraImagen(0);
   //	showSlides(slideIndex += n);
 }
 
@@ -85,29 +92,37 @@ function loadThumbnails(){
 	for (let i=0;i < THUMBPP ; i++)
 	{
 		destino = document.getElementById("thumb0" + i );
+		//	console.log( i, destino);
+		//	console.log( destino.src);
 		//	console.log(nPagina, nCaric);
 		//	console.log(caricaturas[nCaric]);
 		destino.src = (CARPETA + caricaturas[nCaric].thumbnail);
+
+		//	console.log(destino.src);
+		var captionText = document.getElementById("caption0" + i );
+		captionText.innerHTML = caricaturas[nCaric].alt;
+
 		nCaric++;
 
 	}
 
 }
 
-function muestraImagen(nIndx ) {
-	// muestra la imagen seleccionada. nIndx: trae el nro de thumbnail
-	//	resolver vinculación nro thumbnail --> nro de caricatura
-
-	nCaric = (nPagina - 1 ) * THUMBPP + nIndx;
-
-	var destino = document.getElementById("personaje");
-
-	destino.src = CARPETA + caricaturas[nCaric].image;
-
-	//	console.log(destino.src);
-	var captionText = document.getElementById("caption");
-	captionText.innerHTML = caricaturas[nCaric].alt;
-}
+//	function muestraImagen(nIndx ) {
+//		// muestra la imagen seleccionada. nIndx: trae el nro de thumbnail
+//		//	resolver vinculación nro thumbnail --> nro de caricatura
+//	
+//		nCaric = (nPagina - 1 ) * THUMBPP + nIndx;
+//		console.log( nCaric);
+//	
+//		var destino = document.getElementById("personaje");
+//	
+//		destino.src = CARPETA + caricaturas[nCaric].image;
+//	
+//		//	console.log(destino.src);
+//		var captionText = document.getElementById("caption");
+//		captionText.innerHTML = caricaturas[nCaric].alt;
+//	}
 
 
 function caricaturaThumb(nThumb){
@@ -118,7 +133,7 @@ function caricaturaThumb(nThumb){
 
 	// hay que presentar nuevos thumbnails
 	loadThumbnails();
-	muestraImagen(0);
+	//	muestraImagen(0);
 
 }
 

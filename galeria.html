@@ -14,116 +14,15 @@
 
 		<title>Galeria</title>
 
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 		<script src="menuppal.js"></script>
 
 	<style>
-	/*
-		body {
-			font-family: Arial;
-			margin: 0;
-		}
-	*/
 
-	* {
-		box-sizing: border-box;
-	}
-
-	img {
-		vertical-align: middle;
-	}
-
-	/* Position the image container (needed to position the left and right arrows) */
-	.container {
-		position: relative;
-		text-align: center;
-
-	}
-
-	/* Hide the images by default */
-	.mySlides {
-		display: none;
-	}
-
-	/* Add a pointer when hovering over the thumbnail images */
-	.cursor {
-		cursor: pointer;
-	}
-
-	/* Next & previous buttons */
-	.prev,
-	.next {
-		cursor: pointer;
-		position: absolute;
-		top: 95%;
-		width: auto;
-		padding: 16px;
-		margin-top: -50px;
-		color: .clr_contra;
-		font-weight: bold;
-		font-size: 20px;
-		border-radius: 0 3px 3px 0;
-		user-select: none;
-		-webkit-user-select: none;
-	}
-
-	/* Position the "prev button" to the left */
-	.prev {
-		left: 0;
-		border-radius: 3px 0 0 3px;
-	}
-	/* Position the "next button" to the right */
-	.next {
-		right: 0;
-		border-radius: 3px 0 0 3px;
-	}
-
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover,
-	.next:hover {
-		background-color: rgba(0, 0, 0, 0.7);
-	}
-
-	/* Number text (1/3 etc) */
-	.numbertext {
-		color: #f2f2f2;
-		font-size: 12px;
-		padding: 8px 12px;
-		position: absolute;
-		top: 0;
-	}
-
-	/* Container for image text */
-	.caption-container {
-		text-align: center;
-		background-color: #222;
-		padding: 2px 16px;
-		color: white;
-	}
-
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
-	/* Six columns side by side */
-	.column {
-		float: left;
-		width: 16.66%;
-	}
-
-	/* Add a transparency effect for thumnbail images */
-	.demo {
-		opacity: 0.6;
-	}
-
-	.active,
-	.demo:hover {
-		opacity: 1;
-	}
 	</style>
 
 
@@ -133,39 +32,110 @@
 
 		<div id="menuppal"></div>
 
-		<div class="header">
-			<h3 id="titulo" style="text-align:center;"> Galería </h3>
+		<div class="w3-row-padding header">		
+			<h2 style="text-align:center"><a class="prev" onclick="plusSlides(-1)">❮</a>&nbsp;&nbsp;&nbsp;
+			<span id="titulo" style="text-align:center;"> Galería </span>
+			&nbsp;&nbsp;&nbsp;<a class="next" onclick="plusSlides(1)">❯</a></h2>		
 		</div>
 
 		<!-- Contenido de la pagina -->
-		<div class="container">
-			<!-- esta version similar a original galeria.html -->
-			<div class="row" id='laImagen' style="text-align:center;">
-				<div class="col-12" style="text-align: center;">
-					<img src=".\galeria\ManoDibujando.webp" id='personaje' alt="el dibujante" style="width:50%" class="img-responsive">
-				</div>
+		<!-- Primera fila -->
+		<div class="w3-row-padding w3-margin-top">
+
+			<div class="w3-third">
+			<div class="w3-card">
+				<img class="img-responsive" src="" style="width:100%" id='thumb00' alt="imagen 01">
+			<div class="w3-container">
+				<h4 id="caption00" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
 			</div>
-    
-			<div class="clr_medio">
-				<p id="caption" style="color:white; padding:0; font-weight:500"></p>
+			</div>
 			</div>
 
-	<!-- thumbnails -->
-  <div class="row">
+			<div class="w3-third">
+			<div class="w3-card">
+				<img class="img-responsive" src="" style="width:100%" id='thumb01' alt="imagen 02">
+			<div class="w3-container">
+				<h4 id="caption01" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
 
-		<img class="demo cursor img-responsive" src="" id='thumb00' alt="imagen 00" style="width:12%" onclick="muestraImagen( 0 )">
-		<img class="demo cursor img-responsive" src="" id='thumb01' alt="imagen 01" style="width:12%" onclick="muestraImagen( 1 )">
-		<img class="demo cursor img-responsive" src="" id='thumb02' alt="imagen 02" style="width:12%" onclick="muestraImagen( 2 )">
-		<img class="demo cursor img-responsive" src="" id='thumb03' alt="imagen 03" style="width:12%" onclick="muestraImagen( 3 )">
-		<img class="demo cursor img-responsive" src="" id='thumb04' alt="imagen 04" style="width:12%" onclick="muestraImagen( 4 )">
-		<img class="demo cursor img-responsive" src="" id='thumb05' alt="imagen 05" style="width:12%" onclick="muestraImagen( 5 )">
-		<img class="demo cursor img-responsive" src="" id='thumb06' alt="imagen 06" style="width:12%" onclick="muestraImagen( 6 )">
+			<div class="w3-third">
+			<div class="w3-card">
+				<img class="img-responsive" src="" style="width:100%" id='thumb02' alt="imagen 03">
+			<div class="w3-container">
+				<h4 id="caption02" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
 
-  </div>
-</div>
+
+		<!-- Segunda fila -->
+		<div class="w3-row-padding w3-margin-top">
+			<div class="w3-third">
+			<div class="w3-card">
+				<img class="img-responsive" src="" style="width:100%" id='thumb03' alt="imagen 04">
+			<div class="w3-container">
+				<h4 id="caption03" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
+
+			<div class="w3-third">
+			<div class="w3-card">
+				<img class="img-responsive" src="" style="width:100%" id='thumb04' alt="imagen 05">
+			<div class="w3-container">
+				<h4 id="caption04" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
+
+			<div class="w3-third">
+			<div class="w3-card">
+				<img class="img-responsive" src="" style="width:100%" id='thumb05' alt="imagen 06">
+			<div class="w3-container">
+				<h4 id="caption05" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
+		</div>
+
+
+		<!-- Tercera fila -->
+		<div class="w3-row-padding w3-margin-top">
+			<div class="w3-third">
+			<div class="w3-card">
+			<img class="img-responsive" src="" style="width:100%" id='thumb06' alt="imagen 07">
+			<div class="w3-container">
+			<h4 id="caption06" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
+
+			<div class="w3-third">
+			<div class="w3-card">
+			<img class="img-responsive" src="" style="width:100%" id='thumb07' alt="imagen 08">
+			<div class="w3-container">
+			<h4 id="caption07" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
+
+			<div class="w3-third">
+			<div class="w3-card">
+			<img class="img-responsive" src="" style="width:100%" id='thumb08' alt="imagen 09">
+			<div class="w3-container">
+			<h4 id="caption08" class="w3-text-green w3-center w3-padding-small" style="font-weight:700"></h4>
+			</div>
+			</div>
+			</div>
+
+		</div>
+
+
+	</div>
 
     
 
@@ -185,7 +155,7 @@
 		</ul>
 
 		<div class="footer">
-			<p>by Willie Verger, 2021</p>
+			<p>by Willie Verger, 2022</p>
 		</div>
 
 		<script src="js/caricaturas.json"></script>
