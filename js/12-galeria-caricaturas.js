@@ -12,7 +12,7 @@
 
 	const
 		CARPETA = "./galeria/",		//	carpeta donde estan caricaturas y thumbnails
-		THUMBPP = 7,							//	thumbnails por pagina		
+		THUMBPP = 9,							//	thumbnails por pagina		
 		FAKE = null;
 
 
@@ -88,6 +88,11 @@ function loadThumbnails(){
 		//	console.log(nPagina, nCaric);
 		//	console.log(caricaturas[nCaric]);
 		destino.src = (CARPETA + caricaturas[nCaric].thumbnail);
+
+		//	console.log(destino.src);
+		var captionText = document.getElementById("caption0" + i );
+		captionText.innerHTML = caricaturas[nCaric].alt;
+
 		nCaric++;
 
 	}
