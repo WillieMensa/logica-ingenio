@@ -21,9 +21,9 @@
 		processUser();
 		poneTitulo();
 
-		console.log( claseAct )
-		claseAct = ( claseAct == undefined ) ? "C": claseAct
-		console.log( claseAct )
+		//	console.log( claseAct )
+		//	claseAct = ( claseAct == undefined ) ? "C": claseAct
+		//	console.log( claseAct )
 
 		loadCaricaturas(claseAct);
 		loadThumbnails();
@@ -36,10 +36,10 @@ showSlides(slideIndex);
 function plusSlides(n) {
 	// calculo de la cantidad de paginas
 	let nCantX = caricaturas.length / THUMBPP;
-	console.log( nCantX);
+	//	console.log( nCantX);
 	let nCantPag = ( Math.floor(nCantX) == Math.ceil(nCantX) ) ? Math.floor(nCantX) : Math.ceil(nCantX) ;
 	
-	console.log( "cantidad paginas = " , nCantPag );
+	//	console.log( "cantidad paginas = " , nCantPag );
 
 
 	//	nPagina = (n>0) ? nPagina++ : nPagina -- ;
