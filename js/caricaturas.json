@@ -106,6 +106,7 @@ var lasCaricaturas = [
   {"thumbnail":"MaxiBagilet.webp      ",	"image":"MaxiBagilet.webp      ",	"alt":"M.B.",     "clase":"P"},
   {"thumbnail":"PatriciaBullrich.webp ",	"image":"PatriciaBullrich.webp ",	"alt":"P.B.",     "clase":"P"},
   {"thumbnail":"RLopezMurphy.webp     ",	"image":"RLopezMurphy.webp     ",	"alt":"R.L.M.",   "clase":"P"},
+  {"thumbnail":"VladimidolfHitlin.webp",	"image":"VladimidolfHitlin.webp",	"alt":"V.H.",     "clase":"P"},
   {"thumbnail":"VladimirPutin.webp    ",	"image":"VladimirPutin.webp    ",	"alt":"V.P.",     "clase":"P"},
 
   {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
