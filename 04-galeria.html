@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- modificado a partir de 02- -->
+<!-- 
+	llamar de la siguiente forma
+	galeria.html?clase=%22P%22
+-->
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="menuppal.js"></script>
+
+
+<body>
+
+	<div id="menuppal"></div>
+
+	<div class="w3-row-padding header">		
+		<h2 style="text-align:center"><a class="prev" onclick="plusSlides(-1)">❮</a>&nbsp;&nbsp;&nbsp;
+		<span id="titulo" style="text-align:center;"> Galería </span>
+		&nbsp;&nbsp;&nbsp;<a class="next" onclick="plusSlides(1)">❯</a></h2>		
+	</div>
+
+<!-- 1ra fila de imagenes -->
+<div class="w3-row-padding">
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image0" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image1" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image2" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image3" onclick="onClick(this)" class="w3-hover-opacity"></div>
+</div>
+
+<!-- 2da fila de imagenes -->
+<div class="w3-row-padding">
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image4" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image5" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image6" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image7" onclick="onClick(this)" class="w3-hover-opacity"></div>
+</div>
+
+<!-- 3ra fila de imagenes -->
+<div class="w3-row-padding">
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image8" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image9" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image10" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image11" onclick="onClick(this)" class="w3-hover-opacity"></div>
+</div>
+
+<!-- 4ta fila de imagenes -->
+<div class="w3-row-padding">
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image12" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image13" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image14" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image15" onclick="onClick(this)" class="w3-hover-opacity"></div>
+</div>
+
+<!-- 5ta fila de imagenes -->
+<div class="w3-row-padding">
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image16" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image17" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image18" onclick="onClick(this)" class="w3-hover-opacity"></div>
+  <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image19" onclick="onClick(this)" class="w3-hover-opacity"></div>
+</div>
+
+
+
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img id="img01" style="width:100%"> 
+    <!-- <img id="img01" style="height:110%; text-align:center"> -->
+  </div>
+</div>
+
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+		<script src="js/caricaturas.json"></script>
+		<!-- <script src="js/galeria-caricaturas.js"></script> -->
+		<script src="js/galeria-caricaturas-v01.js"></script>
+
+</body>
+</html>

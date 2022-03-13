@@ -5,25 +5,26 @@
 
 	let 
 		nCaric = 0,		//	nro de caricatura definido en el .JSON
-		nPagina = 1,	//	nro de pagina actual. Comenzamos en 1
+		//	nPagina = 1,	//	nro de pagina actual. Comenzamos en 1
 		caricaturas = undefined,
 		claseAct = undefined,
 		xfake = null;
 
 	const
 		CARPETA = "./galeria/",		//	carpeta donde estan caricaturas y thumbnails
-		THUMBPP = 9,							//	thumbnails por pagina		
+		THUMBPP = 18,							//	thumbnails por pagina		
 		FAKE = null;
 
 
 	window.onload = function(){
+		//	processUser();						// procesa parametros recibidos en pagina web
 		poneMenuPpal();						// porque hay superposicion con la misma funcion de carga
-		processUser();
+		processUser();						// procesa parametros recibidos en pagina web
 		poneTitulo();
 
 		//	console.log( claseAct )
 		//	claseAct = ( claseAct == undefined ) ? "C": claseAct
-		//	console.log( claseAct )
+		console.log( claseAct )
 
 		loadCaricaturas(claseAct);
 		loadThumbnails();
@@ -44,11 +45,11 @@ function plusSlides(n) {
 
 
 	//	nPagina = (n>0) ? nPagina++ : nPagina -- ;
-	nPagina = nPagina + n;
+	//	nPagina = nPagina + n;
 	//	console.log( "n, Pagina actual = " , n, nPagina );
 
-	nPagina = (nPagina < 1) ? 1 : nPagina ;
-	nPagina = (nPagina > nCantPag ) ? nCantPag : nPagina ;
+	//	nPagina = (nPagina < 1) ? 1 : nPagina ;
+	//	nPagina = (nPagina > nCantPag ) ? nCantPag : nPagina ;
 	//	console.log( "Pagina actual = " , nPagina );
 
   //	if (n >= THUMBPP) {nPagina++};
@@ -68,8 +69,8 @@ function showSlides(n) {
   var captionText = document.getElementById("caption");
 
 	// corregir aqui para desplazar imagenes 
-  if (n >= THUMBPP) {nPagina++}
-  if (n < 1) {nPagina--}
+  //	if (n >= THUMBPP) {nPagina++}
+  //	if (n < 1) {nPagina--}
 
 	//	for (i = 0; i < slides.length; i++) {
   //	    slides[i].style.display = "none";
@@ -88,11 +89,12 @@ function loadThumbnails(){
 
 	var destino ;		//	identificar el thumbnail a usar
 
-	nCaric = (nPagina - 1 ) * THUMBPP
+	nCaric = 0;		// (nPagina - 1 ) * THUMBPP
 	
 	for (let i=0;i < THUMBPP ; i++)
 	{
-		destino = document.getElementById("thumb0" + i );
+		destino = document.getElementById("image" + i );
+		//	console.log( "image" + i );
 		//	console.log( i, destino);
 		//	console.log( destino.src);
 		//	console.log(nPagina, nCaric);
@@ -100,8 +102,8 @@ function loadThumbnails(){
 		destino.src = (CARPETA + caricaturas[nCaric].thumbnail);
 
 		//	console.log(destino.src);
-		var captionText = document.getElementById("caption0" + i );
-		captionText.innerHTML = caricaturas[nCaric].alt;
+		//	var captionText = document.getElementById("caption0" + i );
+		//	captionText.innerHTML = caricaturas[nCaric].alt;
 
 		nCaric++;
 
@@ -139,7 +141,7 @@ function caricaturaThumb(nThumb){
 }
 
 function loadCaricaturas(claseAct){
-	//caricaturas = [];
+
 	cClase = claseAct;
 	let x = 0;
 	caricaturas = [];
@@ -154,7 +156,7 @@ function loadCaricaturas(claseAct){
 		}
 	}
 
-	console.log( caricaturas );
+	//	console.log( caricaturas );
 
 	while (( caricaturas.length % THUMBPP ) != 0)
 	{
@@ -207,7 +209,9 @@ function poneTitulo() {
 	} else 	if (claseAct.includes("M")) {
 			text = "Mensanos";
 	} else 	if (claseAct.includes("P")) {
-			text = "Políticos";
+			text = "Políticos Nacionales";
+	} else 	if (claseAct.includes("Q")) {
+			text = "Políticos Internacionales";
 	} else {
 		text = "???";
 	}
@@ -215,5 +219,5 @@ function poneTitulo() {
 	//	console.log(claseAct);
 	//	console.log(text);
 
-	document.getElementById("titulo").innerHTML = "Galería " + text ;
+	document.getElementById("titulo").innerHTML = "Galería de " + text ;
 }
