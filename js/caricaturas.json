@@ -12,15 +12,17 @@
 // P : Politicos
 
 var lasCaricaturas = [
-  {"thumbnail":"AlbertoCormillot.webp ",	"image":"AlbertoCormillot.webp ",	"alt":"A.C.",     "clase":"A"},
-  {"thumbnail":"AlbertoOlmedo.webp    ",	"image":"AlbertoOlmedo.webp    ",	"alt":"A.O.",     "clase":"A"},
-  {"thumbnail":"CarlosGardel.webp     ",	"image":"CarlosGardel.webp     ",	"alt":"C.G.",     "clase":"A"},
-  {"thumbnail":"DarioBarassi.webp     ",	"image":"DarioBarassi.webp     ",	"alt":"D.B.",     "clase":"A"},
-  {"thumbnail":"GuillermoFrancella.webp",	"image":"GuillermoFrancella.webp","alt":"G.F.",     "clase":"A"},
-  {"thumbnail":"JorgeLuisBorges.webp  ",	"image":"JorgeLuisBorges.webp  ",	"alt":"J.L.B.",   "clase":"A"},
-  {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp    ",	"alt":"M.L.",     "clase":"A"},
-  {"thumbnail":"RicardoDarin.webp     ",	"image":"RicardoDarin.webp     ",	"alt":"R.D.",     "clase":"A"},
+  {"thumbnail":"AlbertoCormillot.webp ",	"image":"AlbertoCormillot.webp  ",	"alt":"A.C.",     "clase":"A"},
+  {"thumbnail":"AlbertoOlmedo.webp    ",	"image":"AlbertoOlmedo.webp     ",	"alt":"A.O.",     "clase":"A"},
+  {"thumbnail":"AlfredoCasero.webp    ",	"image":"AlfredoCasero.webp     ",	"alt":"A.C.",     "clase":"A"},
+  {"thumbnail":"CarlosGardel.webp     ",	"image":"CarlosGardel.webp      ",	"alt":"C.G.",     "clase":"A"},
+  {"thumbnail":"DarioBarassi.webp     ",	"image":"DarioBarassi.webp      ",	"alt":"D.B.",     "clase":"A"},
+  {"thumbnail":"GuillermoFrancella.webp",	"image":"GuillermoFrancella.webp",  "alt":"G.F.",     "clase":"A"},
+  {"thumbnail":"JorgeLuisBorges.webp  ",	"image":"JorgeLuisBorges.webp   ",	"alt":"J.L.B.",   "clase":"A"},
+  {"thumbnail":"MirthaLegrand.webp    ",	"image":"MirthaLegrand.webp     ",	"alt":"M.L.",     "clase":"A"},
+  {"thumbnail":"RicardoDarin.webp     ",	"image":"RicardoDarin.webp      ",	"alt":"R.D.",     "clase":"A"},
   {"thumbnail":"RobertoFontanarrosa.webp","image":"RobertoFontanarrosa.webp","alt":"R.F.",    "clase":"A"},
+  {"thumbnail":"WillSmith.webp        ",	"image":"WillSmith.webp         ",	"alt":"R.D.",     "clase":"A"},
 
   {"thumbnail":"AdrianaMeyer.webp     ",	"image":"AdrianaMeyer.webp     ",	"alt":"A.M.",     "clase":"C"},
   {"thumbnail":"AlbertoParodi.webp    ",	"image":"AlbertoParodi.webp    ",	"alt":"A.P.",     "clase":"C"},

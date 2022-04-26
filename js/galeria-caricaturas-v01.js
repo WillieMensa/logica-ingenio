@@ -12,7 +12,7 @@
 
 	const
 		CARPETA = "./galeria/",		//	carpeta donde estan caricaturas y thumbnails
-		THUMBPP = 18,							//	thumbnails por pagina		
+		THUMBPP = 20,							//	thumbnails por pagina		
 		FAKE = null;
 
 
