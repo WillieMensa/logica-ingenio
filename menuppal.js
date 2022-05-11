@@ -20,11 +20,13 @@ function poneMenuPpal() {
 		'		<a href="javascript:void(0)" class="dropbtn">Caricaturas</a>' +
 		'		<div class="dropdown-content">' +
 		'			<a href="galeria.html?clase=%22C%22">Conocidos</a>' +
-		'			<a href="galeria.html?clase=%22M%22">Mensanos</a>' +
+		'			<a href="galeria.html?clase=%22O%22">Otros Conocidos</a>' +
+		'			<a href="galeria.html?clase=%22M%22">Mensos</a>' +
 		'			<a href="galeria.html?clase=%22E%22">Periodistas</a>' +
 		'			<a href="galeria.html?clase=%22P%22">Políticos Nacionales</a>' +
 		'			<a href="galeria.html?clase=%22Q%22">Políticos Internacionales</a>' +
-		'			<a href="galeria.html?clase=%22AD%22">Artistas y Deportistas</a>' +
+		'			<a href="galeria.html?clase=%22A%22">Artistas</a>' +
+		'			<a href="galeria.html?clase=%22D%22">Deportistas</a>' +
 		'		</div>' +
 		'	</li>' +
 

@@ -12,7 +12,7 @@
 
 	const
 		CARPETA = "./galeria/",		//	carpeta donde estan caricaturas y thumbnails
-		THUMBPP = 20,							//	thumbnails por pagina		
+		THUMBPP = 16,							//	thumbnails por pagina		
 		FAKE = null;
 
 
@@ -160,7 +160,7 @@ function loadCaricaturas(claseAct){
 
 	while (( caricaturas.length % THUMBPP ) != 0)
 	{
-	  caricaturas.push( {"thumbnail":"blanco.webp",	"image":"blanco.webp",	"alt":"??","clase":"O"} );
+	  caricaturas.push( {"thumbnail":"blanco.webp",	"image":"blanco.webp",	"alt":"??","clase":"Z"} );
 	}
 
 	//caricaturas = 
@@ -197,12 +197,24 @@ function processUser()
 function poneTitulo() {
 	var text;
 	//	console.log(claseAct);
+// A : Artistas
+// C : Conocidos / Parientes
+// O : otros Conocidos
+// D : Deportistas
+// E : pEriodistas
+// M : Mensanos
+// P : Politicos
+// Z : otros
 
 	if (claseAct.includes("C")) {
 		// block of code to be executed if condition1 is true
 			text = "Conocidos";
-	} else 	if (claseAct.includes("AD")) {
-			text = "Artistas y Deportistas";
+	} else 	if (claseAct.includes("O")) {
+			text = "más conocidos";
+	} else 	if (claseAct.includes("A")) {
+			text = "Artistas";
+	} else 	if (claseAct.includes("D")) {
+			text = "Deportistas";
 	} else 	if (claseAct.includes("E")) {
 	//} else 	if (claseAct == "E") {
 			text = "Periodistas";

@@ -4,12 +4,13 @@
 // ----------------------------------------------------------------------------
 // 2021.11.19 - adiciono clase para separar por grupos
 // A : Artistas
-// C : Conocidos
+// C : mUy Conocidos / Parientes
+// O : otros Conocidos
 // D : Deportistas
 // E : pEriodistas
-// M : Mensa
-// O : Otros
+// M : Mensanos
 // P : Politicos
+// Z : otros
 
 var lasCaricaturas = [
   {"thumbnail":"AlbertoCormillot.webp ",	"image":"AlbertoCormillot.webp  ",	"alt":"A.C.",     "clase":"A"},
@@ -27,27 +28,29 @@ var lasCaricaturas = [
 
   {"thumbnail":"AdrianaMeyer.webp     ",	"image":"AdrianaMeyer.webp     ",	"alt":"A.M.",     "clase":"C"},
   {"thumbnail":"AlbertoParodi.webp    ",	"image":"AlbertoParodi.webp    ",	"alt":"A.P.",     "clase":"C"},
-  {"thumbnail":"AlfredoBolatti.webp   ",	"image":"AlfredoBolatti.webp   ",	"alt":"A.B.",     "clase":"C"},
   {"thumbnail":"AnnieV.webp           ",	"image":"AnnieV.webp           ",	"alt":"A.V.",     "clase":"C"},
-  {"thumbnail":"CesarZanabria.webp    ",	"image":"CesarZanabria.webp    ",	"alt":"C.Z.",     "clase":"C"},
   {"thumbnail":"DiegoT.webp           ",	"image":"DiegoT.webp           ",	"alt":"D.T.",     "clase":"C"},
   {"thumbnail":"GuilleFlores.webp     ",	"image":"GuilleFlores.webp     ",	"alt":"G.F.",     "clase":"C"},
   {"thumbnail":"Johnnie.webp          ",	"image":"Johnnie.webp          ",	"alt":"J.C.V.",   "clase":"C"},
-  {"thumbnail":"JesusCejas.webp       ",	"image":"JesusCejas.webp       ",	"alt":"J.C.",     "clase":"C"},
   {"thumbnail":"LourdesF.webp         ",	"image":"LourdesF.webp         ",	"alt":"L.F.",     "clase":"C"},
   {"thumbnail":"LuciBagilet.webp      ",	"image":"LuciBagilet.webp      ",	"alt":"L.B.",     "clase":"C"},
-  {"thumbnail":"MabelRodriguez.webp   ",	"image":"MabelRodriguez.webp   ",	"alt":"M.R.",     "clase":"C"},
   {"thumbnail":"MarielaParodi.webp    ",	"image":"MarielaParodi.webp    ",	"alt":"M.P.",     "clase":"C"},
-  {"thumbnail":"MatiasBortolato.webp  ",	"image":"MatiasBortolato.webp  ",	"alt":"M.B.",     "clase":"C"},
   {"thumbnail":"Nane.webp             ",	"image":"Nane.webp             ",	"alt":"N.F.",     "clase":"C"},
-  {"thumbnail":"NNenVivo.webp         ",	"image":"NNenVivo.webp         ",	"alt":"N.N.",    "clase":"C"},
-  {"thumbnail":"OscarDeSan.webp       ",	"image":"OscarDeSan.webp       ",	"alt":"O.D.S.",   "clase":"C"},
-  {"thumbnail":"OsvaldoDiaz.webp      ",	"image":"OsvaldoDiaz.webp      ",	"alt":"O.D.",     "clase":"C"},
-  {"thumbnail":"PabloCaputi.webp      ",	"image":"PabloCaputi.webp      ",	"alt":"P.C.",     "clase":"C"},
   {"thumbnail":"Pascal.webp           ",	"image":"Pascal.webp           ",	"alt":"P.P.",     "clase":"C"},
   {"thumbnail":"RubenDagostino.webp   ",	"image":"RubenDagostino.webp   ",	"alt":"R.D.",     "clase":"C"},
-  {"thumbnail":"RubenStalli.webp      ",	"image":"RubenStalli.webp      ",	"alt":"R.S.",     "clase":"C"},
-  {"thumbnail":"YaninaVerger.webp      ",	"image":"YaninaVerger.webp     ",	"alt":"Y.V.",     "clase":"C"},
+  {"thumbnail":"SebastianDagostino.webp",	"image":"SebastianDagostino.webp","alt":"S.D.",     "clase":"C"},
+  {"thumbnail":"YaninaVerger.webp     ",	"image":"YaninaVerger.webp     ",	"alt":"Y.V.",     "clase":"C"},
+
+  {"thumbnail":"AlfredoBolatti.webp   ",	"image":"AlfredoBolatti.webp   ",	"alt":"A.B.",     "clase":"O"},
+  {"thumbnail":"CesarZanabria.webp    ",	"image":"CesarZanabria.webp    ",	"alt":"C.Z.",     "clase":"O"},
+  {"thumbnail":"JesusCejas.webp       ",	"image":"JesusCejas.webp       ",	"alt":"J.C.",     "clase":"O"},
+  {"thumbnail":"MabelRodriguez.webp   ",	"image":"MabelRodriguez.webp   ",	"alt":"M.R.",     "clase":"O"},
+  {"thumbnail":"MatiasBortolato.webp  ",	"image":"MatiasBortolato.webp  ",	"alt":"M.B.",     "clase":"O"},
+  {"thumbnail":"NNenVivo.webp         ",	"image":"NNenVivo.webp         ",	"alt":"N.N.",     "clase":"O"},
+  {"thumbnail":"OscarDeSan.webp       ",	"image":"OscarDeSan.webp       ",	"alt":"O.D.S.",   "clase":"O"},
+  {"thumbnail":"OsvaldoDiaz.webp      ",	"image":"OsvaldoDiaz.webp      ",	"alt":"O.D.",     "clase":"O"},
+  {"thumbnail":"PabloCaputi.webp      ",	"image":"PabloCaputi.webp      ",	"alt":"P.C.",     "clase":"O"},
+  {"thumbnail":"RubenStalli.webp      ",	"image":"RubenStalli.webp      ",	"alt":"R.S.",     "clase":"O"},
 
   {"thumbnail":"AngelDiMaria.webp     ",	"image":"AngelDiMaria.webp     ",	"alt":"A.D.M.",   "clase":"D"},
   {"thumbnail":"DiegoMaradona.webp    ",	"image":"DiegoMaradona.webp    ",	"alt":"D.M.",     "clase":"D"},
@@ -116,12 +119,12 @@ var lasCaricaturas = [
   {"thumbnail":"VladimidolfHitlin.webp",	"image":"VladimidolfHitlin.webp",	"alt":"V.H.",     "clase":"Q"},
   {"thumbnail":"VladimirPutin.webp    ",	"image":"VladimirPutin.webp    ",	"alt":"V.P.",     "clase":"Q"},
 
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"},
-  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"O"}
+  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"Z"},
+  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"Z"},
+  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"Z"},
+  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"Z"},
+  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"Z"},
+  {"thumbnail":"blanco.webp           ",	"image":"blanco.webp           ",	"alt":" ",        "clase":"Z"}
 
 ];
 
