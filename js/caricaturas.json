@@ -68,8 +68,9 @@ var lasCaricaturas = [
   {"thumbnail":"JorgeFDiaz.webp       ",	"image":"JorgeFDiaz.webp       ",	"alt":"J.F.D.",   "clase":"E"},
   {"thumbnail":"JorgeLanata.webp      ",	"image":"JorgeLanata.webp      ",	"alt":"J.L.",     "clase":"E"},
   {"thumbnail":"LuisMajul.webp        ",	"image":"LuisMajul.webp        ",	"alt":"L.M.",     "clase":"E"},
+  {"thumbnail":"ManuelAdorni.webp     ",	"image":"ManuelAdorni.webp     ",	"alt":"M.A.",     "clase":"E"},
   {"thumbnail":"MarceloBonelli.webp   ",	"image":"MarceloBonelli.webp   ",	"alt":"M.B.",     "clase":"E"},
-  {"thumbnail":"OsvaldoBazan.webp     ",	"image":"OsvaldoBazan.webp    ",	"alt":"O.B.",     "clase":"E"},
+  {"thumbnail":"OsvaldoBazan.webp     ",	"image":"OsvaldoBazan.webp     ",	"alt":"O.B.",     "clase":"E"},
   {"thumbnail":"RobertoCachan.webp    ",	"image":"RobertoCachan.webp    ",	"alt":"R.C.",     "clase":"E"},
   {"thumbnail":"RobertoNavarro.webp   ",	"image":"RobertoNavarro.webp   ",	"alt":"R.N.",     "clase":"E"},
 
