@@ -10,6 +10,7 @@
 // E : pEriodistas
 // M : Mensanos
 // P : Politicos
+// Q : otros politicos
 // Z : otros
 
 var lasCaricaturas = [
@@ -95,10 +96,9 @@ var lasCaricaturas = [
   {"thumbnail":"NataliaMariscotti.webp",	"image":"NataliaMariscotti.webp",	"alt":"N.M.",     "clase":"M"},
   {"thumbnail":"OscarAbella.webp      ",	"image":"OscarAbella.webp      ",	"alt":"O.A.",     "clase":"M"},
 
-  {"thumbnail":"AlbertoFernandez.webp ",	"image":"AlbertoFernandez.webp ",	"alt":"A.F.",     "clase":"P"},
-  {"thumbnail":"AmadoBoudou.webp      ",	"image":"AmadoBoudou.webp      ",	"alt":"A.B.",     "clase":"P"},
-  {"thumbnail":"AnibalFernandez.webp  ",	"image":"AnibalFernandez.webp  ",	"alt":"A.F.",     "clase":"P"},
-  {"thumbnail":"CEFK.webp             ",	"image":"CEFK.webp             ",	"alt":"C.F.K.",   "clase":"P"},
+
+
+  {"thumbnail":"DomingoSarmiento.webp ",	"image":"DomingoSarmiento.webp ",	"alt":"D.F.S",    "clase":"P"},
   {"thumbnail":"FacundoManes.webp     ",	"image":"FacundoManes.webp     ",	"alt":"F.M.",     "clase":"P"},
   {"thumbnail":"FernandoBurlando.webp ",	"image":"FernandoBurlando.webp ",	"alt":"F.B.",     "clase":"P"},
   {"thumbnail":"GinesGGarcia.webp     ",	"image":"GinesGGarcia.webp     ",	"alt":"G.G.G.",   "clase":"P"},
@@ -114,6 +114,10 @@ var lasCaricaturas = [
   {"thumbnail":"PatriciaBullrich.webp ",	"image":"PatriciaBullrich.webp ",	"alt":"P.B.",     "clase":"P"},
   {"thumbnail":"RLopezMurphy.webp     ",	"image":"RLopezMurphy.webp     ",	"alt":"R.L.M.",   "clase":"P"},
 
+  {"thumbnail":"AlbertoFernandez.webp ",	"image":"AlbertoFernandez.webp ",	"alt":"A.F.",     "clase":"Q"},
+  {"thumbnail":"AmadoBoudou.webp      ",	"image":"AmadoBoudou.webp      ",	"alt":"A.B.",     "clase":"Q"},
+  {"thumbnail":"AnibalFernandez.webp  ",	"image":"AnibalFernandez.webp  ",	"alt":"A.F.",     "clase":"Q"},
+  {"thumbnail":"CEFK.webp             ",	"image":"CEFK.webp             ",	"alt":"C.F.K.",   "clase":"Q"},
   {"thumbnail":"AngelaMerkel.webp     ",	"image":"AngelaMerkel.webp     ",	"alt":"A.M.",     "clase":"Q"},
   {"thumbnail":"BarackObama.webp      ",	"image":"BarackObama.webp      ",	"alt":"B.O.",     "clase":"Q"},
   {"thumbnail":"JoeBiden.webp         ",	"image":"JoeBiden.webp         ",	"alt":"J.B.",     "clase":"Q"},

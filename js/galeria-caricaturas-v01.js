@@ -223,7 +223,7 @@ function poneTitulo() {
 	} else 	if (claseAct.includes("P")) {
 			text = "Políticos Nacionales";
 	} else 	if (claseAct.includes("Q")) {
-			text = "Políticos Internacionales";
+			text = "Otros Políticos";
 	} else {
 		text = "???";
 	}
