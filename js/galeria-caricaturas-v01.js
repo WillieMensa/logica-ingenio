@@ -220,6 +220,8 @@ function poneTitulo() {
 			text = "Periodistas";
 	} else 	if (claseAct.includes("M")) {
 			text = "Mensanos";
+	} else 	if (claseAct.includes("N")) {
+			text = "Mensanos 2";
 	} else 	if (claseAct.includes("P")) {
 			text = "Políticos Nacionales";
 	} else 	if (claseAct.includes("Q")) {
