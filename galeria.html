@@ -4,108 +4,106 @@
 <!-- Este html recibe parámetro desde el enlacede llamda.
 	llamar de la siguiente forma --- 	galeria.html?clase=%22P%22
 	Ver como se resuelve en function processUser()
+
+	Agregar:
+	Al picar en una imagen, abrir otra página, con la imagen elegida, al tamaño maximo posible
+
 -->
-	<head>
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-		<meta name="description" content="Caricaturas de politicos, deportistas, artistas, conocidos.">
-		<meta name="keywords" content="Caricaturas, cartoons">
+<head>
 
-		<title>Galeria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <meta name="description" content="Caricaturas de politicos, deportistas, artistas, conocidos.">
+    <meta name="keywords" content="Caricaturas, cartoons">
 
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Galeria</title>
 
-		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-		<script src="menuppal.js"></script>
+    <link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-	</head>
+    <script src="menuppal.js"></script>
 
-
-	<body>
-
-		<div id="menuppal"></div>
-
-		<div class="w3-row-padding header">		
-			<h2 style="text-align:center" id="titulo" style="text-align:center;"> </span></h2>		
-		</div>
-
-			<!-- Contenido de la pagina -->
-			<!-- Primera fila -->
-			<!-- 1ra fila de imagenes -->
-			<div class="w3-row-padding">
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image0" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image1" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image2" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image3" onclick="onClick(this)" class="w3-hover-opacity"></div>
-			</div>
-
-			<!-- 2da fila de imagenes -->
-			<div class="w3-row-padding">
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image4" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image5" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image6" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image7" onclick="onClick(this)" class="w3-hover-opacity"></div>
-			</div>
-
-			<!-- 3ra fila de imagenes -->
-			<div class="w3-row-padding">
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image8" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image9" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image10" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image11" onclick="onClick(this)" class="w3-hover-opacity"></div>
-			</div>
-
-			<!-- 4ta fila de imagenes -->
-			<div class="w3-row-padding">
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image12" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image13" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image14" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image15" onclick="onClick(this)" class="w3-hover-opacity"></div>
-			</div>
-
-			<!-- 5ta fila de imagenes -->
-			<div class="w3-row-padding">
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image16" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image17" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image18" onclick="onClick(this)" class="w3-hover-opacity"></div>
-				<div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer"  id="image19" onclick="onClick(this)" class="w3-hover-opacity"></div>
-			</div>
+</head>
 
 
+<body>
 
-		</div>
+    <div id="menuppal"></div>
+
+    <div class="w3-row-padding header">
+        <h2 style="text-align:center" id="titulo" style="text-align:center;">
+            <!-- </span> -->
+        </h2>
+    </div>
+
+    <!-- Contenido de la pagina -->
+    <!-- Primera fila -->
+    <!-- 1ra fila de imagenes -->
+    <div class="w3-row-padding">
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image0" onclick="muestraImagen(0)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image1" onclick="muestraImagen(1)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image2" onclick="muestraImagen(2)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image3" onclick="muestraImagen(3)" class="w3-hover-opacity"></div>
+    </div>
+
+    <!-- 2da fila de imagenes -->
+    <div class="w3-row-padding">
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image4" onclick="muestraImagen(4)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image5" onclick="muestraImagen(5)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image6" onclick="muestraImagen(6)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image7" onclick="muestraImagen(7)" class="w3-hover-opacity"></div>
+    </div>
+
+    <!-- 3ra fila de imagenes -->
+    <div class="w3-row-padding">
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image8"  onclick="muestraImagen( 8)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image9"  onclick="muestraImagen( 9)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image10" onclick="muestraImagen(10)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image11" onclick="muestraImagen(11)" class="w3-hover-opacity"></div>
+    </div>
+
+    <!-- 4ta fila de imagenes -->
+    <div class="w3-row-padding">
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image12" onclick="muestraImagen(12)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image13" onclick="muestraImagen(13)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image14" onclick="muestraImagen(14)" class="w3-hover-opacity"></div>
+        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image15" onclick="muestraImagen(15)" class="w3-hover-opacity"></div>
+    </div>
 
 
-	</div>
+    </div>
 
-    
 
-		<div class="row clr_fondo">
-			<div class="col-4" style="text-align: center;">
-			</div>
-			<div class="col-8">
-			</div>
-		</div>
+    </div>
 
-		<div class="row clr_claro">
-		</div>
 
-		<ul id="mainMenu">
-			<li><a href="./curriculum-resumido.html">Quién soy</a></li>
-			<li><a href="./consultas.html">Consultas</a></li>
-		</ul>
 
-		<div class="footer">
-			<p>by Willie Verger, 2022</p>
-		</div>
+    <div class="row clr_fondo">
+        <div class="col-4" style="text-align: center;">
+        </div>
+        <div class="col-8">
+        </div>
+    </div>
 
-		<script src="js/caricaturas.json"></script>
-		<!-- <script src="js/galeria-caricaturas.js"></script> -->
-		<script src="js/galeria-caricaturas-v01.js"></script>
+    <div class="row clr_claro">
+    </div>
 
-	</body>
+    <ul id="mainMenu">
+        <li><a href="./curriculum-resumido.html">Quién soy</a></li>
+        <li><a href="./consultas.html">Consultas</a></li>
+    </ul>
+
+    <div class="footer">
+        <p>by Willie Verger, 2022</p>
+    </div>
+
+    <script src="js/caricaturas.json"></script>
+    <!-- <script src="js/galeria-caricaturas.js"></script> -->
+    <script src="js/galeria-caricaturas-v01.js"></script>
+
+</body>
 
 </html>

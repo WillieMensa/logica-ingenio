@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <meta name="description" content="Calendario mensual, calendario anual y otras impresiones.">
+    <meta name="keywords" content="Calendario anual, Calendario mensual, Calendario anual 2020, Calendario mensual 2020, L�gica,Rompecabezas">
+
+    <title>Tu foto</title>
+
+    <link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- <script src="menuppal.js"></script> -->
+		<style>
+
+			.container {
+				<!-- position: relative; -->
+				width: 100%;
+				max-width: 400px;
+			}
+
+			.container img {
+				margin: auto; 
+			}
+
+			.container .btn {
+				position: absolute;
+				top: 05%;
+				left: 20%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				background-color: #555;
+				color: white;
+				font-size: 16px;
+				padding: 12px 24px;
+				border: none;
+				cursor: pointer;
+				border-radius: 5px;
+				text-align: center;
+			}
+
+			.container .btn:hover {
+				background-color: black;
+			}
+
+		</style>
+
+
+	<script>
+
+		const
+				CARPETA = "./galeria/", //	carpeta donde estan caricaturas y thumbnails
+				FAKE = null;
+
+		window.onload = function() {
+				eligeImagen(); // procesa parametros recibidos en pagina web
+		
+				//	console.log( claseAct )
+				//	claseAct = ( claseAct == undefined ) ? "C": claseAct
+				//	console.log(claseAct)
+
+				//	loadCaricaturas(claseAct);
+				//	loadThumbnails();
+				//	muestraImagen(0);
+		}
+
+			function eligeImagen()
+			/* funcion generica para procesar parametros recibidos en pagina web */
+			{
+					var parameters = location.search.substring(1).split("&");
+					//	console.log(parameters);
+
+					var temp = parameters[0].split("=");
+					//	temp tiene el nombre de la imagen
+					//	console.log(temp);
+
+					//	claseAct = unescape(temp[1]);
+
+    var destino; //	identificar el thumbnail a usar
+
+        destino = document.getElementById("fotoActual");
+        destino.src = (CARPETA + temp);
+
+			}
+
+
+	</script>
+
+</head>
+
+<body>
+	<div class="container">
+		<img id="fotoActual" src="Galeria/JuanCampanella.webp" width="640" height="640" border="0" alt="" />
+		<button class="btn" onclick="history.back()">Volver</button>
+	</div>
+
+</body>
+
+</html>
