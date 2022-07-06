@@ -93,8 +93,8 @@ var lasCaricaturas = [
   {"thumbnail":"EzequielCastano.webp  ",	"image":"EzequielCastano.webp  ",	"alt":"E.C.",     "clase":"M"},
   {"thumbnail":"GermanGaravelli.webp  ",	"image":"GermanGaravelli.webp  ",	"alt":"G.G.",     "clase":"M"},
   {"thumbnail":"GermanGaravelli21.webp",	"image":"GermanGaravelli21.webp",	"alt":"G.G. 2.1", "clase":"M"},
-  {"thumbnail":"Guille-II.webp        ",	"image":"Guille-II.webp        ",	"alt":"G.II.",    "clase":"M"},
 
+  {"thumbnail":"Guille-II.webp        ",	"image":"Guille-II.webp        ",	"alt":"G.II.",    "clase":"N"},
   {"thumbnail":"GuilleDianda.webp     ",	"image":"GuilleDianda.webp     ",	"alt":"G.D.",     "clase":"N"},
   {"thumbnail":"JoseLuisM.webp        ",	"image":"JoseLuisM.webp        ",	"alt":"J.L.M.",   "clase":"N"},
   {"thumbnail":"JoseOnega.webp        ",	"image":"JoseOnega.webp        ",	"alt":"J.O.",     "clase":"N"},
@@ -103,6 +103,7 @@ var lasCaricaturas = [
   {"thumbnail":"MauricioCanavese.webp ",	"image":"MauricioCanavese.webp ",	"alt":"M.C.",     "clase":"N"},
   {"thumbnail":"NataliaMariscotti.webp",	"image":"NataliaMariscotti.webp",	"alt":"N.M.",     "clase":"N"},
   {"thumbnail":"OscarAbella.webp      ",	"image":"OscarAbella.webp      ",	"alt":"O.A.",     "clase":"N"},
+  {"thumbnail":"SolRomero.webp        ",	"image":"SolRomero.webp        ",	"alt":"S.R.",     "clase":"N"},
 
 
   {"thumbnail":"DomingoSarmiento.webp ",	"image":"DomingoSarmiento.webp ",	"alt":"D.F.S",    "clase":"P"},
