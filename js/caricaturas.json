@@ -55,6 +55,7 @@ var lasCaricaturas = [
   {"thumbnail":"MatiasBortolato.webp  ",	"image":"MatiasBortolato.webp  ",	"alt":"M.B.",     "clase":"O"},
   {"thumbnail":"NatYLeo.webp          ",	"image":"NatYLeo.webp          ",	"alt":"N.L.",     "clase":"O"},
   {"thumbnail":"NNenVivo.webp         ",	"image":"NNenVivo.webp         ",	"alt":"N.N.",     "clase":"O"},
+  {"thumbnail":"NNenVivo02.webp       ",	"image":"NNenVivo02.webp       ",	"alt":"N.N.2.",   "clase":"O"},
   {"thumbnail":"OscarDeSan.webp       ",	"image":"OscarDeSan.webp       ",	"alt":"O.D.S.",   "clase":"O"},
   {"thumbnail":"OsvaldoDiaz.webp      ",	"image":"OsvaldoDiaz.webp      ",	"alt":"O.D.",     "clase":"O"},
   {"thumbnail":"PabloCaputi.webp      ",	"image":"PabloCaputi.webp      ",	"alt":"P.C.",     "clase":"O"},
@@ -104,7 +105,6 @@ var lasCaricaturas = [
   {"thumbnail":"NataliaMariscotti.webp",	"image":"NataliaMariscotti.webp",	"alt":"N.M.",     "clase":"N"},
   {"thumbnail":"OscarAbella.webp      ",	"image":"OscarAbella.webp      ",	"alt":"O.A.",     "clase":"N"},
   {"thumbnail":"SolRomero.webp        ",	"image":"SolRomero.webp        ",	"alt":"S.R.",     "clase":"N"},
-
 
   {"thumbnail":"DomingoSarmiento.webp ",	"image":"DomingoSarmiento.webp ",	"alt":"D.F.S",    "clase":"P"},
   {"thumbnail":"FacundoManes.webp     ",	"image":"FacundoManes.webp     ",	"alt":"F.M.",     "clase":"P"},
