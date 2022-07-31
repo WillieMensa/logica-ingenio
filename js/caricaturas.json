@@ -126,12 +126,13 @@ var lasCaricaturas = [
 
   {"thumbnail":"AlbertoFernandez.webp ",	"image":"AlbertoFernandez.webp ",	"alt":"A.F.",     "clase":"Q"},
   {"thumbnail":"AmadoBoudou.webp      ",	"image":"AmadoBoudou.webp      ",	"alt":"A.B.",     "clase":"Q"},
-  {"thumbnail":"AnibalFernandez.webp  ",	"image":"AnibalFernandez.webp  ",	"alt":"A.F.",     "clase":"Q"},
-  {"thumbnail":"CEFK.webp             ",	"image":"CEFK.webp             ",	"alt":"C.F.K.",   "clase":"Q"},
   {"thumbnail":"AngelaMerkel.webp     ",	"image":"AngelaMerkel.webp     ",	"alt":"A.M.",     "clase":"Q"},
+  {"thumbnail":"AnibalFernandez.webp  ",	"image":"AnibalFernandez.webp  ",	"alt":"A.F.",     "clase":"Q"},
   {"thumbnail":"BarackObama.webp      ",	"image":"BarackObama.webp      ",	"alt":"B.O.",     "clase":"Q"},
+  {"thumbnail":"CEFK.webp             ",	"image":"CEFK.webp             ",	"alt":"C.F.K.",   "clase":"Q"},
   {"thumbnail":"JoeBiden.webp         ",	"image":"JoeBiden.webp         ",	"alt":"J.B.",     "clase":"Q"},
   {"thumbnail":"JorgeBergog.webp      ",	"image":"JorgeBergog.webp      ",	"alt":"J.B.",     "clase":"Q"},
+  {"thumbnail":"L-FrancoRinaldi.webp  ",	"image":"L-FrancoRinaldi.webp  ",	"alt":"F.R.",     "clase":"Q"},
   {"thumbnail":"VladimidolfHitlin.webp",	"image":"VladimidolfHitlin.webp",	"alt":"V.H.",     "clase":"Q"},
   {"thumbnail":"VladimirPutin.webp    ",	"image":"VladimirPutin.webp    ",	"alt":"V.P.",     "clase":"Q"},
 
