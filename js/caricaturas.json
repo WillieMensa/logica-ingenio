@@ -134,6 +134,7 @@ var lasCaricaturas = [
   {"thumbnail":"AnibalFernandez.webp  ",	"image":"AnibalFernandez.webp  ",	"alt":"A.F.",     "clase":"Q"},
   {"thumbnail":"BarackObama.webp      ",	"image":"BarackObama.webp      ",	"alt":"B.O.",     "clase":"Q"},
   {"thumbnail":"CEFK.webp             ",	"image":"CEFK.webp             ",	"alt":"C.F.K.",   "clase":"Q"},
+  {"thumbnail":"DonaldTrump.webp      ",	"image":"DonaldTrump.webp      ",	"alt":"D.T.",     "clase":"Q"},
   {"thumbnail":"JoeBiden.webp         ",	"image":"JoeBiden.webp         ",	"alt":"J.B.",     "clase":"Q"},
   {"thumbnail":"JorgeBergog.webp      ",	"image":"JorgeBergog.webp      ",	"alt":"J.B.",     "clase":"Q"},
   {"thumbnail":"L-FrancoRinaldi.webp  ",	"image":"L-FrancoRinaldi.webp  ",	"alt":"F.R.",     "clase":"Q"},
