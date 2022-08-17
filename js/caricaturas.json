@@ -99,7 +99,9 @@ var lasCaricaturas = [
   {"thumbnail":"Guille-II.webp        ",	"image":"Guille-II.webp        ",	"alt":"G.II.",    "clase":"M"},
   {"thumbnail":"GuilleDianda.webp     ",	"image":"GuilleDianda.webp     ",	"alt":"G.D.",     "clase":"M"},
   {"thumbnail":"Magiord.webp          ",	"image":"Magiord.webp          ",	"alt":"Magiord",  "clase":"M"},
+  {"thumbnail":"AdrianaCruz.webp      ",	"image":"AdrianaCruz.webp      ",	"alt":"A.C.",     "clase":"M"},
 
+  {"thumbnail":"LuciaGarmendia.webp   ",	"image":"LuciaGarmendia.webp   ",	"alt":"L.G",      "clase":"N"},
   {"thumbnail":"OscarAbella.webp      ",	"image":"OscarAbella.webp      ",	"alt":"O.A.",     "clase":"N"},
   {"thumbnail":"ArielJurjo.webp       ",	"image":"ArielJurjo.webp       ",	"alt":"A.J.",     "clase":"N"},
   {"thumbnail":"AngelDureLopez.webp   ",	"image":"AngelDureLopez.webp   ",	"alt":"A.D.",     "clase":"N"},
