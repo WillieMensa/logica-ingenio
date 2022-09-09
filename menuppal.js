@@ -28,9 +28,7 @@ function poneMenuPpal() {
 		'		</div>' +
 		'	</li>' +
 		'	<li><a href="./ingenio.html">Ingenio</a></li>' +
-		'	<li><a href="./juegos.html">Juegos </a></li>' +
 		'	<li><a href="./aplicaciones.html">Juegos y Aplicaciones </a></li>' +
-
 		'	<li class="dropdown">' +
 		'		<a href="javascript:void(0)" class="dropbtn">Publicaciones</a>' +
 		'		<div class="dropdown-content">' +
