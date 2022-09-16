@@ -211,6 +211,7 @@ function muestraImagen(nIndx) {
         // A : Artistas
         // C : Conocidos / Parientes
         // O : otros Conocidos
+        // F : Desconocidos
         // D : Deportistas
         // E : pEriodistas
         // M : Mensanos
@@ -221,9 +222,11 @@ function muestraImagen(nIndx) {
             // block of code to be executed if condition1 is true
             text = "Conocidos";
         } else if (claseAct.includes("O")) {
-            text = "más conocidos";
+            text = "otros conocidos";
         } else if (claseAct.includes("A")) {
             text = "Artistas";
+        } else if (claseAct.includes("F")) {
+            text = "Desconocidos";
         } else if (claseAct.includes("D")) {
             text = "Deportistas";
         } else if (claseAct.includes("E")) {
