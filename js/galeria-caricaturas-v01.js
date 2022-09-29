@@ -208,21 +208,27 @@ function muestraImagen(nIndx) {
     function poneTitulo() {
         var text;
         //	console.log(claseAct);
-        // A : Artistas
-        // C : Conocidos / Parientes
-        // O : otros Conocidos
-        // F : Desconocidos
-        // D : Deportistas
-        // E : pEriodistas
-        // M : Mensanos
-        // P : Politicos
-        // Z : otros
+				// A : Artistas
+				// C : mUy Conocidos / Parientes
+				// B : Conocidos II
+				// O : Conocidos III
+				// F : Desconocidos
+				// D : Deportistas
+				// E : pEriodistas
+				// M : Mensanos
+				// N : Mensanos 2
+				// P : Politicos
+				// Q : otros politicos
+				// Z : otros
+
 
         if (claseAct.includes("C")) {
             // block of code to be executed if condition1 is true
             text = "Conocidos";
+        } else if (claseAct.includes("B")) {
+            text = "Conocidos II";
         } else if (claseAct.includes("O")) {
-            text = "otros conocidos";
+            text = "Conocidos III";
         } else if (claseAct.includes("A")) {
             text = "Artistas";
         } else if (claseAct.includes("F")) {
@@ -247,5 +253,5 @@ function muestraImagen(nIndx) {
         //	console.log(claseAct);
         //	console.log(text);
 
-        document.getElementById("titulo").innerHTML = "Galería de " + text;
+        document.getElementById("titulo").innerHTML = " " + text;
     }
