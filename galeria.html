@@ -1,109 +1,58 @@
 <!DOCTYPE html>
-
 <html lang="es">
-<!-- Este html recibe parámetro desde el enlacede llamda.
-	llamar de la siguiente forma --- 	galeria.html?clase=%22P%22
+<!-- Este html recibe parámetro desde el enlace de llamda.
 	Ver como se resuelve en function processUser()
-
-	Agregar:
-	Al picar en una imagen, abrir otra página, con la imagen elegida, al tamaño maximo posible
-
 -->
+	<head>
+	<!-- 
+		<script data-ad-client="ca-pub-4076082038101002" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+		<meta name="description" content="Caricaturas de politicos, deportistas, artistas, conocidos.">
+		<meta name="keywords" content="Caricaturas, caricatures, Calendario anual, Calendario mensual, Lógica,Rompecabezas">
 
-<head>
+		<title>Galeria</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-    <meta name="description" content="Caricaturas de politicos, deportistas, artistas, conocidos.">
-    <meta name="keywords" content="Caricaturas, cartoons">
+		<link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Galeria</title>
+		<script src="menuppal.js"></script>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 
-    <link rel="stylesheet" href="./css/estilo202010.css" media="screen,projection,tv">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-    <script src="menuppal.js"></script>
+	<link href="css/lightbox.css" rel="stylesheet" />
 
 </head>
-
-
 <body>
 
-    <div id="menuppal"></div>
+	<div id="menuppal"></div>
 
-    <div class="w3-row-padding header">
-        <h2 style="text-align:center" id="titulo" style="text-align:center;">
-            <!-- </span> -->
-        </h2>
-    </div>
+	<div class="header">
+		<h3 id="titulo" style="text-align:center;"> Galería </h3>
+	</div>
 
-    <!-- Contenido de la pagina -->
-    <!-- Primera fila -->
-    <!-- 1ra fila de imagenes -->
-    <div class="w3-row-padding">
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image0" onclick="muestraImagen(0)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image1" onclick="muestraImagen(1)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image2" onclick="muestraImagen(2)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image3" onclick="muestraImagen(3)" class="w3-hover-opacity"></div>
-    </div>
+  <section>
+		<p>Picar en la foto para ver en mayor tamaño.</p>
 
-    <!-- 2da fila de imagenes -->
-    <div class="w3-row-padding">
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image4" onclick="muestraImagen(4)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image5" onclick="muestraImagen(5)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image6" onclick="muestraImagen(6)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image7" onclick="muestraImagen(7)" class="w3-hover-opacity"></div>
-    </div>
+		<div id="galeria_ppal"></div>
 
-    <!-- 3ra fila de imagenes -->
-    <div class="w3-row-padding">
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image8"  onclick="muestraImagen( 8)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image9"  onclick="muestraImagen( 9)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image10" onclick="muestraImagen(10)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image11" onclick="muestraImagen(11)" class="w3-hover-opacity"></div>
-    </div>
+  </section>
 
-    <!-- 4ta fila de imagenes -->
-    <div class="w3-row-padding">
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image12" onclick="muestraImagen(12)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image13" onclick="muestraImagen(13)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image14" onclick="muestraImagen(14)" class="w3-hover-opacity"></div>
-        <div class="w3-col w3-quarter"><img src="" style="width:100%;cursor:pointer" id="image15" onclick="muestraImagen(15)" class="w3-hover-opacity"></div>
-    </div>
+  <section>
+    <p>
+      <!-- For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a> -->
+    </p>
+  </section>
 
+	<script src="js/caricaturas22.json"></script>
 
-    </div>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 
+	<script src="js/galeria_load.js"></script>
 
-    </div>
-
-
-
-    <div class="row clr_fondo">
-        <div class="col-4" style="text-align: center;">
-        </div>
-        <div class="col-8">
-        </div>
-    </div>
-
-    <div class="row clr_claro">
-    </div>
-
-    <ul id="mainMenu">
-        <li><a href="./curriculum-resumido.html">Quién soy</a></li>
-        <li><a href="./consultas.html">Consultas</a></li>
-    </ul>
-
-    <div class="footer">
-        <p>by Willie Verger, 2022</p>
-    </div>
-
-    <script src="js/caricaturas.json"></script>
-    <!-- <script src="js/galeria-caricaturas.js"></script> -->
-    <script src="js/galeria-caricaturas-v01.js"></script>
+	<!-- <script src="js/lightbox.js"></script> -->
 
 </body>
-
 </html>

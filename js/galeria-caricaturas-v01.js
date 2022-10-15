@@ -150,8 +150,8 @@ function muestraImagen(nIndx) {
 
         for (let i = 0; i < lasCaricaturas.length; i++) {
             if (cClase.includes(lasCaricaturas[i].clase)) {
-                console.log(x, i);
-                console.log(lasCaricaturas[i]);
+                //	console.log(x, i);
+                //	console.log(lasCaricaturas[i]);
                 //	console.log( Caricaturas[x]);
                 caricaturas.push(lasCaricaturas[i]);
 
