@@ -119,6 +119,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAlbertEinstein.webp      ",	"image":"AlbertEinstein.webp       ",	"alt":"A.E.",     "datatitle":"Albert Einstein      ",   "clase":"M"},
   {"thumbnail":"thumbMarianoMocoroa.webp      ",	"image":"MarianoMocoroa.webp       ",	"alt":"M.M.",     "datatitle":"Mariano M.           ",   "clase":"M"},
   {"thumbnail":"thumbJoseOnega.webp           ",	"image":"JoseOnega.webp            ",	"alt":"J.O.",     "datatitle":"Jose O.              ",   "clase":"M"},
+  {"thumbnail":"thumbJoseOnega2.webp          ",	"image":"JoseOnega2.webp           ",	"alt":"J.O.",     "datatitle":"Jose O.              ",   "clase":"M"},
   {"thumbnail":"thumbJoseLuisM.webp           ",	"image":"JoseLuisM.webp            ",	"alt":"J.L.M.",   "datatitle":"Jose Luis M.         ",   "clase":"M"},
   {"thumbnail":"thumbAngelDureLopez.webp      ",	"image":"AngelDureLopez.webp       ",	"alt":"A.D.",     "datatitle":"Angel D L            ",   "clase":"M"},
   {"thumbnail":"thumbArielJurjo.webp          ",	"image":"ArielJurjo.webp           ",	"alt":"A.J.",     "datatitle":"Ariel J.             ",   "clase":"M"},
