@@ -5,20 +5,6 @@
 
 //	listado de caricaturas a presentar
 // ----------------------------------------------------------------------------
-// 2021.11.19 - adiciono clase para separar por grupos
-// A : Artistas
-// C : mUy Conocidos / Parientes
-// B : Conocidos II
-// O : Conocidos III
-// F : Desconocidos
-// D : Deportistas
-// E : pEriodistas
-// M : Mensanos
-// N : Mensanos 2
-// P : Politicos
-// Q : otros politicos
-// Z : otros
-
 //  2022.10.14 retomo categorias anteriores (menos divisiones)
 // A : Artistas
 // C : Conocidos
@@ -166,9 +152,12 @@ var lasCaricaturas = [
   {"thumbnail":"thumbReneFavaloro.webp        ",	"image":"ReneFavaloro.webp        ",	"alt":"R.F.",     "datatitle":"Rene Favaloro        ",   "clase":"P"},
   {"thumbnail":"thumbHugoMoya.webp            ",	"image":"HugoMoya.webp             ",	"alt":"H.M.",     "datatitle":"Hugo Moyano          ",   "clase":"P"},
   {"thumbnail":"thumbVladimirPutin.webp       ",	"image":"VladimirPutin.webp        ",	"alt":"V.P.",     "datatitle":"Vladimir Putin       ",   "clase":"P"},
+
   {"thumbnail":"thumbDesconocido01.webp       ",	"image":"Desconocido01.webp       ",	"alt":"N.N.01.",  "datatitle":"N.N. 3               ",   "clase":"V"},
   {"thumbnail":"thumbDesconocido02.webp       ",	"image":"Desconocido02.webp       ",	"alt":"N.N.02.",  "datatitle":"N.N. 4               ",   "clase":"V"},
   {"thumbnail":"thumbDesconocido06.webp       ",	"image":"Desconocido06.webp       ",	"alt":"N.N.06.",  "datatitle":"N.N. 6               ",   "clase":"V"},
+  {"thumbnail":"thumbDesconocido51.webp       ",	"image":"Desconocido51.webp       ",	"alt":"N.N.51.",  "datatitle":"N.N. 51              ",   "clase":"V"},
+  {"thumbnail":"thumbDesconocido52.webp       ",	"image":"Desconocido52.webp       ",	"alt":"N.N.52.",  "datatitle":"N.N. 52              ",   "clase":"V"},
   {"thumbnail":"thumbNNenVivo.webp            ",	"image":"NNenVivo.webp            ",	"alt":"N.N.",     "datatitle":"N.N. 1               ",   "clase":"V"},
   {"thumbnail":"thumbVogue.webp               ",	"image":"Vogue.webp               ",	"alt":"Vogue",    "datatitle":"Vogue                ",   "clase":"V"},
   {"thumbnail":"thumbNNenVivo02.webp          ",	"image":"NNenVivo02.webp          ",	"alt":"N.N.2.",   "datatitle":"N.N. 2               ",   "clase":"V"},
