@@ -19,6 +19,20 @@ Old Palette
 	--clr-contra : #685533ff;
 }
 
+--dark-liver: #403f4cff;
+--sizzling-red: #e84855ff;
+--blond: #fff5b2ff;
+--azure: #3185fcff;
+--black-shadows: #bdb4bfff;
+
+:root {          
+	--clr-contra : #403f4cff;
+	--clr-oscuro : #e84855ff;
+	--clr-medio  : #fff5b2ff;
+	--clr-claro  : #3185fcff;
+	--clr-fondo  : #bdb4bfff;
+}                
+
 New Palette from  https://palettte.app/ 
 :root {
 	--clr-contra : #663A25;
@@ -28,14 +42,29 @@ New Palette from  https://palettte.app/
 	--clr-fondo  : #F0E8F0;
 }
 
+--rich-black-fogra-29: #00202eff;
+--fluorescent-blue: #68ece1ff;
+--tea-green: #ccf8c8ff;
+--green-yellow-crayola: #e7e18dff;
+--chocolate-web: #d36600ff;
+
+:root {          
+	--clr-contra : #00202eff;
+	--clr-oscuro : #68ece1ff;
+	--clr-medio  : #ccf8c8ff;
+	--clr-claro  : #e7e18dff;
+	--clr-fondo  : #d36600ff;
+}                
+
+
 */
 
 :root {
-	--clr-contra : #663A25;
-	--clr-oscuro : #662403;
-	--clr-medio  : #579433;
-	--clr-claro  : #9AC27F; 
-	--clr-fondo  : #F0E8F0;
+	--clr-contra : #d36600ff;
+	--clr-oscuro : #00202eff;
+	--clr-medio  : #3070a0ff;
+	--clr-claro  : #e7e18dff;
+	--clr-fondo  : #ccf8c8ff;
 }
 
 
