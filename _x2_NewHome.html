@@ -22,6 +22,14 @@
 
 			/* definicion de figuras de fondo */
 
+			#TectRect {
+					width: 300px;
+					height: 100px;
+					border-radius: 25px;
+					background: red;
+					padding: 20px; 
+
+			}
 			#figura1 {
 					width: 300px;
 					height: 100px;
@@ -40,7 +48,7 @@
 			div {margin-bottom:10px;}
 
 			.button {
-				background-color: #4CAF50; /* Green */
+				background-color: var(--clr-oscuro);	/*				#4CAF50; /* Green */
 				border: none;
 				color: white;
 				padding: 20px;
@@ -88,35 +96,25 @@
 		<div class="row clr_fondo"><div class="col-12	clr_claro ">Color clr_claro 				</div>
 		<div class="row clr_fondo"><div class="col-12	clr_fondo ">Color clr_fondo 				</div>
 		<div class="row clr_fondo"><div class="col-12	clr_contra">Color clr_contra				</div>
+		<h6>Aqui se terminan las pruebas y comienza el show		</h6>
 
-		<div class="row ">
+		<div class="row clr_claro">
 			<div class="col-6 clr_medio">
-				<div id="figura1">
-				</div>
-			</div>
-
-			<div class="col-6 clr_claro">
-				<div id="figura1"></div>
-				<div id="figura2"></div>
-			</div>
-		</div>
-
-
-		<div class="row ">
-			<div class="col-6">
-				<div id="figura1">
-
+				<h1 style="color: white; text-align:center;"> Caricaturas </h1>
 					<button class="button button4">Conocidos</button>
 					<button class="button button5">Mensos</button>
-
-				</div>
 			</div>
 
-			<div class="col-6">
+			<div class="col-6 clr_contra">
+				<h1 style="color: white; text-align:center;"> Ingenio </h1>
+
 				<div id="figura1"></div>
 				<div id="figura2"></div>
 			</div>
 		</div>
+
+		<h5>Fin 1ra fila de pruebas</h5>
+
 
 
 

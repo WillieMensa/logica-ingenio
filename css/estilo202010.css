@@ -106,7 +106,8 @@ body {
 	background: var(--clr-fondo);
 }
 
-h1,
+/* h1, */
+
 #footer {
 	text-align:center;
 	background: var(--clr-oscuro);
@@ -179,6 +180,7 @@ html {
 }
 
 .header {
+  text-align:center;
   background-color: var(--clr-oscuro);
   color: #ffffff;
   padding: 0px;
