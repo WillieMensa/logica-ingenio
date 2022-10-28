@@ -24,48 +24,26 @@
 
 	<!-- estilo exclusivo para posicionar tooltip en imagenes -->
 	<style>
-	.tooltip {
-		position: relative;
-		display: inline-block;
-		border-bottom: 1px dotted black;
-	}
 
-	.tooltip .tooltiptext {
-		visibility: hidden;
-		width: 120px;
-		background-color: black;
-		color: #fff;
+	.button {
+		background-color: var(--clr-oscuro);	/*				#4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 8px;
 		text-align: center;
-		border-radius: 6px;
-		padding: 5px 0;
-		
-		/* Position the tooltip */
-		position: absolute;
-		z-index: 1;
-		top: 100%;
-		left: 50%;
-		margin-left: -60px;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 24px;
+		margin: 12px;
+		cursor: pointer;
 	}
 
-	.tooltip:hover .tooltiptext {
-		visibility: visible;
-	}
+	.button4 {border-radius: 8px;}
+
 	</style>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PP1LNRZ7TV"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-PP1LNRZ7TV');
-	</script>
-
-
-	<script src="menuppal.js"></script>
-
 </head>
+
 
 <body>
 
@@ -73,19 +51,11 @@
 	<h1>Caricaturas e Ingenio</h1>
 </div>
 
-<div id="menuppal"></div>
-
 <!-- Contenido de la pagina -->
 
-<!-- 
 <div class="row clr_fondo">
-  <div class="col-2"></div>
-  <div class="col-8" style="text-align: center;">		
-		<h3>Caricaturas e ingenio.</h3>		
-  </div>
-  <div class="col-2"></div>
+  <div class="col-12"></div>
 </div>
- -->
 
 <div class="row clr_claro">
   <div class="col-4" style="text-align: center;">
@@ -93,57 +63,40 @@
 			<img src="./galeria/resumen-galeria.webp" width="120" height="130" border="0" alt="imagen de la galeria" class="img-responsive"></a></p>		
   </div>
   <div class="col-8">
-			<h2><a href="galeria.html??clase='E'">Galería de personajes</a></h2>
+			<h2><a href="galeria.html??clase='E'">Caricaturas</a></h2>
 			<p>Muestra de caricaturas de personajes conocidos, mensanos, artistas, deportistas, periodistas y polìticos,</p>
+					<a href="galeria.html?clase=%22C%22" ><button class="button button4">Conocidos</button></a>
+					<a href="galeria.html?clase=%22M%22" ><button class="button button4">Mensos</button></a>
+					<a href="galeria.html?clase=%22E%22" ><button class="button button4">Periodistas</button></a>
+					<a href="galeria.html?clase=%22P%22" ><button class="button button4">Públicos</button></a>
+					<a href="galeria.html?clase=%22AD%22"><button class="button button4">Artistas y deportistas</button></a>
+					<a href="galeria.html?clase=%22V%22" ><button class="button button4">Varios</button></a>
+
   </div>
 </div>
 
-
 <div class="row clr_fondo">
+  <div class="col-12"></div>
+</div>
+
+
+<div class="row clr_medio">
   <div class="col-4" style="text-align: center;">
 			<p><a href="rubik.html">
 			<img src="images/cuborubik2.png" width="142" height="130" border="0" alt="cubo de rubik" class="img-responsive"></a></p>		
   </div>
   <div class="col-8">
-			<h2><a href="rubik.html">El cubo de Rubik</a></h2>
-			<p>Notas de ayuda para resolver el <a href="rubik.html">cubo de rubik</a>.</p>
-  </div>
+			<h2><a href="rubik.html">Ingenio</a></h2>
+					<button class="button button4">Ingenio</button>
+					<button class="button button4">Calendarios</button>
+					<button class="button button4">Juegos y aplicaciones</button>
+					<button class="button button4">Publicaciones</button>
+					<button class="button button4">Quien soy</button>
+					<button class="button button4">Consultas</button>
+
+	</div>
 </div>
 
-
-<div class="row clr_claro">
-  <div class="col-4" style="text-align: center;">
-			<a href="https://play.google.com/store/apps/details?id=ar.com.ingverger.pentomania" target="_blank">
-				<img src="images/caja_pentomania_xxs.webp" width="170" height="103" border="0" alt="pentomania aplicaci&oacute;n web" class="img-responsive">
-			</a>
-  </div>
-  <div class="col-8">
-				<h2><a href="./pentomania.html">Pentomania</a></h2>
-				<p>Serie de rompecabezas con piezas poligonales.</p>
-				<p>Hay doce pentominos, piezas formadas por la union de cinco cuadraditos unitarios, y cinco tetrominos, piezas formadas por la union de cuatro cuadraditos unitarios.
-				<p>Los problemas que se plantean consisten en cubrir la grilla de 8 x 8 cuadraditos con los doce pentominos y un tetromino.</p>
-				<p>Dispones de una <a href="./frame_pentomania.html">version web</a>
-				o bi&eacute;n la <a href="https://play.google.com/store/apps/details?id=ar.com.ingverger.pentomania" target="_blank">version m&oacute;vil</a> para tablets y celulares.
-				</p>
-  </div>
-</div>
-
-
-<div class="row clr_fondo">
-  <div class="col-4" style="text-align: center;">
-			<a href="revista-enigma.html">
-			<img src="images/enigma.webp" width="102" height="132" style="border: #484 1pt solid;"  alt="Revista Enigma, ingenio, puzzles, resoluci&oacute;n de problemas"></a></p>
-  </div>
-  <div class="col-8">
-			<h2><A HREF="revista-enigma.html">Revista Enigma</A></h2>
-			<p style="text-align:right;">
-			<p>Enigma es el bolet&iacute;n informativo de Puzzle SIG, Grupo de Inter&eacute;s Especial en Problemas de Ingenio de Mensa Internacional.
-			<P>Participan personas aficcionadas al dise&#x00F1;o y resoluci&oacute;n de rompecabezas, acertijos, problemas de ingenio, invenci&oacute;n de nuevos tipos de puzzles y temas relacionados.
-			<p>El contenido incluye problemas de diferentes tipos; gran parte de l&oacute;gica y matem&aacute;ticas; muchos gr&aacute;ficos y muy poco texto escrito en ingl&eacute;s.
-			<p>Picando aqui se puede revisar en linea, imprimir o descargar 
-			<A HREF="revista-enigma.html">el &uacute;ltimo n&uacute;mero de la revista Enigma.</A>
-  </div>
-</div>
 
 <div class="row clr_fondo">
   <div class="col-2">
@@ -163,12 +116,6 @@
   <div class="col-2">
   </div>
 </div>
-
-
-	<ul id="mainMenu">
-		<li><a href="./curriculum-resumido.html">Quién soy</a></li>
-		<li><a href="./consultas.html">Consultas</a></li>
-	</ul>
 	
 <div class="footer">
   <p>by Willie Verger, 2022</p>

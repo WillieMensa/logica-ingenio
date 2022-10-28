@@ -56,15 +56,35 @@ New Palette from  https://palettte.app/
 	--clr-fondo  : #d36600ff;
 }                
 
+: #003049ff;
+: #d62828ff;
+: #f77f00ff;
+: #fcbf49ff;
+: #eae2b7ff;
+
+:root {          
+	--clr-contra : #;
+	--clr-oscuro : #;
+	--clr-medio  : #;
+	--clr-claro  : #;
+	--clr-fondo  : #;
+}                
+
+	--clr-oscuro : #333d29;
+	--clr-contra : #582f0e;
+	--clr-medio  : #656da4;
+	--clr-claro  : #a68a64;
+	--clr-fondo  : #c2c5a4;
+
 
 */
 
 :root {
-	--clr-contra : #d36600ff;
-	--clr-oscuro : #00202eff;
-	--clr-medio  : #3070a0ff;
-	--clr-claro  : #e7e18dff;
-	--clr-fondo  : #ccf8c8ff;
+	--clr-oscuro : #333d29;
+	--clr-contra : #582f0e;
+	--clr-medio  : #656d4a;
+	--clr-claro  : #a68a64;
+	--clr-fondo  : #c2c5a4;
 }
 
 
@@ -110,17 +130,9 @@ body {
 
 #footer {
 	text-align:center;
-	background: var(--clr-oscuro);
+	background: var(--clr-contra);
 	color:#FFF;
 }
-.footer {
-  color: #ffffff;
-  text-align: center;
-	background:	var(--clr-oscuro);
-  font-size: 1.0em;
-	padding:0.4em;
-}
-
 
 
 h1 {
@@ -189,7 +201,7 @@ html {
 .footer {
   color: #ffffff;
   text-align: center;
-	background:	var(--clr-oscuro);
+	background:	var(--clr-contra);
   font-size: 1.0em;
 	padding:0.4em;
 }
