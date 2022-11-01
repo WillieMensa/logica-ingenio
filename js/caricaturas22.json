@@ -122,6 +122,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAdrianaCruz.webp         ",	"image":"AdrianaCruz.webp          ",	"alt":"A.C.",     "datatitle":"Adriana C.           ",   "clase":"M"},
   {"thumbnail":"thumbAugustoOliva.webp        ",	"image":"AugustoOliva.webp         ",	"alt":"A.O.",     "datatitle":"Augusto O.           ",   "clase":"M"},
   {"thumbnail":"thumbNataliaMariscotti.webp   ",	"image":"NataliaMariscotti.webp    ",	"alt":"N.M.",     "datatitle":"Natalia M.           ",   "clase":"M"},
+  {"thumbnail":"thumbNataliaMariscotti2.webp  ",	"image":"NataliaMariscotti2.webp   ",	"alt":"N.M.",     "datatitle":"Natalia M.           ",   "clase":"M"},
 
   {"thumbnail":"thumbAngelaMerkel.webp        ",	"image":"AngelaMerkel.webp         ",	"alt":"A.M.",     "datatitle":"Angela Merkel        ",   "clase":"P"},
   {"thumbnail":"thumbAmadoBoudou.webp         ",	"image":"AmadoBoudou.webp          ",	"alt":"A.B.",     "datatitle":"Amado Boudou         ",   "clase":"P"},
