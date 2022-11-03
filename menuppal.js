@@ -20,7 +20,8 @@ function poneMenuPpal() {
 		'			<a href="galeria.html?clase=%22M%22">Mensanos</a>' +
 		'			<a href="galeria.html?clase=%22E%22">Periodistas</a>' +
 		'			<a href="galeria.html?clase=%22P%22">Públicos</a>' +
-		'			<a href="galeria.html?clase=%22AD%22">Artistas y Deportistas</a>' +
+		'			<a href="galeria.html?clase=%22A%22">Artistas</a>' +
+		'			<a href="galeria.html?clase=%22D%22">Deportistas</a>' +
 		'			<a href="galeria.html?clase=%22V%22">Varios</a>' +
 		'		</div>' +
 		'	</li>' +

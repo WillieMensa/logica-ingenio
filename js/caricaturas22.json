@@ -15,7 +15,8 @@
 
 
 var lasCaricaturas = [
-  {"thumbnail":"thumbGuidoKaczka.webp         ",	"image":"GuidoKaczka.webp         ",	"alt":"G.K.",     "datatitle":"Guido Kaczka.        ",   "clase":"A"},
+  {"thumbnail":"thumbDiegoPeretti.webp        ",	"image":"DiegoPeretti.webp        ",	"alt":"D.P.",     "datatitle":"Diego Peretti        ",   "clase":"A"},
+  {"thumbnail":"thumbGuidoKaczka.webp         ",	"image":"GuidoKaczka.webp         ",	"alt":"G.K.",     "datatitle":"Guido Kaczka         ",   "clase":"A"},
   {"thumbnail":"thumbDarioBarassi.webp        ",	"image":"DarioBarassi.webp        ",	"alt":"D.B.",     "datatitle":"Dario Barassi.       ",   "clase":"A"},
   {"thumbnail":"thumbRobertoFontanarrosa.webp ",  "image":"RobertoFontanarrosa.webp ",  "alt":"R.F.",     "datatitle":"Roberto Fontanarrosa ",   "clase":"A"},
   {"thumbnail":"thumbRicardoDarin.webp        ",	"image":"RicardoDarin.webp        ",	"alt":"R.D.",     "datatitle":"Ricardo Darin        ",   "clase":"A"},
