@@ -119,7 +119,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbGuilleDianda.webp        ",	"image":"GuilleDianda.webp         ",	"alt":"G.D.",     "datatitle":"Guille D.            ",   "clase":"M"},
   {"thumbnail":"thumbGuille-II.webp           ",	"image":"Guille-II.webp            ",	"alt":"G.II.",    "datatitle":"Guille-II            ",   "clase":"M"},
   {"thumbnail":"thumbGermanGaravelli21.webp   ",	"image":"GermanGaravelli21.webp    ",	"alt":"G.G. 2.1", "datatitle":"German G.            ",   "clase":"M"},
-  {"thumbnail":"thumbCristianGonzalez.webp    ",	"image":"thumbCristianGonzalez.webp",	"alt":"C.G.",     "datatitle":"Cristian G.          ",   "clase":"M"},
+  {"thumbnail":"thumbCristianGonzalez.webp    ",	"image":"CristianGonzalez.webp     ",	"alt":"C.G.",     "datatitle":"Cristian G.          ",   "clase":"M"},
   {"thumbnail":"thumbGermanGaravelli.webp     ",	"image":"GermanGaravelli.webp      ",	"alt":"G.G.",     "datatitle":"German G.            ",   "clase":"M"},
   {"thumbnail":"thumbFernandoVarano.webp      ",	"image":"FernandoVarano.webp       ",	"alt":"F.V.",     "datatitle":"Fernando V           ",   "clase":"M"},
   {"thumbnail":"thumbAdrianaCruz.webp         ",	"image":"AdrianaCruz.webp          ",	"alt":"A.C.",     "datatitle":"Adriana C.           ",   "clase":"M"},
