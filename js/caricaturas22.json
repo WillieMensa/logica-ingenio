@@ -15,6 +15,7 @@
 
 
 var lasCaricaturas = [
+  {"thumbnail":"thumbJulioCortazar.webp       ",	"image":"JulioCortazar.webp        ",	"alt":"J.C.",     "datatitle":"Julio Cortazar       ",   "clase":"A"},
   {"thumbnail":"thumbDiegoPeretti.webp        ",	"image":"DiegoPeretti.webp        ",	"alt":"D.P.",     "datatitle":"Diego Peretti        ",   "clase":"A"},
   {"thumbnail":"thumbGuidoKaczka.webp         ",	"image":"GuidoKaczka.webp         ",	"alt":"G.K.",     "datatitle":"Guido Kaczka         ",   "clase":"A"},
   {"thumbnail":"thumbDarioBarassi.webp        ",	"image":"DarioBarassi.webp        ",	"alt":"D.B.",     "datatitle":"Dario Barassi.       ",   "clase":"A"},
@@ -66,12 +67,10 @@ var lasCaricaturas = [
   {"thumbnail":"thumbOsvaldoDiaz.webp         ",	"image":"OsvaldoDiaz.webp         ",	"alt":"O.D.",     "datatitle":"Osvaldo D            ",   "clase":"C"},
   {"thumbnail":"thumbAdrianaMeyer.webp        ",	"image":"AdrianaMeyer.webp        ",	"alt":"A.M.",     "datatitle":"Adriana M.           ",   "clase":"C"},
   {"thumbnail":"thumbRaulSegura.webp          ",	"image":"RaulSegura.webp          ",	"alt":"R.S",      "datatitle":"Raúl S.              ",   "clase":"C"},
-  {"thumbnail":"thumbRubenStalli.webp         ",	"image":"RubenStalli.webp         ",	"alt":"R.S.",     "datatitle":"Rubén S.             ",   "clase":"C"},
-  {"thumbnail":"thumbPabloCaputi.webp         ",	"image":"PabloCaputi.webp         ",	"alt":"P.C.",     "datatitle":"Pablo C.             ",   "clase":"C"},
   {"thumbnail":"thumbNatYLeo.webp             ",	"image":"NatYLeo.webp             ",	"alt":"N.L.",     "datatitle":"Nati y Leo           ",   "clase":"C"},
   {"thumbnail":"thumbMatiasBortolato.webp     ",	"image":"MatiasBortolato.webp     ",	"alt":"M.B.",     "datatitle":"Matías B.            ",   "clase":"C"},
-  {"thumbnail":"thumbMabelRodriguez.webp      ",	"image":"MabelRodriguez.webp      ",	"alt":"M.R.",     "datatitle":"Mabel R.             ",   "clase":"C"},
   {"thumbnail":"thumbDiegoT.webp              ",	"image":"DiegoT.webp              ",	"alt":"D.T.",     "datatitle":"Diego T.             ",   "clase":"C"},
+  {"thumbnail":"thumbErnestoBonatto.webp      ",	"image":"ErnestoBonatto.webp      ",	"alt":"E.B.",     "datatitle":"Ernesto Bonatto      ",   "clase":"C"},
   {"thumbnail":"thumbValentinElMozo.webp      ",	"image":"ValentinElMozo.webp      ",	"alt":"V.M.",     "datatitle":"Valentín             ",   "clase":"C"},
 
   {"thumbnail":"thumbAngelDiMaria.webp        ",	"image":"AngelDiMaria.webp        ",	"alt":"A.D.M.",   "datatitle":"Angel Di María       ",   "clase":"D"},
@@ -81,6 +80,10 @@ var lasCaricaturas = [
   {"thumbnail":"thumbLionelMessi.webp         ",	"image":"LionelMessi.webp         ",	"alt":"L.M.",     "datatitle":"Leo Messi            ",   "clase":"D"},
   {"thumbnail":"thumbDiegoMaradona.webp       ",	"image":"DiegoMaradona.webp       ",	"alt":"D.M.",     "datatitle":"Diego Maradona       ",   "clase":"D"},
   {"thumbnail":"thumbCarlosTevez.webp         ",	"image":"CarlosTevez.webp         ",	"alt":"C.T.",     "datatitle":"Carlos Tevez         ",   "clase":"D"},
+  {"thumbnail":"thumbGuillermoBatalla.webp    ",	"image":"GuillermoBatalla.webp    ",	"alt":"G.B.",     "datatitle":"Guillermo Batalla    ",   "clase":"D"},
+  {"thumbnail":"thumbRubenStalli.webp         ",	"image":"RubenStalli.webp         ",	"alt":"R.S.",     "datatitle":"Rubén S.             ",   "clase":"D"},
+  {"thumbnail":"thumbPabloCaputi.webp         ",	"image":"PabloCaputi.webp         ",	"alt":"P.C.",     "datatitle":"Pablo C.             ",   "clase":"D"},
+  {"thumbnail":"thumbMabelRodriguez.webp      ",	"image":"MabelRodriguez.webp      ",	"alt":"M.R.",     "datatitle":"Mabel R.             ",   "clase":"D"},
 
   {"thumbnail":"thumbCarlosPagni.webp         ",	"image":"CarlosPagni.webp         ",	"alt":"C.P.",     "datatitle":"Carlos Pagni         ",   "clase":"E"},
   {"thumbnail":"thumbAlfredoLeuco.webp        ",	"image":"AlfredoLeuco.webp        ",	"alt":"A.L.",     "datatitle":"Alfredo Leuco        ",   "clase":"E"},
