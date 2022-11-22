@@ -39,6 +39,9 @@
 
 	</style>
 
+	<!-- para el contador de visitas -->
+	<script src="https://api.countapi.xyz/hit/ingverger.ar/visits?callback=liveViews" async></script>
+
 </head>
 
 
@@ -102,39 +105,31 @@
   </div>
   <div class="col-8" style="text-align: center;">
 		<p>
-		<a href="https://www.facebook.com/gverger/" target="_blank">
-			<img src="images/icon-facebook.svg" width="32" height="32" alt="facebook"/>
-		</a>
-		&nbsp; &nbsp; &nbsp; &nbsp;
-		<a href="https://instagram.com/willieverger" target="_blank">
-			<img src="images/icon-instagram.svg" width="32" height="32" alt="instagram"/>
-		</a>
-
-		</p>
-  </div>
-  <div class="col-2">
-		<!-- probar lo siguiente
-			contadorvisitasgratis.com
-		-->
-		<div id="sfckcabp5z9wb2qqfbhc1lwde7k83ajkg8w"></div>
-		<script type="text/javascript" src="https://counter5.optistats.ovh/private/counter.js?c=kcabp5z9wb2qqfbhc1lwde7k83ajkg8w&down=async" async></script>
-		<noscript>
-			<a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blogger">
-				<img src="https://counter5.optistats.ovh/private/contadorvisitasgratis.php?c=kcabp5z9wb2qqfbhc1lwde7k83ajkg8w" border="0" 
-					title="contador de visitas para blogger" alt="contador de visitas para blogger">
+			<a href="https://www.facebook.com/gverger/" target="_blank">
+				<img src="images/icon-facebook.svg" width="32" height="32" alt="facebook"/>
 			</a>
-		</noscript>
+			&nbsp; &nbsp; &nbsp; &nbsp;
+			<a href="https://instagram.com/willieverger" target="_blank">
+				<img src="images/icon-instagram.svg" width="32" height="32" alt="instagram"/>
+			</a>
+		</p>
 
-	
-		<!-- Contador de visitas -->
-		<!-- 
-		<center><a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-			<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=6789"></a>
-		</center>
+		<!-- contador visitas		-->
+		<h4><span id="visits"></span> vistas</h4>
 
-		<br />
-		<p><div class="powr-hit-counter" id="de011667_1669123969"></div><script src="https://www.powr.io/powr.js?platform=html"></script></p>
-		 -->
+  </div>
+
+  <div class="col-2">
+
+		<!-- partial -->
+			<script>
+
+				function liveViews(response) {
+						document.getElementById('visits').innerText = response.value;
+				}
+
+			</script>
+
 		<!-- Fin Contador de visitas -->
 
   </div>
