@@ -39,8 +39,6 @@
 
 	</style>
 
-	<!-- para el contador de visitas -->
-	<script src="https://api.countapi.xyz/hit/ingverger.ar/visits?callback=liveViews" async></script>
 
 </head>
 
@@ -121,14 +119,13 @@
 
   <div class="col-2">
 
-		<!-- partial -->
-			<script>
-
-				function liveViews(response) {
-						document.getElementById('visits').innerText = response.value;
-				}
-
-			</script>
+		<!-- contador de visitas -->
+		<script>
+			function liveViews(response) {
+					document.getElementById('visits').innerText = response.value;
+			}
+		</script>
+		<script src="https://api.countapi.xyz/hit/ingverger.ar/visits?callback=liveViews" async></script>
 
 		<!-- Fin Contador de visitas -->
 
