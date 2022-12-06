@@ -27,8 +27,9 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-    <script src="https://api.countapi.xyz/update/ingverger.ar/key?amount=10" async></script>
+    <!-- <script src="https://api.countapi.xyz/update/ingverger.ar/key?amount=10" async></script> -->
     <script src="https://api.countapi.xyz/hit/ingverger.ar/visits?callback=liveViews" async></script>
+
 </head>
 <body>
     <h1>This page got <span id="visits"></span> views.</h1>
@@ -37,11 +38,14 @@
 
 	<!-- <script src="index.js">	</script> -->
 	<script>
+		countapi.visits().then((result) => {
+			console.log(result.value);
+		});
+
 		function liveViews(response) {
 				document.getElementById('visits').innerText = response.value;
 		}
-	</script>
-	
+	</script>	
 
 
 </html>
