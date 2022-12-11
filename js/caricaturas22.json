@@ -15,7 +15,8 @@
 
 
 var lasCaricaturas = [
-  {"thumbnail":"thumbJulioCortazar.webp       ",	"image":"JulioCortazar.webp        ",	"alt":"J.C.",     "datatitle":"Julio Cortazar       ",   "clase":"A"},
+  {"thumbnail":"thumbJoaquinSabina.webp       ",	"image":"JoaquinSabina.webp       ",	"alt":"J.S.",     "datatitle":"Julio Cortazar       ",   "clase":"A"},
+  {"thumbnail":"thumbJulioCortazar.webp       ",	"image":"JulioCortazar.webp       ",	"alt":"J.C.",     "datatitle":"Julio Cortazar       ",   "clase":"A"},
   {"thumbnail":"thumbDiegoPeretti.webp        ",	"image":"DiegoPeretti.webp        ",	"alt":"D.P.",     "datatitle":"Diego Peretti        ",   "clase":"A"},
   {"thumbnail":"thumbGuidoKaczka.webp         ",	"image":"GuidoKaczka.webp         ",	"alt":"G.K.",     "datatitle":"Guido Kaczka         ",   "clase":"A"},
   {"thumbnail":"thumbDarioBarassi.webp        ",	"image":"DarioBarassi.webp        ",	"alt":"D.B.",     "datatitle":"Dario Barassi.       ",   "clase":"A"},
@@ -26,7 +27,6 @@ var lasCaricaturas = [
   {"thumbnail":"thumbJorgeLuisBorges.webp     ",	"image":"JorgeLuisBorges.webp     ",	"alt":"J.L.B.",   "datatitle":"Jorge Luis Borges    ",   "clase":"A"},
   {"thumbnail":"thumbGuillermoFrancella.webp  ",	"image":"GuillermoFrancella.webp  ",  "alt":"G.F.",     "datatitle":"Guillermo Francella  ",   "clase":"A"},
   {"thumbnail":"thumbGeorgeLucas.webp         ",	"image":"GeorgeLucas.webp         ",	"alt":"G.L.",     "datatitle":"George Lucas         ",   "clase":"A"},
-  {"thumbnail":"thumbAlbertoCormillot.webp    ",	"image":"AlbertoCormillot.webp    ",	"alt":"A.C.",     "datatitle":"Alberto Cormillot    ",   "clase":"A"},
   {"thumbnail":"thumbElonMusk.webp            ",	"image":"ElonMusk.webp            ",	"alt":"E.M.",     "datatitle":"Elon Musk            ",   "clase":"A"},
   {"thumbnail":"thumbMichaelJackson.webp      ",	"image":"MichaelJackson.webp      ",	"alt":"M.J.",     "datatitle":"Michael Jackson      ",   "clase":"A"},
   {"thumbnail":"thumbCarlosGardel.webp        ",	"image":"CarlosGardel.webp        ",	"alt":"C.G.",     "datatitle":"Carlos Gardel.       ",   "clase":"A"},
@@ -103,6 +103,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbOsvaldoBazan.webp        ",	"image":"OsvaldoBazan.webp        ",	"alt":"O.B.",     "datatitle":"Osvaldo Bazan        ",   "clase":"E"},
   {"thumbnail":"thumbMarceloBonelli.webp      ",	"image":"MarceloBonelli.webp      ",	"alt":"M.B.",     "datatitle":"Marcelo Bonelli      ",   "clase":"E"},
   {"thumbnail":"thumbAdrianVentura.webp       ",	"image":"AdrianVentura.webp       ",	"alt":"A.V.",     "datatitle":"Adrian Ventura       ",   "clase":"E"},
+  {"thumbnail":"thumbAlbertoCormillot.webp    ",	"image":"AlbertoCormillot.webp    ",	"alt":"A.C.",     "datatitle":"Alberto Cormillot    ",   "clase":"E"},
 
   {"thumbnail":"thumbHectorRoldan.webp        ",	"image":"HectorRoldan.webp         ",	"alt":"H.R.",     "datatitle":"Hector R.            ",   "clase":"M"},
   {"thumbnail":"thumbElliottLine.webp         ",	"image":"ElliottLine.webp          ",	"alt":"E.L.",     "datatitle":"Elliott Line         ",   "clase":"M"},
