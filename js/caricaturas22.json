@@ -36,7 +36,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAlbertoOlmedo.webp       ",	"image":"AlbertoOlmedo.webp       ",	"alt":"A.O.",     "datatitle":"Alberto Olmedo       ",   "clase":"A"},
   {"thumbnail":"thumbSeanConnery.webp         ",	"image":"SeanConnery.webp         ",	"alt":"S.C.",     "datatitle":"Sean Connery         ",   "clase":"A"},
 
-  {"thumbnail":"thumbBrunoVerger.webp         ",	"image":"BrunoVerger.webp         ",	"alt":"R.P.",     "datatitle":"Bruno Verger         ",   "clase":"C"},
+  {"thumbnail":"thumbBrunoVerger.webp         ",	"image":"BrunoVerger.webp         ",	"alt":"R.P.",     "datatitle":"Bruno V.             ",   "clase":"C"},
   {"thumbnail":"thumbRubenPhilipp.webp        ",	"image":"RubenPhilipp.webp        ",	"alt":"R.P.",     "datatitle":"Ruben Philipp        ",   "clase":"C"},
   {"thumbnail":"thumbMiguelMinacori.webp      ",	"image":"MiguelMinacori.webp      ",	"alt":"M.M.",     "datatitle":"Miguel Minacori      ",   "clase":"C"},
   {"thumbnail":"thumbVictorLadisa.webp        ",	"image":"VictorLadisa.webp        ",	"alt":"V.L.",     "datatitle":"VictorLadisa         ",   "clase":"C"},
