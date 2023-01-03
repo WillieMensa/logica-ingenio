@@ -78,6 +78,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbErnestoBonatto.webp      ",	"image":"ErnestoBonatto.webp      ",	"alt":"E.B.",     "datatitle":"Ernesto Bonatto      ",   "clase":"C"},
   {"thumbnail":"thumbValentinElMozo.webp      ",	"image":"ValentinElMozo.webp      ",	"alt":"V.M.",     "datatitle":"Valentín             ",   "clase":"C"},
 
+  {"thumbnail":"thumbNicolasTagliafico.webp   ",	"image":"NicolasTagliafico.webp   ",	"alt":"N.T.",     "datatitle":"NicolasTagliafico    ",   "clase":"D"},
   {"thumbnail":"thumbAngelDiMaria.webp        ",	"image":"AngelDiMaria.webp        ",	"alt":"A.D.M.",   "datatitle":"Angel Di María       ",   "clase":"D"},
   {"thumbnail":"thumbRafaelNadal.webp         ",	"image":"RafaelNadal.webp         ",	"alt":"R.N.",     "datatitle":"Rafa Nadal           ",   "clase":"D"},
   {"thumbnail":"thumbManuGinobili.webp        ",	"image":"ManuGinobili.webp        ",	"alt":"M.G.",     "datatitle":"Manu Ginobili        ",   "clase":"D"},
