@@ -17,7 +17,7 @@ function poneMenuPpal() {
 		'		<a href="javascript:void(0)" class="dropbtn">Caricaturas</a>' +
 		'		<div class="dropdown-content">' +
 		'			<a href="galeria.html?clase=%22C%22">Conocidos</a>' +
-		'			<a href="galeria.html?clase=%22M%22">Mensanos</a>' +
+		'			<a href="galeria.html?clase=%22M%22">Mensos</a>' +
 		'			<a href="galeria.html?clase=%22E%22">Periodistas</a>' +
 		'			<a href="galeria.html?clase=%22P%22">Públicos</a>' +
 		'			<a href="galeria.html?clase=%22A%22">Artistas</a>' +
