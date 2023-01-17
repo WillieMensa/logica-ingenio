@@ -1,6 +1,8 @@
 // ----------------------------------------------------------------------------
 //	caricaturas.json
-// #caricature #sketch #pencildrawing #pencilsketch #caricatura #dibujoalapiz #sketchbook #sketching #drawing
+// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch #sketchbook
+// #victima #mensa
+
 
 //	listado de caricaturas a presentar
 // ----------------------------------------------------------------------------
@@ -109,6 +111,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAdrianVentura.webp       ",	"image":"AdrianVentura.webp       ",	"alt":"A.V.",     "datatitle":"Adrian Ventura       ",   "clase":"E"},
   {"thumbnail":"thumbAlbertoCormillot.webp    ",	"image":"AlbertoCormillot.webp    ",	"alt":"A.C.",     "datatitle":"Alberto Cormillot    ",   "clase":"E"},
 
+  {"thumbnail":"thumbBrunoGelida.webp         ",	"image":"BrunoGelida.webp         ",	"alt":"B.G.",     "datatitle":"Bruno G.             ",   "clase":"M"},
   {"thumbnail":"thumbAgustinCarpio.webp       ",	"image":"AgustinCarpio.webp       ",	"alt":"A.C.",     "datatitle":"Agustin C.           ",   "clase":"M"},
   {"thumbnail":"thumbHectorRoldan.webp        ",	"image":"HectorRoldan.webp        ",	"alt":"H.R.",     "datatitle":"Hector R.            ",   "clase":"M"},
   {"thumbnail":"thumbElliottLine.webp         ",	"image":"ElliottLine.webp         ",	"alt":"E.L.",     "datatitle":"Elliott Line         ",   "clase":"M"},
