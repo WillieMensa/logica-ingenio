@@ -111,6 +111,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAdrianVentura.webp       ",	"image":"AdrianVentura.webp       ",	"alt":"A.V.",     "datatitle":"Adrian Ventura       ",   "clase":"E"},
   {"thumbnail":"thumbAlbertoCormillot.webp    ",	"image":"AlbertoCormillot.webp    ",	"alt":"A.C.",     "datatitle":"Alberto Cormillot    ",   "clase":"E"},
 
+  {"thumbnail":"thumbMarianoMocoroa.webp      ",	"image":"MarianoMocoroa.webp      ",	"alt":"M.M.",     "datatitle":"Mariano M.           ",   "clase":"M"},
   {"thumbnail":"thumbRoxanaDiazConte.webp     ",	"image":"RoxanaDiazConte.webp     ",	"alt":"R.D.C.",   "datatitle":"Roxana               ",   "clase":"M"},
   {"thumbnail":"thumbRoxanaDiazC.webp         ",	"image":"RoxanaDiazC.webp         ",	"alt":"R.D.C.",   "datatitle":"Roxana               ",   "clase":"M"},
   {"thumbnail":"thumbHoracioMoavro.webp       ",	"image":"HoracioMoavro.webp       ",	"alt":"H.M.",     "datatitle":"Horacio M.           ",   "clase":"M"},
@@ -124,7 +125,6 @@ var lasCaricaturas = [
   {"thumbnail":"thumbEzequielCastano.webp     ",	"image":"EzequielCastano.webp     ",	"alt":"E.C.",     "datatitle":"Ezequiel C           ",   "clase":"M"},
   {"thumbnail":"thumbMauricioCanavese.webp    ",	"image":"MauricioCanavese.webp    ",	"alt":"M.C.",     "datatitle":"Mauricio C.          ",   "clase":"M"},
   {"thumbnail":"thumbAlbertEinstein.webp      ",	"image":"AlbertEinstein.webp      ",	"alt":"A.E.",     "datatitle":"Albert Einstein      ",   "clase":"M"},
-  {"thumbnail":"thumbMarianoMocoroa.webp      ",	"image":"MarianoMocoroa.webp      ",	"alt":"M.M.",     "datatitle":"Mariano M.           ",   "clase":"M"},
   {"thumbnail":"thumbJoseOnega.webp           ",	"image":"JoseOnega.webp           ",	"alt":"J.O.",     "datatitle":"Jose O.              ",   "clase":"M"},
   {"thumbnail":"thumbJoseOnega2.webp          ",	"image":"JoseOnega2.webp          ",	"alt":"J.O.",     "datatitle":"Jose O.              ",   "clase":"M"},
   {"thumbnail":"thumbJoseLuisM.webp           ",	"image":"JoseLuisM.webp           ",	"alt":"J.L.M.",   "datatitle":"Jose Luis M.         ",   "clase":"M"},
