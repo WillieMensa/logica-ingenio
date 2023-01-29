@@ -17,6 +17,10 @@
 
 
 var lasCaricaturas = [
+  {"thumbnail":"thumbAlfredoTravesaro.webp    ",	"image":"AlfredoTravesaro.webp    ",	"alt":"A.T.",     "datatitle":"Alfredo T.           ",   "clase":"A"},
+  {"thumbnail":"thumbLautaroAchili.webp       ",	"image":"LautaroAchili.webp       ",	"alt":"L.A.",     "datatitle":"Lautaro A.           ",   "clase":"A"},
+  {"thumbnail":"thumbLuisAli.webp             ",	"image":"LuisAli.webp             ",	"alt":"L.A.",     "datatitle":"Alitaepoyo           ",   "clase":"A"},
+  {"thumbnail":"thumbCarlosBay.webp           ",	"image":"CarlosBay.webp           ",	"alt":"C.B.",     "datatitle":"Carlos B.            ",   "clase":"A"},
   {"thumbnail":"thumbJoaquinSabina.webp       ",	"image":"JoaquinSabina.webp       ",	"alt":"J.S.",     "datatitle":"Julio Cortazar       ",   "clase":"A"},
   {"thumbnail":"thumbJulioCortazar.webp       ",	"image":"JulioCortazar.webp       ",	"alt":"J.C.",     "datatitle":"Julio Cortazar       ",   "clase":"A"},
   {"thumbnail":"thumbDiegoPeretti.webp        ",	"image":"DiegoPeretti.webp        ",	"alt":"D.P.",     "datatitle":"Diego Peretti        ",   "clase":"A"},
@@ -68,9 +72,6 @@ var lasCaricaturas = [
   {"thumbnail":"thumbOscarDeSan.webp          ",	"image":"OscarDeSan.webp          ",	"alt":"O.D.S.",   "datatitle":"Roberto E.M          ",   "clase":"C"},
   {"thumbnail":"thumbRobertoMartin.webp       ",	"image":"RobertoMartin.webp       ",	"alt":"O.D.S.",   "datatitle":"Oski                 ",   "clase":"C"},
   {"thumbnail":"thumbJesusCejas.webp          ",	"image":"JesusCejas.webp          ",	"alt":"J.C.",     "datatitle":"Jesús C.             ",   "clase":"C"},
-  {"thumbnail":"thumbLautaroAchili.webp       ",	"image":"LautaroAchili.webp       ",	"alt":"L.A.",     "datatitle":"Lautaro A.           ",   "clase":"C"},
-  {"thumbnail":"thumbLuisAli.webp             ",	"image":"LuisAli.webp             ",	"alt":"L.A.",     "datatitle":"Alitaepoyo           ",   "clase":"C"},
-  {"thumbnail":"thumbCarlosBay.webp           ",	"image":"CarlosBay.webp           ",	"alt":"C.B.",     "datatitle":"Carlos B.            ",   "clase":"C"},
   {"thumbnail":"thumbMatiasZagred.webp        ",	"image":"MatiasZagred.webp        ",	"alt":"M.Z",      "datatitle":"Matías               ",   "clase":"C"},
   {"thumbnail":"thumbOsvaldoDiaz.webp         ",	"image":"OsvaldoDiaz.webp         ",	"alt":"O.D.",     "datatitle":"Osvaldo D            ",   "clase":"C"},
   {"thumbnail":"thumbAdrianaMeyer.webp        ",	"image":"AdrianaMeyer.webp        ",	"alt":"A.M.",     "datatitle":"Adriana M.           ",   "clase":"C"},
