@@ -1,6 +1,6 @@
 # Lógica e Ingenio
 ingverger.ar
-Sitio web de Willie Verger dedicado a juegos de lógica e ingenio
+Sitio web de Willie Verger dedicado a caricaturas, juegos de lógica e ingenio
 
 wizardly-nobel-c2ebe0.netlify.app
 
