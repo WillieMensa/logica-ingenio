@@ -43,7 +43,8 @@ var lasCaricaturas = [
   {"thumbnail":"thumbSeanConnery.webp         ",	"image":"SeanConnery.webp         ",	"alt":"S.C.",     "datatitle":"Sean Connery         ",   "clase":"A"},
 
   {"thumbnail":"thumbJavierColman.webp        ",	"image":"JavierColman.webp        ",	"alt":"N.R.",     "datatitle":"Javier C.            ",   "clase":"C"},
-  {"thumbnail":"thumbTizianaMoza.webp         ",	"image":"TizianaMoza.webp         ",	"alt":"N.R.",     "datatitle":"Tiziana M.           ",   "clase":"C"},
+  {"thumbnail":"thumbAnabelaMoza.webp         ",	"image":"AnabelaMoza.webp         ",	"alt":"A.M.",     "datatitle":"Anabela M.           ",   "clase":"C"},
+  {"thumbnail":"thumbTizianaMoza.webp         ",	"image":"TizianaMoza.webp         ",	"alt":"T.M.",     "datatitle":"Tiziana M.           ",   "clase":"C"},
   {"thumbnail":"thumbNoeRivero.webp           ",	"image":"NoeRivero.webp           ",	"alt":"N.R.",     "datatitle":"Noe R.               ",   "clase":"C"},
   {"thumbnail":"thumbGuilleRodriguez.webp     ",	"image":"GuilleRodriguez.webp     ",	"alt":"G.R.",     "datatitle":"Guille R.            ",   "clase":"C"},
   {"thumbnail":"thumbBrunoVerger.webp         ",	"image":"BrunoVerger.webp         ",	"alt":"R.P.",     "datatitle":"Bruno V.             ",   "clase":"C"},
