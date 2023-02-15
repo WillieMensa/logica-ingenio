@@ -115,7 +115,6 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAlbertoCormillot.webp    ",	"image":"AlbertoCormillot.webp    ",	"alt":"A.C.",     "datatitle":"Alberto Cormillot    ",   "clase":"E"},
 
   {"thumbnail":"thumbArielMartin.webp         ",	"image":"ArielMartin.webp         ",	"alt":"A.M.",     "datatitle":"Ariel M.             ",   "clase":"M"},
-  {"thumbnail":"thumbDiegoFerreira.webp       ",	"image":"DiegoFerreira.webp       ",	"alt":"D.F.",     "datatitle":"Diego F.             ",   "clase":"M"},
   {"thumbnail":"thumbMarianoMocoroa.webp      ",	"image":"MarianoMocoroa.webp      ",	"alt":"M.M.",     "datatitle":"Mariano M.           ",   "clase":"M"},
   //  {"thumbnail":"thumbRoxanaDiazConte.webp     ",	"image":"RoxanaDiazConte.webp     ",	"alt":"R.D.C.",   "datatitle":"Roxana               ",   "clase":"M"},
   {"thumbnail":"thumbRoxanaDiazC.webp         ",	"image":"RoxanaDiazC.webp         ",	"alt":"R.D.C.",   "datatitle":"Roxana               ",   "clase":"M"},
@@ -124,6 +123,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAgustinCarpio.webp       ",	"image":"AgustinCarpio.webp       ",	"alt":"A.C.",     "datatitle":"Agustin C.           ",   "clase":"M"},
   {"thumbnail":"thumbHectorRoldan.webp        ",	"image":"HectorRoldan.webp        ",	"alt":"H.R.",     "datatitle":"Hector R.            ",   "clase":"M"},
   {"thumbnail":"thumbElliottLine.webp         ",	"image":"ElliottLine.webp         ",	"alt":"E.L.",     "datatitle":"Elliott Line         ",   "clase":"M"},
+  {"thumbnail":"thumbDiegoFerreira.webp       ",	"image":"DiegoFerreira.webp       ",	"alt":"D.F.",     "datatitle":"Diego F.             ",   "clase":"M"},
   {"thumbnail":"thumbClausHilman.webp         ",	"image":"ClausHilman.webp         ",	"alt":"C.H.",     "datatitle":"Claus H.             ",   "clase":"M"},
   {"thumbnail":"thumbFernandoVarano.webp      ",	"image":"FernandoVarano.webp      ",	"alt":"F.V.",     "datatitle":"Fernando V           ",   "clase":"M"},
   {"thumbnail":"thumbAdrianaCruz.webp         ",	"image":"AdrianaCruz.webp         ",	"alt":"A.C.",     "datatitle":"Adriana C.           ",   "clase":"M"},
