@@ -100,6 +100,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbPabloCaputi.webp         ",	"image":"PabloCaputi.webp         ",	"alt":"P.C.",     "datatitle":"Pablo C.             ",   "clase":"D"},
   {"thumbnail":"thumbMabelRodriguez.webp      ",	"image":"MabelRodriguez.webp      ",	"alt":"M.R.",     "datatitle":"Mabel R.             ",   "clase":"D"},
 
+  {"thumbnail":"thumbSalvadorDistefano.webp   ",	"image":"SalvadorDistefano.webp   ",	"alt":"C.P.",     "datatitle":"Salvador Distefano   ",   "clase":"E"},
   {"thumbnail":"thumbCarlosPagni.webp         ",	"image":"CarlosPagni.webp         ",	"alt":"C.P.",     "datatitle":"Carlos Pagni         ",   "clase":"E"},
   {"thumbnail":"thumbAlfredoLeuco.webp        ",	"image":"AlfredoLeuco.webp        ",	"alt":"A.L.",     "datatitle":"Alfredo Leuco        ",   "clase":"E"},
   {"thumbnail":"thumbEduardoFeiman.webp       ",	"image":"EduardoFeiman.webp       ",	"alt":"E.F.",     "datatitle":"Eduardo Feiman       ",   "clase":"E"},
