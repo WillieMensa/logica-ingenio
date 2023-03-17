@@ -1,6 +1,8 @@
 // ----------------------------------------------------------------------------
 //	caricaturas.json
-// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch
+//  Sabes quien es?
+//  Pista. Dijo: "El que perdona al lobo, sacrifica a la oveja"
+// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch #karikaturen
 // #sketchbook
 // #victima #mensa
 
@@ -154,6 +156,7 @@ var lasCaricaturas = [
   //  {"thumbnail":"thumbNataliaMariscotti.webp   ",	"image":"NataliaMariscotti.webp   ",	"alt":"N.M.",     "datatitle":"Natalia M.           ",   "clase":"M"},
   {"thumbnail":"thumbMagiord.webp             ",	"image":"Magiord.webp             ",	"alt":"Magiord",  "datatitle":"Magiord              ",   "clase":"M"},
 
+  {"thumbnail":"thumbNayibBukele.webp         ",	"image":"NayibBukele.webp          ",	"alt":"N.B",      "datatitle":"NayibBukele          ",   "clase":"P"},
   {"thumbnail":"thumbAngelaMerkel.webp        ",	"image":"AngelaMerkel.webp         ",	"alt":"A.M.",     "datatitle":"Angela Merkel        ",   "clase":"P"},
   {"thumbnail":"thumbAlbertoFernandez.webp    ",	"image":"AlbertoFernandez.webp     ",	"alt":"A.F.",     "datatitle":"Alberto Fernandez    ",   "clase":"P"},
   {"thumbnail":"thumbDomingoSarmiento.webp    ",	"image":"DomingoSarmiento.webp     ",	"alt":"D.F.S",    "datatitle":"Domingo F. Sarmiento ",   "clase":"P"},
