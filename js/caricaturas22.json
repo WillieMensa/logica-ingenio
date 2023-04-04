@@ -2,7 +2,8 @@
 //      caricaturas.json
 //  Sabes quien es?
 //  Pista. Dijo: "El que perdona al lobo, sacrifica a la oveja"
-// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch #karikaturen
+// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch #karikaturen #cartoon #draw #dibujos 
+
 // #sketchbook
 // #victima #mensa
 
@@ -37,7 +38,6 @@ var lasCaricaturas = [
   {"thumbnail":"thumbJorgeLuisBorges.webp     ",        "image":"JorgeLuisBorges.webp     ",    "alt":"J.L.B.",   "datatitle":"Jorge Luis Borges    ",   "clase":"A"},
   {"thumbnail":"thumbGuillermoFrancella.webp  ",        "image":"GuillermoFrancella.webp  ",  "alt":"G.F.",     "datatitle":"Guillermo Francella  ",   "clase":"A"},
   {"thumbnail":"thumbGeorgeLucas.webp         ",        "image":"GeorgeLucas.webp         ",    "alt":"G.L.",     "datatitle":"George Lucas         ",   "clase":"A"},
-  {"thumbnail":"thumbElonMusk.webp            ",        "image":"ElonMusk.webp            ",    "alt":"E.M.",     "datatitle":"Elon Musk            ",   "clase":"A"},
   {"thumbnail":"thumbMichaelJackson.webp      ",        "image":"MichaelJackson.webp      ",    "alt":"M.J.",     "datatitle":"Michael Jackson      ",   "clase":"A"},
   {"thumbnail":"thumbCarlosGardel.webp        ",        "image":"CarlosGardel.webp        ",    "alt":"C.G.",     "datatitle":"Carlos Gardel.       ",   "clase":"A"},
   {"thumbnail":"thumbCarlitosBala.webp        ",        "image":"CarlitosBala.webp        ",    "alt":"C.B.",     "datatitle":"Carlitos Bala.       ",   "clase":"A"},
@@ -46,6 +46,7 @@ var lasCaricaturas = [
   //  {"thumbnail":"thumbAlbertoOlmedo.webp       ",    "image":"AlbertoOlmedo.webp       ",    "alt":"A.O.",     "datatitle":"Alberto Olmedo       ",   "clase":"A"},
   {"thumbnail":"thumbSeanConnery.webp         ",        "image":"SeanConnery.webp         ",    "alt":"S.C.",     "datatitle":"Sean Connery         ",   "clase":"A"},
 
+  {"thumbnail":"thumbFrancoFosco.webp         ",        "image":"FrancoFosco.webp	  ",    "alt":"C.A.",     "datatitle":"Franco F.            ",   "clase":"C"},
   {"thumbnail":"thumbColoAnaJuana.webp        ",        "image":"ColoAnaJuana.webp        ",    "alt":"C.A.",     "datatitle":"Colo                 ",   "clase":"C"},
   {"thumbnail":"thumbAnnieV.webp              ",        "image":"AnnieV.webp              ",    "alt":"A.V.",     "datatitle":"Annie                ",   "clase":"C"},
   {"thumbnail":"thumbGustavoDeLaVega.webp     ",        "image":"GustavoDeLaVega.webp     ",    "alt":"N.R.",     "datatitle":"Gustavo DLV.         ",   "clase":"C"},
@@ -88,7 +89,8 @@ var lasCaricaturas = [
   //  {"thumbnail":"thumbDiegoT.webp          ",	"image":"DiegoT.webp              ",    "alt":"D.T.",     "datatitle":"Diego T.             ",   "clase":"C"},
   {"thumbnail":"thumbValentinElMozo.webp      ",        "image":"ValentinElMozo.webp      ",    "alt":"V.M.",     "datatitle":"Valentín             ",   "clase":"C"},
 
-  {"thumbnail":"thumbDiegoLupi.webp           ",	"image":"DiegoLupi.webp         ",      "alt":"D.L.",     "datatitle":"Diego L.         ",   "clase":"D"},
+  {"thumbnail":"thumbDibuMartinez.webp        ",	"image":"DibuMartinez.webp        ",    "alt":"D.M.",     "datatitle":"Dibu Martinez	    ",   "clase":"D"},
+  {"thumbnail":"thumbDiegoLupi.webp           ",	"image":"DiegoLupi.webp           ",    "alt":"D.L.",     "datatitle":"Diego L.		    ",   "clase":"D"},
   {"thumbnail":"thumbBenjaminOlaizola.webp    ",        "image":"BenjaminOlaizola.webp    ",    "alt":"B.O.",     "datatitle":"Benjamin O.          ",   "clase":"D"},
   {"thumbnail":"thumbNicolasTagliafico.webp   ",        "image":"NicolasTagliafico.webp   ",    "alt":"N.T.",     "datatitle":"Nicolas Tagliafico   ",   "clase":"D"},
   {"thumbnail":"thumbAngelDiMaria.webp        ",        "image":"AngelDiMaria.webp        ",    "alt":"A.D.M.",   "datatitle":"Angel Di María       ",   "clase":"D"},
@@ -103,19 +105,20 @@ var lasCaricaturas = [
   {"thumbnail":"thumbPabloCaputi.webp         ",        "image":"PabloCaputi.webp         ",    "alt":"P.C.",     "datatitle":"Pablo C.             ",   "clase":"D"},
   {"thumbnail":"thumbMabelRodriguez.webp      ",        "image":"MabelRodriguez.webp      ",    "alt":"M.R.",     "datatitle":"Mabel R.             ",   "clase":"D"},
 
-  {"thumbnail":"thumbSalvadorDistefano.webp   ",        "image":"SalvadorDistefano.webp   ",    "alt":"C.P.",     "datatitle":"Salvador Distefano   ",   "clase":"E"},
+  {"thumbnail":"thumbClaudioZuchovicki.webp   ",        "image":"ClaudioZuchovicki.webp   ",    "alt":"C.Z.",     "datatitle":"Claudio Zuchovicki   ",   "clase":"E"},
+  {"thumbnail":"thumbSalvadorDistefano.webp   ",        "image":"SalvadorDistefano.webp   ",    "alt":"S.D.",     "datatitle":"Salvador Distefano   ",   "clase":"E"},
   {"thumbnail":"thumbCarlosPagni.webp         ",        "image":"CarlosPagni.webp         ",    "alt":"C.P.",     "datatitle":"Carlos Pagni         ",   "clase":"E"},
   {"thumbnail":"thumbAlfredoLeuco.webp        ",        "image":"AlfredoLeuco.webp        ",    "alt":"A.L.",     "datatitle":"Alfredo Leuco        ",   "clase":"E"},
   //  {"thumbnail":"thumbEduardoFeiman.webp       ",    "image":"EduardoFeiman.webp       ",    "alt":"E.F.",     "datatitle":"Eduardo Feiman       ",   "clase":"E"},
   {"thumbnail":"thumbEstebanTrebucq.webp      ",        "image":"EstebanTrebucq.webp      ",    "alt":"E.T.",     "datatitle":"Esteban Trebucq      ",   "clase":"E"},
   {"thumbnail":"thumbHugoAlconada.webp        ",        "image":"HugoAlconada.webp        ",    "alt":"H.A.",     "datatitle":"Hugo Alconada        ",   "clase":"E"},
   {"thumbnail":"thumbJoaquinMSola.webp        ",        "image":"JoaquinMSola.webp        ",    "alt":"J.M.S.",   "datatitle":"Joaquin M Sola       ",   "clase":"E"},
-  {"thumbnail":"thumbJorgeFDiaz.webp          ",        "image":"JorgeFDiaz.webp          ",    "alt":"J.F.D.",   "datatitle":"Jorge F Diaz         ",   "clase":"E"},
+  //	{"thumbnail":"thumbJorgeFDiaz.webp          ",        "image":"JorgeFDiaz.webp          ",    "alt":"J.F.D.",   "datatitle":"Jorge F Diaz         ",   "clase":"E"},
   {"thumbnail":"thumbJorgeLanata.webp         ",        "image":"JorgeLanata.webp         ",    "alt":"J.L.",     "datatitle":"Jorge Lanata         ",   "clase":"E"},
-  {"thumbnail":"thumbLuisMajul.webp           ",        "image":"LuisMajul.webp           ",    "alt":"L.M.",     "datatitle":"Luis Majul           ",   "clase":"E"},
+  //	{"thumbnail":"thumbLuisMajul.webp           ",        "image":"LuisMajul.webp           ",    "alt":"L.M.",     "datatitle":"Luis Majul           ",   "clase":"E"},
   {"thumbnail":"thumbManuelAdorni.webp        ",        "image":"ManuelAdorni.webp        ",    "alt":"M.A.",     "datatitle":"Manuel Adorni        ",   "clase":"E"},
   //  {"thumbnail":"thumbRobertoNavarro.webp      ",    "image":"RobertoNavarro.webp      ",    "alt":"R.N.",     "datatitle":"Roberto Navarro      ",   "clase":"E"},
-  {"thumbnail":"thumbRobertoCachan.webp       ",        "image":"RobertoCachan.webp       ",    "alt":"R.C.",     "datatitle":"Roberto Cachanosky   ",   "clase":"E"},
+  //	{"thumbnail":"thumbRobertoCachan.webp       ",        "image":"RobertoCachan.webp       ",    "alt":"R.C.",     "datatitle":"Roberto Cachanosky   ",   "clase":"E"},
   {"thumbnail":"thumbOsvaldoBazan.webp        ",        "image":"OsvaldoBazan.webp        ",    "alt":"O.B.",     "datatitle":"Osvaldo Bazan        ",   "clase":"E"},
   {"thumbnail":"thumbMarceloBonelli.webp      ",        "image":"MarceloBonelli.webp      ",    "alt":"M.B.",     "datatitle":"Marcelo Bonelli      ",   "clase":"E"},
   {"thumbnail":"thumbAdrianVentura.webp       ",        "image":"AdrianVentura.webp       ",    "alt":"A.V.",     "datatitle":"Adrian Ventura       ",   "clase":"E"},
@@ -145,7 +148,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbOscarAbella.webp         ",        "image":"OscarAbella.webp         ",    "alt":"O.A.",     "datatitle":"Oscar A.             ",   "clase":"M"},
   //  {"thumbnail":"thumbJoseLuisM.webp           ",    "image":"JoseLuisM.webp           ",    "alt":"J.L.M.",   "datatitle":"Jose Luis M.         ",   "clase":"M"},
   {"thumbnail":"thumbAngelDureLopez.webp      ",        "image":"AngelDureLopez.webp      ",    "alt":"A.D.",     "datatitle":"Angel D L            ",   "clase":"M"},
-  {"thumbnail":"thumbArielJurjo.webp          ",        "image":"ArielJurjo.webp          ",    "alt":"A.J.",     "datatitle":"Ariel J.             ",   "clase":"M"},
+  //	{"thumbnail":"thumbArielJurjo.webp          ",        "image":"ArielJurjo.webp          ",    "alt":"A.J.",     "datatitle":"Ariel J.             ",   "clase":"M"},
   {"thumbnail":"thumbAleHernandez.webp        ",        "image":"AleHernandez.webp        ",    "alt":"A.H.",     "datatitle":"AleH                 ",   "clase":"M"},
   {"thumbnail":"thumbAlejandroYacono.webp     ",        "image":"AlejandroYacono.webp     ",    "alt":"A.Y.",     "datatitle":"AYE                  ",   "clase":"M"},
   {"thumbnail":"thumbGuilleDianda.webp        ",        "image":"GuilleDianda.webp        ",    "alt":"G.D.",     "datatitle":"Guille D.            ",   "clase":"M"},
@@ -155,7 +158,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbGermanGaravelli.webp     ",        "image":"GermanGaravelli.webp     ",    "alt":"G.G.",     "datatitle":"German G.            ",   "clase":"M"},
   {"thumbnail":"thumbAugustoOliva.webp        ",        "image":"AugustoOliva.webp        ",    "alt":"A.O.",     "datatitle":"Augusto O.           ",   "clase":"M"},
   //  {"thumbnail":"thumbNataliaMariscotti.webp   ",    "image":"NataliaMariscotti.webp   ",    "alt":"N.M.",     "datatitle":"Natalia M.           ",   "clase":"M"},
-  {"thumbnail":"thumbMagiord.webp             ",        "image":"Magiord.webp             ",    "alt":"Magiord",  "datatitle":"Magiord              ",   "clase":"M"},
+  //	{"thumbnail":"thumbMagiord.webp             ",        "image":"Magiord.webp             ",    "alt":"Magiord",  "datatitle":"Magiord              ",   "clase":"M"},
 
   {"thumbnail":"thumbNayibBukele.webp         ",        "image":"NayibBukele.webp          ",   "alt":"N.B",      "datatitle":"NayibBukele          ",   "clase":"P"},
   {"thumbnail":"thumbAngelaMerkel.webp        ",        "image":"AngelaMerkel.webp         ",   "alt":"A.M.",     "datatitle":"Angela Merkel        ",   "clase":"P"},
@@ -166,7 +169,8 @@ var lasCaricaturas = [
   {"thumbnail":"thumbFacundoManes.webp        ",        "image":"FacundoManes.webp         ",   "alt":"F.M.",     "datatitle":"Facundo Manes        ",   "clase":"P"},
   {"thumbnail":"thumbFernandoBurlando.webp    ",        "image":"FernandoBurlando.webp     ",   "alt":"F.B.",     "datatitle":"Fernando Burlando    ",   "clase":"P"},
   {"thumbnail":"thumbMariaEugeniaVidal.webp   ",        "image":"MariaEugeniaVidal.webp    ",   "alt":"M.E.V.",   "datatitle":"Maria Eugenia Vidal  ",   "clase":"P"},
-  {"thumbnail":"thumbGinesGGarcia.webp        ",        "image":"GinesGGarcia.webp         ",   "alt":"G.G.G.",   "datatitle":"Gines G. Garcia      ",   "clase":"P"},
+  {"thumbnail":"thumbElonMusk.webp            ",        "image":"ElonMusk.webp            ",    "alt":"E.M.",     "datatitle":"Elon Musk            ",   "clase":"P"},
+  //	{"thumbnail":"thumbGinesGGarcia.webp        ",        "image":"GinesGGarcia.webp         ",   "alt":"G.G.G.",   "datatitle":"Gines G. Garcia      ",   "clase":"P"},
   {"thumbnail":"thumbHoracioRL.webp           ",        "image":"HoracioRL.webp            ",   "alt":"H.R.L.",   "datatitle":"Horacio R.Larreta    ",   "clase":"P"},
   {"thumbnail":"thumbAnibalFernandez.webp     ",        "image":"AnibalFernandez.webp      ",   "alt":"A.F.",     "datatitle":"Anibal Fernandez     ",   "clase":"P"},
   {"thumbnail":"thumbJavierMilei.webp         ",        "image":"JavierMilei.webp          ",   "alt":"J.M.",     "datatitle":"Javier Milei         ",   "clase":"P"},
@@ -195,7 +199,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbDesconocido52.webp       ",        "image":"Desconocido52.webp       ",    "alt":"N.N.52.",  "datatitle":"N.N. 52              ",   "clase":"V"},
   {"thumbnail":"thumbNNenVivo.webp            ",        "image":"NNenVivo.webp            ",    "alt":"N.N.",     "datatitle":"N.N. 1               ",   "clase":"V"},
   {"thumbnail":"thumbVogue.webp               ",        "image":"Vogue.webp               ",    "alt":"Vogue",    "datatitle":"Vogue                ",   "clase":"V"},
-  {"thumbnail":"thumbNNenVivo02.webp          ",        "image":"NNenVivo02.webp          ",    "alt":"N.N.2.",   "datatitle":"N.N. 2               ",   "clase":"V"},
+  {"thumbnail":"thumbNNenVivo02.webp          ",        "image":"NNenVivo02.webp          ",    "alt":"N.N.2.",   "datatitle":"N.N. 2               ",   "clase":"V"}
 
  ];
 
