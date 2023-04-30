@@ -2,7 +2,7 @@
 //      caricaturas.json
 //  Sabes quien es?
 //  Pista. Dijo: "El que perdona al lobo, sacrifica a la oveja"
-// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch #karikaturen #cartoon #draw #dibujos 
+// #caricatura #caricature #dibujoalapiz #drawing #illustration #pencildrawing #pencilsketch #sketch #karikaturen #cartoon #draw #dibujos
 
 // #sketchbook
 // #victima #mensa
@@ -46,10 +46,11 @@ var lasCaricaturas = [
   //  {"thumbnail":"thumbAlbertoOlmedo.webp       ",    "image":"AlbertoOlmedo.webp       ",    "alt":"A.O.",     "datatitle":"Alberto Olmedo       ",   "clase":"A"},
   {"thumbnail":"thumbSeanConnery.webp         ",        "image":"SeanConnery.webp         ",    "alt":"S.C.",     "datatitle":"Sean Connery         ",   "clase":"A"},
 
-  {"thumbnail":"thumbRodrigoCorts.webp        ",        "image":"RodrigoCorts.webp	  	",    "alt":"J.B.",     "datatitle":"Rodrigo C.		    ",   "clase":"C"},
-  {"thumbnail":"thumbJulioBragagnolo.webp     ",        "image":"JulioBragagnolo.webp	",    "alt":"J.B.",     "datatitle":"Julio B.		    ",   "clase":"C"},
-  {"thumbnail":"thumbFranciscoFosco.webp      ",        "image":"FranciscoFosco.webp	",    "alt":"C.A.",     "datatitle":"Francisco F.         ",   "clase":"C"},
-  {"thumbnail":"thumbFrancoFosco.webp         ",        "image":"FrancoFosco.webp	  	",    "alt":"C.A.",     "datatitle":"Franco F.            ",   "clase":"C"},
+  {"thumbnail":"thumbLuliFerro.webp     	    ",        "image":"LuliFerro.webp		        ",    "alt":"J.B.",     "datatitle":"Luli F.	      	    ",   "clase":"C"},
+  {"thumbnail":"thumbRaulTemino.webp     	    ",        "image":"RaulTemino.webp		      ",    "alt":"J.B.",     "datatitle":"Raúl T.		          ",   "clase":"C"},
+  {"thumbnail":"thumbJulioBragagnolo.webp     ",        "image":"JulioBragagnolo.webp	    ",    "alt":"J.B.",     "datatitle":"Julio B.		          ",   "clase":"C"},
+  {"thumbnail":"thumbFranciscoFosco.webp      ",        "image":"FranciscoFosco.webp	    ",    "alt":"C.A.",     "datatitle":"Francisco F.         ",   "clase":"C"},
+  {"thumbnail":"thumbFrancoFosco.webp         ",        "image":"FrancoFosco.webp	  	    ",    "alt":"C.A.",     "datatitle":"Franco F.            ",   "clase":"C"},
   {"thumbnail":"thumbColoAnaJuana.webp        ",        "image":"ColoAnaJuana.webp        ",    "alt":"C.A.",     "datatitle":"Colo                 ",   "clase":"C"},
   {"thumbnail":"thumbAnnieV.webp              ",        "image":"AnnieV.webp              ",    "alt":"A.V.",     "datatitle":"Annie                ",   "clase":"C"},
   {"thumbnail":"thumbGustavoDeLaVega.webp     ",        "image":"GustavoDeLaVega.webp     ",    "alt":"N.R.",     "datatitle":"Gustavo DLV.         ",   "clase":"C"},
@@ -127,6 +128,7 @@ var lasCaricaturas = [
   {"thumbnail":"thumbAdrianVentura.webp       ",        "image":"AdrianVentura.webp       ",    "alt":"A.V.",     "datatitle":"Adrian Ventura       ",   "clase":"E"},
   //  {"thumbnail":"thumbAlbertoCormillot.webp    ",    "image":"AlbertoCormillot.webp    ",    "alt":"A.C.",     "datatitle":"Alberto Cormillot    ",   "clase":"E"},
 
+  {"thumbnail":"thumbRodrigoCorts.webp        ",        "image":"RodrigoCorts.webp	  	",    "alt":"J.B.",     "datatitle":"Rodrigo C.		    ",   "clase":"M"},
   {"thumbnail":"thumbArielMartin.webp         ",        "image":"ArielMartin.webp         ",    "alt":"A.M.",     "datatitle":"Ariel M.             ",   "clase":"M"},
   {"thumbnail":"thumbMarianoMocoroa.webp      ",        "image":"MarianoMocoroa.webp      ",    "alt":"M.M.",     "datatitle":"Mariano M.           ",   "clase":"M"},
   //  {"thumbnail":"thumbRoxanaDiazConte.webp     ",    "image":"RoxanaDiazConte.webp     ",    "alt":"R.D.C.",   "datatitle":"Roxana               ",   "clase":"M"},
@@ -195,6 +197,8 @@ var lasCaricaturas = [
   {"thumbnail":"thumbHugoMoya.webp            ",        "image":"HugoMoya.webp             ",   "alt":"H.M.",     "datatitle":"Hugo Moyano          ",   "clase":"P"},
   //  {"thumbnail":"thumbAmadoBoudou.webp         ",    "image":"AmadoBoudou.webp          ",   "alt":"A.B.",     "datatitle":"Amado Boudou         ",   "clase":"P"},
 
+
+  {"thumbnail":"thumbPetisoOrejudo.webp       ",        "image":"PetisoOrejudo.webp       ",    "alt":"P.O.",  	"datatitle":"Petiso Orejudo 	    ",   "clase":"V"},
   {"thumbnail":"thumbDesconocido01.webp       ",        "image":"Desconocido01.webp       ",    "alt":"N.N.01.",  "datatitle":"N.N. 3               ",   "clase":"V"},
   {"thumbnail":"thumbDesconocido02.webp       ",        "image":"Desconocido02.webp       ",    "alt":"N.N.02.",  "datatitle":"N.N. 4               ",   "clase":"V"},
   {"thumbnail":"thumbDesconocido06.webp       ",        "image":"Desconocido06.webp       ",    "alt":"N.N.06.",  "datatitle":"N.N. 6               ",   "clase":"V"},
