@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<!-- grilla			https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints -->
+<!-- top navigation https://www.w3schools.com/howto/howto_js_topnav.asp -->
+
+<head>
+	
+	<meta name="google-site-verification" content="0UvInlB89ZSmsrbtJHuY81yu6nVTUf7eDdjkbducs2E" />
+
+	<meta charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,height=device-height,initial-scale=1">
+	<!-- tutorial de https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids	-->
+	<meta name="description" content="Caricaturas, Ingenio, ">
+	<meta name="keywords" content="Caricaturas, Juegos, Ingenio, Lógica, Rompecabezas, cubo de Rubik, drawing, sketching,">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Caricaturas e Ingenio</title> 
+
+	<link	rel="stylesheet"	href="./css/estilo202010.css"	media="screen,projection,tv">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- estilo exclusivo para posicionar tooltip en imagenes -->
+	<style>
+
+	.button {
+		background-color: var(--clr-oscuro);	/*				#4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 8px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 24px;
+		margin: 12px;
+		cursor: pointer;
+	}
+
+	.button4 {border-radius: 8px;}
+
+	</style>
+
+
+</head>
+
+
+<body>
+
+<div class="header">
+	<h1>Caricaturas e Ingenio</h1>
+</div>
+
+<!-- Contenido de la pagina -->
+
+<div class="row clr_fondo">
+  <div class="col-12"></div>
+</div>
+
+<div class="row clr_claro">
+  <div class="col-4" style="text-align: center;">
+			<p><a href="galeria.html??clase='E'">
+			<img src="./galeria/resumen-galeria.webp" width="120" height="130" border="0" alt="imagen de la galeria" class="img-responsive"></a></p>		
+  </div>
+  <div class="col-8">
+			<h2><a href="galeria.html??clase='E'">Caricaturas</a></h2>
+			<p>Caricaturas de personajes conocidos, mensos, artistas, deportistas, periodistas, polìticos y otros</p>
+			<a href="galeria.html?clase=%22C%22" ><button class="button button4">Conocidos</button></a>
+			<a href="galeria.html?clase=%22M%22" ><button class="button button4">Mensos</button></a>
+			<a href="galeria.html?clase=%22E%22" ><button class="button button4">Periodistas</button></a>
+			<a href="galeria.html?clase=%22P%22" ><button class="button button4">Públicos</button></a>
+			<a href="galeria.html?clase=%22A%22" ><button class="button button4">Artistas</button></a>
+			<a href="galeria.html?clase=%22D%22" ><button class="button button4">Deportistas</button></a>
+			<a href="galeria.html?clase=%22V%22" ><button class="button button4">Varios</button></a>
+
+  </div>
+</div>
+
+<div class="row clr_fondo">
+  <div class="col-12"></div>
+</div>
+
+
+<div class="row clr_medio">
+  <div class="col-4" style="text-align: center;">
+			<p><a href="rubik.html">
+			<img src="images/cuborubik2.png" width="142" height="130" border="0" alt="cubo de rubik" class="img-responsive"></a></p>		
+  </div>
+  <div class="col-8">
+		<a href="./ingenio.html"><button class="button button4">Ingenio</button></a>
+		<a href="calendarios.html"><button class="button button4">Calendarios</button></a>
+		<a href="./aplicaciones.html"><button class="button button4">Juegos y aplicaciones</button></a>
+		<a href="publicaciones-varias.html"><button class="button button4">Publicaciones</button></a>
+		<a href="./repgrafsincorbata.html"><button class="button button4">Representación gráfica sin corbata</button></a>
+		<a href="revista-enigma.html"><button class="button button4">Revista Enigma</button></a>
+		<a href="./curriculum-resumido.html"><button class="button button4">Quien soy</button></a>
+		<a href="./consultas.html"><button class="button button4">Consultas</button></a>
+
+	</div>
+</div>
+
+
+<div class="row clr_fondo">
+  <div class="col-2">
+  </div>
+  <div class="col-8" style="text-align: center;">
+		<p>
+			<a href="https://www.facebook.com/gverger/" target="_blank">
+				<img src="images/icon-facebook.svg" width="32" height="32" alt="facebook"/>
+			</a>
+			&nbsp; &nbsp; &nbsp; &nbsp;
+			<a href="https://instagram.com/willieverger" target="_blank">
+				<img src="images/icon-instagram.svg" width="32" height="32" alt="instagram"/>
+			</a>
+		</p>
+
+		<!-- contador visitas		-->
+		<h4><span id="visits"></span> vistas</h4>
+
+  </div>
+
+  <div class="col-2">
+
+		<!-- contador de visitas -->
+		<script>
+			function liveViews(response) {
+					document.getElementById('visits').innerText = response.value;
+			}
+		</script>
+		<script src="https://api.countapi.xyz/hit/ingverger.ar/visits?callback=liveViews" async></script>
+
+		<!-- Fin Contador de visitas -->
+
+  </div>
+</div>
+	
+<div class="footer">
+  <p>by Willie Verger, 2023</p>
+</div>
+
+</body>
+</html>
