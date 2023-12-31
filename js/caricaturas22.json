@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-//      caricaturas.json
+//  caricaturas.json
 //  Sabes quien es?
 //  Pista. Dijo: "El que perdona al lobo, sacrifica a la oveja"
 //      listado de caricaturas a presentar
@@ -25,12 +25,12 @@ var lasCaricaturas = [
   {"thumbnail":"thumbDiegoPeretti.webp        ",        "image":"DiegoPeretti.webp        ",    "alt":"D.P.",     "datatitle":"Diego Peretti        ",   "clase":"A"},
   {"thumbnail":"thumbGuidoKaczka.webp         ",        "image":"GuidoKaczka.webp         ",    "alt":"G.K.",     "datatitle":"Guido Kaczka         ",   "clase":"A"},
   {"thumbnail":"thumbDarioBarassi.webp        ",        "image":"DarioBarassi.webp        ",    "alt":"D.B.",     "datatitle":"Dario Barassi.       ",   "clase":"A"},
-  {"thumbnail":"thumbRobertoFontanarrosa.webp ",  "image":"RobertoFontanarrosa.webp ",  "alt":"R.F.",     "datatitle":"Roberto Fontanarrosa ",   "clase":"A"},
+  {"thumbnail":"thumbRobertoFontanarrosa.webp ",        "image":"RobertoFontanarrosa.webp ",    "alt":"R.F.",     "datatitle":"Roberto Fontanarrosa ",   "clase":"A"},
   {"thumbnail":"thumbRicardoDarin.webp        ",        "image":"RicardoDarin.webp        ",    "alt":"R.D.",     "datatitle":"Ricardo Darin        ",   "clase":"A"},
   {"thumbnail":"thumbMirthaLegrand.webp       ",        "image":"MirthaLegrand.webp       ",    "alt":"M.L.",     "datatitle":"Mirtha Legrand       ",   "clase":"A"},
   {"thumbnail":"thumbJuanCampanella.webp      ",        "image":"JuanCampanella.webp      ",    "alt":"J.C.",     "datatitle":"Juan Campanella      ",   "clase":"A"},
   {"thumbnail":"thumbJorgeLuisBorges.webp     ",        "image":"JorgeLuisBorges.webp     ",    "alt":"J.L.B.",   "datatitle":"Jorge Luis Borges    ",   "clase":"A"},
-  {"thumbnail":"thumbGuillermoFrancella.webp  ",        "image":"GuillermoFrancella.webp  ",  "alt":"G.F.",     "datatitle":"Guillermo Francella  ",   "clase":"A"},
+  {"thumbnail":"thumbGuillermoFrancella.webp  ",        "image":"GuillermoFrancella.webp  ",    "alt":"G.F.",     "datatitle":"Guillermo Francella  ",   "clase":"A"},
   {"thumbnail":"thumbGeorgeLucas.webp         ",        "image":"GeorgeLucas.webp         ",    "alt":"G.L.",     "datatitle":"George Lucas         ",   "clase":"A"},
   {"thumbnail":"thumbMichaelJackson.webp      ",        "image":"MichaelJackson.webp      ",    "alt":"M.J.",     "datatitle":"Michael Jackson      ",   "clase":"A"},
   {"thumbnail":"thumbCarlosGardel.webp        ",        "image":"CarlosGardel.webp        ",    "alt":"C.G.",     "datatitle":"Carlos Gardel.       ",   "clase":"A"},
