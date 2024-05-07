@@ -1,6 +1,10 @@
 # Lógica e Ingenio
 ingverger.ar
-Sitio web de Willie Verger dedicado a caricaturas, juegos de lógica e ingenio
+Sitio web de Willie Verger dedicado a caricaturas y croquis urbano
+
+2024.05.06 
+Se eliminaron las opciones de juegos e ingenio para dedicarme exclusivamente a Caricaturas y croquis urbano.
+
 
 wizardly-nobel-c2ebe0.netlify.app
 
@@ -94,3 +98,4 @@ Fotos para caricaturizar. Tomar con HDR e iluminacion en automatico
 
 	  gtag('config', 'G-PP1LNRZ7TV');
 	</script>
+
